@@ -63,11 +63,18 @@ const MOVIES = [
     "releaseDate": "2026-08-12",
     "audience": 386852,
     "boRank": 6,
-    "status": "unknown",
+    "status": "yes",
     "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
+    "cookies": [
+      {
+        "pos": "위치 미확인",
+        "len": "",
+        "desc": "쿠키 영상이 있습니다. 자세한 내용은 출처를 확인하세요."
+      }
+    ],
+    "tip": "",
+    "source": "나무위키",
+    "sourceUrl": "https://namu.wiki/w/%EB%AA%85%ED%83%90%EC%A0%95%20%EC%BD%94%EB%82%9C%3A%20%ED%95%98%EC%9D%B4%EC%9B%A8%EC%9D%B4%EC%9D%98%20%ED%83%80%EC%B2%9C%EC%82%AC"
   },
   {
     "id": "tmdb-1307247",
@@ -79,11 +86,18 @@ const MOVIES = [
     "releaseDate": "2026-08-12",
     "audience": 326842,
     "boRank": 7,
-    "status": "unknown",
+    "status": "yes",
     "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
+    "cookies": [
+      {
+        "pos": "위치 미확인",
+        "len": "",
+        "desc": "지훈의 권총에 맞았지만 꿈틀거리며 생존 플래그를 남기더니 쿠키 영상에서 복수를 예고하면서 끝난다."
+      }
+    ],
+    "tip": "",
+    "source": "나무위키",
+    "sourceUrl": "https://namu.wiki/w/%EC%98%A4%EC%BC%80%EC%9D%B4%20%EB%A7%88%EB%8B%B42"
   },
   {
     "id": "insidious-out-of-the-further",
@@ -299,11 +313,18 @@ const MOVIES = [
     "releaseDate": "2026-08-19",
     "audience": null,
     "boRank": null,
-    "status": "unknown",
+    "status": "yes",
     "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
+    "cookies": [
+      {
+        "pos": "크레딧 중간",
+        "len": "",
+        "desc": "크레딧이 올라가는 도중에 쿠키 영상이 나온다."
+      }
+    ],
+    "tip": "",
+    "source": "나무위키",
+    "sourceUrl": "https://namu.wiki/w/%EB%93%9C%EB%A1%9C%EC%8A%A4%ED%85%8C%20%EC%A0%80%ED%8E%B8%EC%9D%98%20%EC%9A%B0%EB%A6%AC%EB%93%A4"
   },
   {
     "id": "paw-patrol-the-dino-movie",
