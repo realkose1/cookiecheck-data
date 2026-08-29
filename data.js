@@ -1,10 +1,10 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-08-29)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-08-30)
    관객수: KOBIS 일별 박스오피스 (기준일 20260828)
    쿠키 정보: aftercredits.com + 나무위키 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-08-29';
+const DATA_UPDATED = '2026-08-30';
 const BOXOFFICE_DATE = "20260828";
 
 const MOVIES = [
@@ -42,7 +42,7 @@ const MOVIES = [
     "title": "오디세이",
     "meta": "모험 · 액션 · 판타지",
     "meta2": "173분",
-    "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
+    "posterPath": "/6SIaFQosjJm09Vbk40TgWylU9Bm.jpg",
     "releaseDate": "2026-08-05",
     "audience": 8017492,
     "boRank": 1,
