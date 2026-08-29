@@ -4,9 +4,14 @@
 # 돌리고, 결과(cookies.json)를 이 저장소에 커밋한다. 설치된 앱(TestFlight)은
 # 실행할 때마다 raw.githubusercontent.com 의 cookies.json 을 읽는다.
 #
-# 필요한 시크릿:
-#   TMDB_READ_TOKEN   (필수) TMDB v4 read access token
-#   ANTHROPIC_API_KEY (선택) 새 쿠키 설명 한국어 번역 — 없으면 영어 원문 유지
+# 필수 시크릿
+#   TMDB_READ_TOKEN   TMDB v4 read access token
+#
+# 쿠키 설명 한국어 번역 (선택) — 아래 둘 중 하나. 없으면 영어 원문을 유지한다.
+#   A. ID 페더레이션 (권장, 고정 키 없음):
+#      ANTHROPIC_FEDERATION_RULE_ID / ANTHROPIC_ORGANIZATION_ID /
+#      ANTHROPIC_SERVICE_ACCOUNT_ID  (+ 규칙이 여러 워크스페이스를 덮으면 ANTHROPIC_WORKSPACE_ID)
+#   B. ANTHROPIC_API_KEY
 
 name: refresh
 on:
@@ -16,6 +21,7 @@ on:
 
 permissions:
   contents: write
+  id-token: write   # GitHub OIDC 토큰 발급 — ID 페더레이션에 필요
 
 concurrency:
   group: refresh
@@ -28,18 +34,64 @@ jobs:
     env:
       TZ: Asia/Seoul   # date.today() 가 KST 기준이어야 개봉일 필터가 맞는다
       TMDB_READ_TOKEN: ${{ secrets.TMDB_READ_TOKEN }}
-      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - name: 번역 SDK (선택 — 키 없으면 영어 유지로 degrade)
-        if: env.ANTHROPIC_API_KEY != ''
+      # aftercredits 색인 갱신 (증분). 인증이 필요 없고 가장 오래 걸리므로 먼저 돌려서
+      # 아래에서 받는 Anthropic 토큰의 유효 시간을 아낀다.
+      - name: 쿠키 색인 동기화
+        run: python3 tools/sync_aftercredits.py
+
+      # ID 페더레이션: GitHub OIDC JWT 를 Anthropic 액세스 토큰으로 교환한다.
+      # 고정 API 키가 없고, 받은 토큰은 몇 분 뒤 만료된다.
+      #
+      # 주의 — ANTHROPIC_API_KEY 는 페더레이션보다 우선순위가 높아서, 빈 값이라도
+      # 환경에 있으면 페더레이션을 가린다. 그래서 job env 에 두지 않고 여기서
+      # 필요한 쪽만 GITHUB_ENV 로 내보낸다.
+      - name: Anthropic 인증
+        env:
+          RULE: ${{ secrets.ANTHROPIC_FEDERATION_RULE_ID }}
+          ORG: ${{ secrets.ANTHROPIC_ORGANIZATION_ID }}
+          SVAC: ${{ secrets.ANTHROPIC_SERVICE_ACCOUNT_ID }}
+          WS: ${{ secrets.ANTHROPIC_WORKSPACE_ID }}
+          KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          set -euo pipefail
+          if [ -n "$RULE" ]; then
+            JWT=$(curl -sS -H "Authorization: Bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
+              "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=https://api.anthropic.com" | jq -r .value)
+            RESP=$(curl -sS https://api.anthropic.com/v1/oauth/token \
+              -H "content-type: application/json" \
+              -d "$(jq -nc --arg a "$JWT" --arg r "$RULE" --arg o "$ORG" --arg s "$SVAC" --arg w "$WS" \
+                    '{grant_type:"urn:ietf:params:oauth:grant-type:jwt-bearer",assertion:$a,
+                      federation_rule_id:$r,organization_id:$o,service_account_id:$s}
+                     + (if $w == "" then {} else {workspace_id:$w} end)')")
+            TOKEN=$(jq -r '.access_token // empty' <<<"$RESP")
+            if [ -z "$TOKEN" ]; then
+              # 조용히 영어로 degrade 하지 않고 여기서 멈춘다 — 설정이 틀리면
+              # 번역이 몇 주 동안 말없이 빠질 수 있기 때문.
+              echo "::error::ID 페더레이션 토큰 교환 실패: $(jq -rc '.error // .' <<<"$RESP")"
+              exit 1
+            fi
+            echo "::add-mask::$TOKEN"
+            echo "ANTHROPIC_AUTH_TOKEN=$TOKEN" >> "$GITHUB_ENV"
+            echo "TRANSLATE=1" >> "$GITHUB_ENV"
+            echo "인증: ID 페더레이션 (토큰 만료 $(jq -r '.expires_in' <<<"$RESP")초)"
+          elif [ -n "$KEY" ]; then
+            echo "ANTHROPIC_API_KEY=$KEY" >> "$GITHUB_ENV"
+            echo "TRANSLATE=1" >> "$GITHUB_ENV"
+            echo "인증: API 키"
+          else
+            echo "인증 없음 — 새 쿠키 설명은 영어 원문을 유지합니다."
+          fi
+
+      - name: 번역 SDK
+        if: env.TRANSLATE == '1'
         run: pip install anthropic
 
       - name: 데이터 갱신
         run: |
           mkdir -p ios/data   # fetch_movies.py 가 앱 번들용 사본을 여기 쓴다
-          python3 tools/sync_aftercredits.py
           python3 tools/fetch_movies.py
           # 앱이 읽는 안정 경로 (COOKIE_FEED_URL = .../main/cookies.json)
           cp ios/data/cookies.json cookies.json
