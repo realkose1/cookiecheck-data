@@ -212,6 +212,27 @@ def main():
         if patch:
             m.update(patch)
 
+    # 직전 피드의 확정 판정 이월. 소스가 일시적으로 막혀도(예: GitHub Actions
+    # 러너 IP 를 나무위키 Cloudflare 가 차단) 이미 확정된 사실이 '미확인'으로
+    # 퇴행하면 안 된다 — 쿠키 유무는 개봉 후 바뀌지 않는 사실이므로, 이번 조회가
+    # 답을 못 준 작품만 이전 판정으로 채운다 (새 판정이 있으면 항상 새 것 우선).
+    prev_path = ROOT / "ios" / "data" / "cookies.json"
+    if prev_path.exists():
+        prev = {
+            p["tmdbId"]: p
+            for p in json.loads(prev_path.read_text(encoding="utf-8")).get("movies", [])
+            if p.get("status") in ("yes", "no")
+        }
+        carried = 0
+        for m in movies:
+            if m["status"] == "unknown" and m["tmdbId"] in prev:
+                p = prev[m["tmdbId"]]
+                m.update({k: p[k] for k in ("status", "cookies", "tip", "creditsLen", "source") if k in p})
+                m["sourceUrl"] = p.get("sourceUrl")
+                carried += 1
+        if carried:
+            print(f"  직전 피드에서 판정 이월 {carried}편")
+
     for m in movies:
         for key in [k for k in m if k.startswith("_")]:
             del m[key]
