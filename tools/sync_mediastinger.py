@@ -47,12 +47,16 @@ INCREMENTAL_PAGES = 3
 #
 # 'currently-no-after-credits-information' 은 담지 않는다. 색인해봐야 미확인이라
 # 결과가 같고, 오히려 나중에 판정이 붙었을 때 낡은 값이 남는다.
+#
+# 'scene-during-credits' / 'extras-during-credits' 도 **일부러 뺐다.** 이 사이트는
+# 크레딧 위에 얹힌 장식까지 그 분류에 넣는다 — 모탈 컴뱃 II 는 "배우 이름 주위로
+# 영상 요소가 회전한다"가 근거다. 그걸 '쿠키 있음'으로 알리면 관객을 빈 극장에
+# 10분 앉혀 두게 된다. 실제로 aftercredits 와 어긋난 327건 중 288건이 이 분류였다.
+# 크레딧 중간 쿠키는 판정이 더 엄격한 aftercredits 색인에 맡긴다.
 CATEGORIES = {
     "no-post-credits-scene": ("no", 0, 0),
     "post-credits-scene": ("yes", 0, 1),
     "post-credits-extra": ("yes", 0, 1),
-    "scene-during-credits": ("yes", 1, 0),
-    "extras-during-credits": ("yes", 1, 0),
 }
 
 ITEM_RE = re.compile(r'class="title" ><a href="([^"]+)">([^<]+)</a>')
