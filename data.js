@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
    작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-08-31)
-   관객수: KOBIS 일별 박스오피스 (기준일 20260829)
+   관객수: KOBIS 일별 박스오피스 (기준일 20260830)
    쿠키 정보: aftercredits.com + 나무위키 + TMDB 키워드 + data.overrides.json */
 
 const DATA_UPDATED = '2026-08-31';
-const BOXOFFICE_DATE = "20260829";
+const BOXOFFICE_DATE = "20260830";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/k0pJYRAWMacnhY93IikTmXaiR1B.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 8471045,
+    "audience": 8864922,
     "boRank": 1,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "145분",
     "posterPath": "/8mLepBa5l591xFidRpn65xV7hb4.jpg",
     "releaseDate": "2026-07-29",
-    "audience": 8454119,
+    "audience": 8548390,
     "boRank": 2,
     "status": "yes",
     "creditsLen": null,
@@ -61,7 +61,7 @@ const MOVIES = [
     "meta2": "105분",
     "posterPath": "/tmV1b9s0zKtUx06pkYaRtBAz065.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 818725,
+    "audience": 838696,
     "boRank": 5,
     "status": "no",
     "creditsLen": null,
@@ -78,8 +78,8 @@ const MOVIES = [
     "meta2": "110분",
     "posterPath": "/uvhDoTtOyoUO0hn02buTv2rxyf8.jpg",
     "releaseDate": "2026-08-12",
-    "audience": 395471,
-    "boRank": 7,
+    "audience": 403092,
+    "boRank": 6,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -94,6 +94,29 @@ const MOVIES = [
     "sourceUrl": "https://namu.wiki/w/%EB%AA%85%ED%83%90%EC%A0%95%20%EC%BD%94%EB%82%9C%3A%20%ED%95%98%EC%9D%B4%EC%9B%A8%EC%9D%B4%EC%9D%98%20%ED%83%80%EC%B2%9C%EC%82%AC"
   },
   {
+    "id": "tmdb-1307247",
+    "tmdbId": 1307247,
+    "title": "오케이 마담 2",
+    "meta": "액션 · 코미디",
+    "meta2": "109분",
+    "posterPath": "/xDbrWXB9yb5aEdt4peVy8OWNP2Y.jpg",
+    "releaseDate": "2026-08-12",
+    "audience": 334897,
+    "boRank": 8,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "pos": "위치 미확인",
+        "len": "",
+        "desc": "지훈의 권총에 맞았지만 꿈틀거리며 생존 플래그를 남기더니 쿠키 영상에서 복수를 예고하면서 끝난다."
+      }
+    ],
+    "tip": "",
+    "source": "나무위키",
+    "sourceUrl": "https://namu.wiki/w/%EC%98%A4%EC%BC%80%EC%9D%B4%20%EB%A7%88%EB%8B%B42"
+  },
+  {
     "id": "tmdb-1235769",
     "tmdbId": 1235769,
     "title": "경주기행",
@@ -101,7 +124,7 @@ const MOVIES = [
     "meta2": "111분",
     "posterPath": "/2dAd2APyFUyJ6qEv9VFHdHQtQI6.jpg",
     "releaseDate": "2026-08-26",
-    "audience": 147901,
+    "audience": 192351,
     "boRank": 3,
     "status": "unknown",
     "creditsLen": null,
@@ -118,8 +141,8 @@ const MOVIES = [
     "meta2": "106분",
     "posterPath": "/aKkPEqUtbEtCB5WWJWanHJPFsnZ.jpg",
     "releaseDate": "2026-08-20",
-    "audience": 141172,
-    "boRank": 6,
+    "audience": 148316,
+    "boRank": 7,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -134,6 +157,23 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/08/insidious-out-of-the-further-2026/"
   },
   {
+    "id": "the-end-of-oak-street",
+    "tmdbId": 1101383,
+    "title": "오크 스트리트의 마지막 날",
+    "meta": "SF · 미스터리 · 스릴러",
+    "meta2": "100분",
+    "posterPath": "/oGqJr59UAwZfpmSkEkaW02o0ZLC.jpg",
+    "releaseDate": "2026-08-26",
+    "audience": 107419,
+    "boRank": 4,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/08/end-of-oak-street-the-2026/"
+  },
+  {
     "id": "paw-patrol-the-dino-movie",
     "tmdbId": 1185806,
     "title": "퍼피 구조대: 더 다이노 무비",
@@ -141,8 +181,8 @@ const MOVIES = [
     "meta2": "89분",
     "posterPath": "/AnG0YQdnIf3mMYEVc2onMeAROzU.jpg",
     "releaseDate": "2026-08-13",
-    "audience": 102497,
-    "boRank": 8,
+    "audience": 106540,
+    "boRank": 9,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -155,23 +195,6 @@ const MOVIES = [
     "tip": "",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/08/paw-patrol-the-dino-movie-2026/"
-  },
-  {
-    "id": "the-end-of-oak-street",
-    "tmdbId": 1101383,
-    "title": "오크 스트리트의 마지막 날",
-    "meta": "SF · 미스터리 · 스릴러",
-    "meta2": "100분",
-    "posterPath": "/oGqJr59UAwZfpmSkEkaW02o0ZLC.jpg",
-    "releaseDate": "2026-08-26",
-    "audience": 86576,
-    "boRank": 4,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/08/end-of-oak-street-the-2026/"
   },
   {
     "id": "the-mortuary-assistant",
@@ -364,29 +387,6 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "tmdb-1307247",
-    "tmdbId": 1307247,
-    "title": "오케이 마담 2",
-    "meta": "액션 · 코미디",
-    "meta2": "109분",
-    "posterPath": "/xDbrWXB9yb5aEdt4peVy8OWNP2Y.jpg",
-    "releaseDate": "2026-08-12",
-    "audience": null,
-    "boRank": null,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "pos": "위치 미확인",
-        "len": "",
-        "desc": "지훈의 권총에 맞았지만 꿈틀거리며 생존 플래그를 남기더니 쿠키 영상에서 복수를 예고하면서 끝난다."
-      }
-    ],
-    "tip": "",
-    "source": "나무위키",
-    "sourceUrl": "https://namu.wiki/w/%EC%98%A4%EC%BC%80%EC%9D%B4%20%EB%A7%88%EB%8B%B42"
-  },
-  {
     "id": "jackass-best-and-last",
     "tmdbId": 1612018,
     "title": "잭애스: 베스트 앤드 라스트",
@@ -433,6 +433,10 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "tmdb-1307247": {
+    "up": 0,
+    "down": 0
+  },
   "tmdb-1235769": {
     "up": 0,
     "down": 0
@@ -441,11 +445,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "paw-patrol-the-dino-movie": {
+  "the-end-of-oak-street": {
     "up": 0,
     "down": 0
   },
-  "the-end-of-oak-street": {
+  "paw-patrol-the-dino-movie": {
     "up": 0,
     "down": 0
   },
@@ -490,10 +494,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "katseye-wild-hearts": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-1307247": {
     "up": 0,
     "down": 0
   },
