@@ -1,6 +1,6 @@
 """쿠키(쿠키 영상) 정보 소스.
 
-TMDB에는 쿠키 데이터가 없어서 두 소스를 겹쳐 쓴다.
+TMDB에는 쿠키 데이터가 없어서 여러 소스를 겹쳐 쓴다.
 
 1. aftercredits.com — WordPress REST API 가 공개돼 있고(robots.txt: `Disallow:` 없음)
    본문에 "Are There Any Extras During/After The Credits?" Yes/No 와 스포일러로 감춘
@@ -20,8 +20,10 @@ TMDB에는 쿠키 데이터가 없어서 두 소스를 겹쳐 쓴다.
 우선순위: data.overrides.json > aftercredits > 나무위키 > TMDB 키워드 > 미확인.
 """
 
+import datetime
 import html
 import json
+import os
 import re
 import time
 import unicodedata
@@ -186,12 +188,18 @@ def aftercredits_lookup(en_title, original_title, year, session_get=_get_json):
 # 박스오피스 (KOBIS 일별 박스오피스 TOP 10)
 # ---------------------------------------------------------------------------
 #
-# KOBIS 공식 오픈API 는 발급 키가 필요하다. 키 없이 쓰려고 kukiit.araboke.com 이
-# 공개해 둔 프록시(`/api/boxoffice`)를 쓴다 — 원 데이터는 KOBIS 일별 박스오피스이고
-# `audiAcc`(누적 관객수)를 그대로 담고 있다. 하루 한 번만 부른다.
-# 나중에 KOBIS 키를 발급받으면 이 함수만 갈아끼우면 된다.
+# KOBIS 공식 오픈API 를 쓴다 (KOBIS_API_KEY 필요).
+#
+# 예전에는 남이 공개해 둔 프록시(kukiit.araboke.com)에 붙어 있었다. 데이터 자체는
+# KOBIS 공개 정보였지만 허락 없이 남의 서버에 매일 트래픽을 얹는 셈이라 걷어냈다.
+#
+# 기준일은 '어제'다. KOBIS 는 전날 집계를 아침에 내므로, 아직 안 나왔으면 하루씩
+# 뒤로 물러나며 최대 사흘까지 찾는다 — 그래야 새벽에 돌아도 빈손이 되지 않는다.
 
-BOXOFFICE_API = "https://kukiit.araboke.com/api/boxoffice"
+BOXOFFICE_API = (
+    "https://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json"
+)
+BOXOFFICE_LOOKBACK = 3
 
 
 def _bo_norm(title):
@@ -201,19 +209,42 @@ def _bo_norm(title):
 
 def boxoffice_fetch():
     """{정규화제목: {rank, audience, openDt}} 와 기준일. 실패하면 ({}, None)."""
-    try:
-        data = _get_json(BOXOFFICE_API)
-    except Exception:
+    key = os.environ.get("KOBIS_API_KEY", "").strip()
+    if not key:
+        print("  KOBIS_API_KEY 가 없습니다 — 관객수를 건너뜁니다")
         return {}, None
 
-    index = {}
-    for item in data.get("items", []):
-        index[_bo_norm(item.get("movieNm"))] = {
-            "rank": item.get("rank"),
-            "audience": item.get("audiAcc"),
-            "openDt": item.get("openDt"),
-        }
-    return index, data.get("targetDt")
+    today = datetime.date.today()
+    for back in range(1, BOXOFFICE_LOOKBACK + 1):
+        target = (today - datetime.timedelta(days=back)).strftime("%Y%m%d")
+        url = f"{BOXOFFICE_API}?key={key}&targetDt={target}"
+        try:
+            data = _get_json(url)
+        except Exception:
+            continue
+
+        items = (data.get("boxOfficeResult") or {}).get("dailyBoxOfficeList") or []
+        if not items:
+            continue  # 아직 집계가 안 나온 날짜
+
+        index = {}
+        for item in items:
+            index[_bo_norm(item.get("movieNm"))] = {
+                "rank": _int_or_none(item.get("rank")),
+                "audience": _int_or_none(item.get("audiAcc")),
+                "openDt": (item.get("openDt") or "").replace("-", "") or None,
+            }
+        return index, target
+
+    return {}, None
+
+
+def _int_or_none(v):
+    """KOBIS 는 숫자를 문자열로 준다 ("8471045")."""
+    try:
+        return int(v)
+    except (TypeError, ValueError):
+        return None
 
 
 def boxoffice_match(title, index):

@@ -1,11 +1,12 @@
 # 쿠키이써 데이터 일일 갱신 — 매일 오전(KST) 클라우드에서 돈다.
 #
-# TMDB 상영작 + KOBIS 관객수(kukiit 프록시) + aftercredits/나무위키 쿠키 대조를
+# TMDB 상영작 + KOBIS 관객수 + aftercredits/mediastinger/나무위키 쿠키 대조를
 # 돌리고, 결과(cookies.json)를 이 저장소에 커밋한다. 설치된 앱(TestFlight)은
 # 실행할 때마다 raw.githubusercontent.com 의 cookies.json 을 읽는다.
 #
 # 필수 시크릿
 #   TMDB_READ_TOKEN   TMDB v4 read access token
+#   KOBIS_API_KEY     영화진흥위원회 오픈API 키 (일별 박스오피스)
 #
 # 쿠키 설명 한국어 번역 (선택) — 아래 둘 중 하나. 없으면 영어 원문을 유지한다.
 #   A. ID 페더레이션 (권장, 고정 키 없음):
@@ -38,6 +39,7 @@ jobs:
     env:
       TZ: Asia/Seoul   # date.today() 가 KST 기준이어야 개봉일 필터가 맞는다
       TMDB_READ_TOKEN: ${{ secrets.TMDB_READ_TOKEN }}
+      KOBIS_API_KEY: ${{ secrets.KOBIS_API_KEY }}   # 일별 박스오피스 (관객수)
     steps:
       - uses: actions/checkout@v5
 
