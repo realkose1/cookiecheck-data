@@ -34,17 +34,25 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 35
     env:
       TZ: Asia/Seoul   # date.today() 가 KST 기준이어야 개봉일 필터가 맞는다
       TMDB_READ_TOKEN: ${{ secrets.TMDB_READ_TOKEN }}
     steps:
       - uses: actions/checkout@v5
 
-      # aftercredits 색인 갱신 (증분). 인증이 필요 없고 가장 오래 걸리므로 먼저 돌려서
+      # 쿠키 색인 갱신 (모두 증분). 인증이 필요 없고 가장 오래 걸리므로 먼저 돌려서
       # 아래에서 받는 Anthropic 토큰의 유효 시간을 아낀다.
+      #
+      # 세 색인은 서로 빈 곳이 다르다 — ac 는 영어권 전반, ms 는 개봉 중 신작이
+      # 빠르고, ko 는 나무위키에서 한국·일본 영화를 채운다. 뒤의 둘은 남의 서버
+      # 예절(mediastinger robots.txt 는 Crawl-delay 10) 때문에 한 번에 다 훑지
+      # 않고 매일 조금씩 이어붙인다.
       - name: 쿠키 색인 동기화
-        run: python3 tools/sync_aftercredits.py
+        run: |
+          python3 tools/sync_aftercredits.py
+          python3 tools/sync_mediastinger.py
+          python3 tools/sync_namu.py --budget 120
 
       # ID 페더레이션: GitHub OIDC JWT 를 Anthropic 액세스 토큰으로 교환한다.
       # 고정 API 키가 없고, 받은 토큰은 몇 분 뒤 만료된다.
