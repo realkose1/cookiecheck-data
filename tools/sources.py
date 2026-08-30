@@ -220,12 +220,21 @@ def boxoffice_fetch():
         url = f"{BOXOFFICE_API}?key={key}&targetDt={target}"
         try:
             data = _get_json(url)
-        except Exception:
+        except Exception as e:
+            print(f"  KOBIS 요청 실패({target}): {e}")
             continue
+
+        # 키가 틀리면 KOBIS 는 HTTP 200 에 faultInfo 를 담아 보낸다 — 조용히
+        # 빈손이 되지 않도록 이유를 찍는다.
+        fault = data.get("faultInfo")
+        if fault:
+            print(f"  KOBIS 오류({target}): {fault.get('errorCode')} {fault.get('message')}")
+            return {}, None
 
         items = (data.get("boxOfficeResult") or {}).get("dailyBoxOfficeList") or []
         if not items:
-            continue  # 아직 집계가 안 나온 날짜
+            print(f"  KOBIS {target} 집계 없음 — 하루 앞으로")
+            continue
 
         index = {}
         for item in items:
