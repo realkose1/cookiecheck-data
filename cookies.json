@@ -8,7 +8,7 @@
    "title": "오디세이",
    "meta": "모험 · 액션 · 판타지",
    "meta2": "173분",
-   "posterPath": "/6SIaFQosjJm09Vbk40TgWylU9Bm.jpg",
+   "posterPath": "/k0pJYRAWMacnhY93IikTmXaiR1B.jpg",
    "releaseDate": "2026-08-05",
    "audience": 8471045,
    "boRank": 1,
@@ -100,8 +100,9 @@
    "status": "unknown",
    "creditsLen": null,
    "cookies": [],
-   "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-   "source": ""
+   "tip": "쿠키 영상은 확인되지 않았습니다. 다만 엔딩 크레딧에 무술감독 고 박인혜를 추모하는 문구가 들어 있습니다.",
+   "source": "언론 보도",
+   "sourceUrl": "https://www.mt.co.kr/entertainment/2026/08/26/2026082611537225743"
   },
   {
    "id": "insidious-out-of-the-further",
@@ -142,7 +143,7 @@
     {
      "pos": "크레딧 중간",
      "len": "",
-     "desc": "크레딧 앞부분에 애니메이션 장면들이 이어집니다."
+     "desc": "엔딩 크레딧 앞부분에 애니메이션 장면들이 나옵니다."
     }
    ],
    "tip": "",
@@ -259,11 +260,12 @@
    "releaseDate": "2026-08-26",
    "audience": null,
    "boRank": null,
-   "status": "unknown",
+   "status": "no",
    "creditsLen": null,
    "cookies": [],
-   "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-   "source": ""
+   "tip": "쿠키가 없습니다. 일본 개봉 당시 주차를 바꿔가며 확인한 관객 후기 기준입니다.",
+   "source": "일본 현지 관람 후기",
+   "sourceUrl": "https://muko.kr/movietalk/12341784"
   },
   {
    "id": "warfare",
@@ -292,11 +294,12 @@
    "releaseDate": "2026-08-19",
    "audience": null,
    "boRank": null,
-   "status": "unknown",
+   "status": "no",
    "creditsLen": null,
    "cookies": [],
-   "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-   "source": ""
+   "tip": "쿠키가 없습니다. 1973년 작품이라 쿠키 영상이라는 관습 자체가 없던 시절입니다.",
+   "source": "파이널 컷 판본 비교 자료",
+   "sourceUrl": "https://twm.fandom.com/wiki/Final_Cut"
   },
   {
    "id": "tmdb-805627",
