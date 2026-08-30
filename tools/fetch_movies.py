@@ -175,13 +175,30 @@ def main():
     # 이미 개봉한 작품만.
     movies = [m for m in movies if m["releaseDate"] and m["releaseDate"] <= today]
 
+    # 직전 피드. 박스오피스 퇴행 방지와 쿠키 판정 이월에 함께 쓴다.
+    prev_path = ROOT / "ios" / "data" / "cookies.json"
+    prev_feed = json.loads(prev_path.read_text(encoding="utf-8")) if prev_path.exists() else {}
+    prev_all = {p["tmdbId"]: p for p in prev_feed.get("movies", [])}
+
     # 박스오피스 관객수를 붙인다.
     bo_index, bo_date = sources.boxoffice_fetch()
+    prev_bo_date = prev_feed.get("boxofficeDate")
+    # KOBIS 는 전날 집계를 아침에야 낸다. 그 전에 돌면 하루 더 오래된 집계가
+    # 돌아오는데, 그대로 쓰면 관객수와 기준일이 뒤로 간다. 조회에 실패했을 때도
+    # 마찬가지다 — 둘 다 직전 집계를 그대로 지킨다.
+    stale_bo = bool(prev_bo_date) and (not bo_date or bo_date < prev_bo_date)
+    if stale_bo:
+        print(f"  박스오피스 {bo_date or '조회 실패'} — 직전({prev_bo_date})보다 오래됨. 직전 집계 유지")
+        bo_index, bo_date = {}, prev_bo_date
+
     for m in movies:
         entry = sources.boxoffice_match(m["title"], bo_index)
         if entry:
             m["audience"] = entry["audience"]
             m["boRank"] = entry["rank"]
+        elif stale_bo and (p := prev_all.get(m["tmdbId"])) and p.get("audience") is not None:
+            m["audience"] = p["audience"]
+            m["boRank"] = p.get("boRank")
 
     # 최신 개봉순 상위 MAX_MOVIES 편에, 박스오피스 진입작은 개봉일과 무관하게 합집합으로
     # 더한다 — 흥행 중인데 개봉한 지 오래됐다는 이유로 빠지면 박스오피스 목록이 아니다.
@@ -216,22 +233,16 @@ def main():
     # 러너 IP 를 나무위키 Cloudflare 가 차단) 이미 확정된 사실이 '미확인'으로
     # 퇴행하면 안 된다 — 쿠키 유무는 개봉 후 바뀌지 않는 사실이므로, 이번 조회가
     # 답을 못 준 작품만 이전 판정으로 채운다 (새 판정이 있으면 항상 새 것 우선).
-    prev_path = ROOT / "ios" / "data" / "cookies.json"
-    if prev_path.exists():
-        prev = {
-            p["tmdbId"]: p
-            for p in json.loads(prev_path.read_text(encoding="utf-8")).get("movies", [])
-            if p.get("status") in ("yes", "no")
-        }
-        carried = 0
-        for m in movies:
-            if m["status"] == "unknown" and m["tmdbId"] in prev:
-                p = prev[m["tmdbId"]]
-                m.update({k: p[k] for k in ("status", "cookies", "tip", "creditsLen", "source") if k in p})
-                m["sourceUrl"] = p.get("sourceUrl")
-                carried += 1
-        if carried:
-            print(f"  직전 피드에서 판정 이월 {carried}편")
+    prev = {k: p for k, p in prev_all.items() if p.get("status") in ("yes", "no")}
+    carried = 0
+    for m in movies:
+        if m["status"] == "unknown" and m["tmdbId"] in prev:
+            p = prev[m["tmdbId"]]
+            m.update({k: p[k] for k in ("status", "cookies", "tip", "creditsLen", "source") if k in p})
+            m["sourceUrl"] = p.get("sourceUrl")
+            carried += 1
+    if carried:
+        print(f"  직전 피드에서 판정 이월 {carried}편")
 
     for m in movies:
         for key in [k for k in m if k.startswith("_")]:

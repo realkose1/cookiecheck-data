@@ -1,4 +1,4 @@
-# 쿠키이써 데이터 일일 갱신 — 매일 자정(KST) 클라우드에서 돈다.
+# 쿠키이써 데이터 일일 갱신 — 매일 오전(KST) 클라우드에서 돈다.
 #
 # TMDB 상영작 + KOBIS 관객수(kukiit 프록시) + aftercredits/나무위키 쿠키 대조를
 # 돌리고, 결과(cookies.json)를 이 저장소에 커밋한다. 설치된 앱(TestFlight)은
@@ -16,7 +16,11 @@
 name: refresh
 on:
   schedule:
-    - cron: "5 15 * * *"   # 15:05 UTC = 00:05 KST
+    # KOBIS 는 전날 집계를 아침에 낸다. 자정에 돌면 이틀 전 집계밖에 못 받는다
+    # (00:05 KST 실행 → 8/28 기준이 8/30 까지 남았다). 발표 뒤로 옮기고,
+    # GitHub 의 스케줄 지연(수 시간까지 밀린다)에 대비해 오후에 한 번 더 돈다.
+    - cron: "0 1 * * *"   # 01:00 UTC = 10:00 KST
+    - cron: "0 5 * * *"   # 05:00 UTC = 14:00 KST (예비)
   workflow_dispatch:
 
 permissions:
