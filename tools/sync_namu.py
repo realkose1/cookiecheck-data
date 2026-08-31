@@ -14,7 +14,8 @@ budget 만큼만 새로 보고 다음 실행이 이어받는다. 판정이 안 �
 (checked) 매번 같은 문서를 다시 두드리지 않는다.
 
 출력: data/ko-index.json
-  { "syncedAt": ISO, "entries": {"<tmdbId>": {"s","d","a","u"}}, "checked": [tmdbId...] }
+  { "syncedAt": ISO, "entries": {"<tmdbId>": {"s","d","a","u","t"?}}, "checked": [...] }
+  t 는 쿠키 설명(한국어). 문서에 알맹이 있는 서술이 있을 때만 담는다.
 
 사용법:
   python3 tools/sync_namu.py                 # 기본 budget 만큼 이어서
@@ -26,6 +27,7 @@ import datetime
 import json
 import os
 import pathlib
+import re
 import sys
 import time
 import urllib.parse
@@ -85,6 +87,26 @@ def candidates(years):
     return out
 
 
+# 존재만 알리는 문장은 담지 않는다 — 필 배지와 위치 표시가 이미 같은 말을 한다.
+# 쿠키를 쪼갰는데 "쿠키 영상이 존재한다" 가 나오면 쪼갠 보람이 없다.
+_EXISTENCE = re.compile(
+    r"쿠키\s*영상(은|이|가|도)?\s*(총\s*\d+\s*개(가)?\s*)?"
+    r"(있다|없다|존재한다|나온다|있음|없음|있습니다|나옵니다)"
+)
+
+
+def _clean_desc(text):
+    """나무위키 본문에서 뽑은 문장의 찌꺼기를 턴다 (문단 기호, 목차 번호)."""
+    t = re.sub(r"^#+\s*", "", (text or "").strip())
+    t = re.sub(r"^(\d+(\.\d+)*\s+)+", "", t)
+    return re.sub(r"\s+", " ", t).strip()
+
+
+def _is_thin(text):
+    rest = re.sub(r"[\s.,·…!?~\-—()\[\]'\"]+", "", _EXISTENCE.sub("", text))
+    return len(rest) < 10
+
+
 def directors_of(tmdb_id):
     try:
         crew = tmdb_get(f"/movie/{tmdb_id}/credits", language="ko-KR").get("crew", [])
@@ -130,12 +152,19 @@ def main():
         checked.add(m["id"])
         if hit and hit.get("status") in ("yes", "no"):
             cookies = hit.get("cookies") or []
-            index["entries"][str(m["id"])] = {
+            entry = {
                 "s": hit["status"],
                 "d": 1 if any(c.get("pos") == "크레딧 중간" for c in cookies) else 0,
                 "a": 1 if any(c.get("pos") == "크레딧 종료 후" for c in cookies) else 0,
                 "u": hit.get("sourceUrl") or "",
             }
+            # 쿠키 설명. 나무위키는 한국어라 번역이 필요 없다 — 그냥 담아두면
+            # 검색 결과에서도 "쿠키가 있다"에서 그치지 않고 내용을 보여줄 수 있다.
+            # 위치별로 나누지 않고 한 줄만 둔다 (문서 서술이 그 정도 입자다).
+            desc = _clean_desc(next((c.get("desc") for c in cookies if c.get("desc")), ""))
+            if desc and not _is_thin(desc):
+                entry["t"] = desc[:400]
+            index["entries"][str(m["id"])] = entry
             found += 1
             print(f"  [{n}/{min(budget, len(pool))}] {title} → {hit['status']}")
         if n % 25 == 0:

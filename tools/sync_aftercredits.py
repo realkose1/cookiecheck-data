@@ -11,8 +11,9 @@
   16 Both During&After → 중간+종료 후  8  Unknown           → unknown
 
 출력: data/ac-index.json
-  { "syncedAt": ISO8601, "entries": { "<정규화제목>|<연도>": {"s","d","a","u"} } }
+  { "syncedAt": ISO8601, "entries": { "<정규화제목>|<연도>": {"s","d","a","u","t"?} } }
   s: yes|no|unknown · d/a: 중간/종료후 쿠키 존재(0|1) · u: 출처 URL
+  t: 쿠키 설명(영어 원문). 번역본은 tools/translate_index.py 가 덮어쓴다.
 
 사용법:
   python3 tools/sync_aftercredits.py          # 증분 (색인 없으면 전체)
@@ -28,7 +29,7 @@ import urllib.parse
 import urllib.request
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-from sources import normalize_title  # noqa: E402
+from sources import _parse_extras, normalize_title  # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 INDEX_PATH = ROOT / "data" / "ac-index.json"
@@ -40,12 +41,18 @@ CAT_STINGERS, CAT_NON, CAT_UNKNOWN = 7, 6, 8
 CAT_DURING, CAT_AFTER, CAT_BOTH = 14, 15, 16
 
 
+# 본문(content)까지 받으면 글 하나가 1만 자쯤 된다. 100편씩 받으면 응답이
+# 페이지당 1MB 를 넘어 서버가 연결을 끊는다 — 그래서 25편씩 나눠 받는다.
+PER_PAGE = 25
+RETRIES = 4
+
+
 def fetch_page(page, after=None):
     params = {
         "categories": CAT_MOVIES,
-        "per_page": 100,
+        "per_page": PER_PAGE,
         "page": page,
-        "_fields": "title,link,categories,date",
+        "_fields": "title,link,categories,date,content",
         "orderby": "date",
         "order": "desc",
     }
@@ -55,9 +62,18 @@ def fetch_page(page, after=None):
         f"{API}?{urllib.parse.urlencode(params)}",
         headers={"User-Agent": UA, "accept": "application/json"},
     )
-    with urllib.request.urlopen(req, timeout=30) as r:
-        total_pages = int(r.headers.get("X-WP-TotalPages", "1"))
-        return json.load(r), total_pages
+    # 끊기면 잠깐 쉬었다 다시. 79페이지를 연달아 받다 보면 한두 번은 끊긴다.
+    for attempt in range(RETRIES):
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                total_pages = int(r.headers.get("X-WP-TotalPages", "1"))
+                return json.load(r), total_pages
+        except urllib.error.HTTPError:
+            raise            # 400(범위 초과) 등은 호출한 쪽이 판단한다
+        except Exception:
+            if attempt == RETRIES - 1:
+                raise
+            time.sleep(3 * (attempt + 1))
 
 
 def year_of(title):
@@ -74,12 +90,25 @@ def entry_of(post):
     else:
         return None  # Unknown / 분류 없음 — 색인해봐야 미확인이라 뺀다
 
-    return {
+    entry = {
         "s": status,
         "d": 1 if (CAT_DURING in cats or CAT_BOTH in cats) else 0,
         "a": 1 if (CAT_AFTER in cats or CAT_BOTH in cats) else 0,
         "u": post["link"],
     }
+
+    # 쿠키 설명. 본문의 스포일러 블록에 들어 있고, '있음' 글은 사실상 전부 갖고
+    # 있다. 담아두면 검색으로 찾은 옛 영화도 "있다"에서 그치지 않는다.
+    # 영어 원문이라 화면에 내보내기 전에 번역이 필요하다 (tools/translate_index.py).
+    if status == "yes":
+        body = (post.get("content") or {}).get("rendered") or ""
+        if body:
+            extras = _parse_extras(body)
+            desc = next((d for _, d in extras.values() if d), "")
+            # 'No information at this time' 같은 자리표시자는 담지 않는다.
+            if desc and not re.match(r"\s*no information", desc, re.I):
+                entry["t"] = desc[:600]
+    return entry
 
 
 def main():
@@ -112,7 +141,7 @@ def main():
                 newest_date = post["date"]
         print(f"  {page}/{total_pages} 페이지 · 누적 {added}편")
         page += 1
-        time.sleep(0.4)  # 남의 서버
+        time.sleep(1.0)  # 남의 서버 — 본문까지 받으므로 넉넉히
 
     index["syncedAt"] = newest_date
     INDEX_PATH.parent.mkdir(exist_ok=True)
