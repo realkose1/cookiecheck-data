@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 9124232,
+    "audience": 9124230,
     "boRank": 1,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "145분",
     "posterPath": "/8mLepBa5l591xFidRpn65xV7hb4.jpg",
     "releaseDate": "2026-07-29",
-    "audience": 8599914,
+    "audience": 8599912,
     "boRank": 2,
     "status": "yes",
     "creditsLen": null,
@@ -124,7 +124,7 @@ const MOVIES = [
     "meta2": "111분",
     "posterPath": "/2dAd2APyFUyJ6qEv9VFHdHQtQI6.jpg",
     "releaseDate": "2026-08-26",
-    "audience": 225749,
+    "audience": 225773,
     "boRank": 3,
     "status": "unknown",
     "creditsLen": null,
@@ -141,7 +141,7 @@ const MOVIES = [
     "meta2": "106분",
     "posterPath": "/aKkPEqUtbEtCB5WWJWanHJPFsnZ.jpg",
     "releaseDate": "2026-08-20",
-    "audience": 154460,
+    "audience": 154456,
     "boRank": 5,
     "status": "yes",
     "creditsLen": null,
@@ -290,22 +290,6 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "tmdb-665669",
-    "tmdbId": 665669,
-    "title": "비광",
-    "meta": "범죄 · 드라마",
-    "meta2": "110분",
-    "posterPath": "/4JpwwQLDIXOYt3YwRszR3rkcwtk.jpg",
-    "releaseDate": "2026-09-02",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
     "id": "the-mortuary-assistant",
     "tmdbId": 1470130,
     "title": "모추어리 어시스턴트",
@@ -421,6 +405,22 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 1973년 작품이라 쿠키 영상이라는 관습 자체가 없던 시절입니다.",
     "source": "파이널 컷 판본 비교 자료",
     "sourceUrl": "https://twm.fandom.com/wiki/Final_Cut"
+  },
+  {
+    "id": "tmdb-805627",
+    "tmdbId": 805627,
+    "title": "드로스테 저편의 우리들",
+    "meta": "코미디 · SF",
+    "meta2": "71분",
+    "posterPath": "/i0GXVBO7IjWm4n9VkcpBmp4xEJ5.jpg",
+    "releaseDate": "2026-08-19",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   }
 ];
 
@@ -485,10 +485,6 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-665669": {
-    "up": 0,
-    "down": 0
-  },
   "the-mortuary-assistant": {
     "up": 0,
     "down": 0
@@ -514,6 +510,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "the-wicker-man": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-805627": {
     "up": 0,
     "down": 0
   }
