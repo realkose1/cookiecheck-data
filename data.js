@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-01)
-   관객수: KOBIS 일별 박스오피스 (기준일 20260831)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-02)
+   관객수: KOBIS 일별 박스오피스 (기준일 20260901)
    쿠키 정보: aftercredits.com + 나무위키 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-09-01';
-const BOXOFFICE_DATE = "20260831";
+const DATA_UPDATED = '2026-09-02';
+const BOXOFFICE_DATE = "20260901";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 9010818,
+    "audience": 9124232,
     "boRank": 1,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "145분",
     "posterPath": "/8mLepBa5l591xFidRpn65xV7hb4.jpg",
     "releaseDate": "2026-07-29",
-    "audience": 8577049,
+    "audience": 8599914,
     "boRank": 2,
     "status": "yes",
     "creditsLen": null,
@@ -61,8 +61,8 @@ const MOVIES = [
     "meta2": "105분",
     "posterPath": "/tmV1b9s0zKtUx06pkYaRtBAz065.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 839771,
-    "boRank": 10,
+    "audience": 840869,
+    "boRank": 9,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -78,7 +78,7 @@ const MOVIES = [
     "meta2": "110분",
     "posterPath": "/uvhDoTtOyoUO0hn02buTv2rxyf8.jpg",
     "releaseDate": "2026-08-12",
-    "audience": 406168,
+    "audience": 408538,
     "boRank": 6,
     "status": "yes",
     "creditsLen": null,
@@ -101,8 +101,8 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/xDbrWXB9yb5aEdt4peVy8OWNP2Y.jpg",
     "releaseDate": "2026-08-12",
-    "audience": 336870,
-    "boRank": 7,
+    "audience": 337976,
+    "boRank": 8,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -124,7 +124,7 @@ const MOVIES = [
     "meta2": "111분",
     "posterPath": "/2dAd2APyFUyJ6qEv9VFHdHQtQI6.jpg",
     "releaseDate": "2026-08-26",
-    "audience": 210485,
+    "audience": 225749,
     "boRank": 3,
     "status": "unknown",
     "creditsLen": null,
@@ -141,7 +141,7 @@ const MOVIES = [
     "meta2": "106분",
     "posterPath": "/aKkPEqUtbEtCB5WWJWanHJPFsnZ.jpg",
     "releaseDate": "2026-08-20",
-    "audience": 151538,
+    "audience": 154460,
     "boRank": 5,
     "status": "yes",
     "creditsLen": null,
@@ -164,7 +164,7 @@ const MOVIES = [
     "meta2": "100분",
     "posterPath": "/oGqJr59UAwZfpmSkEkaW02o0ZLC.jpg",
     "releaseDate": "2026-08-26",
-    "audience": 114198,
+    "audience": 119410,
     "boRank": 4,
     "status": "no",
     "creditsLen": null,
@@ -181,14 +181,129 @@ const MOVIES = [
     "meta2": "119분",
     "posterPath": "/cttXvh438Mqp55loQMDofsd4yiC.jpg",
     "releaseDate": "2026-08-26",
-    "audience": 13241,
-    "boRank": 8,
+    "audience": 14732,
+    "boRank": 7,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/08/dog-stars-the-2026/"
+  },
+  {
+    "id": "obsession",
+    "tmdbId": 1339713,
+    "title": "옵세션",
+    "meta": "공포 · 스릴러",
+    "meta2": "109분",
+    "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
+    "releaseDate": "2026-09-02",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/05/obsession-2025/"
+  },
+  {
+    "id": "in-the-grey",
+    "tmdbId": 1122573,
+    "title": "인 더 그레이",
+    "meta": "액션 · 스릴러",
+    "meta2": "97분",
+    "posterPath": "/2PIph5fGpL7xsNsRRjHOx1rkpYa.jpg",
+    "releaseDate": "2026-09-02",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/05/in-the-grey-2026/"
+  },
+  {
+    "id": "power-ballad",
+    "tmdbId": 1284016,
+    "title": "싱 어게인",
+    "meta": "코미디 · 음악 · 드라마",
+    "meta2": "99분",
+    "posterPath": "/19BfIkDHgbgLcHVbi9rKx7KUCgi.jpg",
+    "releaseDate": "2026-09-02",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/06/power-ballad-2026/"
+  },
+  {
+    "id": "papa-zola-the-movie",
+    "tmdbId": 1274214,
+    "title": "파파조라 더 무비",
+    "meta": "애니메이션 · 액션 · 모험",
+    "meta2": "111분",
+    "posterPath": "/x71IGbvjUSeqrTtslrMnwylidYf.jpg",
+    "releaseDate": "2026-09-02",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "le-cose-non-dette",
+    "tmdbId": 1473635,
+    "title": "말하지 않은 것들",
+    "meta": "드라마",
+    "meta2": "115분",
+    "posterPath": "/jhAimZ4vUrq4zEAWgT0yBff1ooh.jpg",
+    "releaseDate": "2026-09-02",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "katy-perry-the-lifetimes-tour-li",
+    "tmdbId": 1684016,
+    "title": "케이티 페리: 라이프타임스 투어 - 라이브 인 파리",
+    "meta": "다큐멘터리 · 음악",
+    "meta2": "119분",
+    "posterPath": "/snmaFZZ0GCMnvGCcoSzztbCrwbV.jpg",
+    "releaseDate": "2026-09-02",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "tmdb-665669",
+    "tmdbId": 665669,
+    "title": "비광",
+    "meta": "범죄 · 드라마",
+    "meta2": "110분",
+    "posterPath": "/4JpwwQLDIXOYt3YwRszR3rkcwtk.jpg",
+    "releaseDate": "2026-09-02",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   },
   {
     "id": "the-mortuary-assistant",
@@ -274,22 +389,6 @@ const MOVIES = [
     "sourceUrl": "https://muko.kr/movietalk/12341784"
   },
   {
-    "id": "tmdb-1535944",
-    "tmdbId": 1535944,
-    "title": "고양이를 놓아줘",
-    "meta": "드라마",
-    "meta2": "102분",
-    "posterPath": "/4dS74FTvHkBzjCdZZSwfjwt4UQZ.jpg",
-    "releaseDate": "2026-08-26",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
     "id": "warfare",
     "tmdbId": 1241436,
     "title": "워페어",
@@ -322,85 +421,6 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 1973년 작품이라 쿠키 영상이라는 관습 자체가 없던 시절입니다.",
     "source": "파이널 컷 판본 비교 자료",
     "sourceUrl": "https://twm.fandom.com/wiki/Final_Cut"
-  },
-  {
-    "id": "tmdb-805627",
-    "tmdbId": 805627,
-    "title": "드로스테 저편의 우리들",
-    "meta": "코미디 · SF",
-    "meta2": "71분",
-    "posterPath": "/i0GXVBO7IjWm4n9VkcpBmp4xEJ5.jpg",
-    "releaseDate": "2026-08-19",
-    "audience": null,
-    "boRank": null,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "pos": "크레딧 중간",
-        "len": "",
-        "desc": "크레딧이 올라가는 도중에 쿠키 영상이 나온다."
-      }
-    ],
-    "tip": "",
-    "source": "나무위키",
-    "sourceUrl": "https://namu.wiki/w/%EB%93%9C%EB%A1%9C%EC%8A%A4%ED%85%8C%20%EC%A0%80%ED%8E%B8%EC%9D%98%20%EC%9A%B0%EB%A6%AC%EB%93%A4"
-  },
-  {
-    "id": "paw-patrol-the-dino-movie",
-    "tmdbId": 1185806,
-    "title": "퍼피 구조대: 더 다이노 무비",
-    "meta": "애니메이션 · 모험 · 가족",
-    "meta2": "89분",
-    "posterPath": "/AnG0YQdnIf3mMYEVc2onMeAROzU.jpg",
-    "releaseDate": "2026-08-13",
-    "audience": null,
-    "boRank": null,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "pos": "크레딧 중간",
-        "len": "",
-        "desc": "엔딩 크레딧 앞부분에 애니메이션 장면들이 나옵니다."
-      }
-    ],
-    "tip": "",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/08/paw-patrol-the-dino-movie-2026/"
-  },
-  {
-    "id": "dangerous-animals",
-    "tmdbId": 1285965,
-    "title": "데인저러스 애니멀스",
-    "meta": "공포 · 스릴러",
-    "meta2": "99분",
-    "posterPath": "/v4mopTpB6QTEF1p6CTKUuoOSL6i.jpg",
-    "releaseDate": "2026-08-12",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2025/06/dangerous-animals-2025/"
-  },
-  {
-    "id": "katseye-wild-hearts",
-    "tmdbId": 1728113,
-    "title": "캣츠아이 - 와일드 하츠",
-    "meta": "다큐멘터리 · 음악",
-    "meta2": "84분",
-    "posterPath": "/qVmnPdA2P3RfRXY2CCSUaSfXxDA.jpg",
-    "releaseDate": "2026-08-12",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   }
 ];
 
@@ -441,6 +461,34 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "obsession": {
+    "up": 0,
+    "down": 0
+  },
+  "in-the-grey": {
+    "up": 0,
+    "down": 0
+  },
+  "power-ballad": {
+    "up": 0,
+    "down": 0
+  },
+  "papa-zola-the-movie": {
+    "up": 0,
+    "down": 0
+  },
+  "le-cose-non-dette": {
+    "up": 0,
+    "down": 0
+  },
+  "katy-perry-the-lifetimes-tour-li": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-665669": {
+    "up": 0,
+    "down": 0
+  },
   "the-mortuary-assistant": {
     "up": 0,
     "down": 0
@@ -461,31 +509,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-1535944": {
-    "up": 0,
-    "down": 0
-  },
   "warfare": {
     "up": 0,
     "down": 0
   },
   "the-wicker-man": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-805627": {
-    "up": 0,
-    "down": 0
-  },
-  "paw-patrol-the-dino-movie": {
-    "up": 0,
-    "down": 0
-  },
-  "dangerous-animals": {
-    "up": 0,
-    "down": 0
-  },
-  "katseye-wild-hearts": {
     "up": 0,
     "down": 0
   }
