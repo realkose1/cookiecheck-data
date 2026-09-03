@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-03)
-   관객수: KOBIS 일별 박스오피스 (기준일 20260902)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-04)
+   관객수: KOBIS 일별 박스오피스 (기준일 20260903)
    쿠키 정보: aftercredits.com + 나무위키 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-09-03';
-const BOXOFFICE_DATE = "20260902";
+const DATA_UPDATED = '2026-09-04';
+const BOXOFFICE_DATE = "20260903";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 9231203,
+    "audience": 9329609,
     "boRank": 1,
     "status": "no",
     "creditsLen": null,
@@ -33,8 +33,8 @@ const MOVIES = [
     "meta2": "145분",
     "posterPath": "/8mLepBa5l591xFidRpn65xV7hb4.jpg",
     "releaseDate": "2026-07-29",
-    "audience": 8626135,
-    "boRank": 2,
+    "audience": 8645360,
+    "boRank": 3,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -61,8 +61,8 @@ const MOVIES = [
     "meta2": "110분",
     "posterPath": "/uvhDoTtOyoUO0hn02buTv2rxyf8.jpg",
     "releaseDate": "2026-08-12",
-    "audience": 410932,
-    "boRank": 8,
+    "audience": 412677,
+    "boRank": 7,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -84,8 +84,8 @@ const MOVIES = [
     "meta2": "120분",
     "posterPath": "/yB71TFQzTmULS08g4RatAEHoL8J.jpg",
     "releaseDate": "2012-07-05",
-    "audience": 302945,
-    "boRank": 10,
+    "audience": 304593,
+    "boRank": 9,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -100,7 +100,7 @@ const MOVIES = [
     "meta2": "111분",
     "posterPath": "/2dAd2APyFUyJ6qEv9VFHdHQtQI6.jpg",
     "releaseDate": "2026-08-26",
-    "audience": 238503,
+    "audience": 248181,
     "boRank": 5,
     "status": "unknown",
     "creditsLen": null,
@@ -110,6 +110,23 @@ const MOVIES = [
     "sourceUrl": "https://www.mt.co.kr/entertainment/2026/08/26/2026082611537225743"
   },
   {
+    "id": "the-end-of-oak-street",
+    "tmdbId": 1101383,
+    "title": "오크 스트리트의 마지막 날",
+    "meta": "SF · 미스터리 · 스릴러",
+    "meta2": "100분",
+    "posterPath": "/oGqJr59UAwZfpmSkEkaW02o0ZLC.jpg",
+    "releaseDate": "2026-08-26",
+    "audience": 122993,
+    "boRank": 8,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/08/end-of-oak-street-the-2026/"
+  },
+  {
     "id": "obsession",
     "tmdbId": 1339713,
     "title": "옵세션",
@@ -117,8 +134,8 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 24894,
-    "boRank": 3,
+    "audience": 46653,
+    "boRank": 2,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -134,7 +151,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/19BfIkDHgbgLcHVbi9rKx7KUCgi.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 11889,
+    "audience": 21549,
     "boRank": 6,
     "status": "no",
     "creditsLen": null,
@@ -151,14 +168,30 @@ const MOVIES = [
     "meta2": "97분",
     "posterPath": "/2PIph5fGpL7xsNsRRjHOx1rkpYa.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 3115,
-    "boRank": 7,
+    "audience": 4453,
+    "boRank": 10,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/05/in-the-grey-2026/"
+  },
+  {
+    "id": "badland-rising",
+    "tmdbId": 1325614,
+    "title": "배드랜드 스나이퍼",
+    "meta": "액션 · 범죄",
+    "meta2": "97분",
+    "posterPath": "/97kdNvdoFdDGvN2N7tyQPC3vTo2.jpg",
+    "releaseDate": "2026-09-04",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   },
   {
     "id": "ruffen-sj-ormen-som-ikke-kunne-s",
@@ -193,12 +226,12 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "le-cose-non-dette",
-    "tmdbId": 1473635,
-    "title": "말하지 않은 것들",
-    "meta": "드라마",
-    "meta2": "115분",
-    "posterPath": "/jhAimZ4vUrq4zEAWgT0yBff1ooh.jpg",
+    "id": "katy-perry-the-lifetimes-tour-li",
+    "tmdbId": 1684016,
+    "title": "케이티 페리: 라이프타임스 투어 - 라이브 인 파리",
+    "meta": "다큐멘터리 · 음악",
+    "meta2": "119분",
+    "posterPath": "/snmaFZZ0GCMnvGCcoSzztbCrwbV.jpg",
     "releaseDate": "2026-09-02",
     "audience": null,
     "boRank": null,
@@ -209,12 +242,12 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "katy-perry-the-lifetimes-tour-li",
-    "tmdbId": 1684016,
-    "title": "케이티 페리: 라이프타임스 투어 - 라이브 인 파리",
-    "meta": "다큐멘터리 · 음악",
-    "meta2": "119분",
-    "posterPath": "/snmaFZZ0GCMnvGCcoSzztbCrwbV.jpg",
+    "id": "le-cose-non-dette",
+    "tmdbId": 1473635,
+    "title": "말하지 않은 것들",
+    "meta": "드라마",
+    "meta2": "115분",
+    "posterPath": "/jhAimZ4vUrq4zEAWgT0yBff1ooh.jpg",
     "releaseDate": "2026-09-02",
     "audience": null,
     "boRank": null,
@@ -291,23 +324,6 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/08/dog-stars-the-2026/"
   },
   {
-    "id": "the-end-of-oak-street",
-    "tmdbId": 1101383,
-    "title": "오크 스트리트의 마지막 날",
-    "meta": "SF · 미스터리 · 스릴러",
-    "meta2": "100분",
-    "posterPath": "/oGqJr59UAwZfpmSkEkaW02o0ZLC.jpg",
-    "releaseDate": "2026-08-26",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/08/end-of-oak-street-the-2026/"
-  },
-  {
     "id": "dracula",
     "tmdbId": 1246049,
     "title": "드라큘라: 러브 테일",
@@ -380,23 +396,6 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2025/04/warfare-2025/"
-  },
-  {
-    "id": "the-wicker-man",
-    "tmdbId": 16307,
-    "title": "위커 맨: 파이널 컷",
-    "meta": "공포",
-    "meta2": "93분",
-    "posterPath": "/oglvMOKY0ne2Sl3rPC6bHp07EpY.jpg",
-    "releaseDate": "2026-08-19",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 1973년 작품이라 쿠키 영상이라는 관습 자체가 없던 시절입니다.",
-    "source": "파이널 컷 판본 비교 자료",
-    "sourceUrl": "https://twm.fandom.com/wiki/Final_Cut"
   }
 ];
 
@@ -421,6 +420,10 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "the-end-of-oak-street": {
+    "up": 0,
+    "down": 0
+  },
   "obsession": {
     "up": 0,
     "down": 0
@@ -433,6 +436,10 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "badland-rising": {
+    "up": 0,
+    "down": 0
+  },
   "ruffen-sj-ormen-som-ikke-kunne-s": {
     "up": 0,
     "down": 0
@@ -441,11 +448,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "le-cose-non-dette": {
+  "katy-perry-the-lifetimes-tour-li": {
     "up": 0,
     "down": 0
   },
-  "katy-perry-the-lifetimes-tour-li": {
+  "le-cose-non-dette": {
     "up": 0,
     "down": 0
   },
@@ -465,10 +472,6 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "the-end-of-oak-street": {
-    "up": 0,
-    "down": 0
-  },
   "dracula": {
     "up": 0,
     "down": 0
@@ -482,10 +485,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "warfare": {
-    "up": 0,
-    "down": 0
-  },
-  "the-wicker-man": {
     "up": 0,
     "down": 0
   }

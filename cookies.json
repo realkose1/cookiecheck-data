@@ -1,6 +1,6 @@
 {
  "updated": "2026-09-04",
- "boxofficeDate": "20260830",
+ "boxofficeDate": "20260903",
  "movies": [
   {
    "id": "the-odyssey",
@@ -10,7 +10,7 @@
    "meta2": "173분",
    "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
    "releaseDate": "2026-08-05",
-   "audience": 8864922,
+   "audience": 9329609,
    "boRank": 1,
    "status": "no",
    "creditsLen": null,
@@ -27,8 +27,8 @@
    "meta2": "145분",
    "posterPath": "/8mLepBa5l591xFidRpn65xV7hb4.jpg",
    "releaseDate": "2026-07-29",
-   "audience": 8548390,
-   "boRank": 2,
+   "audience": 8645360,
+   "boRank": 3,
    "status": "yes",
    "creditsLen": null,
    "cookies": [
@@ -48,23 +48,6 @@
    "sourceUrl": "https://aftercredits.com/2026/07/spider-man-brand-new-day-2026/"
   },
   {
-   "id": "tmdb-1436168",
-   "tmdbId": 1436168,
-   "title": "사랑의 하츄핑: 고래보석의 전설",
-   "meta": "애니메이션 · 가족 · 모험",
-   "meta2": "105분",
-   "posterPath": "/tmV1b9s0zKtUx06pkYaRtBAz065.jpg",
-   "releaseDate": "2026-08-05",
-   "audience": 838696,
-   "boRank": 5,
-   "status": "no",
-   "creditsLen": null,
-   "cookies": [],
-   "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-   "source": "언론 보도 (국제뉴스·톱스타뉴스)",
-   "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3658997"
-  },
-  {
    "id": "tmdb-1545621",
    "tmdbId": 1545621,
    "title": "명탐정 코난: 하이웨이의 타천사",
@@ -72,8 +55,8 @@
    "meta2": "110분",
    "posterPath": "/uvhDoTtOyoUO0hn02buTv2rxyf8.jpg",
    "releaseDate": "2026-08-12",
-   "audience": 403092,
-   "boRank": 6,
+   "audience": 412677,
+   "boRank": 7,
    "status": "yes",
    "creditsLen": null,
    "cookies": [
@@ -88,27 +71,20 @@
    "sourceUrl": "https://namu.wiki/w/%EB%AA%85%ED%83%90%EC%A0%95%20%EC%BD%94%EB%82%9C%3A%20%ED%95%98%EC%9D%B4%EC%9B%A8%EC%9D%B4%EC%9D%98%20%ED%83%80%EC%B2%9C%EC%82%AC"
   },
   {
-   "id": "tmdb-1307247",
-   "tmdbId": 1307247,
-   "title": "오케이 마담 2",
-   "meta": "액션 · 코미디",
-   "meta2": "109분",
-   "posterPath": "/xDbrWXB9yb5aEdt4peVy8OWNP2Y.jpg",
-   "releaseDate": "2026-08-12",
-   "audience": 334897,
-   "boRank": 8,
-   "status": "yes",
+   "id": "tmdb-100271",
+   "tmdbId": 100271,
+   "title": "모모와 다락방의 수상한 요괴들",
+   "meta": "코미디 · 판타지 · 애니메이션",
+   "meta2": "120분",
+   "posterPath": "/yB71TFQzTmULS08g4RatAEHoL8J.jpg",
+   "releaseDate": "2012-07-05",
+   "audience": 304593,
+   "boRank": 9,
+   "status": "unknown",
    "creditsLen": null,
-   "cookies": [
-    {
-     "pos": "위치 미확인",
-     "len": "",
-     "desc": "지훈의 권총에 맞았지만 꿈틀거리며 생존 플래그를 남기더니 쿠키 영상에서 복수를 예고하면서 끝난다."
-    }
-   ],
-   "tip": "",
-   "source": "나무위키",
-   "sourceUrl": "https://namu.wiki/w/%EC%98%A4%EC%BC%80%EC%9D%B4%20%EB%A7%88%EB%8B%B42"
+   "cookies": [],
+   "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+   "source": ""
   },
   {
    "id": "tmdb-1235769",
@@ -118,37 +94,14 @@
    "meta2": "111분",
    "posterPath": "/2dAd2APyFUyJ6qEv9VFHdHQtQI6.jpg",
    "releaseDate": "2026-08-26",
-   "audience": 192351,
-   "boRank": 3,
+   "audience": 248181,
+   "boRank": 5,
    "status": "unknown",
    "creditsLen": null,
    "cookies": [],
    "tip": "쿠키 영상은 확인되지 않았습니다. 다만 엔딩 크레딧에 무술감독 고 박인혜를 추모하는 문구가 들어 있습니다.",
    "source": "언론 보도",
    "sourceUrl": "https://www.mt.co.kr/entertainment/2026/08/26/2026082611537225743"
-  },
-  {
-   "id": "insidious-out-of-the-further",
-   "tmdbId": 1291595,
-   "title": "인시디어스: 그들이 넘어왔다",
-   "meta": "공포 · 스릴러",
-   "meta2": "106분",
-   "posterPath": "/aKkPEqUtbEtCB5WWJWanHJPFsnZ.jpg",
-   "releaseDate": "2026-08-20",
-   "audience": 148316,
-   "boRank": 7,
-   "status": "yes",
-   "creditsLen": null,
-   "cookies": [
-    {
-     "pos": "크레딧 중간",
-     "len": "",
-     "desc": "만신창이가 된 사이러스가 치과 의자에 내던져져 결박되는 장면이 나옵니다. 그가 빠져나오려 몸부림치는 사이, 젬마를 습격했던 사악한 치과의사 키페이스가 나타납니다. 키페이스는 붉은 문을 잠근 뒤 사이러스의 앞니를 드릴로 뚫기 시작합니다."
-    }
-   ],
-   "tip": "",
-   "source": "aftercredits.com",
-   "sourceUrl": "https://aftercredits.com/2026/08/insidious-out-of-the-further-2026/"
   },
   {
    "id": "the-end-of-oak-street",
@@ -158,8 +111,8 @@
    "meta2": "100분",
    "posterPath": "/oGqJr59UAwZfpmSkEkaW02o0ZLC.jpg",
    "releaseDate": "2026-08-26",
-   "audience": 107419,
-   "boRank": 4,
+   "audience": 122993,
+   "boRank": 8,
    "status": "no",
    "creditsLen": null,
    "cookies": [],
@@ -168,27 +121,55 @@
    "sourceUrl": "https://aftercredits.com/2026/08/end-of-oak-street-the-2026/"
   },
   {
-   "id": "paw-patrol-the-dino-movie",
-   "tmdbId": 1185806,
-   "title": "퍼피 구조대: 더 다이노 무비",
-   "meta": "애니메이션 · 모험 · 가족",
-   "meta2": "89분",
-   "posterPath": "/AnG0YQdnIf3mMYEVc2onMeAROzU.jpg",
-   "releaseDate": "2026-08-13",
-   "audience": 106540,
-   "boRank": 9,
-   "status": "yes",
+   "id": "obsession",
+   "tmdbId": 1339713,
+   "title": "옵세션",
+   "meta": "공포 · 스릴러",
+   "meta2": "109분",
+   "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
+   "releaseDate": "2026-09-02",
+   "audience": 46653,
+   "boRank": 2,
+   "status": "no",
    "creditsLen": null,
-   "cookies": [
-    {
-     "pos": "크레딧 중간",
-     "len": "",
-     "desc": "크레딧 앞부분에 애니메이션 장면들이 이어집니다."
-    }
-   ],
-   "tip": "",
+   "cookies": [],
+   "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
    "source": "aftercredits.com",
-   "sourceUrl": "https://aftercredits.com/2026/08/paw-patrol-the-dino-movie-2026/"
+   "sourceUrl": "https://aftercredits.com/2026/05/obsession-2025/"
+  },
+  {
+   "id": "power-ballad",
+   "tmdbId": 1284016,
+   "title": "싱 어게인",
+   "meta": "코미디 · 음악 · 드라마",
+   "meta2": "99분",
+   "posterPath": "/19BfIkDHgbgLcHVbi9rKx7KUCgi.jpg",
+   "releaseDate": "2026-09-02",
+   "audience": 21549,
+   "boRank": 6,
+   "status": "no",
+   "creditsLen": null,
+   "cookies": [],
+   "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+   "source": "aftercredits.com",
+   "sourceUrl": "https://aftercredits.com/2026/06/power-ballad-2026/"
+  },
+  {
+   "id": "in-the-grey",
+   "tmdbId": 1122573,
+   "title": "인 더 그레이",
+   "meta": "액션 · 스릴러",
+   "meta2": "97분",
+   "posterPath": "/2PIph5fGpL7xsNsRRjHOx1rkpYa.jpg",
+   "releaseDate": "2026-09-02",
+   "audience": 4453,
+   "boRank": 10,
+   "status": "no",
+   "creditsLen": null,
+   "cookies": [],
+   "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+   "source": "aftercredits.com",
+   "sourceUrl": "https://aftercredits.com/2026/05/in-the-grey-2026/"
   },
   {
    "id": "badland-rising",
@@ -223,57 +204,6 @@
    "source": ""
   },
   {
-   "id": "obsession",
-   "tmdbId": 1339713,
-   "title": "옵세션",
-   "meta": "공포 · 스릴러",
-   "meta2": "109분",
-   "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
-   "releaseDate": "2026-09-02",
-   "audience": null,
-   "boRank": null,
-   "status": "no",
-   "creditsLen": null,
-   "cookies": [],
-   "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-   "source": "aftercredits.com",
-   "sourceUrl": "https://aftercredits.com/2026/05/obsession-2025/"
-  },
-  {
-   "id": "in-the-grey",
-   "tmdbId": 1122573,
-   "title": "인 더 그레이",
-   "meta": "액션 · 스릴러",
-   "meta2": "97분",
-   "posterPath": "/2PIph5fGpL7xsNsRRjHOx1rkpYa.jpg",
-   "releaseDate": "2026-09-02",
-   "audience": null,
-   "boRank": null,
-   "status": "no",
-   "creditsLen": null,
-   "cookies": [],
-   "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-   "source": "aftercredits.com",
-   "sourceUrl": "https://aftercredits.com/2026/05/in-the-grey-2026/"
-  },
-  {
-   "id": "power-ballad",
-   "tmdbId": 1284016,
-   "title": "싱 어게인",
-   "meta": "코미디 · 음악 · 드라마",
-   "meta2": "99분",
-   "posterPath": "/19BfIkDHgbgLcHVbi9rKx7KUCgi.jpg",
-   "releaseDate": "2026-09-02",
-   "audience": null,
-   "boRank": null,
-   "status": "no",
-   "creditsLen": null,
-   "cookies": [],
-   "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-   "source": "aftercredits.com",
-   "sourceUrl": "https://aftercredits.com/2026/06/power-ballad-2026/"
-  },
-  {
    "id": "papa-zola-the-movie",
    "tmdbId": 1274214,
    "title": "파파조라 더 무비",
@@ -290,12 +220,12 @@
    "source": ""
   },
   {
-   "id": "le-cose-non-dette",
-   "tmdbId": 1473635,
-   "title": "말하지 않은 것들",
-   "meta": "드라마",
-   "meta2": "115분",
-   "posterPath": "/jhAimZ4vUrq4zEAWgT0yBff1ooh.jpg",
+   "id": "katy-perry-the-lifetimes-tour-li",
+   "tmdbId": 1684016,
+   "title": "케이티 페리: 라이프타임스 투어 - 라이브 인 파리",
+   "meta": "다큐멘터리 · 음악",
+   "meta2": "119분",
+   "posterPath": "/snmaFZZ0GCMnvGCcoSzztbCrwbV.jpg",
    "releaseDate": "2026-09-02",
    "audience": null,
    "boRank": null,
@@ -306,12 +236,12 @@
    "source": ""
   },
   {
-   "id": "katy-perry-the-lifetimes-tour-li",
-   "tmdbId": 1684016,
-   "title": "케이티 페리: 라이프타임스 투어 - 라이브 인 파리",
-   "meta": "다큐멘터리 · 음악",
-   "meta2": "119분",
-   "posterPath": "/snmaFZZ0GCMnvGCcoSzztbCrwbV.jpg",
+   "id": "le-cose-non-dette",
+   "tmdbId": 1473635,
+   "title": "말하지 않은 것들",
+   "meta": "드라마",
+   "meta2": "115분",
+   "posterPath": "/jhAimZ4vUrq4zEAWgT0yBff1ooh.jpg",
    "releaseDate": "2026-09-02",
    "audience": null,
    "boRank": null,
@@ -420,6 +350,29 @@
    "tip": "쿠키가 없습니다. 일본 개봉 당시 주차를 바꿔가며 확인한 관객 후기 기준입니다.",
    "source": "일본 현지 관람 후기",
    "sourceUrl": "https://muko.kr/movietalk/12341784"
+  },
+  {
+   "id": "insidious-out-of-the-further",
+   "tmdbId": 1291595,
+   "title": "인시디어스: 그들이 넘어왔다",
+   "meta": "공포 · 스릴러",
+   "meta2": "106분",
+   "posterPath": "/aKkPEqUtbEtCB5WWJWanHJPFsnZ.jpg",
+   "releaseDate": "2026-08-20",
+   "audience": null,
+   "boRank": null,
+   "status": "yes",
+   "creditsLen": null,
+   "cookies": [
+    {
+     "pos": "크레딧 중간",
+     "len": "",
+     "desc": "만신창이가 된 사이러스가 치과 의자에 내던져져 결박되는 장면이 나옵니다. 그가 빠져나오려 몸부림치는 사이, 젬마를 습격했던 사악한 치과의사 키페이스가 나타납니다. 키페이스는 붉은 문을 잠근 뒤 사이러스의 앞니를 드릴로 뚫기 시작합니다."
+    }
+   ],
+   "tip": "",
+   "source": "aftercredits.com",
+   "sourceUrl": "https://aftercredits.com/2026/08/insidious-out-of-the-further-2026/"
   },
   {
    "id": "warfare",
