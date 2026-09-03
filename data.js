@@ -1,10 +1,10 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-02)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-03)
    관객수: KOBIS 일별 박스오피스 (기준일 20260901)
    쿠키 정보: aftercredits.com + 나무위키 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-09-02';
+const DATA_UPDATED = '2026-09-03';
 const BOXOFFICE_DATE = "20260901";
 
 const MOVIES = [
@@ -189,6 +189,22 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/08/dog-stars-the-2026/"
+  },
+  {
+    "id": "ruffen-sj-ormen-som-ikke-kunne-s",
+    "tmdbId": 1512207,
+    "title": "리틀 드래곤:몬스터섬의 비밀",
+    "meta": "애니메이션 · 가족",
+    "meta2": "74분",
+    "posterPath": "/esGI8WI19wO0Hyvv2OFYUuvEPtx.jpg",
+    "releaseDate": "2026-09-03",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   },
   {
     "id": "obsession",
@@ -405,22 +421,6 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 1973년 작품이라 쿠키 영상이라는 관습 자체가 없던 시절입니다.",
     "source": "파이널 컷 판본 비교 자료",
     "sourceUrl": "https://twm.fandom.com/wiki/Final_Cut"
-  },
-  {
-    "id": "tmdb-805627",
-    "tmdbId": 805627,
-    "title": "드로스테 저편의 우리들",
-    "meta": "코미디 · SF",
-    "meta2": "71분",
-    "posterPath": "/i0GXVBO7IjWm4n9VkcpBmp4xEJ5.jpg",
-    "releaseDate": "2026-08-19",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   }
 ];
 
@@ -458,6 +458,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "the-dog-stars": {
+    "up": 0,
+    "down": 0
+  },
+  "ruffen-sj-ormen-som-ikke-kunne-s": {
     "up": 0,
     "down": 0
   },
@@ -510,10 +514,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "the-wicker-man": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-805627": {
     "up": 0,
     "down": 0
   }
