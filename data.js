@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-05)
-   관객수: KOBIS 일별 박스오피스 (기준일 20260904)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-06)
+   관객수: KOBIS 일별 박스오피스 (기준일 20260905)
    쿠키 정보: aftercredits.com + 나무위키 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-09-05';
-const BOXOFFICE_DATE = "20260904";
+const DATA_UPDATED = '2026-09-06';
+const BOXOFFICE_DATE = "20260905";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 9467012,
+    "audience": 9768259,
     "boRank": 1,
     "status": "no",
     "creditsLen": null,
@@ -33,8 +33,8 @@ const MOVIES = [
     "meta2": "145분",
     "posterPath": "/8mLepBa5l591xFidRpn65xV7hb4.jpg",
     "releaseDate": "2026-07-29",
-    "audience": 8673474,
-    "boRank": 3,
+    "audience": 8737145,
+    "boRank": 2,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -54,6 +54,23 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/07/spider-man-brand-new-day-2026/"
   },
   {
+    "id": "tmdb-1436168",
+    "tmdbId": 1436168,
+    "title": "사랑의 하츄핑: 고래보석의 전설",
+    "meta": "애니메이션 · 가족 · 모험",
+    "meta2": "105분",
+    "posterPath": "/tmV1b9s0zKtUx06pkYaRtBAz065.jpg",
+    "releaseDate": "2026-08-05",
+    "audience": 850675,
+    "boRank": 7,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "언론 보도 (국제뉴스·톱스타뉴스)",
+    "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3658997"
+  },
+  {
     "id": "tmdb-1545621",
     "tmdbId": 1545621,
     "title": "명탐정 코난: 하이웨이의 타천사",
@@ -61,7 +78,7 @@ const MOVIES = [
     "meta2": "110분",
     "posterPath": "/uvhDoTtOyoUO0hn02buTv2rxyf8.jpg",
     "releaseDate": "2026-08-12",
-    "audience": 414524,
+    "audience": 417688,
     "boRank": 9,
     "status": "yes",
     "creditsLen": null,
@@ -84,7 +101,7 @@ const MOVIES = [
     "meta2": "111분",
     "posterPath": "/2dAd2APyFUyJ6qEv9VFHdHQtQI6.jpg",
     "releaseDate": "2026-08-26",
-    "audience": 260119,
+    "audience": 279761,
     "boRank": 4,
     "status": "unknown",
     "creditsLen": null,
@@ -94,23 +111,6 @@ const MOVIES = [
     "sourceUrl": "https://www.mt.co.kr/entertainment/2026/08/26/2026082611537225743"
   },
   {
-    "id": "the-end-of-oak-street",
-    "tmdbId": 1101383,
-    "title": "오크 스트리트의 마지막 날",
-    "meta": "SF · 미스터리 · 스릴러",
-    "meta2": "100분",
-    "posterPath": "/oGqJr59UAwZfpmSkEkaW02o0ZLC.jpg",
-    "releaseDate": "2026-08-26",
-    "audience": 125222,
-    "boRank": 8,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/08/end-of-oak-street-the-2026/"
-  },
-  {
     "id": "obsession",
     "tmdbId": 1339713,
     "title": "옵세션",
@@ -118,14 +118,31 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 78217,
-    "boRank": 2,
+    "audience": 133637,
+    "boRank": 3,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/05/obsession-2025/"
+  },
+  {
+    "id": "the-end-of-oak-street",
+    "tmdbId": 1101383,
+    "title": "오크 스트리트의 마지막 날",
+    "meta": "SF · 미스터리 · 스릴러",
+    "meta2": "100분",
+    "posterPath": "/oGqJr59UAwZfpmSkEkaW02o0ZLC.jpg",
+    "releaseDate": "2026-08-26",
+    "audience": 128071,
+    "boRank": 10,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/08/end-of-oak-street-the-2026/"
   },
   {
     "id": "power-ballad",
@@ -135,7 +152,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/19BfIkDHgbgLcHVbi9rKx7KUCgi.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 30645,
+    "audience": 43927,
     "boRank": 6,
     "status": "no",
     "creditsLen": null,
@@ -143,23 +160,6 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/06/power-ballad-2026/"
-  },
-  {
-    "id": "in-the-grey",
-    "tmdbId": 1122573,
-    "title": "인 더 그레이",
-    "meta": "액션 · 스릴러",
-    "meta2": "97분",
-    "posterPath": "/2PIph5fGpL7xsNsRRjHOx1rkpYa.jpg",
-    "releaseDate": "2026-09-02",
-    "audience": 5695,
-    "boRank": 10,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/05/in-the-grey-2026/"
   },
   {
     "id": "badland-rising",
@@ -194,6 +194,23 @@ const MOVIES = [
     "source": ""
   },
   {
+    "id": "in-the-grey",
+    "tmdbId": 1122573,
+    "title": "인 더 그레이",
+    "meta": "액션 · 스릴러",
+    "meta2": "97분",
+    "posterPath": "/2PIph5fGpL7xsNsRRjHOx1rkpYa.jpg",
+    "releaseDate": "2026-09-02",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/05/in-the-grey-2026/"
+  },
+  {
     "id": "papa-zola-the-movie",
     "tmdbId": 1274214,
     "title": "파파조라 더 무비",
@@ -210,12 +227,12 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "le-cose-non-dette",
-    "tmdbId": 1473635,
-    "title": "말하지 않은 것들",
-    "meta": "드라마",
-    "meta2": "115분",
-    "posterPath": "/jhAimZ4vUrq4zEAWgT0yBff1ooh.jpg",
+    "id": "katy-perry-the-lifetimes-tour-li",
+    "tmdbId": 1684016,
+    "title": "케이티 페리: 라이프타임스 투어 - 라이브 인 파리",
+    "meta": "다큐멘터리 · 음악",
+    "meta2": "119분",
+    "posterPath": "/snmaFZZ0GCMnvGCcoSzztbCrwbV.jpg",
     "releaseDate": "2026-09-02",
     "audience": null,
     "boRank": null,
@@ -226,12 +243,12 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "katy-perry-the-lifetimes-tour-li",
-    "tmdbId": 1684016,
-    "title": "케이티 페리: 라이프타임스 투어 - 라이브 인 파리",
-    "meta": "다큐멘터리 · 음악",
-    "meta2": "119분",
-    "posterPath": "/snmaFZZ0GCMnvGCcoSzztbCrwbV.jpg",
+    "id": "le-cose-non-dette",
+    "tmdbId": 1473635,
+    "title": "말하지 않은 것들",
+    "meta": "드라마",
+    "meta2": "115분",
+    "posterPath": "/jhAimZ4vUrq4zEAWgT0yBff1ooh.jpg",
     "releaseDate": "2026-09-02",
     "audience": null,
     "boRank": null,
@@ -392,6 +409,10 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "tmdb-1436168": {
+    "up": 0,
+    "down": 0
+  },
   "tmdb-1545621": {
     "up": 0,
     "down": 0
@@ -400,19 +421,15 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "the-end-of-oak-street": {
-    "up": 0,
-    "down": 0
-  },
   "obsession": {
     "up": 0,
     "down": 0
   },
-  "power-ballad": {
+  "the-end-of-oak-street": {
     "up": 0,
     "down": 0
   },
-  "in-the-grey": {
+  "power-ballad": {
     "up": 0,
     "down": 0
   },
@@ -424,15 +441,19 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "in-the-grey": {
+    "up": 0,
+    "down": 0
+  },
   "papa-zola-the-movie": {
     "up": 0,
     "down": 0
   },
-  "le-cose-non-dette": {
+  "katy-perry-the-lifetimes-tour-li": {
     "up": 0,
     "down": 0
   },
-  "katy-perry-the-lifetimes-tour-li": {
+  "le-cose-non-dette": {
     "up": 0,
     "down": 0
   },
