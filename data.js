@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
    작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-07)
-   관객수: KOBIS 일별 박스오피스 (기준일 20260905)
+   관객수: KOBIS 일별 박스오피스 (기준일 20260906)
    쿠키 정보: aftercredits.com + 나무위키 + TMDB 키워드 + data.overrides.json */
 
 const DATA_UPDATED = '2026-09-07';
-const BOXOFFICE_DATE = "20260905";
+const BOXOFFICE_DATE = "20260906";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 9768253,
+    "audience": 10027986,
     "boRank": 1,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "145분",
     "posterPath": "/8mLepBa5l591xFidRpn65xV7hb4.jpg",
     "releaseDate": "2026-07-29",
-    "audience": 8737145,
+    "audience": 8792029,
     "boRank": 2,
     "status": "yes",
     "creditsLen": null,
@@ -61,7 +61,7 @@ const MOVIES = [
     "meta2": "105분",
     "posterPath": "/tmV1b9s0zKtUx06pkYaRtBAz065.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 850675,
+    "audience": 858709,
     "boRank": 7,
     "status": "no",
     "creditsLen": null,
@@ -78,8 +78,8 @@ const MOVIES = [
     "meta2": "110분",
     "posterPath": "/uvhDoTtOyoUO0hn02buTv2rxyf8.jpg",
     "releaseDate": "2026-08-12",
-    "audience": 417687,
-    "boRank": 9,
+    "audience": 420629,
+    "boRank": 8,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -94,6 +94,22 @@ const MOVIES = [
     "sourceUrl": "https://namu.wiki/w/%EB%AA%85%ED%83%90%EC%A0%95%20%EC%BD%94%EB%82%9C%3A%20%ED%95%98%EC%9D%B4%EC%9B%A8%EC%9D%B4%EC%9D%98%20%ED%83%80%EC%B2%9C%EC%82%AC"
   },
   {
+    "id": "tmdb-100271",
+    "tmdbId": 100271,
+    "title": "모모와 다락방의 수상한 요괴들",
+    "meta": "코미디 · 판타지 · 애니메이션",
+    "meta2": "120분",
+    "posterPath": "/yB71TFQzTmULS08g4RatAEHoL8J.jpg",
+    "releaseDate": "2012-07-05",
+    "audience": 310413,
+    "boRank": 10,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
     "id": "tmdb-1235769",
     "tmdbId": 1235769,
     "title": "경주기행",
@@ -101,7 +117,7 @@ const MOVIES = [
     "meta2": "111분",
     "posterPath": "/2dAd2APyFUyJ6qEv9VFHdHQtQI6.jpg",
     "releaseDate": "2026-08-26",
-    "audience": 279760,
+    "audience": 297594,
     "boRank": 4,
     "status": "unknown",
     "creditsLen": null,
@@ -118,7 +134,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 133637,
+    "audience": 185100,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -135,8 +151,8 @@ const MOVIES = [
     "meta2": "100분",
     "posterPath": "/oGqJr59UAwZfpmSkEkaW02o0ZLC.jpg",
     "releaseDate": "2026-08-26",
-    "audience": 128069,
-    "boRank": 10,
+    "audience": 130502,
+    "boRank": 9,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -152,7 +168,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/19BfIkDHgbgLcHVbi9rKx7KUCgi.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 43927,
+    "audience": 55931,
     "boRank": 6,
     "status": "no",
     "creditsLen": null,
@@ -414,6 +430,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "tmdb-1545621": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-100271": {
     "up": 0,
     "down": 0
   },
