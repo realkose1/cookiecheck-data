@@ -1,10 +1,10 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-06)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-07)
    관객수: KOBIS 일별 박스오피스 (기준일 20260905)
    쿠키 정보: aftercredits.com + 나무위키 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-09-06';
+const DATA_UPDATED = '2026-09-07';
 const BOXOFFICE_DATE = "20260905";
 
 const MOVIES = [
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 9768255,
+    "audience": 9768253,
     "boRank": 1,
     "status": "no",
     "creditsLen": null,
@@ -227,12 +227,12 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "katy-perry-the-lifetimes-tour-li",
-    "tmdbId": 1684016,
-    "title": "케이티 페리: 라이프타임스 투어 - 라이브 인 파리",
-    "meta": "다큐멘터리 · 음악",
-    "meta2": "119분",
-    "posterPath": "/snmaFZZ0GCMnvGCcoSzztbCrwbV.jpg",
+    "id": "le-cose-non-dette",
+    "tmdbId": 1473635,
+    "title": "말하지 않은 것들",
+    "meta": "드라마",
+    "meta2": "115분",
+    "posterPath": "/jhAimZ4vUrq4zEAWgT0yBff1ooh.jpg",
     "releaseDate": "2026-09-02",
     "audience": null,
     "boRank": null,
@@ -243,12 +243,12 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "le-cose-non-dette",
-    "tmdbId": 1473635,
-    "title": "말하지 않은 것들",
-    "meta": "드라마",
-    "meta2": "115분",
-    "posterPath": "/jhAimZ4vUrq4zEAWgT0yBff1ooh.jpg",
+    "id": "katy-perry-the-lifetimes-tour-li",
+    "tmdbId": 1684016,
+    "title": "케이티 페리: 라이프타임스 투어 - 라이브 인 파리",
+    "meta": "다큐멘터리 · 음악",
+    "meta2": "119분",
+    "posterPath": "/snmaFZZ0GCMnvGCcoSzztbCrwbV.jpg",
     "releaseDate": "2026-09-02",
     "audience": null,
     "boRank": null,
@@ -449,11 +449,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "katy-perry-the-lifetimes-tour-li": {
+  "le-cose-non-dette": {
     "up": 0,
     "down": 0
   },
-  "le-cose-non-dette": {
+  "katy-perry-the-lifetimes-tour-li": {
     "up": 0,
     "down": 0
   },

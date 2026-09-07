@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-06",
+ "updated": "2026-09-07",
  "boxofficeDate": "20260905",
  "movies": [
   {
@@ -10,7 +10,7 @@
    "meta2": "173분",
    "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
    "releaseDate": "2026-08-05",
-   "audience": 9768255,
+   "audience": 9768253,
    "boRank": 1,
    "status": "no",
    "creditsLen": null,
@@ -221,12 +221,12 @@
    "source": ""
   },
   {
-   "id": "katy-perry-the-lifetimes-tour-li",
-   "tmdbId": 1684016,
-   "title": "케이티 페리: 라이프타임스 투어 - 라이브 인 파리",
-   "meta": "다큐멘터리 · 음악",
-   "meta2": "119분",
-   "posterPath": "/snmaFZZ0GCMnvGCcoSzztbCrwbV.jpg",
+   "id": "le-cose-non-dette",
+   "tmdbId": 1473635,
+   "title": "말하지 않은 것들",
+   "meta": "드라마",
+   "meta2": "115분",
+   "posterPath": "/jhAimZ4vUrq4zEAWgT0yBff1ooh.jpg",
    "releaseDate": "2026-09-02",
    "audience": null,
    "boRank": null,
@@ -237,12 +237,12 @@
    "source": ""
   },
   {
-   "id": "le-cose-non-dette",
-   "tmdbId": 1473635,
-   "title": "말하지 않은 것들",
-   "meta": "드라마",
-   "meta2": "115분",
-   "posterPath": "/jhAimZ4vUrq4zEAWgT0yBff1ooh.jpg",
+   "id": "katy-perry-the-lifetimes-tour-li",
+   "tmdbId": 1684016,
+   "title": "케이티 페리: 라이프타임스 투어 - 라이브 인 파리",
+   "meta": "다큐멘터리 · 음악",
+   "meta2": "119분",
+   "posterPath": "/snmaFZZ0GCMnvGCcoSzztbCrwbV.jpg",
    "releaseDate": "2026-09-02",
    "audience": null,
    "boRank": null,
