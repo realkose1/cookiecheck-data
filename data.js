@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-07)
-   관객수: KOBIS 일별 박스오피스 (기준일 20260906)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-08)
+   관객수: KOBIS 일별 박스오피스 (기준일 20260907)
    쿠키 정보: aftercredits.com + 나무위키 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-09-07';
-const BOXOFFICE_DATE = "20260906";
+const DATA_UPDATED = '2026-09-08';
+const BOXOFFICE_DATE = "20260907";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 10027972,
+    "audience": 10115354,
     "boRank": 1,
     "status": "no",
     "creditsLen": null,
@@ -33,8 +33,8 @@ const MOVIES = [
     "meta2": "145분",
     "posterPath": "/8mLepBa5l591xFidRpn65xV7hb4.jpg",
     "releaseDate": "2026-07-29",
-    "audience": 8792026,
-    "boRank": 2,
+    "audience": 8805891,
+    "boRank": 3,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -54,23 +54,6 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/07/spider-man-brand-new-day-2026/"
   },
   {
-    "id": "tmdb-1436168",
-    "tmdbId": 1436168,
-    "title": "사랑의 하츄핑: 고래보석의 전설",
-    "meta": "애니메이션 · 가족 · 모험",
-    "meta2": "105분",
-    "posterPath": "/tmV1b9s0zKtUx06pkYaRtBAz065.jpg",
-    "releaseDate": "2026-08-05",
-    "audience": 858707,
-    "boRank": 7,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "언론 보도 (국제뉴스·톱스타뉴스)",
-    "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3658997"
-  },
-  {
     "id": "tmdb-1545621",
     "tmdbId": 1545621,
     "title": "명탐정 코난: 하이웨이의 타천사",
@@ -78,7 +61,7 @@ const MOVIES = [
     "meta2": "110분",
     "posterPath": "/uvhDoTtOyoUO0hn02buTv2rxyf8.jpg",
     "releaseDate": "2026-08-12",
-    "audience": 420629,
+    "audience": 421534,
     "boRank": 8,
     "status": "yes",
     "creditsLen": null,
@@ -94,22 +77,6 @@ const MOVIES = [
     "sourceUrl": "https://namu.wiki/w/%EB%AA%85%ED%83%90%EC%A0%95%20%EC%BD%94%EB%82%9C%3A%20%ED%95%98%EC%9D%B4%EC%9B%A8%EC%9D%B4%EC%9D%98%20%ED%83%80%EC%B2%9C%EC%82%AC"
   },
   {
-    "id": "tmdb-100271",
-    "tmdbId": 100271,
-    "title": "모모와 다락방의 수상한 요괴들",
-    "meta": "코미디 · 판타지 · 애니메이션",
-    "meta2": "120분",
-    "posterPath": "/yB71TFQzTmULS08g4RatAEHoL8J.jpg",
-    "releaseDate": "2012-07-05",
-    "audience": 310413,
-    "boRank": 10,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
     "id": "tmdb-1235769",
     "tmdbId": 1235769,
     "title": "경주기행",
@@ -117,8 +84,8 @@ const MOVIES = [
     "meta2": "111분",
     "posterPath": "/2dAd2APyFUyJ6qEv9VFHdHQtQI6.jpg",
     "releaseDate": "2026-08-26",
-    "audience": 297594,
-    "boRank": 4,
+    "audience": 303399,
+    "boRank": 5,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -134,8 +101,8 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 185100,
-    "boRank": 3,
+    "audience": 213172,
+    "boRank": 2,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -151,8 +118,8 @@ const MOVIES = [
     "meta2": "100분",
     "posterPath": "/oGqJr59UAwZfpmSkEkaW02o0ZLC.jpg",
     "releaseDate": "2026-08-26",
-    "audience": 130502,
-    "boRank": 9,
+    "audience": 131591,
+    "boRank": 7,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -168,14 +135,31 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/19BfIkDHgbgLcHVbi9rKx7KUCgi.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 55931,
-    "boRank": 6,
+    "audience": 61791,
+    "boRank": 4,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/06/power-ballad-2026/"
+  },
+  {
+    "id": "in-the-grey",
+    "tmdbId": 1122573,
+    "title": "인 더 그레이",
+    "meta": "액션 · 스릴러",
+    "meta2": "97분",
+    "posterPath": "/2PIph5fGpL7xsNsRRjHOx1rkpYa.jpg",
+    "releaseDate": "2026-09-02",
+    "audience": 9200,
+    "boRank": 9,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/05/in-the-grey-2026/"
   },
   {
     "id": "badland-rising",
@@ -210,23 +194,6 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "in-the-grey",
-    "tmdbId": 1122573,
-    "title": "인 더 그레이",
-    "meta": "액션 · 스릴러",
-    "meta2": "97분",
-    "posterPath": "/2PIph5fGpL7xsNsRRjHOx1rkpYa.jpg",
-    "releaseDate": "2026-09-02",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/05/in-the-grey-2026/"
-  },
-  {
     "id": "papa-zola-the-movie",
     "tmdbId": 1274214,
     "title": "파파조라 더 무비",
@@ -243,12 +210,12 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "le-cose-non-dette",
-    "tmdbId": 1473635,
-    "title": "말하지 않은 것들",
-    "meta": "드라마",
-    "meta2": "115분",
-    "posterPath": "/jhAimZ4vUrq4zEAWgT0yBff1ooh.jpg",
+    "id": "katy-perry-the-lifetimes-tour-li",
+    "tmdbId": 1684016,
+    "title": "케이티 페리: 라이프타임스 투어 - 라이브 인 파리",
+    "meta": "다큐멘터리 · 음악",
+    "meta2": "119분",
+    "posterPath": "/snmaFZZ0GCMnvGCcoSzztbCrwbV.jpg",
     "releaseDate": "2026-09-02",
     "audience": null,
     "boRank": null,
@@ -259,12 +226,12 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "katy-perry-the-lifetimes-tour-li",
-    "tmdbId": 1684016,
-    "title": "케이티 페리: 라이프타임스 투어 - 라이브 인 파리",
-    "meta": "다큐멘터리 · 음악",
-    "meta2": "119분",
-    "posterPath": "/snmaFZZ0GCMnvGCcoSzztbCrwbV.jpg",
+    "id": "le-cose-non-dette",
+    "tmdbId": 1473635,
+    "title": "말하지 않은 것들",
+    "meta": "드라마",
+    "meta2": "115분",
+    "posterPath": "/jhAimZ4vUrq4zEAWgT0yBff1ooh.jpg",
     "releaseDate": "2026-09-02",
     "audience": null,
     "boRank": null,
@@ -425,15 +392,7 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-1436168": {
-    "up": 0,
-    "down": 0
-  },
   "tmdb-1545621": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-100271": {
     "up": 0,
     "down": 0
   },
@@ -453,6 +412,10 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "in-the-grey": {
+    "up": 0,
+    "down": 0
+  },
   "badland-rising": {
     "up": 0,
     "down": 0
@@ -461,19 +424,15 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "in-the-grey": {
-    "up": 0,
-    "down": 0
-  },
   "papa-zola-the-movie": {
     "up": 0,
     "down": 0
   },
-  "le-cose-non-dette": {
+  "katy-perry-the-lifetimes-tour-li": {
     "up": 0,
     "down": 0
   },
-  "katy-perry-the-lifetimes-tour-li": {
+  "le-cose-non-dette": {
     "up": 0,
     "down": 0
   },
