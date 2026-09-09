@@ -26,34 +26,6 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/07/odyssey-the-2026/"
   },
   {
-    "id": "spider-man-brand-new-day",
-    "tmdbId": 969681,
-    "title": "스파이더맨: 브랜드 뉴 데이",
-    "meta": "SF · 액션 · 모험",
-    "meta2": "145분",
-    "posterPath": "/8mLepBa5l591xFidRpn65xV7hb4.jpg",
-    "releaseDate": "2026-07-29",
-    "audience": 8819175,
-    "boRank": 3,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "pos": "크레딧 중간",
-        "len": "",
-        "desc": "뉴욕에서 일상을 보내는 사람들의 배경 이미지들이 나옵니다."
-      },
-      {
-        "pos": "크레딧 종료 후",
-        "len": "",
-        "desc": "스파이디 트래커가 새로운 '알 수 없는 위치'에서 스파이더맨을 '발견'합니다. 트래커 화면이 뉴욕에서 대륙, 지구 전체로 줌아웃되다가 달을 살짝 지나 우주까지 나아가는데, 이때 '스파이더맨: 뉴 유니버스'의 글리치 연출과 같은 효과로 화면이 지지직거립니다. 그리고 새로운 스파이더맨의 위치가 우주임을 표시합니다."
-      }
-    ],
-    "tip": "",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/07/spider-man-brand-new-day-2026/"
-  },
-  {
     "id": "tmdb-1235769",
     "tmdbId": 1235769,
     "title": "경주기행",
@@ -156,6 +128,22 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/04/deep-water-2026/"
   },
   {
+    "id": "practical-magic-2",
+    "tmdbId": 1302904,
+    "title": "프랙티컬 매직: 새로운 챕터",
+    "meta": "로맨스 · 판타지 · 코미디",
+    "meta2": "110분",
+    "posterPath": "/7jCV8dkRFK3DGJ4dTqlvrMTFPwZ.jpg",
+    "releaseDate": "2026-09-09",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
     "id": "the-drama",
     "tmdbId": 1325734,
     "title": "더 드라마",
@@ -171,22 +159,6 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/04/drama-the-2026/"
-  },
-  {
-    "id": "practical-magic-2",
-    "tmdbId": 1302904,
-    "title": "프랙티컬 매직: 새로운 챕터",
-    "meta": "로맨스 · 판타지 · 코미디",
-    "meta2": "130분",
-    "posterPath": "/7jCV8dkRFK3DGJ4dTqlvrMTFPwZ.jpg",
-    "releaseDate": "2026-09-09",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   },
   {
     "id": "oasis-don-t-look-back-in-anger",
@@ -369,7 +341,7 @@ const MOVIES = [
     "id": "the-dog-stars",
     "tmdbId": 1384216,
     "title": "도그 스타: 마지막 희망",
-    "meta": "SF · 드라마",
+    "meta": "SF · 드라마 · 모험",
     "meta2": "119분",
     "posterPath": "/cttXvh438Mqp55loQMDofsd4yiC.jpg",
     "releaseDate": "2026-08-26",
@@ -386,10 +358,6 @@ const MOVIES = [
 
 const INITIAL_VOTES = {
   "the-odyssey": {
-    "up": 0,
-    "down": 0
-  },
-  "spider-man-brand-new-day": {
     "up": 0,
     "down": 0
   },
@@ -417,11 +385,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "the-drama": {
+  "practical-magic-2": {
     "up": 0,
     "down": 0
   },
-  "practical-magic-2": {
+  "the-drama": {
     "up": 0,
     "down": 0
   },
