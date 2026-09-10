@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
    작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-10)
-   관객수: KOBIS 일별 박스오피스 (기준일 20260908)
+   관객수: KOBIS 일별 박스오피스 (기준일 20260909)
    쿠키 정보: aftercredits.com + 나무위키 + TMDB 키워드 + data.overrides.json */
 
 const DATA_UPDATED = '2026-09-10';
-const BOXOFFICE_DATE = "20260908";
+const BOXOFFICE_DATE = "20260909";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 10192017,
+    "audience": 10268412,
     "boRank": 1,
     "status": "no",
     "creditsLen": null,
@@ -33,8 +33,8 @@ const MOVIES = [
     "meta2": "111분",
     "posterPath": "/2dAd2APyFUyJ6qEv9VFHdHQtQI6.jpg",
     "releaseDate": "2026-08-26",
-    "audience": 308324,
-    "boRank": 6,
+    "audience": 311800,
+    "boRank": 9,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -50,7 +50,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 239527,
+    "audience": 270722,
     "boRank": 2,
     "status": "no",
     "creditsLen": null,
@@ -60,23 +60,6 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/05/obsession-2025/"
   },
   {
-    "id": "the-end-of-oak-street",
-    "tmdbId": 1101383,
-    "title": "오크 스트리트의 마지막 날",
-    "meta": "SF · 미스터리 · 스릴러",
-    "meta2": "100분",
-    "posterPath": "/oGqJr59UAwZfpmSkEkaW02o0ZLC.jpg",
-    "releaseDate": "2026-08-26",
-    "audience": 132622,
-    "boRank": 8,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/08/end-of-oak-street-the-2026/"
-  },
-  {
     "id": "power-ballad",
     "tmdbId": 1284016,
     "title": "싱 어게인",
@@ -84,64 +67,14 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/19BfIkDHgbgLcHVbi9rKx7KUCgi.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 67281,
-    "boRank": 5,
+    "audience": 70887,
+    "boRank": 8,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/06/power-ballad-2026/"
-  },
-  {
-    "id": "in-the-grey",
-    "tmdbId": 1122573,
-    "title": "인 더 그레이",
-    "meta": "액션 · 스릴러",
-    "meta2": "97분",
-    "posterPath": "/2PIph5fGpL7xsNsRRjHOx1rkpYa.jpg",
-    "releaseDate": "2026-09-02",
-    "audience": 10211,
-    "boRank": 9,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/05/in-the-grey-2026/"
-  },
-  {
-    "id": "deep-water",
-    "tmdbId": 1127384,
-    "title": "딥 워터",
-    "meta": "공포 · 스릴러",
-    "meta2": "107분",
-    "posterPath": "/zhJcsxOxqm9W6YQpquZw6TZDa06.jpg",
-    "releaseDate": "2026-09-09",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/04/deep-water-2026/"
-  },
-  {
-    "id": "practical-magic-2",
-    "tmdbId": 1302904,
-    "title": "프랙티컬 매직: 새로운 챕터",
-    "meta": "로맨스 · 판타지 · 코미디",
-    "meta2": "110분",
-    "posterPath": "/ogwQOLbCfncjvBhFb5l0OmQH8KC.jpg",
-    "releaseDate": "2026-09-09",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   },
   {
     "id": "the-drama",
@@ -151,8 +84,8 @@ const MOVIES = [
     "meta2": "107분",
     "posterPath": "/9MKVekk642o1IXug6VSerPqIrZc.jpg",
     "releaseDate": "2026-09-09",
-    "audience": null,
-    "boRank": null,
+    "audience": 16877,
+    "boRank": 4,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -167,6 +100,39 @@ const MOVIES = [
     "meta": "다큐멘터리 · 음악",
     "meta2": "123분",
     "posterPath": "/pRMOGMnTKZO7P0J65UNORcXAU8G.jpg",
+    "releaseDate": "2026-09-09",
+    "audience": 4545,
+    "boRank": 7,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "deep-water",
+    "tmdbId": 1127384,
+    "title": "딥 워터",
+    "meta": "공포 · 스릴러",
+    "meta2": "107분",
+    "posterPath": "/zhJcsxOxqm9W6YQpquZw6TZDa06.jpg",
+    "releaseDate": "2026-09-09",
+    "audience": 3500,
+    "boRank": 10,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/04/deep-water-2026/"
+  },
+  {
+    "id": "practical-magic-2",
+    "tmdbId": 1302904,
+    "title": "프랙티컬 매직: 새로운 챕터",
+    "meta": "로맨스 · 판타지 · 코미디",
+    "meta2": "110분",
+    "posterPath": "/ogwQOLbCfncjvBhFb5l0OmQH8KC.jpg",
     "releaseDate": "2026-09-09",
     "audience": null,
     "boRank": null,
@@ -239,6 +205,23 @@ const MOVIES = [
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
+  },
+  {
+    "id": "in-the-grey",
+    "tmdbId": 1122573,
+    "title": "인 더 그레이",
+    "meta": "액션 · 스릴러",
+    "meta2": "97분",
+    "posterPath": "/2PIph5fGpL7xsNsRRjHOx1rkpYa.jpg",
+    "releaseDate": "2026-09-02",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/05/in-the-grey-2026/"
   },
   {
     "id": "papa-zola-the-movie",
@@ -336,6 +319,23 @@ const MOVIES = [
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
+  },
+  {
+    "id": "the-end-of-oak-street",
+    "tmdbId": 1101383,
+    "title": "오크 스트리트의 마지막 날",
+    "meta": "SF · 미스터리 · 스릴러",
+    "meta2": "100분",
+    "posterPath": "/oGqJr59UAwZfpmSkEkaW02o0ZLC.jpg",
+    "releaseDate": "2026-08-26",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/08/end-of-oak-street-the-2026/"
   }
 ];
 
@@ -352,23 +352,7 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "the-end-of-oak-street": {
-    "up": 0,
-    "down": 0
-  },
   "power-ballad": {
-    "up": 0,
-    "down": 0
-  },
-  "in-the-grey": {
-    "up": 0,
-    "down": 0
-  },
-  "deep-water": {
-    "up": 0,
-    "down": 0
-  },
-  "practical-magic-2": {
     "up": 0,
     "down": 0
   },
@@ -377,6 +361,14 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "oasis-don-t-look-back-in-anger": {
+    "up": 0,
+    "down": 0
+  },
+  "deep-water": {
+    "up": 0,
+    "down": 0
+  },
+  "practical-magic-2": {
     "up": 0,
     "down": 0
   },
@@ -393,6 +385,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "ruffen-sj-ormen-som-ikke-kunne-s": {
+    "up": 0,
+    "down": 0
+  },
+  "in-the-grey": {
     "up": 0,
     "down": 0
   },
@@ -417,6 +413,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "the-bay": {
+    "up": 0,
+    "down": 0
+  },
+  "the-end-of-oak-street": {
     "up": 0,
     "down": 0
   }
