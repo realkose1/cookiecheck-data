@@ -131,7 +131,7 @@ const MOVIES = [
     "tmdbId": 1302904,
     "title": "프랙티컬 매직: 새로운 챕터",
     "meta": "로맨스 · 판타지 · 코미디",
-    "meta2": "110분",
+    "meta2": "130분",
     "posterPath": "/ogwQOLbCfncjvBhFb5l0OmQH8KC.jpg",
     "releaseDate": "2026-09-09",
     "audience": null,
