@@ -1,10 +1,10 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-09)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-10)
    관객수: KOBIS 일별 박스오피스 (기준일 20260908)
    쿠키 정보: aftercredits.com + 나무위키 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-09-09';
+const DATA_UPDATED = '2026-09-10';
 const BOXOFFICE_DATE = "20260908";
 
 const MOVIES = [
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 10192012,
+    "audience": 10192017,
     "boRank": 1,
     "status": "no",
     "creditsLen": null,
@@ -336,23 +336,6 @@ const MOVIES = [
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
-  },
-  {
-    "id": "the-dog-stars",
-    "tmdbId": 1384216,
-    "title": "도그 스타: 마지막 희망",
-    "meta": "SF · 드라마 · 모험",
-    "meta2": "119분",
-    "posterPath": "/cttXvh438Mqp55loQMDofsd4yiC.jpg",
-    "releaseDate": "2026-08-26",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/08/dog-stars-the-2026/"
   }
 ];
 
@@ -434,10 +417,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "the-bay": {
-    "up": 0,
-    "down": 0
-  },
-  "the-dog-stars": {
     "up": 0,
     "down": 0
   }
