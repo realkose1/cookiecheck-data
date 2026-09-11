@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-10)
-   관객수: KOBIS 일별 박스오피스 (기준일 20260909)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-11)
+   관객수: KOBIS 일별 박스오피스 (기준일 20260910)
    쿠키 정보: aftercredits.com + 나무위키 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-09-10';
-const BOXOFFICE_DATE = "20260909";
+const DATA_UPDATED = '2026-09-11';
+const BOXOFFICE_DATE = "20260910";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 10268412,
+    "audience": 10333247,
     "boRank": 1,
     "status": "no",
     "creditsLen": null,
@@ -33,8 +33,8 @@ const MOVIES = [
     "meta2": "111분",
     "posterPath": "/2dAd2APyFUyJ6qEv9VFHdHQtQI6.jpg",
     "releaseDate": "2026-08-26",
-    "audience": 311800,
-    "boRank": 9,
+    "audience": 315754,
+    "boRank": 7,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -50,7 +50,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 270722,
+    "audience": 298339,
     "boRank": 2,
     "status": "no",
     "creditsLen": null,
@@ -67,7 +67,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/19BfIkDHgbgLcHVbi9rKx7KUCgi.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 70887,
+    "audience": 74122,
     "boRank": 8,
     "status": "no",
     "creditsLen": null,
@@ -84,7 +84,7 @@ const MOVIES = [
     "meta2": "107분",
     "posterPath": "/9MKVekk642o1IXug6VSerPqIrZc.jpg",
     "releaseDate": "2026-09-09",
-    "audience": 16877,
+    "audience": 24119,
     "boRank": 4,
     "status": "no",
     "creditsLen": null,
@@ -101,8 +101,8 @@ const MOVIES = [
     "meta2": "123분",
     "posterPath": "/pRMOGMnTKZO7P0J65UNORcXAU8G.jpg",
     "releaseDate": "2026-09-09",
-    "audience": 4545,
-    "boRank": 7,
+    "audience": 6842,
+    "boRank": 10,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -117,8 +117,8 @@ const MOVIES = [
     "meta2": "107분",
     "posterPath": "/zhJcsxOxqm9W6YQpquZw6TZDa06.jpg",
     "releaseDate": "2026-09-09",
-    "audience": 3500,
-    "boRank": 10,
+    "audience": null,
+    "boRank": null,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -165,6 +165,22 @@ const MOVIES = [
     "meta": "액션 · 스릴러 · 모험",
     "meta2": "102분",
     "posterPath": "/Aw2oCnLMoMiWA8r9LfdCK94JnaT.jpg",
+    "releaseDate": "2026-09-09",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "tmdb-1280401",
+    "tmdbId": 1280401,
+    "title": "아가미",
+    "meta": "애니메이션 · 드라마 · 판타지",
+    "meta2": "106분",
+    "posterPath": "/hy6PNPZ8JGWZf4sGuCB8bqHJ8rR.jpg",
     "releaseDate": "2026-09-09",
     "audience": null,
     "boRank": null,
@@ -246,22 +262,6 @@ const MOVIES = [
     "meta": "드라마",
     "meta2": "115분",
     "posterPath": "/jhAimZ4vUrq4zEAWgT0yBff1ooh.jpg",
-    "releaseDate": "2026-09-02",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
-    "id": "katy-perry-the-lifetimes-tour-li",
-    "tmdbId": 1684016,
-    "title": "케이티 페리: 라이프타임스 투어 - 라이브 인 파리",
-    "meta": "다큐멘터리 · 음악",
-    "meta2": "119분",
-    "posterPath": "/snmaFZZ0GCMnvGCcoSzztbCrwbV.jpg",
     "releaseDate": "2026-09-02",
     "audience": null,
     "boRank": null,
@@ -380,6 +380,10 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "tmdb-1280401": {
+    "up": 0,
+    "down": 0
+  },
   "badland-rising": {
     "up": 0,
     "down": 0
@@ -397,10 +401,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "le-cose-non-dette": {
-    "up": 0,
-    "down": 0
-  },
-  "katy-perry-the-lifetimes-tour-li": {
     "up": 0,
     "down": 0
   },
