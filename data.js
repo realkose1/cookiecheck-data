@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
    작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-12)
-   관객수: KOBIS 일별 박스오피스 (기준일 20260910)
+   관객수: KOBIS 일별 박스오피스 (기준일 20260911)
    쿠키 정보: aftercredits.com + 나무위키 + TMDB 키워드 + data.overrides.json */
 
 const DATA_UPDATED = '2026-09-12';
-const BOXOFFICE_DATE = "20260910";
+const BOXOFFICE_DATE = "20260911";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 10333241,
+    "audience": 10426496,
     "boRank": 1,
     "status": "no",
     "creditsLen": null,
@@ -26,23 +26,6 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/07/odyssey-the-2026/"
   },
   {
-    "id": "tmdb-1235769",
-    "tmdbId": 1235769,
-    "title": "경주기행",
-    "meta": "드라마 · 미스터리 · 범죄",
-    "meta2": "111분",
-    "posterPath": "/2dAd2APyFUyJ6qEv9VFHdHQtQI6.jpg",
-    "releaseDate": "2026-08-26",
-    "audience": 315754,
-    "boRank": 7,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키 영상은 확인되지 않았습니다. 다만 엔딩 크레딧에 무술감독 고 박인혜를 추모하는 문구가 들어 있습니다.",
-    "source": "언론 보도",
-    "sourceUrl": "https://www.mt.co.kr/entertainment/2026/08/26/2026082611537225743"
-  },
-  {
     "id": "obsession",
     "tmdbId": 1339713,
     "title": "옵세션",
@@ -50,7 +33,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 298339,
+    "audience": 340267,
     "boRank": 2,
     "status": "no",
     "creditsLen": null,
@@ -60,6 +43,23 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/05/obsession-2025/"
   },
   {
+    "id": "tmdb-1235769",
+    "tmdbId": 1235769,
+    "title": "경주기행",
+    "meta": "드라마 · 미스터리 · 범죄",
+    "meta2": "111분",
+    "posterPath": "/2dAd2APyFUyJ6qEv9VFHdHQtQI6.jpg",
+    "releaseDate": "2026-08-26",
+    "audience": 320268,
+    "boRank": 7,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키 영상은 확인되지 않았습니다. 다만 엔딩 크레딧에 무술감독 고 박인혜를 추모하는 문구가 들어 있습니다.",
+    "source": "언론 보도",
+    "sourceUrl": "https://www.mt.co.kr/entertainment/2026/08/26/2026082611537225743"
+  },
+  {
     "id": "power-ballad",
     "tmdbId": 1284016,
     "title": "싱 어게인",
@@ -67,8 +67,8 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/19BfIkDHgbgLcHVbi9rKx7KUCgi.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 74122,
-    "boRank": 8,
+    "audience": 78935,
+    "boRank": 6,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -84,7 +84,7 @@ const MOVIES = [
     "meta2": "107분",
     "posterPath": "/9MKVekk642o1IXug6VSerPqIrZc.jpg",
     "releaseDate": "2026-09-09",
-    "audience": 24119,
+    "audience": 32083,
     "boRank": 4,
     "status": "no",
     "creditsLen": null,
@@ -101,7 +101,23 @@ const MOVIES = [
     "meta2": "123분",
     "posterPath": "/pRMOGMnTKZO7P0J65UNORcXAU8G.jpg",
     "releaseDate": "2026-09-09",
-    "audience": 6842,
+    "audience": 9719,
+    "boRank": 9,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "tmdb-1280401",
+    "tmdbId": 1280401,
+    "title": "아가미",
+    "meta": "애니메이션 · 드라마 · 판타지",
+    "meta2": "106분",
+    "posterPath": "/hy6PNPZ8JGWZf4sGuCB8bqHJ8rR.jpg",
+    "releaseDate": "2026-09-09",
+    "audience": 8459,
     "boRank": 10,
     "status": "unknown",
     "creditsLen": null,
@@ -165,22 +181,6 @@ const MOVIES = [
     "meta": "액션 · 스릴러 · 모험",
     "meta2": "102분",
     "posterPath": "/Aw2oCnLMoMiWA8r9LfdCK94JnaT.jpg",
-    "releaseDate": "2026-09-09",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
-    "id": "tmdb-1280401",
-    "tmdbId": 1280401,
-    "title": "아가미",
-    "meta": "애니메이션 · 드라마 · 판타지",
-    "meta2": "106분",
-    "posterPath": "/hy6PNPZ8JGWZf4sGuCB8bqHJ8rR.jpg",
     "releaseDate": "2026-09-09",
     "audience": null,
     "boRank": null,
@@ -344,11 +344,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-1235769": {
+  "obsession": {
     "up": 0,
     "down": 0
   },
-  "obsession": {
+  "tmdb-1235769": {
     "up": 0,
     "down": 0
   },
@@ -361,6 +361,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "oasis-don-t-look-back-in-anger": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-1280401": {
     "up": 0,
     "down": 0
   },
@@ -377,10 +381,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "tmdb-1364368": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-1280401": {
     "up": 0,
     "down": 0
   },
