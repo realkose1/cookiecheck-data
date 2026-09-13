@@ -94,6 +94,22 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/04/drama-the-2026/"
   },
   {
+    "id": "practical-magic-2",
+    "tmdbId": 1302904,
+    "title": "프랙티컬 매직: 새로운 챕터",
+    "meta": "로맨스 · 판타지 · 코미디",
+    "meta2": "130분",
+    "posterPath": "/ogwQOLbCfncjvBhFb5l0OmQH8KC.jpg",
+    "releaseDate": "2026-09-09",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
     "id": "deep-water",
     "tmdbId": 1127384,
     "title": "딥 워터",
@@ -109,22 +125,6 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/04/deep-water-2026/"
-  },
-  {
-    "id": "practical-magic-2",
-    "tmdbId": 1302904,
-    "title": "프랙티컬 매직: 새로운 챕터",
-    "meta": "로맨스 · 판타지 · 코미디",
-    "meta2": "130분",
-    "posterPath": "/ogwQOLbCfncjvBhFb5l0OmQH8KC.jpg",
-    "releaseDate": "2026-09-09",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   },
   {
     "id": "oasis-don-t-look-back-in-anger",
@@ -361,11 +361,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "deep-water": {
+  "practical-magic-2": {
     "up": 0,
     "down": 0
   },
-  "practical-magic-2": {
+  "deep-water": {
     "up": 0,
     "down": 0
   },
