@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 10834334,
+    "audience": 10834339,
     "boRank": 1,
     "status": "no",
     "creditsLen": null,
@@ -50,7 +50,7 @@ const MOVIES = [
     "meta2": "111분",
     "posterPath": "/2dAd2APyFUyJ6qEv9VFHdHQtQI6.jpg",
     "releaseDate": "2026-08-26",
-    "audience": 335377,
+    "audience": 335379,
     "boRank": 7,
     "status": "unknown",
     "creditsLen": null,
@@ -67,7 +67,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/19BfIkDHgbgLcHVbi9rKx7KUCgi.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 91886,
+    "audience": 91887,
     "boRank": 6,
     "status": "no",
     "creditsLen": null,
@@ -149,6 +149,22 @@ const MOVIES = [
     "meta": "액션 · 애니메이션 · 모험",
     "meta2": "99분",
     "posterPath": "/ixLZPFZuTSbl7nj9QPa46W84eWz.jpg",
+    "releaseDate": "2026-09-09",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "tmdb-1280401",
+    "tmdbId": 1280401,
+    "title": "아가미",
+    "meta": "애니메이션 · 드라마 · 판타지",
+    "meta2": "106분",
+    "posterPath": "/hy6PNPZ8JGWZf4sGuCB8bqHJ8rR.jpg",
     "releaseDate": "2026-09-09",
     "audience": null,
     "boRank": null,
@@ -320,23 +336,6 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/08/end-of-oak-street-the-2026/"
-  },
-  {
-    "id": "the-dog-stars",
-    "tmdbId": 1384216,
-    "title": "도그 스타: 마지막 희망",
-    "meta": "SF · 스릴러",
-    "meta2": "119분",
-    "posterPath": "/cttXvh438Mqp55loQMDofsd4yiC.jpg",
-    "releaseDate": "2026-08-26",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/08/dog-stars-the-2026/"
   }
 ];
 
@@ -377,6 +376,10 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "tmdb-1280401": {
+    "up": 0,
+    "down": 0
+  },
   "tmdb-1364368": {
     "up": 0,
     "down": 0
@@ -414,10 +417,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "the-end-of-oak-street": {
-    "up": 0,
-    "down": 0
-  },
-  "the-dog-stars": {
     "up": 0,
     "down": 0
   }
