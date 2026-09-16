@@ -9,23 +9,6 @@ const BOXOFFICE_DATE = "20260915";
 
 const MOVIES = [
   {
-    "id": "the-odyssey",
-    "tmdbId": 1368337,
-    "title": "오디세이",
-    "meta": "모험 · 액션 · 판타지",
-    "meta2": "173분",
-    "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
-    "releaseDate": "2026-08-05",
-    "audience": 10880177,
-    "boRank": 1,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/07/odyssey-the-2026/"
-  },
-  {
     "id": "obsession",
     "tmdbId": 1339713,
     "title": "옵세션",
@@ -50,7 +33,7 @@ const MOVIES = [
     "meta2": "111분",
     "posterPath": "/2dAd2APyFUyJ6qEv9VFHdHQtQI6.jpg",
     "releaseDate": "2026-08-26",
-    "audience": 338091,
+    "audience": 338089,
     "boRank": 8,
     "status": "unknown",
     "creditsLen": null,
@@ -165,22 +148,6 @@ const MOVIES = [
     "meta": "로맨스 · 판타지 · 코미디",
     "meta2": "130분",
     "posterPath": "/ogwQOLbCfncjvBhFb5l0OmQH8KC.jpg",
-    "releaseDate": "2026-09-09",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
-    "id": "oasis-don-t-look-back-in-anger",
-    "tmdbId": 1447853,
-    "title": "오아시스: 돈 룩 백 인 앵거",
-    "meta": "다큐멘터리 · 음악",
-    "meta2": "123분",
-    "posterPath": "/pRMOGMnTKZO7P0J65UNORcXAU8G.jpg",
     "releaseDate": "2026-09-09",
     "audience": null,
     "boRank": null,
@@ -335,14 +302,26 @@ const MOVIES = [
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
+  },
+  {
+    "id": "the-bay",
+    "tmdbId": 1430698,
+    "title": "블러드 베이: 노 이스케이프",
+    "meta": "스릴러 · 공포",
+    "meta2": "87분",
+    "posterPath": "/hqzxCqbRS6YmYzgTYHW3dsWGoPD.jpg",
+    "releaseDate": "2026-08-27",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   }
 ];
 
 const INITIAL_VOTES = {
-  "the-odyssey": {
-    "up": 0,
-    "down": 0
-  },
   "obsession": {
     "up": 0,
     "down": 0
@@ -379,10 +358,6 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "oasis-don-t-look-back-in-anger": {
-    "up": 0,
-    "down": 0
-  },
   "tmdb-42360": {
     "up": 0,
     "down": 0
@@ -416,6 +391,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "y-n-lapsi": {
+    "up": 0,
+    "down": 0
+  },
+  "the-bay": {
     "up": 0,
     "down": 0
   }
