@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-16)
-   관객수: KOBIS 일별 박스오피스 (기준일 20260915)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-17)
+   관객수: KOBIS 일별 박스오피스 (기준일 20260916)
    쿠키 정보: aftercredits.com + 나무위키 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-09-16';
-const BOXOFFICE_DATE = "20260915";
+const DATA_UPDATED = '2026-09-17';
+const BOXOFFICE_DATE = "20260916";
 
 const MOVIES = [
   {
@@ -16,82 +16,14 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 524753,
-    "boRank": 2,
+    "audience": 548649,
+    "boRank": 3,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/05/obsession-2025/"
-  },
-  {
-    "id": "tmdb-1235769",
-    "tmdbId": 1235769,
-    "title": "경주기행",
-    "meta": "드라마 · 미스터리 · 범죄",
-    "meta2": "111분",
-    "posterPath": "/2dAd2APyFUyJ6qEv9VFHdHQtQI6.jpg",
-    "releaseDate": "2026-08-26",
-    "audience": 338089,
-    "boRank": 8,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키 영상은 확인되지 않았습니다. 다만 엔딩 크레딧에 무술감독 고 박인혜를 추모하는 문구가 들어 있습니다.",
-    "source": "언론 보도",
-    "sourceUrl": "https://www.mt.co.kr/entertainment/2026/08/26/2026082611537225743"
-  },
-  {
-    "id": "power-ballad",
-    "tmdbId": 1284016,
-    "title": "싱 어게인",
-    "meta": "코미디 · 음악 · 드라마",
-    "meta2": "99분",
-    "posterPath": "/19BfIkDHgbgLcHVbi9rKx7KUCgi.jpg",
-    "releaseDate": "2026-09-02",
-    "audience": 94795,
-    "boRank": 7,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/06/power-ballad-2026/"
-  },
-  {
-    "id": "the-drama",
-    "tmdbId": 1325734,
-    "title": "더 드라마",
-    "meta": "로맨스 · 코미디 · 드라마",
-    "meta2": "107분",
-    "posterPath": "/9MKVekk642o1IXug6VSerPqIrZc.jpg",
-    "releaseDate": "2026-09-09",
-    "audience": 63666,
-    "boRank": 4,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/04/drama-the-2026/"
-  },
-  {
-    "id": "deep-water",
-    "tmdbId": 1127384,
-    "title": "딥 워터",
-    "meta": "공포 · 스릴러",
-    "meta2": "107분",
-    "posterPath": "/zhJcsxOxqm9W6YQpquZw6TZDa06.jpg",
-    "releaseDate": "2026-09-09",
-    "audience": 15045,
-    "boRank": 9,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/04/deep-water-2026/"
   },
   {
     "id": "tmdb-607833",
@@ -101,6 +33,39 @@ const MOVIES = [
     "meta2": "133분",
     "posterPath": "/kRHjgsICPISgEClloeARkPHP96M.jpg",
     "releaseDate": "2026-09-16",
+    "audience": 82532,
+    "boRank": 1,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "the-drama",
+    "tmdbId": 1325734,
+    "title": "더 드라마",
+    "meta": "로맨스 · 코미디 · 드라마",
+    "meta2": "107분",
+    "posterPath": "/9MKVekk642o1IXug6VSerPqIrZc.jpg",
+    "releaseDate": "2026-09-09",
+    "audience": 67567,
+    "boRank": 7,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/04/drama-the-2026/"
+  },
+  {
+    "id": "resident-evil",
+    "tmdbId": 1423191,
+    "title": "레지던트 이블: 0번째 밤",
+    "meta": "공포 · SF",
+    "meta2": "94분",
+    "posterPath": "/fQX4fRsagskLvCXnvPfdvh62QTG.jpg",
+    "releaseDate": "2026-09-17",
     "audience": null,
     "boRank": null,
     "status": "unknown",
@@ -108,6 +73,46 @@ const MOVIES = [
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
+  },
+  {
+    "id": "tmdb-650524",
+    "tmdbId": 650524,
+    "title": "백 투 더 패스트: 진나라 쟁탈전",
+    "meta": "SF · 액션 · 코미디",
+    "meta2": "108분",
+    "posterPath": "/jK5Z3Gg5rV1qJoXYsvCukheviua.jpg",
+    "releaseDate": "2026-09-17",
+    "audience": null,
+    "boRank": null,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "pos": "크레딧 중간",
+        "len": "",
+        "desc": "A lengthy alternative ending scene where our heroes visit the modern world.\nBloopers are shown during the credits from the “Step to the Past” tv-show that precedes this films events."
+      }
+    ],
+    "tip": "",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/01/back-to-the-past-2025/"
+  },
+  {
+    "id": "deep-water",
+    "tmdbId": 1127384,
+    "title": "딥 워터",
+    "meta": "공포 · 스릴러",
+    "meta2": "107분",
+    "posterPath": "/zhJcsxOxqm9W6YQpquZw6TZDa06.jpg",
+    "releaseDate": "2026-09-09",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/04/deep-water-2026/"
   },
   {
     "id": "practical-magic-2",
@@ -207,6 +212,23 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/05/in-the-grey-2026/"
   },
   {
+    "id": "power-ballad",
+    "tmdbId": 1284016,
+    "title": "싱 어게인",
+    "meta": "코미디 · 음악 · 드라마",
+    "meta2": "99분",
+    "posterPath": "/19BfIkDHgbgLcHVbi9rKx7KUCgi.jpg",
+    "releaseDate": "2026-09-02",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/06/power-ballad-2026/"
+  },
+  {
     "id": "papa-zola-the-movie",
     "tmdbId": 1274214,
     "title": "파파조라 더 무비",
@@ -287,40 +309,6 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/08/end-of-oak-street-the-2026/"
-  },
-  {
-    "id": "the-dog-stars",
-    "tmdbId": 1384216,
-    "title": "도그 스타: 마지막 희망",
-    "meta": "SF · 스릴러",
-    "meta2": "119분",
-    "posterPath": "/cttXvh438Mqp55loQMDofsd4yiC.jpg",
-    "releaseDate": "2026-08-26",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/08/dog-stars-the-2026/"
-  },
-  {
-    "id": "dracula",
-    "tmdbId": 1246049,
-    "title": "드라큘라: 러브 테일",
-    "meta": "공포 · 판타지 · 로맨스",
-    "meta2": "129분",
-    "posterPath": "/3mNCAoWAOHUYaY1VxOCqKC3v8n3.jpg",
-    "releaseDate": "2026-08-26",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/02/dracula-2025/"
   }
 ];
 
@@ -329,11 +317,7 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-1235769": {
-    "up": 0,
-    "down": 0
-  },
-  "power-ballad": {
+  "tmdb-607833": {
     "up": 0,
     "down": 0
   },
@@ -341,11 +325,15 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "deep-water": {
+  "resident-evil": {
     "up": 0,
     "down": 0
   },
-  "tmdb-607833": {
+  "tmdb-650524": {
+    "up": 0,
+    "down": 0
+  },
+  "deep-water": {
     "up": 0,
     "down": 0
   },
@@ -373,6 +361,10 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "power-ballad": {
+    "up": 0,
+    "down": 0
+  },
   "papa-zola-the-movie": {
     "up": 0,
     "down": 0
@@ -390,14 +382,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "the-end-of-oak-street": {
-    "up": 0,
-    "down": 0
-  },
-  "the-dog-stars": {
-    "up": 0,
-    "down": 0
-  },
-  "dracula": {
     "up": 0,
     "down": 0
   }
