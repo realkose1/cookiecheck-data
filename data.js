@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 524755,
+    "audience": 524753,
     "boRank": 2,
     "status": "no",
     "creditsLen": null,
@@ -110,38 +110,6 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "tmdb-97787",
-    "tmdbId": 97787,
-    "title": "디지몬 어드벤처: 운명적 만남",
-    "meta": "애니메이션 · 모험 · 액션",
-    "meta2": "20분",
-    "posterPath": "/p0SmmqmDvgpTg75hc0wPxTdsAlS.jpg",
-    "releaseDate": "2026-09-16",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
-    "id": "tmdb-75571",
-    "tmdbId": 75571,
-    "title": "디지몬 어드벤처: 우리들의 워 게임!",
-    "meta": "모험 · 애니메이션 · 액션",
-    "meta2": "41분",
-    "posterPath": "/jxrvPQjx2bg7xjyrq4gRGN1KhFG.jpg",
-    "releaseDate": "2026-09-16",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
     "id": "practical-magic-2",
     "tmdbId": 1302904,
     "title": "프랙티컬 매직: 새로운 챕터",
@@ -158,12 +126,12 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "tmdb-42360",
-    "tmdbId": 42360,
-    "title": "이누야샤: 시대를 초월한 마음",
-    "meta": "액션 · 애니메이션 · 모험",
-    "meta2": "99분",
-    "posterPath": "/ixLZPFZuTSbl7nj9QPa46W84eWz.jpg",
+    "id": "oasis-don-t-look-back-in-anger",
+    "tmdbId": 1447853,
+    "title": "오아시스: 돈 룩 백 인 앵거",
+    "meta": "다큐멘터리 · 음악",
+    "meta2": "123분",
+    "posterPath": "/pRMOGMnTKZO7P0J65UNORcXAU8G.jpg",
     "releaseDate": "2026-09-09",
     "audience": null,
     "boRank": null,
@@ -174,12 +142,12 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "tmdb-1280401",
-    "tmdbId": 1280401,
-    "title": "아가미",
-    "meta": "애니메이션 · 드라마 · 판타지",
-    "meta2": "106분",
-    "posterPath": "/hy6PNPZ8JGWZf4sGuCB8bqHJ8rR.jpg",
+    "id": "tmdb-42360",
+    "tmdbId": 42360,
+    "title": "이누야샤: 시대를 초월한 마음",
+    "meta": "액션 · 애니메이션 · 모험",
+    "meta2": "99분",
+    "posterPath": "/ixLZPFZuTSbl7nj9QPa46W84eWz.jpg",
     "releaseDate": "2026-09-09",
     "audience": null,
     "boRank": null,
@@ -318,6 +286,40 @@ const MOVIES = [
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
+  },
+  {
+    "id": "the-end-of-oak-street",
+    "tmdbId": 1101383,
+    "title": "오크 스트리트의 마지막 날",
+    "meta": "SF · 미스터리 · 스릴러",
+    "meta2": "100분",
+    "posterPath": "/oGqJr59UAwZfpmSkEkaW02o0ZLC.jpg",
+    "releaseDate": "2026-08-26",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/08/end-of-oak-street-the-2026/"
+  },
+  {
+    "id": "the-dog-stars",
+    "tmdbId": 1384216,
+    "title": "도그 스타: 마지막 희망",
+    "meta": "SF · 스릴러",
+    "meta2": "119분",
+    "posterPath": "/cttXvh438Mqp55loQMDofsd4yiC.jpg",
+    "releaseDate": "2026-08-26",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/08/dog-stars-the-2026/"
   }
 ];
 
@@ -346,23 +348,15 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-97787": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-75571": {
-    "up": 0,
-    "down": 0
-  },
   "practical-magic-2": {
     "up": 0,
     "down": 0
   },
-  "tmdb-42360": {
+  "oasis-don-t-look-back-in-anger": {
     "up": 0,
     "down": 0
   },
-  "tmdb-1280401": {
+  "tmdb-42360": {
     "up": 0,
     "down": 0
   },
@@ -395,6 +389,14 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "the-bay": {
+    "up": 0,
+    "down": 0
+  },
+  "the-end-of-oak-street": {
+    "up": 0,
+    "down": 0
+  },
+  "the-dog-stars": {
     "up": 0,
     "down": 0
   }
