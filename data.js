@@ -223,22 +223,6 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "le-cose-non-dette",
-    "tmdbId": 1473635,
-    "title": "말하지 않은 것들",
-    "meta": "드라마",
-    "meta2": "115분",
-    "posterPath": "/jhAimZ4vUrq4zEAWgT0yBff1ooh.jpg",
-    "releaseDate": "2026-09-02",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
     "id": "the-mortuary-assistant",
     "tmdbId": 1470130,
     "title": "모추어리 어시스턴트",
@@ -320,6 +304,23 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/08/dog-stars-the-2026/"
+  },
+  {
+    "id": "dracula",
+    "tmdbId": 1246049,
+    "title": "드라큘라: 러브 테일",
+    "meta": "공포 · 판타지 · 로맨스",
+    "meta2": "129분",
+    "posterPath": "/3mNCAoWAOHUYaY1VxOCqKC3v8n3.jpg",
+    "releaseDate": "2026-08-26",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/02/dracula-2025/"
   }
 ];
 
@@ -376,10 +377,6 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "le-cose-non-dette": {
-    "up": 0,
-    "down": 0
-  },
   "the-mortuary-assistant": {
     "up": 0,
     "down": 0
@@ -397,6 +394,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "the-dog-stars": {
+    "up": 0,
+    "down": 0
+  },
+  "dracula": {
     "up": 0,
     "down": 0
   }
