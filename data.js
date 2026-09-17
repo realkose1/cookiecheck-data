@@ -9,6 +9,51 @@ const BOXOFFICE_DATE = "20260916";
 
 const MOVIES = [
   {
+    "id": "the-odyssey",
+    "tmdbId": 1368337,
+    "title": "오디세이",
+    "meta": "모험 · 액션 · 판타지",
+    "meta2": "173분",
+    "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
+    "releaseDate": "2026-08-05",
+    "audience": 10921483,
+    "boRank": 2,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/07/odyssey-the-2026/"
+  },
+  {
+    "id": "spider-man-brand-new-day",
+    "tmdbId": 969681,
+    "title": "스파이더맨: 브랜드 뉴 데이",
+    "meta": "SF · 액션 · 모험",
+    "meta2": "145분",
+    "posterPath": "/8mLepBa5l591xFidRpn65xV7hb4.jpg",
+    "releaseDate": "2026-07-29",
+    "audience": 8952757,
+    "boRank": 4,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "pos": "크레딧 중간",
+        "len": "",
+        "desc": "뉴욕에서 일상을 보내는 사람들의 배경 이미지들이 나옵니다."
+      },
+      {
+        "pos": "크레딧 종료 후",
+        "len": "",
+        "desc": "스파이디 트래커가 새로운 '알 수 없는 위치'에서 스파이더맨을 '발견'합니다. 트래커 화면이 뉴욕에서 대륙, 지구 전체로 줌아웃되다가 달을 살짝 지나 우주까지 나아가는데, 이때 '스파이더맨: 뉴 유니버스'의 글리치 연출과 같은 효과로 화면이 지지직거립니다. 그리고 새로운 스파이더맨의 위치가 우주임을 표시합니다."
+      }
+    ],
+    "tip": "",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/07/spider-man-brand-new-day-2026/"
+  },
+  {
     "id": "obsession",
     "tmdbId": 1339713,
     "title": "옵세션",
@@ -26,6 +71,22 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/05/obsession-2025/"
   },
   {
+    "id": "tmdb-14069",
+    "tmdbId": 14069,
+    "title": "시간을 달리는 소녀",
+    "meta": "판타지 · 애니메이션 · 드라마",
+    "meta2": "97분",
+    "posterPath": "/zhvpSzYKUMdAfId2VSU1qLFeW5x.jpg",
+    "releaseDate": "2007-06-14",
+    "audience": 117481,
+    "boRank": 5,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
     "id": "tmdb-607833",
     "tmdbId": 607833,
     "title": "인턴",
@@ -35,6 +96,22 @@ const MOVIES = [
     "releaseDate": "2026-09-16",
     "audience": 82566,
     "boRank": 1,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "tmdb-1408553",
+    "tmdbId": 1408553,
+    "title": "아이유 콘서트 : 더 위닝",
+    "meta": "음악 · 다큐멘터리",
+    "meta2": "124분",
+    "posterPath": "/ld6Pp824MMzJ7vzCdowvTRtVRTN.jpg",
+    "releaseDate": "2025-01-24",
+    "audience": 78634,
+    "boRank": 8,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -57,6 +134,38 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/04/drama-the-2026/"
+  },
+  {
+    "id": "tmdb-1394740",
+    "tmdbId": 1394740,
+    "title": "타짜: 벨제붑의 노래",
+    "meta": "범죄 · 드라마",
+    "meta2": "130분",
+    "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
+    "releaseDate": "2026-09-23",
+    "audience": 12184,
+    "boRank": 9,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "tmdb-1532365",
+    "tmdbId": 1532365,
+    "title": "철들 무렵",
+    "meta": "드라마",
+    "meta2": "105분",
+    "posterPath": "/7gBqPAjf7jLZxbp61Zn2oak2SUW.jpg",
+    "releaseDate": "2026-09-16",
+    "audience": 3341,
+    "boRank": 10,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   },
   {
     "id": "resident-evil",
@@ -276,43 +385,23 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/02/mortuary-assistant-the-2026/"
-  },
-  {
-    "id": "y-n-lapsi",
-    "tmdbId": 964849,
-    "title": "나이트본",
-    "meta": "공포",
-    "meta2": "91분",
-    "posterPath": "/8lpzyhJxb1edjfG4ZPKRC2cymHN.jpg",
-    "releaseDate": "2026-08-27",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
-    "id": "the-bay",
-    "tmdbId": 1430698,
-    "title": "블러드 베이: 노 이스케이프",
-    "meta": "스릴러 · 공포",
-    "meta2": "87분",
-    "posterPath": "/hqzxCqbRS6YmYzgTYHW3dsWGoPD.jpg",
-    "releaseDate": "2026-08-27",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   }
 ];
 
 const INITIAL_VOTES = {
+  "the-odyssey": {
+    "up": 0,
+    "down": 0
+  },
+  "spider-man-brand-new-day": {
+    "up": 0,
+    "down": 0
+  },
   "obsession": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-14069": {
     "up": 0,
     "down": 0
   },
@@ -320,7 +409,19 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "tmdb-1408553": {
+    "up": 0,
+    "down": 0
+  },
   "the-drama": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-1394740": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-1532365": {
     "up": 0,
     "down": 0
   },
@@ -373,14 +474,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "the-mortuary-assistant": {
-    "up": 0,
-    "down": 0
-  },
-  "y-n-lapsi": {
-    "up": 0,
-    "down": 0
-  },
-  "the-bay": {
     "up": 0,
     "down": 0
   }
