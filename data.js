@@ -62,7 +62,7 @@ const MOVIES = [
     "id": "resident-evil",
     "tmdbId": 1423191,
     "title": "레지던트 이블: 0번째 밤",
-    "meta": "공포 · SF",
+    "meta": "공포 · 스릴러 · 코미디",
     "meta2": "94분",
     "posterPath": "/fQX4fRsagskLvCXnvPfdvh62QTG.jpg",
     "releaseDate": "2026-09-17",
