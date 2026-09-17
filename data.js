@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-17)
-   관객수: KOBIS 일별 박스오피스 (기준일 20260916)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-18)
+   관객수: KOBIS 일별 박스오피스 (기준일 20260917)
    쿠키 정보: aftercredits.com + 나무위키 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-09-17';
-const BOXOFFICE_DATE = "20260916";
+const DATA_UPDATED = '2026-09-18';
+const BOXOFFICE_DATE = "20260917";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 10921483,
+    "audience": 10960842,
     "boRank": 2,
     "status": "no",
     "creditsLen": null,
@@ -33,8 +33,8 @@ const MOVIES = [
     "meta2": "145분",
     "posterPath": "/8mLepBa5l591xFidRpn65xV7hb4.jpg",
     "releaseDate": "2026-07-29",
-    "audience": 8952757,
-    "boRank": 4,
+    "audience": 8956959,
+    "boRank": 6,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -61,30 +61,14 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 548655,
-    "boRank": 3,
+    "audience": 570243,
+    "boRank": 4,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/05/obsession-2025/"
-  },
-  {
-    "id": "tmdb-14069",
-    "tmdbId": 14069,
-    "title": "시간을 달리는 소녀",
-    "meta": "판타지 · 애니메이션 · 드라마",
-    "meta2": "97분",
-    "posterPath": "/zhvpSzYKUMdAfId2VSU1qLFeW5x.jpg",
-    "releaseDate": "2007-06-14",
-    "audience": 117481,
-    "boRank": 5,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   },
   {
     "id": "tmdb-607833",
@@ -94,8 +78,24 @@ const MOVIES = [
     "meta2": "133분",
     "posterPath": "/kRHjgsICPISgEClloeARkPHP96M.jpg",
     "releaseDate": "2026-09-16",
-    "audience": 82566,
+    "audience": 128636,
     "boRank": 1,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "tmdb-14069",
+    "tmdbId": 14069,
+    "title": "시간을 달리는 소녀",
+    "meta": "판타지 · 애니메이션 · 드라마",
+    "meta2": "97분",
+    "posterPath": "/zhvpSzYKUMdAfId2VSU1qLFeW5x.jpg",
+    "releaseDate": "2007-06-14",
+    "audience": 120503,
+    "boRank": 7,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -110,8 +110,8 @@ const MOVIES = [
     "meta2": "124분",
     "posterPath": "/ld6Pp824MMzJ7vzCdowvTRtVRTN.jpg",
     "releaseDate": "2025-01-24",
-    "audience": 78634,
-    "boRank": 8,
+    "audience": 80073,
+    "boRank": 10,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -126,46 +126,14 @@ const MOVIES = [
     "meta2": "107분",
     "posterPath": "/9MKVekk642o1IXug6VSerPqIrZc.jpg",
     "releaseDate": "2026-09-09",
-    "audience": 67567,
-    "boRank": 7,
+    "audience": 70562,
+    "boRank": 8,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/04/drama-the-2026/"
-  },
-  {
-    "id": "tmdb-1394740",
-    "tmdbId": 1394740,
-    "title": "타짜: 벨제붑의 노래",
-    "meta": "범죄 · 드라마",
-    "meta2": "130분",
-    "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
-    "releaseDate": "2026-09-23",
-    "audience": 12184,
-    "boRank": 9,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
-    "id": "tmdb-1532365",
-    "tmdbId": 1532365,
-    "title": "철들 무렵",
-    "meta": "드라마",
-    "meta2": "105분",
-    "posterPath": "/7gBqPAjf7jLZxbp61Zn2oak2SUW.jpg",
-    "releaseDate": "2026-09-16",
-    "audience": 3341,
-    "boRank": 10,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   },
   {
     "id": "resident-evil",
@@ -175,8 +143,24 @@ const MOVIES = [
     "meta2": "94분",
     "posterPath": "/fQX4fRsagskLvCXnvPfdvh62QTG.jpg",
     "releaseDate": "2026-09-17",
-    "audience": null,
-    "boRank": null,
+    "audience": 22872,
+    "boRank": 3,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "tmdb-1418428",
+    "tmdbId": 1418428,
+    "title": "암살자(들)",
+    "meta": "드라마 · 범죄 · 스릴러",
+    "meta2": "131분",
+    "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
+    "releaseDate": "2026-09-23",
+    "audience": 14125,
+    "boRank": 5,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -385,6 +369,22 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/02/mortuary-assistant-the-2026/"
+  },
+  {
+    "id": "y-n-lapsi",
+    "tmdbId": 964849,
+    "title": "나이트본",
+    "meta": "공포",
+    "meta2": "91분",
+    "posterPath": "/8lpzyhJxb1edjfG4ZPKRC2cymHN.jpg",
+    "releaseDate": "2026-08-27",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   }
 ];
 
@@ -401,11 +401,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-14069": {
+  "tmdb-607833": {
     "up": 0,
     "down": 0
   },
-  "tmdb-607833": {
+  "tmdb-14069": {
     "up": 0,
     "down": 0
   },
@@ -417,15 +417,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-1394740": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-1532365": {
-    "up": 0,
-    "down": 0
-  },
   "resident-evil": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-1418428": {
     "up": 0,
     "down": 0
   },
@@ -474,6 +470,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "the-mortuary-assistant": {
+    "up": 0,
+    "down": 0
+  },
+  "y-n-lapsi": {
     "up": 0,
     "down": 0
   }
