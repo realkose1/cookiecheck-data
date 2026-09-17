@@ -200,6 +200,12 @@ BOXOFFICE_API = (
     "https://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json"
 )
 BOXOFFICE_LOOKBACK = 3
+# 전송 실패(DNS·타임아웃) 재시도. GitHub Actions 러너에서 이름 해석이 간헐적으로
+# 무너져 모든 날짜가 한 번에 실패하는 일이 있었다 — 그 한 번의 딸꾹질 때문에
+# 집계 전체를 놓치지 않도록 같은 날짜를 몇 번 더 두드린다.
+BOXOFFICE_RETRIES = 3
+BOXOFFICE_BACKOFF = 1.5  # 초, 시도마다 2배
+BOXOFFICE_TIMEOUT = 15
 
 
 def _bo_norm(title):
@@ -207,8 +213,27 @@ def _bo_norm(title):
     return re.sub(r"[\s:·,\-—()]+", "", (title or "")).lower()
 
 
+def _boxoffice_request(url, target):
+    """한 날짜분 응답. 전송 실패는 **같은 날짜로** 재시도하고, 끝내 실패하면 None.
+
+    '그 날짜에 집계가 없다'(빈 목록)와 '서버에 닿지 못했다'는 전혀 다른 사건이다.
+    전자는 하루 앞으로 물러나는 게 맞지만, 후자에서 날짜를 넘기면 멀쩡한 최신
+    집계를 스스로 버리고 오래된 날짜로 밀려난다.
+    """
+    delay = BOXOFFICE_BACKOFF
+    for attempt in range(1, BOXOFFICE_RETRIES + 1):
+        try:
+            return _get_json(url, timeout=BOXOFFICE_TIMEOUT)
+        except Exception as e:
+            print(f"  KOBIS 요청 실패({target}, 시도 {attempt}/{BOXOFFICE_RETRIES}): {e}")
+            if attempt < BOXOFFICE_RETRIES:
+                time.sleep(delay)
+                delay *= 2
+    return None
+
+
 def boxoffice_fetch():
-    """{정규화제목: {rank, audience, openDt}} 와 기준일. 실패하면 ({}, None)."""
+    """{정규화제목: {title, rank, audience, openDt}} 와 기준일. 실패하면 ({}, None)."""
     key = os.environ.get("KOBIS_API_KEY", "").strip()
     if not key:
         print("  KOBIS_API_KEY 가 없습니다 — 관객수를 건너뜁니다")
@@ -218,10 +243,10 @@ def boxoffice_fetch():
     for back in range(1, BOXOFFICE_LOOKBACK + 1):
         target = (today - datetime.timedelta(days=back)).strftime("%Y%m%d")
         url = f"{BOXOFFICE_API}?key={key}&targetDt={target}"
-        try:
-            data = _get_json(url)
-        except Exception as e:
-            print(f"  KOBIS 요청 실패({target}): {e}")
+        data = _boxoffice_request(url, target)
+        if data is None:
+            # 재시도까지 다 실패했다. 다음 날짜도 같은 이유로 실패할 가능성이 크지만,
+            # 하루치 서버 장애일 수도 있으니 마지막 기대로 물러나 본다.
             continue
 
         # 키가 틀리면 KOBIS 는 HTTP 200 에 faultInfo 를 담아 보낸다 — 조용히
@@ -239,6 +264,9 @@ def boxoffice_fetch():
         index = {}
         for item in items:
             index[_bo_norm(item.get("movieNm"))] = {
+                # 원제목을 그대로 들고 있어야 TMDB 재검색(boxoffice_tmdb_search)에 쓸 수 있다.
+                # 색인 키는 정규화된 값이라 되돌릴 수 없다.
+                "title": item.get("movieNm"),
                 "rank": _int_or_none(item.get("rank")),
                 "audience": _int_or_none(item.get("audiAcc")),
                 "openDt": (item.get("openDt") or "").replace("-", "") or None,
@@ -256,15 +284,156 @@ def _int_or_none(v):
         return None
 
 
+def boxoffice_match_key(title, index):
+    """제목에 대응하는 색인 키. 부분 일치까지 허용하고, 없으면 None.
+
+    어떤 KOBIS 항목이 **아직 아무 작품에도 안 붙었는지** 알아내려면 값이 아니라
+    키가 필요하다 (boxoffice_tmdb_search 로 넘길 미매칭 목록을 만들 때 쓴다).
+    """
+    key = _bo_norm(title)
+    if not key:
+        # 빈 제목은 모든 키의 접두사라 아래 루프에서 아무 항목이나 집어온다.
+        return None
+    if key in index:
+        return key
+    for other in index:
+        if other.startswith(key) or key.startswith(other):
+            return other
+    return None
+
+
 def boxoffice_match(title, index):
     """제목으로 박스오피스 항목을 찾는다. 부분 일치까지 허용."""
-    key = _bo_norm(title)
-    if key in index:
-        return index[key]
-    for other, entry in index.items():
-        if other.startswith(key) or key.startswith(other):
-            return entry
-    return None
+    key = boxoffice_match_key(title, index)
+    return index[key] if key else None
+
+
+# ---------------------------------------------------------------------------
+# KOBIS TOP 10 → TMDB 역검색
+# ---------------------------------------------------------------------------
+#
+# 작품 목록은 TMDB now_playing 에서만 온다. 그래서 TMDB 가 더 이상 상영작으로
+# 세지 않는(또는 제목이 안 맞는) KOBIS TOP 10 작품은 앱에서 통째로 사라진다 —
+# 실제로 관객수 1·2위가 화면에 없는 날이 있었다. 남은 KOBIS 항목을 제목으로
+# 직접 검색해 목록에 되돌려 넣는다.
+#
+# 다만 **틀린 작품을 1위 자리에 앉히는 것보다 비워 두는 편이 낫다.** 정규화한
+# 제목이 맞고 개봉 연도까지 들어맞을 때만 인정하고, 아니면 그 항목은 포기한다.
+
+BOXOFFICE_SEARCH_YEAR_SLACK = 1   # 해외 개봉과 국내 개봉이 해를 넘겨 갈릴 수 있다
+BOXOFFICE_SEARCH_MIN_PREFIX = 4   # 접두사 일치를 허용할 최소 길이 ('인턴' 같은 두 글자 제목이 아무 데나 붙지 않도록)
+
+# KOBIS movieNm 에 붙는 부제 꼬리표. TMDB 는 이런 꼬리표를 모르니 검색/비교
+# 전에 떼어내야 하는데, 괄호를 통째로 지우면 괄호가 원제목의 일부인 작품까지
+# 망가뜨린다 — 그래서 알려진 어휘로만 좁게 매치한다. 전각 숫자·괄호('（４Ｋ）')도
+# 섞여 들어오므로 매치 전에 NFKC 로 반각화한다.
+_BO_TAG_RE = re.compile(
+    r"\(\s*(?:재개봉\d*|더빙|자막|감독판|4k(?:\s*리마스터링)?|imax|확장판)\s*\)\s*$",
+    re.IGNORECASE,
+)
+
+
+def _bo_strip_tag(title):
+    """(비교/검색용 제목, 꼬리표가 있었는지) 를 돌려준다.
+
+    꼬리표가 없으면 원문 그대로 돌려줘 기존 경로(연도 대조 포함)를 건드리지
+    않는다. 꼬리표가 있으면 뒤를 잘라낸 제목을 돌려주는데, 이 경우 호출자는
+    연도 대조를 건너뛰어야 한다 — 재개봉·리마스터링판은 KOBIS openDt 가
+    재개봉일이라 TMDB release_date(원작 개봉일)와 해가 안 맞기 때문이다.
+    """
+    raw = title or ""
+    norm = unicodedata.normalize("NFKC", raw)
+    m = _BO_TAG_RE.search(norm)
+    if not m:
+        return raw, False
+    return norm[:m.start()].rstrip(), True
+
+
+def _bo_open_date(open_dt):
+    """KOBIS openDt('20260729') -> date. 비었거나 형식이 깨졌으면 None."""
+    try:
+        return datetime.datetime.strptime((open_dt or "").strip(), "%Y%m%d").date()
+    except ValueError:
+        return None
+
+
+def _bo_title_score(ko_title, cand):
+    """제목 유사도. 2 = 정규화 후 같음, 1 = 한쪽이 다른 쪽의 접두사, 0 = 다름."""
+    want = _bo_norm(ko_title)
+    want_en = normalize_title(ko_title)
+    best = 0
+    for raw in (cand.get("title"), cand.get("original_title")):
+        got = _bo_norm(raw)
+        if not want or not got:
+            continue
+        if got == want:
+            return 2
+        # 영문 제목끼리는 관사·구두점까지 털어내는 normalize_title 이 더 정확하다.
+        got_en = normalize_title(raw)
+        if want_en and got_en and want_en == got_en:
+            return 2
+        if (got.startswith(want) or want.startswith(got)) and min(len(got), len(want)) >= BOXOFFICE_SEARCH_MIN_PREFIX:
+            best = max(best, 1)
+    return best
+
+
+def boxoffice_tmdb_search(ko_title, open_dt, tmdb_get):
+    """KOBIS 제목으로 TMDB 작품을 찾는다. 확신이 서는 후보가 없으면 None.
+
+    tmdb_get 은 fetch_movies.get 처럼 (path, **params) 를 받는 호출자다.
+
+    '인턴'(2015, The Intern)과 '인턴'(2026, 국내 영화)처럼 제목이 완전히 같은
+    작품이 실재한다 — 제목만으로는 절대 고를 수 없어서 KOBIS 개봉일과 TMDB
+    개봉일의 연도를 반드시 대조한다(±1년: 해외 개봉이 해를 넘겨 들어오는 경우).
+    KOBIS 개봉일이 없으면 고를 근거가 없으니 포기한다.
+
+    단, '(재개봉)'/'(４K)' 같은 부제 꼬리표가 붙은 제목은 예외다 — 그런 항목의
+    KOBIS 개봉일은 재개봉일이라 연도 대조 자체가 성립하지 않는다(_bo_strip_tag
+    참고). 이 경로에서는 연도를 대조하는 대신 제목 완전 일치(score 2)만 인정해
+    빠진 근거를 메운다: 접두사 일치까지 허용하면 엉뚱한 작품이 1위로 뽑힌다.
+    """
+    open_date = _bo_open_date(open_dt)
+    if not ko_title or not open_date:
+        return None
+
+    query_title, has_tag = _bo_strip_tag(ko_title)
+    if not query_title:
+        return None
+
+    try:
+        results = tmdb_get(
+            "/search/movie", query=query_title, language="ko-KR", include_adult="false"
+        ).get("results") or []
+    except Exception as e:
+        print(f"  TMDB 검색 실패('{query_title}'): {e}")
+        return None
+
+    scored = []
+    for cand in results:
+        score = _bo_title_score(query_title, cand)
+        if not score:
+            continue
+        if has_tag:
+            if score < 2:
+                continue  # 연도 근거가 없는 경로라 접두사 일치는 거부한다.
+            # 개봉일 근접도는 재개봉일 대 원작 개봉일 비교라 의미가 없다 —
+            # 완전 일치 후보들 중에서는 더 알려진(popularity) 쪽을 고른다.
+            scored.append(((score, cand.get("popularity") or 0), cand))
+            continue
+        released = cand.get("release_date") or ""
+        try:
+            cand_date = datetime.date.fromisoformat(released)
+        except ValueError:
+            continue  # 개봉일이 없으면 연도 대조를 못 한다 — 근거 부족으로 버린다.
+        if abs(cand_date.year - open_date.year) > BOXOFFICE_SEARCH_YEAR_SLACK:
+            continue
+        gap = abs((cand_date - open_date).days)
+        # 제목이 더 정확한 쪽 > 개봉일이 더 가까운 쪽 > 더 알려진 쪽.
+        scored.append(((score, -gap, cand.get("popularity") or 0), cand))
+
+    if not scored:
+        return None
+    return max(scored, key=lambda s: s[0])[1]
 
 
 # ---------------------------------------------------------------------------

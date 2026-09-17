@@ -6,6 +6,9 @@ SweetSpot(ios/Sources/Services/TMDBService.swift)과 같은 방식이다:
   - /movie/{id}/release_dates 의 KR 항목에서 실제 국내 개봉일을 뽑는다
     (type 우선순위 3 극장 > 2 극장 제한 > 1 프리미어, 같은 type 안에서는 최소값)
 
+now_playing 이 빠뜨린 KOBIS 박스오피스 TOP 10 작품은 제목으로 /search/movie 를
+다시 쳐서 보충한다 — TMDB 의 '현재 상영작' 판단과 실제 국내 상영관은 자주 어긋난다.
+
 쿠키(쿠키 영상) 정보는 TMDB에 없어서 tools/sources.py 가 따로 채운다.
 우선순위: data.overrides.json > aftercredits.com > TMDB 키워드 > 미확인.
 
@@ -121,6 +124,90 @@ def build(detail, today):
     }
 
 
+def boxoffice_backfill(bo_index, matched, movies, today):
+    """어느 작품에도 안 붙은 KOBIS 항목을 TMDB 에서 직접 찾아 목록에 보충한다.
+
+    작품 목록이 now_playing 하나뿐이면, TMDB 가 상영 종료로 판단했거나 제목이
+    안 맞는 TOP 10 작품은 관객수가 아무리 많아도 앱에서 통째로 사라진다.
+    박스오피스 화면이 1·3·7위만 보여 주던 이유다.
+
+    확실한 후보가 없으면 그 항목은 건너뛴다 — 1위 자리에 엉뚱한 영화를 앉히느니
+    비어 있는 편이 낫다.
+    """
+    leftovers = [(k, e) for k, e in bo_index.items() if k not in matched]
+    if not leftovers:
+        return []
+
+    by_id = {m["tmdbId"]: m for m in movies}
+    added = []
+    for _key, entry in sorted(leftovers, key=lambda kv: kv[1]["rank"] or 99):
+        label = f"{entry['rank']}위 '{entry['title']}'"
+        found = sources.boxoffice_tmdb_search(entry["title"], entry["openDt"], get)
+        if not found:
+            print(f"  박스오피스 {label} — TMDB 에 확실한 후보가 없어 건너뜀")
+            continue
+
+        exist = by_id.get(found["id"])
+        if exist:
+            # now_playing 에는 있었는데 제목 표기가 달라 못 붙은 경우다
+            # (KOBIS 와 TMDB 의 부제·띄어쓰기 차이). 새로 만들지 말고 붙이기만 한다.
+            exist["audience"], exist["boRank"] = entry["audience"], entry["rank"]
+            print(f"  박스오피스 {label} — 제목 표기만 달랐음, '{exist['title']}' 에 연결")
+            continue
+
+        try:
+            detail = get(
+                f"/movie/{found['id']}",
+                language="ko-KR",
+                append_to_response="credits,release_dates,keywords",
+            )
+        except Exception as e:
+            print(f"  박스오피스 {label} — TMDB 상세 조회 실패: {e}")
+            continue
+
+        m = build(detail, today)
+        # 개봉일은 정렬 키다. TMDB 에 국내 개봉일이 없으면 KOBIS 개봉일로 채운다.
+        if not m["releaseDate"]:
+            o = entry["openDt"]
+            m["releaseDate"] = f"{o[:4]}-{o[4:6]}-{o[6:8]}"
+        m["audience"], m["boRank"] = entry["audience"], entry["rank"]
+        by_id[m["tmdbId"]] = m
+        added.append(m)
+        print(f"  박스오피스 {label} — now_playing 에 없어 TMDB #{m['tmdbId']} '{m['title']}' 로 보충")
+    return added
+
+
+def stale_backfill(prev_all, movies, today):
+    """직전 집계를 그대로 쓰는 회차에서, 목록에서 사라진 박스오피스 진입작을 되살린다.
+
+    KOBIS 조회가 실패하면 bo_index 가 비어 역검색할 제목조차 없다. 하지만 직전
+    피드에는 관객수와 순위가 남아 있으니, now_playing 에서 빠진 작품만 TMDB
+    상세로 다시 만들어 붙인다 — 이름 해석이 한 번 흔들렸다고 1·2위가 화면에서
+    사라지면 안 된다.
+    """
+    have = {m["tmdbId"] for m in movies}
+    added = []
+    for tmdb_id, p in prev_all.items():
+        if tmdb_id in have or not p.get("audience"):
+            continue
+        try:
+            detail = get(
+                f"/movie/{tmdb_id}",
+                language="ko-KR",
+                append_to_response="credits,release_dates,keywords",
+            )
+        except Exception as e:
+            print(f"  직전 박스오피스 {p.get('title')} 복원 실패: {e}")
+            continue
+        m = build(detail, today)
+        m["releaseDate"] = m["releaseDate"] or p.get("releaseDate") or today
+        m["audience"], m["boRank"] = p["audience"], p.get("boRank")
+        added.append(m)
+    if added:
+        print(f"  직전 집계에서 박스오피스 {len(added)}편 복원 ({', '.join(m['title'] for m in added)})")
+    return added
+
+
 def enrich(movie):
     """쿠키 정보를 채운다. aftercredits.com → 나무위키 → TMDB 키워드 순.
 
@@ -191,14 +278,23 @@ def main():
         print(f"  박스오피스 {bo_date or '조회 실패'} — 직전({prev_bo_date})보다 오래됨. 직전 집계 유지")
         bo_index, bo_date = {}, prev_bo_date
 
+    matched = set()
     for m in movies:
-        entry = sources.boxoffice_match(m["title"], bo_index)
-        if entry:
-            m["audience"] = entry["audience"]
-            m["boRank"] = entry["rank"]
+        key = sources.boxoffice_match_key(m["title"], bo_index)
+        if key:
+            matched.add(key)
+            m["audience"] = bo_index[key]["audience"]
+            m["boRank"] = bo_index[key]["rank"]
         elif stale_bo and (p := prev_all.get(m["tmdbId"])) and p.get("audience") is not None:
             m["audience"] = p["audience"]
             m["boRank"] = p.get("boRank")
+
+    # TOP 10 에 있는데 now_playing 에 없던 작품을 TMDB 에서 찾아 더한다.
+    # (개봉 여부 필터 뒤에 붙이는 게 맞다 — KOBIS 집계에 있다는 건 지금 걸려 있다는 뜻이다.)
+    if stale_bo:
+        movies += stale_backfill(prev_all, movies, today)
+    else:
+        movies += boxoffice_backfill(bo_index, matched, movies, today)
 
     # 최신 개봉순 상위 MAX_MOVIES 편에, 박스오피스 진입작은 개봉일과 무관하게 합집합으로
     # 더한다 — 흥행 중인데 개봉한 지 오래됐다는 이유로 빠지면 박스오피스 목록이 아니다.
@@ -286,7 +382,10 @@ const INITIAL_VOTES = {votes};
     ranked = [m for m in movies if m.get("audience")]
     print(f"\ndata.js 갱신 완료 — {len(movies)}편 (조회일 {today})")
     print(f"  쿠키 있음 {tally['yes']} · 없음 {tally['no']} · 미확인 {tally['unknown']}")
-    print(f"  박스오피스 집계 {len(ranked)}편 (기준일 {bo_date or '없음'})")
+    # TOP 10 중 몇 편을 실었는지까지 찍는다 — 예전에는 '집계 3편'만 보여서
+    # 나머지 일곱 편이 통째로 빠졌다는 사실을 로그만 봐서는 알 수 없었다.
+    coverage = f" · KOBIS TOP {len(bo_index)} 중 {len([m for m in ranked if m.get('boRank')])}편" if bo_index else ""
+    print(f"  박스오피스 집계 {len(ranked)}편 (기준일 {bo_date or '없음'}){coverage}")
     for m in ranked:
         print(f"    {m['audience']:>9,}명  {m['title'][:26]:<28} [{m['status']}]")
     for m in movies:
