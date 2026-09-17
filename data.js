@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 548649,
+    "audience": 548655,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "133분",
     "posterPath": "/kRHjgsICPISgEClloeARkPHP96M.jpg",
     "releaseDate": "2026-09-16",
-    "audience": 82532,
+    "audience": 82566,
     "boRank": 1,
     "status": "unknown",
     "creditsLen": null,
@@ -90,7 +90,7 @@ const MOVIES = [
       {
         "pos": "크레딧 중간",
         "len": "",
-        "desc": "A lengthy alternative ending scene where our heroes visit the modern world.\nBloopers are shown during the credits from the “Step to the Past” tv-show that precedes this films events."
+        "desc": "주인공들이 현대 세계를 방문하는 긴 대체 엔딩 장면이 나옵니다.\n크레딧이 올라가는 동안, 이 영화의 사건에 앞서 방영된 TV 쇼 '과거로 가는 걸음(Step to the Past)'의 NG 장면들이 공개됩니다."
       }
     ],
     "tip": "",
@@ -200,7 +200,7 @@ const MOVIES = [
     "title": "인 더 그레이",
     "meta": "액션 · 스릴러",
     "meta2": "97분",
-    "posterPath": "/2PIph5fGpL7xsNsRRjHOx1rkpYa.jpg",
+    "posterPath": "/wilN2jrZqClKcgONqyXQUnB4btD.jpg",
     "releaseDate": "2026-09-02",
     "audience": null,
     "boRank": null,
@@ -235,6 +235,22 @@ const MOVIES = [
     "meta": "애니메이션 · 액션 · 모험",
     "meta2": "107분",
     "posterPath": "/aMjKQ4kNLJJFiRHRcei7ZBsu5Ay.jpg",
+    "releaseDate": "2026-09-02",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "le-cose-non-dette",
+    "tmdbId": 1473635,
+    "title": "말하지 않은 것들",
+    "meta": "드라마",
+    "meta2": "115분",
+    "posterPath": "/jhAimZ4vUrq4zEAWgT0yBff1ooh.jpg",
     "releaseDate": "2026-09-02",
     "audience": null,
     "boRank": null,
@@ -292,23 +308,6 @@ const MOVIES = [
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
-  },
-  {
-    "id": "the-end-of-oak-street",
-    "tmdbId": 1101383,
-    "title": "오크 스트리트의 마지막 날",
-    "meta": "SF · 미스터리 · 스릴러",
-    "meta2": "100분",
-    "posterPath": "/oGqJr59UAwZfpmSkEkaW02o0ZLC.jpg",
-    "releaseDate": "2026-08-26",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/08/end-of-oak-street-the-2026/"
   }
 ];
 
@@ -369,6 +368,10 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "le-cose-non-dette": {
+    "up": 0,
+    "down": 0
+  },
   "the-mortuary-assistant": {
     "up": 0,
     "down": 0
@@ -378,10 +381,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "the-bay": {
-    "up": 0,
-    "down": 0
-  },
-  "the-end-of-oak-street": {
     "up": 0,
     "down": 0
   }
