@@ -24,6 +24,7 @@ import datetime
 import html
 import json
 import os
+import pathlib
 import re
 import time
 import unicodedata
@@ -125,6 +126,18 @@ def _parse_extras(content_html):
     return out
 
 
+# 전송 실패(연결 리셋·타임아웃) 재시도. aftercredits.com 은 개인 WordPress 호스트라
+# ThreadPoolExecutor 로 동시에 두드리면 연결 리셋이 드물지 않다 — 그 한 번의 딸꾹질을
+# "이 제목은 쿠키가 없다"로 오판하지 않도록 같은 질의를 몇 번 더 두드린다.
+AC_RETRIES = 3
+AC_BACKOFF = 1.5  # 초, 시도마다 2배
+
+# 재시도까지 다 실패한 질의 문자열. fetch_movies.py 가 실행 끝에 이 값을 읽어
+# "aftercredits 조회 실패 N편" 요약을 찍는다. ThreadPoolExecutor 에서 여러 스레드가
+# 동시에 append 하지만, CPython 의 list.append 는 원자적이라 별도 락은 필요 없다.
+AC_FAILURES = []
+
+
 def aftercredits_lookup(en_title, original_title, year, session_get=_get_json):
     """제목+연도로 aftercredits 항목을 찾아 쿠키 정보를 반환한다. 없으면 None.
 
@@ -136,9 +149,20 @@ def aftercredits_lookup(en_title, original_title, year, session_get=_get_json):
         params = urllib.parse.urlencode(
             {"search": query, "per_page": 10, "_fields": "title,link,content,categories"}
         )
-        try:
-            posts = session_get(f"{AC_API}?{params}")
-        except Exception:
+        posts = None
+        delay = AC_BACKOFF
+        for attempt in range(1, AC_RETRIES + 1):
+            try:
+                posts = session_get(f"{AC_API}?{params}")
+                break
+            except Exception as e:
+                print(f"  aftercredits 조회 실패('{query}'): {e}")
+                if attempt < AC_RETRIES:
+                    time.sleep(delay)
+                    delay *= 2
+                else:
+                    AC_FAILURES.append(query)
+        if posts is None:
             continue
 
         for post in posts:
@@ -459,6 +483,11 @@ _NAMU_POS_AFTER = re.compile(
     r"|크레딧\s*(?:직후|이후)"
 )
 
+# 문서가 '쿠키가 있다'까지만 알려주고 내용은 말하지 않을 때 쓰는 설명.
+# namu_lookup 과 ko_index_lookup 이 **같은 문장**을 써야 한다 — 색인에서 꺼낸
+# 판정과 라이브 조회 결과가 화면에서 달라 보이면 안 되기 때문.
+NAMU_DESC_FALLBACK = "쿠키 영상이 있습니다. 자세한 내용은 출처를 확인하세요."
+
 
 def _namu_fetch_text(title):
     """문서를 받아 태그를 벗긴 본문 텍스트로. 404/오류는 None."""
@@ -557,7 +586,7 @@ def namu_lookup(ko_title, year, directors):
             # 목차에 '쿠키 영상' 섹션이 있으면 그것이 근거다 — 서술 문장은 프랜차이즈
             # 문서에서 다른 작품의 쿠키를 가리키는 경우가 있어(코난 시리즈 등) 쓰지 않는다.
             hit = None if section else (explicit or narrative)
-            desc = _namu_sentence(text, hit.start()) if hit else "쿠키 영상이 있습니다. 자세한 내용은 출처를 확인하세요."
+            desc = _namu_sentence(text, hit.start()) if hit else NAMU_DESC_FALLBACK
             pos = _namu_position(text)
             return {
                 "status": "yes",
@@ -573,6 +602,73 @@ def namu_lookup(ko_title, year, directors):
         # ('호프(영화)')를 못 보고 끝나기 때문이다.
         continue
     return None
+
+
+def ko_index_lookup(tmdb_id, index):
+    """커밋된 나무위키 색인(data/ko-index.json)에서 판정을 꺼낸다. 없으면 None.
+
+    **왜 필요한가.** GitHub Actions 러너 IP 는 나무위키 Cloudflare 에 막혀
+    namu_lookup 이 영원히 None 을 돌려준다 — 그래서 한국·일본 영화 쿠키는
+    러너에서 절대 채워지지 않는다. 쿠키 유무는 한 번 확정되면 변하지 않는
+    사실이므로, 나무위키가 닿는 곳(맥)에서 '발견'한 결과를 색인 파일에 커밋해
+    두면 러너는 그 파일만 읽어 '발행'할 수 있다.
+
+    반환 모양은 namu_lookup 과 **같아야 한다** — enrich() 가 둘을 구분 없이
+    movie.update() 에 넘기기 때문이다.
+
+    index: sync_namu.py 가 만든 색인 전체 dict ({"entries": {...}, ...}).
+           main() 에서 한 번 읽어 넘긴다 (스레드마다 파일을 다시 열지 않도록).
+    """
+    entry = (index or {}).get("entries", {}).get(str(tmdb_id))
+    if not entry:
+        return None
+
+    url = entry.get("u") or ""
+    status = entry.get("s")
+
+    if status == "no":
+        return {
+            "status": "no",
+            "cookies": [],
+            "tip": TIP_NONE,
+            "source": "나무위키",
+            "sourceUrl": url,
+            "matchedTitle": None,
+        }
+    if status != "yes":
+        return None
+
+    # d/a 가 둘 다 0 이면 문서가 '있다'까지만 말한 것 — 위치를 지어내지 않는다.
+    positions = []
+    if entry.get("d") == 1:
+        positions.append(POS_DURING)
+    if entry.get("a") == 1:
+        positions.append(POS_AFTER)
+    if not positions:
+        positions = ["위치 미확인"]
+
+    desc = entry.get("t") or NAMU_DESC_FALLBACK
+    return {
+        "status": "yes",
+        # 설명은 문서 서술 한 줄뿐이라 위치별로 쪼개도 같은 문장이 된다
+        # (sync_namu.py 가 desc 를 하나만 담는 이유와 같다).
+        "cookies": [{"pos": pos, "len": "", "desc": desc} for pos in positions],
+        "tip": "",
+        "source": "나무위키",
+        "sourceUrl": url,
+        "matchedTitle": None,
+    }
+
+
+def load_ko_index(path):
+    """색인 파일을 읽는다. 없거나 깨졌으면 빈 색인 — 색인이 빠져도 나머지는 돌아야 한다."""
+    try:
+        data = json.loads(pathlib.Path(path).read_text(encoding="utf-8"))
+    except Exception:
+        return {"entries": {}, "checked": []}
+    data.setdefault("entries", {})
+    data.setdefault("checked", [])
+    return data
 
 
 # ---------------------------------------------------------------------------

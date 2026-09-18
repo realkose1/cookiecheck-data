@@ -139,7 +139,28 @@ jobs:
           git add -A
           if git diff --cached --quiet; then
             echo "변경 없음 — 커밋 생략"
-          else
-            git commit -m "data: $(date +%F)"
-            git push
+            exit 0
           fi
+          git commit -m "data: $(date +%F)"
+
+          # 이 저장소에는 러너 말고 쓰는 곳이 하나 더 있다. 맥이 매일
+          # tools/publish_index.sh 로 data/ko-index.json 을 올린다 — 나무위키가
+          # 러너 IP 를 막아서 한국 영화 쿠키 색인은 맥에서만 채울 수 있기 때문이다.
+          # checkout 과 push 사이에 그 커밋이 끼면 push 가 non-fast-forward 로
+          # 실패하고, 그러면 그날 피드가 통째로 안 올라간다. 그래서 밀어내지 말고
+          # (force 금지 — 맥이 올린 색인을 지우게 된다) 그 위에 다시 얹는다.
+          for i in 1 2 3; do
+            if git push; then
+              echo "푸시 완료 (시도 $i)"
+              exit 0
+            fi
+            echo "푸시 거절됨 — 원격을 받아 그 위에 다시 얹습니다 (시도 $i)"
+            # 맥은 색인만, 러너는 피드만 건드리므로 같은 파일이 겹칠 일은 없다.
+            # 그래도 충돌이 나면 멈춘다 — 조용히 한쪽을 버리는 것보다 낫다.
+            git pull --rebase origin main || {
+              echo "::error::rebase 충돌 — 손으로 봐야 합니다"
+              exit 1
+            }
+          done
+          echo "::error::세 번 시도했지만 푸시하지 못했습니다"
+          exit 1

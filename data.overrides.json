@@ -38,5 +38,46 @@
         "desc": "쿠키 내용 설명 (스포일러는 앱에서 블러 처리됩니다)"
       }
     ]
+  },
+  "607833": {
+    "status": "yes",
+    "cookies": [
+      {"pos": "크레딧 종료 후", "len": "", "desc": "엔딩 크레딧이 모두 올라간 뒤 쿠키 영상이 한 편 이어집니다. 장면 내용은 공개되지 않았습니다."}
+    ],
+    "tip": "",
+    "source": "언론 보도 (금강일보·이투데이·국제뉴스)",
+    "sourceUrl": "https://www.ggilbo.com/news/articleView.html?idxno=1181861"
+  },
+  "1408553": {
+    "status": "yes",
+    "cookies": [
+      {"pos": "크레딧 종료 후", "len": "", "desc": "엔딩 크레딧이 끝난 뒤 〈여름밤의 꿈〉 무대가 이어집니다. TV 방송판에서는 이 무대가 크레딧 뒤가 아니라 공연 중간으로 옮겨졌습니다."}
+    ],
+    "tip": "",
+    "source": "나무위키",
+    "sourceUrl": "https://namu.wiki/w/아이유 콘서트: 더 위닝(TV 프로그램)"
+  },
+  "1274214": {
+    "status": "yes",
+    "cookies": [
+      {"pos": "크레딧 중간", "len": "", "desc": "크레딧 도중 차기작 〈BoBoiBoy Movie 3〉 티저가 나옵니다. 마지막 쿠키에는 시리즈 주인공 보보이보이가 등장합니다."}
+    ],
+    "tip": "",
+    "source": "나무위키 · Malay Mail",
+    "sourceUrl": "https://namu.wiki/w/파파조라 더 무비"
+  },
+  "1423191": {
+    "status": "no",
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "SlashFilm",
+    "sourceUrl": "https://www.slashfilm.com/2260289/resident-evil-2026-movie-post-credits-scene-guide/"
+  },
+  "1302904": {
+    "status": "no",
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/09/practical-magic-2-2026/"
   }
 }

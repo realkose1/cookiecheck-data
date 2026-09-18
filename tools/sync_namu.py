@@ -13,6 +13,11 @@ normalize_title 이 `[^a-z0-9]` 를 지우기 때문에 '경주기행' 같은 �
 budget 만큼만 새로 보고 다음 실행이 이어받는다. 판정이 안 난 영화도 기록해 둬야
 (checked) 매번 같은 문서를 다시 두드리지 않는다.
 
+**순서: 현재 피드(상영작) 먼저, 남은 예산만 백카탈로그.** 백카탈로그를 앞에
+두면 수천 편을 다 훑을 때까지 정작 지금 극장에 걸린 영화가 색인에 안 들어온다.
+그리고 개봉 60일 이내의 미확인 상영작은 checked 에 있어도 다시 본다 — 개봉
+직후엔 문서에 쿠키 문단이 없다가 며칠 뒤 생기기 때문 (RECHECK_DAYS 참고).
+
 출력: data/ko-index.json
   { "syncedAt": ISO, "entries": {"<tmdbId>": {"s","d","a","u","t"?}}, "checked": [...] }
   t 는 쿠키 설명(한국어). 문서에 알맹이 있는 서술이 있을 때만 담는다.
@@ -38,10 +43,19 @@ import sources  # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 INDEX_PATH = ROOT / "data" / "ko-index.json"
+FEED_PATH = ROOT / "ios" / "data" / "cookies.json"
 
 DEFAULT_BUDGET = 150
 DEFAULT_YEARS = (2016, 2026)
 PAGES_PER_YEAR = 5          # 연도당 TMDB 인기순 상위 100편
+
+# 상영작 재확인 기간. 개봉 직후에는 나무위키 문서에 쿠키 문단이 아직 없다가
+# 며칠~몇 주 뒤에 생긴다 — 한 번 못 찾았다고 checked 에 넣고 영원히 안 보면
+# 정작 지금 극장에 걸린 영화가 끝까지 '미확인'으로 남는다 (이번 사고가 그것이다).
+# 그래서 피드에 있고 아직 판정이 없는 작품은 개봉 후 이 기간 동안 매번 다시 본다.
+# 60일은 국내 상영 주기(대개 4~8주)를 넉넉히 덮는 길이다. 이미 판정이 난 작품은
+# 다시 보지 않는다 — 쿠키 유무는 변하지 않는 사실이라 재확인할 이유가 없다.
+RECHECK_DAYS = 60
 
 
 def tmdb_get(path, **params):
@@ -54,6 +68,41 @@ def tmdb_get(path, **params):
     req = urllib.request.Request(url, headers={"Authorization": f"Bearer {token}"})
     with urllib.request.urlopen(req, timeout=20) as r:
         return json.load(r)
+
+
+def feed_candidates():
+    """지금 앱이 보여주는 작품 목록 (ios/data/cookies.json).
+
+    백카탈로그를 연도순으로 기어가는 것보다 **이쪽이 먼저다.** 색인이 필요한
+    이유는 러너가 상영작 쿠키를 못 채우기 때문인데, discover 를 앞에 두면
+    수천 편을 다 훑을 때까지 정작 지금 상영 중인 영화가 색인에 안 들어온다.
+    """
+    try:
+        feed = json.loads(FEED_PATH.read_text(encoding="utf-8"))
+    except Exception:
+        return []
+    out = []
+    for m in feed.get("movies", []):
+        if not m.get("tmdbId"):
+            continue
+        out.append({
+            "id": m["tmdbId"],
+            "title": m.get("title") or "",
+            "release_date": m.get("releaseDate") or "",
+            "_status": m.get("status"),
+        })
+    return out
+
+
+def _recheck_ok(m, today):
+    """checked 에 있어도 다시 봐야 하는 상영작인가 (RECHECK_DAYS 주석 참고)."""
+    if m.get("_status") != "unknown":
+        return False
+    try:
+        released = datetime.date.fromisoformat(m.get("release_date") or "")
+    except ValueError:
+        return False
+    return 0 <= (today - released).days <= RECHECK_DAYS
 
 
 def candidates(years):
@@ -135,10 +184,38 @@ def main():
     if INDEX_PATH.exists():
         index = json.loads(INDEX_PATH.read_text(encoding="utf-8"))
     checked = set(index.get("checked", []))
+    entries = index.setdefault("entries", {})
+    today = datetime.date.today()
 
     print(f"나무위키 동기화 — {years[0]}~{years[1]}년, 이번 실행 최대 {budget}편")
-    pool = [m for m in candidates(years) if m["id"] not in checked]
-    print(f"  후보 {len(pool)}편 (이미 확인 {len(checked)}편)")
+
+    # 1) 현재 피드(= 앱이 지금 보여주는 상영작)를 맨 앞에.
+    #    판정이 이미 있으면 건너뛰고, checked 에 있더라도 개봉 60일 이내의
+    #    미확인작이면 문서가 그새 자랐을 수 있으니 다시 본다.
+    feed = feed_candidates()
+    front = []
+    for m in feed:
+        if str(m["id"]) in entries:
+            continue
+        if m["id"] in checked and not _recheck_ok(m, today):
+            continue
+        front.append(m)
+
+    # 2) 남은 예산만 백카탈로그에. 상영작만으로 예산이 차면 discover 는 아예
+    #    부르지 않는다 — TMDB 요청 수백 번을 아낀다.
+    front = front[:budget]
+    rechecks = sum(1 for m in front if m["id"] in checked)
+    remaining = budget - len(front)
+    back = []
+    if remaining > 0:
+        front_ids = {m["id"] for m in front}
+        back = [
+            m for m in candidates(years)
+            if m["id"] not in checked and m["id"] not in front_ids and str(m["id"]) not in entries
+        ]
+    pool = front + back[:remaining]
+    print(f"  상영작 {len(front)}편 (재확인 {rechecks}편) + 백카탈로그 {len(pool) - len(front)}편"
+          f" · 후보 풀 {len(back)}편 · 이미 확인 {len(checked)}편")
 
     found = 0
     for n, m in enumerate(pool[:budget], 1):

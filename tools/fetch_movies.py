@@ -10,7 +10,12 @@ now_playing 이 빠뜨린 KOBIS 박스오피스 TOP 10 작품은 제목으로 /s
 다시 쳐서 보충한다 — TMDB 의 '현재 상영작' 판단과 실제 국내 상영관은 자주 어긋난다.
 
 쿠키(쿠키 영상) 정보는 TMDB에 없어서 tools/sources.py 가 따로 채운다.
-우선순위: data.overrides.json > aftercredits.com > TMDB 키워드 > 미확인.
+우선순위: data.overrides.json > aftercredits.com > 나무위키 색인(data/ko-index.json)
+        > 라이브 나무위키 > TMDB 키워드 > 미확인.
+
+나무위키는 색인을 먼저 본다. GitHub Actions 러너 IP 가 나무위키에 막혀 있어서
+라이브 조회는 러너에서 늘 실패하기 때문이다 — 색인은 나무위키가 닿는 곳(맥)에서
+tools/sync_namu.py 가 채우고 tools/publish_index.sh 가 올린다.
 
 사용법:
   export TMDB_READ_TOKEN="<TMDB v4 read access token>"
@@ -208,10 +213,17 @@ def stale_backfill(prev_all, movies, today):
     return added
 
 
-def enrich(movie):
-    """쿠키 정보를 채운다. aftercredits.com → 나무위키 → TMDB 키워드 순.
+def enrich(movie, ko_index=None):
+    """쿠키 정보를 채운다. aftercredits.com → 나무위키 색인 → 라이브 나무위키 → TMDB 키워드 순.
 
     어느 쪽도 답하지 않으면 'unknown' 그대로 둔다 — '없음'으로 단정하지 않는다.
+
+    **색인이 라이브보다 먼저인 이유.** GitHub Actions 러너는 나무위키에 막혀
+    있어(Cloudflare) 라이브 조회가 영원히 실패한다. data/ko-index.json 은 나무위키가
+    닿는 곳에서 미리 확인해 커밋해 둔 판정이라, 러너도 이것만 있으면 한국 영화
+    쿠키를 채울 수 있다. 색인에 없을 때만 라이브를 두드린다 — 그러면 남의 서버
+    부담도 줄고(이미 아는 문서를 다시 읽지 않는다) 러너에서는 그 시도가 조용히
+    실패할 뿐 결과가 나빠지지 않는다.
     """
     # aftercredits 는 영어 제목으로 색인돼 있다. ko-KR 응답의 title 은 한국어라 못 쓴다.
     try:
@@ -223,6 +235,12 @@ def enrich(movie):
     hit = sources.aftercredits_lookup(en_title, movie["_originalTitle"], year)
 
     # 한국·일본 로컬 영화는 영어권 소스에 없다 — 나무위키로 보강.
+    # 먼저 커밋된 색인, 없으면 라이브 문서.
+    if hit is None:
+        hit = sources.ko_index_lookup(movie["tmdbId"], ko_index)
+        if hit is not None:
+            movie["_fromKoIndex"] = True
+
     if hit is None:
         kr_year = int(movie["releaseDate"][:4]) if movie["releaseDate"] else year
         hit = sources.namu_lookup(movie["title"], kr_year, movie["_directors"])
@@ -305,10 +323,18 @@ def main():
     keep.sort(key=lambda m: (m.get("audience") is not None, m.get("audience") or 0, m["releaseDate"]), reverse=True)
     movies = keep
 
+    # 나무위키 색인은 여기서 **한 번만** 읽는다. enrich() 안에서 읽으면 스레드마다
+    # 같은 파일(수십만 자)을 다시 파싱하게 된다.
+    ko_index = sources.load_ko_index(ROOT / "data" / "ko-index.json")
+
     # 쿠키 정보 조회. aftercredits 는 남의 서버라 동시 요청을 3개로 묶어 둔다.
-    print(f"쿠키 정보 조회 중… ({len(movies)}편)")
+    print(f"쿠키 정보 조회 중… ({len(movies)}편, 나무위키 색인 {len(ko_index['entries'])}편)")
     with ThreadPoolExecutor(3) as pool:
-        movies = list(pool.map(enrich, movies))
+        movies = list(pool.map(lambda m: enrich(m, ko_index), movies))
+
+    # 색인에서 채운 작품 (아래 요약 로그에 '(색인)' 으로 표시). 언더스코어 키는
+    # 출력 직전에 지워지므로 여기서 미리 걷어 둔다.
+    ko_filled = {m["tmdbId"] for m in movies if m.pop("_fromKoIndex", False)}
 
     # 쿠키 설명 한국어 번역 — 항상 수행한다. 캐시에 있으면 API 없이 즉시,
     # 새 문장은 Claude API(자격증명 있을 때)로, 어느 쪽도 안 되면 영어 원문 유지.
@@ -388,10 +414,24 @@ const INITIAL_VOTES = {votes};
     print(f"  박스오피스 집계 {len(ranked)}편 (기준일 {bo_date or '없음'}){coverage}")
     for m in ranked:
         print(f"    {m['audience']:>9,}명  {m['title'][:26]:<28} [{m['status']}]")
+    # 나무위키 판정이 색인에서 왔는지 라이브 조회에서 왔는지 구분해 찍는다.
+    # 러너에서는 라이브가 늘 막히므로, 여기 '(색인)' 이 붙어 있어야 발행 경로가
+    # 살아 있다는 뜻이다 — 색인 줄이 0편이면 색인이 낡았거나 안 붙은 것이다.
+    ko_used = [m for m in movies if m["tmdbId"] in ko_filled and m.get("source") == "나무위키"]
+    print(f"  나무위키 색인에서 채움 {len(ko_used)}편"
+          + (f": {', '.join(m['title'][:18] for m in ko_used)}" if ko_used else ""))
+
+    # aftercredits 조회가 재시도까지 실패한 작품. 조용히 실패하면 '없음'인지
+    # '못 읽었음'인지 구분이 안 돼 판정이 통째로 빈다 — 반드시 눈에 띄어야 한다.
+    ac_failures = getattr(sources, "AC_FAILURES", [])
+    if ac_failures:
+        print(f"  aftercredits 조회 실패 {len(ac_failures)}편: {', '.join(str(t) for t in ac_failures)}")
+
     for m in movies:
         if m["status"] != "unknown":
             where = ", ".join(c["pos"] for c in m["cookies"]) or "-"
-            print(f"    [{m['status']:<7}] {m['title'][:24]:<26} {where:<24} ← {m['source']}")
+            src = m["source"] + (" (색인)" if m["tmdbId"] in ko_filled and m["source"] == "나무위키" else "")
+            print(f"    [{m['status']:<7}] {m['title'][:24]:<26} {where:<24} ← {src}")
 
 
 if __name__ == "__main__":
