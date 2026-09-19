@@ -59,13 +59,27 @@ RESEARCH_BUDGET = 6
 #
 # 'unknown' 으로 끝난 작품만 다시 본다. 개봉 직후에는 아직 아무도 안 썼다가
 # 며칠 뒤 리뷰가 올라오는 일이 흔하기 때문이다. 다만 영원히 두드리면 예산을
-# 전부 잡아먹으므로 두 개의 문을 둔다.
-RETRY_UNKNOWN_DAYS = 3   # unknown 기록은 3일에 한 번만 다시 시도
-GIVE_UP_AFTER_DAYS = 60  # 개봉 60일이 지나도록 자료가 없으면 앞으로도 안 나온다
+# 전부 잡아먹으므로 문을 여러 개 둔다.
+#
+# 간격은 점점 늘어난다 — 자료는 보통 개봉 첫 주(언론·후기)나 나무위키 문서가
+# 자라는 몇 주 안에 나오고, 그 뒤로는 거의 안 나온다. 4회(=3항목, 첫 시도 포함
+# 4번째에서 중단)면 3+7+14=24일, 즉 개봉 후 약 24일을 덮는다 — 그 이상은 결과가
+# 전부 unknown 이었던 실측(6편 중 6편, $5.14)에 비추어 돈만 쓰는 쪽에 가깝다.
+RETRY_SCHEDULE_DAYS = (3, 7, 14)  # N번째 시도 뒤 대기일: 1→3일, 2→7일, 3→14일, 4번째면 중단
+# 박스오피스 순위가 없는 작품(=관객이 적어 후기·보도가 나올 가능성도 낮고, 앱
+# 화면에서도 아래쪽이다)은 더 짧게, 더 적게 두드린다. 순위가 나중에 생기면 위
+# 일정으로 승격된다 — select_targets 는 매 실행 시점의 boRank 로 판단하기 때문에
+# 별도 처리가 필요 없다.
+RETRY_SCHEDULE_DAYS_UNRANKED = (7,)  # 1→7일 뒤 한 번 더, 2번째 시도면 중단
+GIVE_UP_AFTER_DAYS = 60  # 개봉 60일이 지나도록 자료가 없으면 앞으로도 안 나온다 (둘 중 먼저 오는 쪽에서 중단)
 
 # --- 모델 호출 --------------------------------------------------------------
-MAX_SEARCHES = 8   # 작품 하나에 허용하는 웹 검색 횟수
-MAX_FETCHES = 6    # 작품 하나에 허용하는 페이지 열람 횟수
+# 첫 실제 실행에서 8회/6회를 꽉 채우고도(48회 검색, 편당 8회) 결과가 전부
+# unknown 이었다 — 강한 출처(aftercredits·언론·나무위키)는 있다면 검색 첫
+# 페이지에 나오므로, 한도를 낮춰도 놓치는 건 애초에 2건 규칙으로도 못 미더운
+# 후기·블로그 뒤쪽 페이지뿐이다.
+MAX_SEARCHES = 5   # 작품 하나에 허용하는 웹 검색 횟수
+MAX_FETCHES = 3    # 작품 하나에 허용하는 페이지 열람 횟수
 MAX_TOKENS = 8000
 MAX_PAUSE_RESUMES = 3  # 서버 도구 루프가 pause_turn 으로 끊길 때 이어 붙일 횟수
 
@@ -295,6 +309,19 @@ def _days_since(iso_date, today):
     return (today - d).days
 
 
+def next_attempt_number(verdicts, key):
+    """이 작품이 몇 번째 시도가 될지. 재시도 간격(RETRY_SCHEDULE_DAYS 등) 계산과
+    verdicts-auto.json 에 남길 attempts 값에 함께 쓴다.
+
+    기록이 없으면 이번이 1번째다. 기록이 있는데 attempts 가 없으면(과거 포맷)
+    이미 1회 시도한 것으로 간주하고 이번을 2번째로 센다.
+    """
+    prev = verdicts.get(key)
+    if not prev:
+        return 1
+    return (prev.get("attempts") or 1) + 1
+
+
 def select_targets(movies, verdicts, overrides, today, budget=RESEARCH_BUDGET, verbose=True):
     """조사할 작품을 고른다. 로그를 남기며 거르고, 박스오피스 순위 순으로 자른다."""
     picked = []
@@ -311,17 +338,45 @@ def select_targets(movies, verdicts, overrides, today, budget=RESEARCH_BUDGET, v
                 print(f"  건너뜀 {m['title'][:20]} — data.overrides.json 에 사람 판정이 있음")
             continue
 
+        # 개봉 전 작품은 아예 건드리지 않는다. 유료 시사회만으로 박스오피스
+        # 순위에 들어오는 일이 있는데, 쿠키 정보(후기·보도)는 실제 개봉일을
+        # 전후해서야 나오기 시작한다 — 지금 찾아봐야 있을 수가 없다.
+        # verdicts-auto.json 에는 기록하지 않는다: 개봉하고 나면 이 작품은
+        # '처음 조사하는' 취급을 받아야지, 시도 횟수가 미리 깎여 있으면 안 된다.
+        release_date = m.get("releaseDate") or ""
+        if release_date and release_date > today.isoformat():
+            if verbose:
+                print(f"  건너뜀 {m['title'][:20]} — 개봉 전 ({release_date})")
+            continue
+
         rec = verdicts.get(key)
         if rec:
             if rec.get("status") in ("yes", "no"):
                 continue  # 확정된 사실은 다시 묻지 않는다
-            age = _days_since(rec.get("checkedAt", ""), today)
-            if age is not None and age < RETRY_UNKNOWN_DAYS:
-                continue
+
             since_release = _days_since(m.get("releaseDate") or "", today)
             if since_release is not None and since_release > GIVE_UP_AFTER_DAYS:
                 if verbose:
                     print(f"  건너뜀 {m['title'][:20]} — 개봉 {since_release}일 경과, 재조사 중단")
+                continue
+
+            # 순위 없는 작품(=관객이 적음)은 더 짧은 일정으로 더 적게 재시도한다.
+            # 순위는 매 실행 시점 것을 쓴다 — 나중에 순위가 붙으면 자동으로
+            # 일반 일정으로 승격된다.
+            #
+            # attempts_done 은 '지금까지 몇 번 unknown 으로 끝났는지'다(기록에
+            # attempts 가 없으면 1회로 간주). schedule 의 길이만큼 시도했으면
+            # 그다음(=schedule 길이+1 번째) 시도는 하지 않는다 — 예를 들어
+            # RETRY_SCHEDULE_DAYS 는 3개짜리라 attempts_done==4 에서 영구 중단한다.
+            schedule = RETRY_SCHEDULE_DAYS if m.get("boRank") else RETRY_SCHEDULE_DAYS_UNRANKED
+            attempts_done = rec.get("attempts") or 1
+            if attempts_done > len(schedule):
+                if verbose:
+                    print(f"  건너뜀 {m['title'][:20]} — {attempts_done}회 시도, 재조사 중단")
+                continue
+            wait_days = schedule[attempts_done - 1]
+            age = _days_since(rec.get("checkedAt", ""), today)
+            if age is not None and age < wait_days:
                 continue
         picked.append(m)
 
@@ -703,7 +758,11 @@ def main(argv=None):
     print(f"자동 조사 대상 {len(targets)}편 (미확인 {sum(1 for m in movies if m.get('status') == 'unknown')}편 중):")
     for m in targets:
         rank = f"BO {m['boRank']}위" if m.get("boRank") else "순위 없음"
-        print(f"  #{m['tmdbId']:<9} {m['title'][:24]:<26} {rank:<10} 개봉 {m.get('releaseDate')}")
+        attempt = next_attempt_number(verdicts, str(m["tmdbId"]))
+        print(
+            f"  #{m['tmdbId']:<9} {m['title'][:24]:<26} {rank:<10} "
+            f"개봉 {m.get('releaseDate')}  시도 {attempt}회째"
+        )
     if args.dry_run:
         print("\n--dry-run — 모델을 부르지 않고 끝냅니다")
         return 0
@@ -733,9 +792,13 @@ def main(argv=None):
         for k in total:
             total[k] += usage[k]
 
+        # 재시도 간격(RETRY_SCHEDULE_DAYS)이 시도 횟수를 보고 판단하므로, unknown
+        # 으로 남길 때마다 몇 번째 시도였는지 같이 적어 둔다.
+        attempts = next_attempt_number(verdicts, key)
+
         if not result or result.get("status") not in ("yes", "no", "unknown"):
             reason = "모델 응답을 해석하지 못함"
-            verdicts[key] = {"status": "unknown", "checkedAt": today, "reason": reason}
+            verdicts[key] = {"status": "unknown", "checkedAt": today, "reason": reason, "attempts": attempts}
             tally["unknown"] += 1
             print(f"    [unknown] {reason}")
             continue
@@ -743,7 +806,7 @@ def main(argv=None):
         status = result["status"]
         if status == "unknown":
             reason = (result.get("reason") or "근거를 찾지 못함").strip()[:200]
-            verdicts[key] = {"status": "unknown", "checkedAt": today, "reason": reason}
+            verdicts[key] = {"status": "unknown", "checkedAt": today, "reason": reason, "attempts": attempts}
             tally["unknown"] += 1
             print(f"    [unknown] {reason}")
             continue
@@ -756,7 +819,7 @@ def main(argv=None):
             # 판정을 지우고 unknown 으로 내린다. 모델이 yes 라고 했어도,
             # 파이썬이 눈으로 확인하지 못한 판정은 기록하지 않는다.
             reason = f"'{status}' 로 답했으나 근거 부족 — {why}"
-            verdicts[key] = {"status": "unknown", "checkedAt": today, "reason": reason}
+            verdicts[key] = {"status": "unknown", "checkedAt": today, "reason": reason, "attempts": attempts}
             tally["unknown"] += 1
             demoted += 1
             print(f"    [강등→unknown] {reason}")
