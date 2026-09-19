@@ -8,7 +8,9 @@
 #   TMDB_READ_TOKEN   TMDB v4 read access token
 #   KOBIS_API_KEY     영화진흥위원회 오픈API 키 (일별 박스오피스)
 #
-# 쿠키 설명 한국어 번역 (선택) — 아래 둘 중 하나. 없으면 영어 원문을 유지한다.
+# Anthropic 인증 (선택) — 아래 둘 중 하나. 두 가지 기능이 여기에 달려 있다:
+#   1) 쿠키 설명 한국어 번역 (없으면 영어 원문 유지)
+#   2) 미확인 작품 쿠키 자동 조사 (tools/research.py, 없으면 통째로 건너뜀)
 #   A. ID 페더레이션 (권장, 고정 키 없음):
 #      ANTHROPIC_FEDERATION_RULE_ID / ANTHROPIC_ORGANIZATION_ID /
 #      ANTHROPIC_SERVICE_ACCOUNT_ID  (+ 규칙이 여러 워크스페이스를 덮으면 ANTHROPIC_WORKSPACE_ID)
@@ -44,6 +46,7 @@ on:
 permissions:
   contents: write
   id-token: write   # GitHub OIDC 토큰 발급 — ID 페더레이션에 필요
+  issues: write     # 자동 판정 검토 이슈 (아래 '자동 판정 검토 이슈' 단계)
 
 concurrency:
   group: refresh
@@ -128,9 +131,55 @@ jobs:
       - name: 데이터 갱신
         run: |
           mkdir -p ios/data   # fetch_movies.py 가 앱 번들용 사본을 여기 쓴다
-          python3 tools/fetch_movies.py
+          # 로그를 파일로도 남긴다 — 아래 '실행 요약' 이 이걸 읽어 커버리지·실패를 뽑는다.
+          python3 tools/fetch_movies.py 2>&1 | tee /tmp/refresh.log
           # 앱이 읽는 안정 경로 (COOKIE_FEED_URL = .../main/cookies.json)
           cp ios/data/cookies.json cookies.json
+
+      # 오늘 피드의 '미확인' 작품을 모델이 웹에서 조사한다. 인용문을 원문과
+      # 대조해 통과한 것만 기록하므로(tools/research.py 참고), 실패하는 쪽은
+      # 늘 '판정 안 함' 이다. 그래도 조사가 통째로 터졌다고 피드 발행까지
+      # 막으면 안 되므로 continue-on-error 로 둔다.
+      #
+      # 색인 동기화와 같은 이유로 **아침 첫 예약(과 수동 실행)에서만** 돈다.
+      # 하루 일곱 번 도는 건 KOBIS 집계를 놓치지 않으려는 것이지 조사 때문이
+      # 아니다. RESEARCH_BUDGET=6 은 '하루 6편'이라는 뜻인데, 회차마다 돌면
+      # 그날의 미확인이 바닥날 때까지 모델을 계속 부른다 — 비용도 검색 대상
+      # 사이트 부담도 이유 없이 몇 배가 된다. 쿠키 유무는 급한 정보가 아니다.
+      - name: 쿠키 자동 조사
+        if: env.TRANSLATE == '1' && (github.event.schedule == '17 23 * * *' || github.event_name == 'workflow_dispatch')
+        continue-on-error: true
+        run: |
+          python3 tools/research.py 2>&1 | tee /tmp/research.log
+          # 판정이 새로 생기면 cookies.json 을 제자리에서 고치므로 사본도 다시 뜬다.
+          cp ios/data/cookies.json cookies.json
+
+      - name: 실행 요약
+        if: always()
+        continue-on-error: true
+        run: python3 tools/summary.py --log /tmp/refresh.log --research-log /tmp/research.log
+
+      # 사람 검토 루프. 자동 판정이 새로 생긴 회차에만 돈다. 이슈를 매번 새로
+      # 열면 알림이 쌓여 아무도 안 보게 되므로, 열려 있는 이슈가 있으면 거기에
+      # 댓글로 붙인다. 사용자가 훑어보고 틀린 게 있으면 data.overrides.json 으로
+      # 고친다 — override 가 항상 이기므로 그것으로 끝이다.
+      - name: 자동 판정 검토 이슈
+        if: env.TRANSLATE == '1'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          [ -s /tmp/verdict-review.md ] || { echo "새 자동 판정 없음 — 이슈 생략"; exit 0; }
+          NUM=$(gh issue list --label auto-verdict --state open --limit 1 --json number --jq '.[0].number // empty')
+          if [ -n "$NUM" ]; then
+            { echo "## $(date +%F) 회차"; echo; cat /tmp/verdict-review.md; } \
+              | gh issue comment "$NUM" --body-file -
+            echo "이슈 #$NUM 에 댓글로 붙였습니다"
+          else
+            gh label create auto-verdict --color BFD4F2 --description "자동 조사 판정 검토" 2>/dev/null || true
+            gh issue create --title "자동 판정 검토" --label auto-verdict --body-file /tmp/verdict-review.md
+          fi
 
       - name: 커밋
         run: |

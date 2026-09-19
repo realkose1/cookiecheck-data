@@ -11,7 +11,7 @@ now_playing 이 빠뜨린 KOBIS 박스오피스 TOP 10 작품은 제목으로 /s
 
 쿠키(쿠키 영상) 정보는 TMDB에 없어서 tools/sources.py 가 따로 채운다.
 우선순위: data.overrides.json > aftercredits.com > 나무위키 색인(data/ko-index.json)
-        > 라이브 나무위키 > TMDB 키워드 > 미확인.
+        > 자동 조사(data/verdicts-auto.json) > 라이브 나무위키 > TMDB 키워드 > 미확인.
 
 나무위키는 색인을 먼저 본다. GitHub Actions 러너 IP 가 나무위키에 막혀 있어서
 라이브 조회는 러너에서 늘 실패하기 때문이다 — 색인은 나무위키가 닿는 곳(맥)에서
@@ -213,8 +213,41 @@ def stale_backfill(prev_all, movies, today):
     return added
 
 
-def enrich(movie, ko_index=None):
-    """쿠키 정보를 채운다. aftercredits.com → 나무위키 색인 → 라이브 나무위키 → TMDB 키워드 순.
+def load_auto_verdicts(path):
+    """tools/research.py 가 남긴 자동 조사 판정. 없으면 빈 dict.
+
+    main() 에서 **한 번만** 읽는다 (ko_index 와 같은 이유 — enrich() 는 스레드
+    풀에서 돌아 파일을 여러 번 파싱하게 된다).
+    """
+    if not path.exists():
+        return {}
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return {}
+
+
+def auto_verdict_lookup(tmdb_id, verdicts):
+    """자동 조사 판정에서 쿠키 정보를 꺼낸다. 판정이 없으면 None.
+
+    'unknown' 기록은 **무시한다.** 그건 '조사했지만 근거를 못 찾았다'는 재조사
+    일정표일 뿐 판정이 아니다 — 여기서 쓰면 뒤의 나무위키·TMDB 키워드 조회를
+    막아버린다.
+    """
+    rec = (verdicts or {}).get(str(tmdb_id))
+    if not rec or rec.get("status") not in ("yes", "no"):
+        return None
+    return {
+        "status": rec["status"],
+        "cookies": rec.get("cookies", []),
+        "tip": rec.get("tip", ""),
+        "source": rec.get("source", ""),
+        "sourceUrl": rec.get("sourceUrl"),
+    }
+
+
+def enrich(movie, ko_index=None, auto_verdicts=None):
+    """쿠키 정보를 채운다. aftercredits.com → 나무위키 색인 → 자동 조사 → 라이브 나무위키 → TMDB 키워드 순.
 
     어느 쪽도 답하지 않으면 'unknown' 그대로 둔다 — '없음'으로 단정하지 않는다.
 
@@ -240,6 +273,15 @@ def enrich(movie, ko_index=None):
         hit = sources.ko_index_lookup(movie["tmdbId"], ko_index)
         if hit is not None:
             movie["_fromKoIndex"] = True
+
+    # 자동 조사 판정(tools/research.py). 라이브 나무위키보다 **앞**에 둔다 —
+    # 러너에서 라이브 조회는 어차피 차단돼 실패하고, 자동 조사는 인용문을 원문과
+    # 대조해 통과한 것만 남은 기록이라 이미 근거가 확인돼 있다. 파일 한 번 읽는
+    # 값이니 남의 서버를 두드리기 전에 먼저 본다.
+    if hit is None:
+        hit = auto_verdict_lookup(movie["tmdbId"], auto_verdicts)
+        if hit is not None:
+            movie["_fromAuto"] = True
 
     if hit is None:
         kr_year = int(movie["releaseDate"][:4]) if movie["releaseDate"] else year
@@ -326,15 +368,20 @@ def main():
     # 나무위키 색인은 여기서 **한 번만** 읽는다. enrich() 안에서 읽으면 스레드마다
     # 같은 파일(수십만 자)을 다시 파싱하게 된다.
     ko_index = sources.load_ko_index(ROOT / "data" / "ko-index.json")
+    auto_verdicts = load_auto_verdicts(ROOT / "data" / "verdicts-auto.json")
 
     # 쿠키 정보 조회. aftercredits 는 남의 서버라 동시 요청을 3개로 묶어 둔다.
-    print(f"쿠키 정보 조회 중… ({len(movies)}편, 나무위키 색인 {len(ko_index['entries'])}편)")
+    print(
+        f"쿠키 정보 조회 중… ({len(movies)}편, 나무위키 색인 {len(ko_index['entries'])}편,"
+        f" 자동 조사 판정 {sum(1 for v in auto_verdicts.values() if v.get('status') in ('yes', 'no'))}편)"
+    )
     with ThreadPoolExecutor(3) as pool:
-        movies = list(pool.map(lambda m: enrich(m, ko_index), movies))
+        movies = list(pool.map(lambda m: enrich(m, ko_index, auto_verdicts), movies))
 
-    # 색인에서 채운 작품 (아래 요약 로그에 '(색인)' 으로 표시). 언더스코어 키는
-    # 출력 직전에 지워지므로 여기서 미리 걷어 둔다.
+    # 색인/자동 조사에서 채운 작품 (아래 요약 로그에 '(색인)' '(자동)' 으로 표시).
+    # 언더스코어 키는 출력 직전에 지워지므로 여기서 미리 걷어 둔다.
     ko_filled = {m["tmdbId"] for m in movies if m.pop("_fromKoIndex", False)}
+    auto_filled = {m["tmdbId"] for m in movies if m.pop("_fromAuto", False)}
 
     # 쿠키 설명 한국어 번역 — 항상 수행한다. 캐시에 있으면 API 없이 즉시,
     # 새 문장은 Claude API(자격증명 있을 때)로, 어느 쪽도 안 되면 영어 원문 유지.
@@ -377,7 +424,7 @@ def main():
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
    작품 정보: TMDB /movie/now_playing?region=KR (조회일 {today})
    관객수: KOBIS 일별 박스오피스 (기준일 {bo_date or '없음'})
-   쿠키 정보: aftercredits.com + 나무위키 + TMDB 키워드 + data.overrides.json */
+   쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
 const DATA_UPDATED = '{today}';
 const BOXOFFICE_DATE = {json.dumps(bo_date)};
@@ -421,6 +468,12 @@ const INITIAL_VOTES = {votes};
     print(f"  나무위키 색인에서 채움 {len(ko_used)}편"
           + (f": {', '.join(m['title'][:18] for m in ko_used)}" if ko_used else ""))
 
+    # 자동 조사(tools/research.py)가 채운 작품. 0편이 며칠씩 이어지면 조사 단계가
+    # 안 돌고 있거나 근거를 계속 못 찾고 있다는 뜻이다.
+    auto_used = [m for m in movies if m["tmdbId"] in auto_filled]
+    print(f"  자동 조사에서 채움 {len(auto_used)}편"
+          + (f": {', '.join(m['title'][:18] for m in auto_used)}" if auto_used else ""))
+
     # aftercredits 조회가 재시도까지 실패한 작품. 조용히 실패하면 '없음'인지
     # '못 읽었음'인지 구분이 안 돼 판정이 통째로 빈다 — 반드시 눈에 띄어야 한다.
     ac_failures = getattr(sources, "AC_FAILURES", [])
@@ -430,7 +483,11 @@ const INITIAL_VOTES = {votes};
     for m in movies:
         if m["status"] != "unknown":
             where = ", ".join(c["pos"] for c in m["cookies"]) or "-"
-            src = m["source"] + (" (색인)" if m["tmdbId"] in ko_filled and m["source"] == "나무위키" else "")
+            src = m["source"]
+            if m["tmdbId"] in ko_filled and m["source"] == "나무위키":
+                src += " (색인)"
+            elif m["tmdbId"] in auto_filled:
+                src += " (자동)"
             print(f"    [{m['status']:<7}] {m['title'][:24]:<26} {where:<24} ← {src}")
 
 
