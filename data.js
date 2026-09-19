@@ -242,11 +242,12 @@ const MOVIES = [
     "releaseDate": "2026-09-09",
     "audience": null,
     "boRank": null,
-    "status": "unknown",
+    "status": "no",
     "creditsLen": null,
     "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "topstarnews.net (자동 조사)",
+    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16187853"
   },
   {
     "id": "tmdb-42360",
@@ -258,11 +259,23 @@ const MOVIES = [
     "releaseDate": "2026-09-09",
     "audience": null,
     "boRank": null,
-    "status": "unknown",
+    "status": "yes",
     "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
+    "cookies": [
+      {
+        "pos": "크레딧 중간",
+        "len": "",
+        "desc": "엔딩 크레딧이 흐르는 동안 셋쇼마루, 자켄, 린이 돌아오지 않는 숲을 찾아와 부서진 세월의 나무 잔해를 바라본다. 사혼충이 키쿄를 회수하고, 카에데와 묘가, 싯포와 사츠키 등 등장인물들의 후일담 장면이 이어진다."
+      },
+      {
+        "pos": "크레딧 종료 후",
+        "len": "",
+        "desc": "크레딧이 모두 끝난 뒤, 이누야샤와 카고메가 현대 도쿄의 신목 양쪽에 각각 앉아 나무를 통해 마음으로 대화를 나눈다. 카고메가 모두에게 도시락을 더 만들어 주고 싶다고 말한다."
+      }
+    ],
+    "tip": "",
+    "source": "gukjenews.com (자동 조사)",
+    "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3696548"
   },
   {
     "id": "badland-rising",
