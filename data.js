@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-21)
-   관객수: KOBIS 일별 박스오피스 (기준일 20260920)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-22)
+   관객수: KOBIS 일별 박스오피스 (기준일 20260921)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-09-21';
-const BOXOFFICE_DATE = "20260920";
+const DATA_UPDATED = '2026-09-22';
+const BOXOFFICE_DATE = "20260921";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 11217623,
+    "audience": 11250602,
     "boRank": 2,
     "status": "no",
     "creditsLen": null,
@@ -33,8 +33,8 @@ const MOVIES = [
     "meta2": "145분",
     "posterPath": "/8mLepBa5l591xFidRpn65xV7hb4.jpg",
     "releaseDate": "2026-07-29",
-    "audience": 8990600,
-    "boRank": 5,
+    "audience": 8994213,
+    "boRank": 6,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -61,7 +61,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 701709,
+    "audience": 721274,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -78,7 +78,7 @@ const MOVIES = [
     "meta2": "133분",
     "posterPath": "/kRHjgsICPISgEClloeARkPHP96M.jpg",
     "releaseDate": "2026-09-16",
-    "audience": 403895,
+    "audience": 437735,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -101,8 +101,8 @@ const MOVIES = [
     "meta2": "97분",
     "posterPath": "/zhvpSzYKUMdAfId2VSU1qLFeW5x.jpg",
     "releaseDate": "2007-06-14",
-    "audience": 132656,
-    "boRank": 7,
+    "audience": 134297,
+    "boRank": 8,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -117,7 +117,7 @@ const MOVIES = [
     "meta2": "94분",
     "posterPath": "/fQX4fRsagskLvCXnvPfdvh62QTG.jpg",
     "releaseDate": "2026-09-17",
-    "audience": 103654,
+    "audience": 114678,
     "boRank": 4,
     "status": "no",
     "creditsLen": null,
@@ -127,6 +127,29 @@ const MOVIES = [
     "sourceUrl": "https://www.slashfilm.com/2260289/resident-evil-2026-movie-post-credits-scene-guide/"
   },
   {
+    "id": "tmdb-1408553",
+    "tmdbId": 1408553,
+    "title": "아이유 콘서트 : 더 위닝",
+    "meta": "음악 · 다큐멘터리",
+    "meta2": "124분",
+    "posterPath": "/ld6Pp824MMzJ7vzCdowvTRtVRTN.jpg",
+    "releaseDate": "2025-01-24",
+    "audience": 86404,
+    "boRank": 10,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "pos": "크레딧 종료 후",
+        "len": "",
+        "desc": "엔딩 크레딧이 끝난 뒤 〈여름밤의 꿈〉 무대가 이어집니다. TV 방송판에서는 이 무대가 크레딧 뒤가 아니라 공연 중간으로 옮겨졌습니다."
+      }
+    ],
+    "tip": "",
+    "source": "나무위키",
+    "sourceUrl": "https://namu.wiki/w/아이유 콘서트: 더 위닝(TV 프로그램)"
+  },
+  {
     "id": "the-drama",
     "tmdbId": 1325734,
     "title": "더 드라마",
@@ -134,7 +157,7 @@ const MOVIES = [
     "meta2": "107분",
     "posterPath": "/9MKVekk642o1IXug6VSerPqIrZc.jpg",
     "releaseDate": "2026-09-09",
-    "audience": 80094,
+    "audience": 81527,
     "boRank": 9,
     "status": "no",
     "creditsLen": null,
@@ -144,38 +167,15 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/04/drama-the-2026/"
   },
   {
-    "id": "tmdb-1586876",
-    "tmdbId": 1586876,
-    "title": "극장판 치이카와: 인어 섬의 비밀",
-    "meta": "애니메이션 · 가족 · 모험",
-    "meta2": "99분",
-    "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
-    "releaseDate": "2026-09-30",
-    "audience": 21203,
-    "boRank": 6,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "pos": "위치 미확인",
-        "len": "",
-        "desc": "엔딩 후 쿠키 영상이 있으며 그게 진짜 결말이므로 스태프롤이 끝나기 전에 영화관을 나가지 않는 것이 좋다."
-      }
-    ],
-    "tip": "",
-    "source": "나무위키",
-    "sourceUrl": "https://namu.wiki/w/%EA%B7%B9%EC%9E%A5%ED%8C%90%20%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80%3A%20%EC%9D%B8%EC%96%B4%20%EC%84%AC%EC%9D%98%20%EB%B9%84%EB%B0%80"
-  },
-  {
-    "id": "tmdb-1394740",
-    "tmdbId": 1394740,
-    "title": "타짜: 벨제붑의 노래",
-    "meta": "범죄 · 드라마",
-    "meta2": "130분",
-    "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
+    "id": "tmdb-1418428",
+    "tmdbId": 1418428,
+    "title": "암살자(들)",
+    "meta": "드라마 · 범죄 · 스릴러",
+    "meta2": "131분",
+    "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 19183,
-    "boRank": 10,
+    "audience": 23879,
+    "boRank": 5,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -183,21 +183,36 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "tmdb-97787",
-    "tmdbId": 97787,
-    "title": "디지몬 어드벤처: 운명적 만남",
-    "meta": "애니메이션 · 모험 · 액션",
-    "meta2": "20분",
-    "posterPath": "/p0SmmqmDvgpTg75hc0wPxTdsAlS.jpg",
-    "releaseDate": "2026-09-16",
-    "audience": 17764,
-    "boRank": 8,
-    "status": "no",
+    "id": "tmdb-1483525",
+    "tmdbId": 1483525,
+    "title": "가능한 사랑",
+    "meta": "드라마",
+    "meta2": "165분",
+    "posterPath": "/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
+    "releaseDate": "2026-09-23",
+    "audience": 2649,
+    "boRank": 7,
+    "status": "unknown",
     "creditsLen": null,
     "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "gukjenews.com (자동 조사)",
-    "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3700206"
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "dead-shot",
+    "tmdbId": 507250,
+    "title": "데드 샷",
+    "meta": "액션 · 스릴러",
+    "meta2": "92분",
+    "posterPath": "/4K98Uxar2JwQarF7uijSUcHKyhW.jpg",
+    "releaseDate": "2026-09-22",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   },
   {
     "id": "tmdb-650524",
@@ -221,6 +236,23 @@ const MOVIES = [
     "tip": "",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/01/back-to-the-past-2025/"
+  },
+  {
+    "id": "tmdb-97787",
+    "tmdbId": 97787,
+    "title": "디지몬 어드벤처: 운명적 만남",
+    "meta": "애니메이션 · 모험 · 액션",
+    "meta2": "20분",
+    "posterPath": "/p0SmmqmDvgpTg75hc0wPxTdsAlS.jpg",
+    "releaseDate": "2026-09-16",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "gukjenews.com (자동 조사)",
+    "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3700206"
   },
   {
     "id": "tmdb-75571",
@@ -383,29 +415,6 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/06/power-ballad-2026/"
-  },
-  {
-    "id": "papa-zola-the-movie",
-    "tmdbId": 1274214,
-    "title": "파파조라 더 무비",
-    "meta": "애니메이션 · 액션 · 모험",
-    "meta2": "107분",
-    "posterPath": "/aMjKQ4kNLJJFiRHRcei7ZBsu5Ay.jpg",
-    "releaseDate": "2026-09-02",
-    "audience": null,
-    "boRank": null,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "pos": "크레딧 중간",
-        "len": "",
-        "desc": "크레딧 도중 차기작 〈BoBoiBoy Movie 3〉 티저가 나옵니다. 마지막 쿠키에는 시리즈 주인공 보보이보이가 등장합니다."
-      }
-    ],
-    "tip": "",
-    "source": "나무위키 · Malay Mail",
-    "sourceUrl": "https://namu.wiki/w/파파조라 더 무비"
   }
 ];
 
@@ -434,23 +443,31 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "tmdb-1408553": {
+    "up": 0,
+    "down": 0
+  },
   "the-drama": {
     "up": 0,
     "down": 0
   },
-  "tmdb-1586876": {
+  "tmdb-1418428": {
     "up": 0,
     "down": 0
   },
-  "tmdb-1394740": {
+  "tmdb-1483525": {
     "up": 0,
     "down": 0
   },
-  "tmdb-97787": {
+  "dead-shot": {
     "up": 0,
     "down": 0
   },
   "tmdb-650524": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-97787": {
     "up": 0,
     "down": 0
   },
@@ -487,10 +504,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "power-ballad": {
-    "up": 0,
-    "down": 0
-  },
-  "papa-zola-the-movie": {
     "up": 0,
     "down": 0
   }
