@@ -57,6 +57,12 @@
   "status": "yes",
   "tip": ""
  },
+ "507250": {
+  "attempts": 1,
+  "checkedAt": "2026-09-22",
+  "reason": "2023년 Guard 형제 연출작 'Dead Shot'에 대해 쿠키 영상 유무를 명시한 문장(있음/없음 어느 쪽도)을 확인하지 못했고, 검색 가능 횟수가 소진되어 추가 검증이 불가능했다.",
+  "status": "unknown"
+ },
  "75571": {
   "checkedAt": "2026-09-21",
   "cookies": [],
