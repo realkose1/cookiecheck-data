@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-22)
-   관객수: KOBIS 일별 박스오피스 (기준일 20260921)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-23)
+   관객수: KOBIS 일별 박스오피스 (기준일 20260922)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-09-22';
-const BOXOFFICE_DATE = "20260921";
+const DATA_UPDATED = '2026-09-23';
+const BOXOFFICE_DATE = "20260922";
 
 const MOVIES = [
   {
@@ -16,8 +16,8 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 11250537,
-    "boRank": 2,
+    "audience": 11286777,
+    "boRank": 1,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -33,8 +33,8 @@ const MOVIES = [
     "meta2": "145분",
     "posterPath": "/8mLepBa5l591xFidRpn65xV7hb4.jpg",
     "releaseDate": "2026-07-29",
-    "audience": 8994211,
-    "boRank": 6,
+    "audience": 8998512,
+    "boRank": 5,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -54,6 +54,29 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/07/spider-man-brand-new-day-2026/"
   },
   {
+    "id": "tmdb-1058424",
+    "tmdbId": 1058424,
+    "title": "호프",
+    "meta": "SF · 미스터리 · 액션",
+    "meta2": "157분",
+    "posterPath": "/ptqlN6mDIAqJjVA86J5eOoG82zc.jpg",
+    "releaseDate": "2026-07-15",
+    "audience": 4584113,
+    "boRank": 8,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "pos": "크레딧 중간",
+        "len": "",
+        "desc": "부상당한 성기가 지팡이를 목발 삼아 고속도로를 걸어 내려가는 모습이 나옵니다."
+      }
+    ],
+    "tip": "",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/09/hope-2026/"
+  },
+  {
     "id": "obsession",
     "tmdbId": 1339713,
     "title": "옵세션",
@@ -61,7 +84,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 721277,
+    "audience": 741452,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -78,8 +101,8 @@ const MOVIES = [
     "meta2": "133분",
     "posterPath": "/kRHjgsICPISgEClloeARkPHP96M.jpg",
     "releaseDate": "2026-09-16",
-    "audience": 437744,
-    "boRank": 1,
+    "audience": 471205,
+    "boRank": 2,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -101,8 +124,8 @@ const MOVIES = [
     "meta2": "97분",
     "posterPath": "/zhvpSzYKUMdAfId2VSU1qLFeW5x.jpg",
     "releaseDate": "2007-06-14",
-    "audience": 134296,
-    "boRank": 8,
+    "audience": 136226,
+    "boRank": 6,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -117,7 +140,7 @@ const MOVIES = [
     "meta2": "94분",
     "posterPath": "/fQX4fRsagskLvCXnvPfdvh62QTG.jpg",
     "releaseDate": "2026-09-17",
-    "audience": 114689,
+    "audience": 125798,
     "boRank": 4,
     "status": "no",
     "creditsLen": null,
@@ -134,8 +157,8 @@ const MOVIES = [
     "meta2": "124분",
     "posterPath": "/ld6Pp824MMzJ7vzCdowvTRtVRTN.jpg",
     "releaseDate": "2025-01-24",
-    "audience": 86404,
-    "boRank": 10,
+    "audience": 87389,
+    "boRank": 9,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -157,8 +180,8 @@ const MOVIES = [
     "meta2": "107분",
     "posterPath": "/9MKVekk642o1IXug6VSerPqIrZc.jpg",
     "releaseDate": "2026-09-09",
-    "audience": 81527,
-    "boRank": 9,
+    "audience": 83097,
+    "boRank": 7,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -167,15 +190,31 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/04/drama-the-2026/"
   },
   {
-    "id": "tmdb-1418428",
-    "tmdbId": 1418428,
-    "title": "암살자(들)",
-    "meta": "드라마 · 범죄 · 스릴러",
-    "meta2": "131분",
-    "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
+    "id": "tmdb-1708755",
+    "tmdbId": 1708755,
+    "title": "아버지의 집밥",
+    "meta": "드라마",
+    "meta2": "147분",
+    "posterPath": "/wapb8RjHDm8XmFarQIt4idgIUSi.jpg",
+    "releaseDate": "2026-09-09",
+    "audience": 12304,
+    "boRank": 10,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "forgotten-island",
+    "tmdbId": 1465063,
+    "title": "포가튼 아일랜드",
+    "meta": "애니메이션 · 모험 · 판타지",
+    "meta2": "109분",
+    "posterPath": "/bIQY9RLkqUhdwOBExK4k3ggxddF.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 23879,
-    "boRank": 5,
+    "audience": null,
+    "boRank": null,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -190,8 +229,57 @@ const MOVIES = [
     "meta2": "165분",
     "posterPath": "/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 2649,
-    "boRank": 7,
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "familiar-touch",
+    "tmdbId": 1265717,
+    "title": "친숙한 손길",
+    "meta": "드라마",
+    "meta2": "92분",
+    "posterPath": "/4tWJdFTBEg0hXHw41ZFCjj3Cvpo.jpg",
+    "releaseDate": "2026-09-23",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "late-fame",
+    "tmdbId": 1285895,
+    "title": "나의 사적인 예술가",
+    "meta": "드라마",
+    "meta2": "96분",
+    "posterPath": "/hv7zKr3cCdOFhNVcqWYj74Ij6KX.jpg",
+    "releaseDate": "2026-09-23",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/08/late-fame-2025/"
+  },
+  {
+    "id": "tmdb-1394740",
+    "tmdbId": 1394740,
+    "title": "타짜: 벨제붑의 노래",
+    "meta": "범죄 · 드라마",
+    "meta2": "130분",
+    "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
+    "releaseDate": "2026-09-23",
+    "audience": null,
+    "boRank": null,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -365,56 +453,6 @@ const MOVIES = [
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
-  },
-  {
-    "id": "ruffen-sj-ormen-som-ikke-kunne-s",
-    "tmdbId": 1512207,
-    "title": "리틀 드래곤:몬스터섬의 비밀",
-    "meta": "애니메이션 · 가족",
-    "meta2": "74분",
-    "posterPath": "/esGI8WI19wO0Hyvv2OFYUuvEPtx.jpg",
-    "releaseDate": "2026-09-03",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
-    "id": "in-the-grey",
-    "tmdbId": 1122573,
-    "title": "인 더 그레이",
-    "meta": "액션 · 스릴러",
-    "meta2": "97분",
-    "posterPath": "/wilN2jrZqClKcgONqyXQUnB4btD.jpg",
-    "releaseDate": "2026-09-02",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/05/in-the-grey-2026/"
-  },
-  {
-    "id": "power-ballad",
-    "tmdbId": 1284016,
-    "title": "싱 어게인",
-    "meta": "코미디 · 음악 · 드라마",
-    "meta2": "99분",
-    "posterPath": "/19BfIkDHgbgLcHVbi9rKx7KUCgi.jpg",
-    "releaseDate": "2026-09-02",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/06/power-ballad-2026/"
   }
 ];
 
@@ -424,6 +462,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "spider-man-brand-new-day": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-1058424": {
     "up": 0,
     "down": 0
   },
@@ -451,11 +493,27 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-1418428": {
+  "tmdb-1708755": {
+    "up": 0,
+    "down": 0
+  },
+  "forgotten-island": {
     "up": 0,
     "down": 0
   },
   "tmdb-1483525": {
+    "up": 0,
+    "down": 0
+  },
+  "familiar-touch": {
+    "up": 0,
+    "down": 0
+  },
+  "late-fame": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-1394740": {
     "up": 0,
     "down": 0
   },
@@ -492,18 +550,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "badland-rising": {
-    "up": 0,
-    "down": 0
-  },
-  "ruffen-sj-ormen-som-ikke-kunne-s": {
-    "up": 0,
-    "down": 0
-  },
-  "in-the-grey": {
-    "up": 0,
-    "down": 0
-  },
-  "power-ballad": {
     "up": 0,
     "down": 0
   }
