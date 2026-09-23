@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 11286777,
+    "audience": 11286770,
     "boRank": 1,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "145분",
     "posterPath": "/8mLepBa5l591xFidRpn65xV7hb4.jpg",
     "releaseDate": "2026-07-29",
-    "audience": 8998512,
+    "audience": 8998514,
     "boRank": 5,
     "status": "yes",
     "creditsLen": null,
@@ -61,7 +61,7 @@ const MOVIES = [
     "meta2": "157분",
     "posterPath": "/ptqlN6mDIAqJjVA86J5eOoG82zc.jpg",
     "releaseDate": "2026-07-15",
-    "audience": 4584113,
+    "audience": 4584115,
     "boRank": 8,
     "status": "yes",
     "creditsLen": null,
@@ -84,7 +84,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 741452,
+    "audience": 741466,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -101,7 +101,7 @@ const MOVIES = [
     "meta2": "133분",
     "posterPath": "/kRHjgsICPISgEClloeARkPHP96M.jpg",
     "releaseDate": "2026-09-16",
-    "audience": 471205,
+    "audience": 471218,
     "boRank": 2,
     "status": "yes",
     "creditsLen": null,
@@ -140,7 +140,7 @@ const MOVIES = [
     "meta2": "94분",
     "posterPath": "/fQX4fRsagskLvCXnvPfdvh62QTG.jpg",
     "releaseDate": "2026-09-17",
-    "audience": 125798,
+    "audience": 125802,
     "boRank": 4,
     "status": "no",
     "creditsLen": null,
@@ -238,22 +238,6 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "familiar-touch",
-    "tmdbId": 1265717,
-    "title": "친숙한 손길",
-    "meta": "드라마",
-    "meta2": "92분",
-    "posterPath": "/4tWJdFTBEg0hXHw41ZFCjj3Cvpo.jpg",
-    "releaseDate": "2026-09-23",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
     "id": "late-fame",
     "tmdbId": 1285895,
     "title": "나의 사적인 예술가",
@@ -277,6 +261,22 @@ const MOVIES = [
     "meta": "범죄 · 드라마",
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
+    "releaseDate": "2026-09-23",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "familiar-touch",
+    "tmdbId": 1265717,
+    "title": "친숙한 손길",
+    "meta": "드라마",
+    "meta2": "92분",
+    "posterPath": "/4tWJdFTBEg0hXHw41ZFCjj3Cvpo.jpg",
     "releaseDate": "2026-09-23",
     "audience": null,
     "boRank": null,
@@ -324,40 +324,6 @@ const MOVIES = [
     "tip": "",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/01/back-to-the-past-2025/"
-  },
-  {
-    "id": "tmdb-97787",
-    "tmdbId": 97787,
-    "title": "디지몬 어드벤처: 운명적 만남",
-    "meta": "애니메이션 · 모험 · 액션",
-    "meta2": "20분",
-    "posterPath": "/p0SmmqmDvgpTg75hc0wPxTdsAlS.jpg",
-    "releaseDate": "2026-09-16",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "gukjenews.com (자동 조사)",
-    "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3700206"
-  },
-  {
-    "id": "tmdb-75571",
-    "tmdbId": 75571,
-    "title": "디지몬 어드벤처: 우리들의 워 게임!",
-    "meta": "모험 · 애니메이션 · 액션",
-    "meta2": "41분",
-    "posterPath": "/jxrvPQjx2bg7xjyrq4gRGN1KhFG.jpg",
-    "releaseDate": "2026-09-16",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "gukjenews.com (자동 조사)",
-    "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3700206"
   },
   {
     "id": "deep-water",
@@ -453,6 +419,22 @@ const MOVIES = [
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
+  },
+  {
+    "id": "ruffen-sj-ormen-som-ikke-kunne-s",
+    "tmdbId": 1512207,
+    "title": "리틀 드래곤:몬스터섬의 비밀",
+    "meta": "애니메이션 · 가족",
+    "meta2": "74분",
+    "posterPath": "/esGI8WI19wO0Hyvv2OFYUuvEPtx.jpg",
+    "releaseDate": "2026-09-03",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   }
 ];
 
@@ -505,10 +487,6 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "familiar-touch": {
-    "up": 0,
-    "down": 0
-  },
   "late-fame": {
     "up": 0,
     "down": 0
@@ -517,19 +495,15 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "familiar-touch": {
+    "up": 0,
+    "down": 0
+  },
   "dead-shot": {
     "up": 0,
     "down": 0
   },
   "tmdb-650524": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-97787": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-75571": {
     "up": 0,
     "down": 0
   },
@@ -550,6 +524,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "badland-rising": {
+    "up": 0,
+    "down": 0
+  },
+  "ruffen-sj-ormen-som-ikke-kunne-s": {
     "up": 0,
     "down": 0
   }
