@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-23)
-   관객수: KOBIS 일별 박스오피스 (기준일 20260922)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-24)
+   관객수: KOBIS 일별 박스오피스 (기준일 20260923)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-09-23';
-const BOXOFFICE_DATE = "20260922";
+const DATA_UPDATED = '2026-09-24';
+const BOXOFFICE_DATE = "20260923";
 
 const MOVIES = [
   {
@@ -16,8 +16,8 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 11286770,
-    "boRank": 1,
+    "audience": 11327993,
+    "boRank": 3,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -33,8 +33,8 @@ const MOVIES = [
     "meta2": "145분",
     "posterPath": "/8mLepBa5l591xFidRpn65xV7hb4.jpg",
     "releaseDate": "2026-07-29",
-    "audience": 8998514,
-    "boRank": 5,
+    "audience": 9002748,
+    "boRank": 9,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -54,29 +54,6 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/07/spider-man-brand-new-day-2026/"
   },
   {
-    "id": "tmdb-1058424",
-    "tmdbId": 1058424,
-    "title": "호프",
-    "meta": "SF · 미스터리 · 액션",
-    "meta2": "157분",
-    "posterPath": "/ptqlN6mDIAqJjVA86J5eOoG82zc.jpg",
-    "releaseDate": "2026-07-15",
-    "audience": 4584115,
-    "boRank": 8,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "pos": "크레딧 중간",
-        "len": "",
-        "desc": "부상당한 성기가 지팡이를 목발 삼아 고속도로를 걸어 내려가는 모습이 나옵니다."
-      }
-    ],
-    "tip": "",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/09/hope-2026/"
-  },
-  {
     "id": "obsession",
     "tmdbId": 1339713,
     "title": "옵세션",
@@ -84,8 +61,8 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 741464,
-    "boRank": 3,
+    "audience": 759789,
+    "boRank": 7,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -101,8 +78,8 @@ const MOVIES = [
     "meta2": "133분",
     "posterPath": "/kRHjgsICPISgEClloeARkPHP96M.jpg",
     "releaseDate": "2026-09-16",
-    "audience": 471216,
-    "boRank": 2,
+    "audience": 494570,
+    "boRank": 4,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -117,15 +94,15 @@ const MOVIES = [
     "sourceUrl": "https://www.ggilbo.com/news/articleView.html?idxno=1181861"
   },
   {
-    "id": "tmdb-14069",
-    "tmdbId": 14069,
-    "title": "시간을 달리는 소녀",
-    "meta": "판타지 · 애니메이션 · 드라마",
-    "meta2": "97분",
-    "posterPath": "/zhvpSzYKUMdAfId2VSU1qLFeW5x.jpg",
-    "releaseDate": "2007-06-14",
-    "audience": 136226,
-    "boRank": 6,
+    "id": "tmdb-1418428",
+    "tmdbId": 1418428,
+    "title": "암살자(들)",
+    "meta": "드라마 · 범죄 · 스릴러",
+    "meta2": "131분",
+    "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
+    "releaseDate": "2026-09-23",
+    "audience": 158485,
+    "boRank": 1,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -140,8 +117,8 @@ const MOVIES = [
     "meta2": "94분",
     "posterPath": "/fQX4fRsagskLvCXnvPfdvh62QTG.jpg",
     "releaseDate": "2026-09-17",
-    "audience": 125800,
-    "boRank": 4,
+    "audience": 136622,
+    "boRank": 8,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -150,71 +127,15 @@ const MOVIES = [
     "sourceUrl": "https://www.slashfilm.com/2260289/resident-evil-2026-movie-post-credits-scene-guide/"
   },
   {
-    "id": "tmdb-1408553",
-    "tmdbId": 1408553,
-    "title": "아이유 콘서트 : 더 위닝",
-    "meta": "음악 · 다큐멘터리",
-    "meta2": "124분",
-    "posterPath": "/ld6Pp824MMzJ7vzCdowvTRtVRTN.jpg",
-    "releaseDate": "2025-01-24",
-    "audience": 87389,
-    "boRank": 9,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "pos": "크레딧 종료 후",
-        "len": "",
-        "desc": "엔딩 크레딧이 끝난 뒤 〈여름밤의 꿈〉 무대가 이어집니다. TV 방송판에서는 이 무대가 크레딧 뒤가 아니라 공연 중간으로 옮겨졌습니다."
-      }
-    ],
-    "tip": "",
-    "source": "나무위키",
-    "sourceUrl": "https://namu.wiki/w/아이유 콘서트: 더 위닝(TV 프로그램)"
-  },
-  {
-    "id": "the-drama",
-    "tmdbId": 1325734,
-    "title": "더 드라마",
-    "meta": "로맨스 · 코미디 · 드라마",
-    "meta2": "107분",
-    "posterPath": "/9MKVekk642o1IXug6VSerPqIrZc.jpg",
-    "releaseDate": "2026-09-09",
-    "audience": 83097,
-    "boRank": 7,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/04/drama-the-2026/"
-  },
-  {
-    "id": "tmdb-1708755",
-    "tmdbId": 1708755,
-    "title": "아버지의 집밥",
-    "meta": "드라마",
-    "meta2": "147분",
-    "posterPath": "/wapb8RjHDm8XmFarQIt4idgIUSi.jpg",
-    "releaseDate": "2026-09-09",
-    "audience": 12304,
-    "boRank": 10,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
-    "id": "forgotten-island",
-    "tmdbId": 1465063,
-    "title": "포가튼 아일랜드",
-    "meta": "애니메이션 · 모험 · 판타지",
-    "meta2": "109분",
-    "posterPath": "/bIQY9RLkqUhdwOBExK4k3ggxddF.jpg",
+    "id": "tmdb-1394740",
+    "tmdbId": 1394740,
+    "title": "타짜: 벨제붑의 노래",
+    "meta": "범죄 · 드라마",
+    "meta2": "130분",
+    "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": null,
-    "boRank": null,
+    "audience": 122384,
+    "boRank": 2,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -229,8 +150,47 @@ const MOVIES = [
     "meta2": "165분",
     "posterPath": "/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
     "releaseDate": "2026-09-23",
-    "audience": null,
-    "boRank": null,
+    "audience": 22158,
+    "boRank": 6,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "avengers-endgame",
+    "tmdbId": 299534,
+    "title": "어벤져스: 엔드게임",
+    "meta": "모험 · SF · 액션",
+    "meta2": "181분",
+    "posterPath": "/z7ilT5rNN9kDo8JZmgyhM6ej2xv.jpg",
+    "releaseDate": "2019-04-24",
+    "audience": 21504,
+    "boRank": 5,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "pos": "크레딧 종료 후",
+        "len": "",
+        "desc": "금속끼리 부딪히는 소리가 들립니다.\n개봉 2주 차부터는 영화 '스파이더맨: 파 프롬 홈'의 예고편이 나옵니다.\n\n\n2019년 6월 28일 재개봉판:\n\n스탠 리 추모 영상으로, 그의 카메오 출연에 대해 이야기하는 인터뷰가 포함됩니다. 마지막은 \"Stan We Love You 3000\"으로 끝납니다.\n공동 감독 앤서니 루소가 삭제 장면을 소개합니다. \"끝까지 남아주셔서 감사합니다, … 아마 눈치채셨겠지만 저희는 이 영화에 정말 많은 것을 담았습니다. 캐릭터도 많고, 액션도 많고, 감정도 많고, 그리고 재미도 많다고 생각합니다. 하지만 믿기 어려우시겠지만 찍어놓고도 잘라내야 했던 장면들이 있습니다. 압니다, 영화가 더 길어질 수도 있었죠.\"\n미완성 상태의 \"삭제 장면\"으로, 헐크가 위성 안테나를 이용해 불타는 건물에서 사람들을 구하고, 현장의 긴급 지원 인력에게 전화기를 건네받고는 \"스티브 누구?\"라고 묻습니다. 경찰관 역은 '다이 하드'의 레지널드 벨존슨의 카메오입니다.\n화면에 \"and one more thing…\"이라는 메시지가 뜹니다.\n차 한 대가 사막을 가로질러 멕시코 익스텐코로 향합니다. 마리아 힐과 닉 퓨리가 \"사이클론에 얼굴이 있었다\"는 사건을 조사하고, \"당신은 여기 끼어들지 않는 게 좋아\"라고 말하는 미스테리오가 등장합니다.\n마지막으로 화면에 메시지가 뜹니다: \"From All of Us at Marvel Studios / Thank You\""
+      }
+    ],
+    "tip": "",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2019/04/avengers-endgame-2019/"
+  },
+  {
+    "id": "forgotten-island",
+    "tmdbId": 1465063,
+    "title": "포가튼 아일랜드",
+    "meta": "애니메이션 · 모험 · 판타지",
+    "meta2": "109분",
+    "posterPath": "/bIQY9RLkqUhdwOBExK4k3ggxddF.jpg",
+    "releaseDate": "2026-09-23",
+    "audience": 18044,
+    "boRank": 10,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -253,22 +213,6 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/08/late-fame-2025/"
-  },
-  {
-    "id": "tmdb-1394740",
-    "tmdbId": 1394740,
-    "title": "타짜: 벨제붑의 노래",
-    "meta": "범죄 · 드라마",
-    "meta2": "130분",
-    "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
-    "releaseDate": "2026-09-23",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   },
   {
     "id": "familiar-touch",
@@ -360,6 +304,23 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/09/practical-magic-2-2026/"
   },
   {
+    "id": "the-drama",
+    "tmdbId": 1325734,
+    "title": "더 드라마",
+    "meta": "로맨스 · 코미디 · 드라마",
+    "meta2": "107분",
+    "posterPath": "/9MKVekk642o1IXug6VSerPqIrZc.jpg",
+    "releaseDate": "2026-09-09",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/04/drama-the-2026/"
+  },
+  {
     "id": "oasis-don-t-look-back-in-anger",
     "tmdbId": 1447853,
     "title": "오아시스: 돈 룩 백 인 앵거",
@@ -447,10 +408,6 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-1058424": {
-    "up": 0,
-    "down": 0
-  },
   "obsession": {
     "up": 0,
     "down": 0
@@ -459,7 +416,7 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-14069": {
+  "tmdb-1418428": {
     "up": 0,
     "down": 0
   },
@@ -467,19 +424,7 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-1408553": {
-    "up": 0,
-    "down": 0
-  },
-  "the-drama": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-1708755": {
-    "up": 0,
-    "down": 0
-  },
-  "forgotten-island": {
+  "tmdb-1394740": {
     "up": 0,
     "down": 0
   },
@@ -487,11 +432,15 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "late-fame": {
+  "avengers-endgame": {
     "up": 0,
     "down": 0
   },
-  "tmdb-1394740": {
+  "forgotten-island": {
+    "up": 0,
+    "down": 0
+  },
+  "late-fame": {
     "up": 0,
     "down": 0
   },
@@ -512,6 +461,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "practical-magic-2": {
+    "up": 0,
+    "down": 0
+  },
+  "the-drama": {
     "up": 0,
     "down": 0
   },
