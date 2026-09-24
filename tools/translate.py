@@ -18,7 +18,7 @@ import pathlib
 
 CACHE_PATH = pathlib.Path(__file__).resolve().parent / ".translation-cache.json"
 
-MODEL = "claude-opus-5"
+MODEL = "claude-sonnet-5"
 
 SYSTEM = """너는 영화 '쿠키 영상'(post-credits scene) 설명을 한국어로 옮기는 번역가다.
 

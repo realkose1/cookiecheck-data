@@ -45,7 +45,7 @@ VERDICTS_PATH = ROOT / "data" / "verdicts-auto.json"
 OVERRIDES_PATH = ROOT / "data.overrides.json"
 REVIEW_PATH = pathlib.Path("/tmp/verdict-review.md")
 
-MODEL = "claude-opus-5"  # translate.py 와 같은 모델을 쓴다
+MODEL = "claude-sonnet-5"  # translate.py 와 같은 모델을 쓴다
 
 # --- 예산과 재조사 주기 ------------------------------------------------------
 # 한 회차에 조사할 작품 수. 비용 상한이자 남의 서버(검색 대상 사이트)에 대한
@@ -80,6 +80,12 @@ GIVE_UP_AFTER_DAYS = 60  # 개봉 60일이 지나도록 자료가 없으면 앞�
 # 후기·블로그 뒤쪽 페이지뿐이다.
 MAX_SEARCHES = 5   # 작품 하나에 허용하는 웹 검색 횟수
 MAX_FETCHES = 3    # 작품 하나에 허용하는 페이지 열람 횟수
+# 페이지 하나에서 모델이 읽는 본문 상한. 한 편에 입력 18만 토큰($0.99, 검색 2회)이
+# 나온 실측이 있다 — 비용 대부분이 web_fetch 로 연 페이지 본문이다. 쿠키 언급은
+# 기사 앞부분이나 위키의 '쿠키 영상' 절에 있으니 이 정도면 충분하다. 너무 낮추면
+# 근거 문장이 잘려 unknown 이 늘어난다. (검증은 파이썬이 페이지를 따로 받으므로
+# 이 상한과 무관하다.)
+MAX_FETCH_TOKENS = 20000
 MAX_TOKENS = 8000
 MAX_PAUSE_RESUMES = 3  # 서버 도구 루프가 pause_turn 으로 끊길 때 이어 붙일 횟수
 
@@ -133,10 +139,12 @@ SITE_LABELS = {
 }
 
 # --- 비용 추정 (대략) --------------------------------------------------------
-# 로그에 "대략"이라고 찍는 이유: 캐시 적중·서버 도구 내부 토큰까지는 세지 않는다.
+# 로그에 "대략"이라고 찍는 이유: 서버 도구 내부 토큰까지는 세지 않는다.
 # 단가가 바뀌면 여기만 고치면 된다.
-PRICE_IN_PER_MTOK = 5.00     # claude-opus-5 입력 $/1M tokens
-PRICE_OUT_PER_MTOK = 25.00   # claude-opus-5 출력 $/1M tokens
+PRICE_IN_PER_MTOK = 2.00     # claude-sonnet-5 입력 $/1M tokens
+PRICE_OUT_PER_MTOK = 10.00   # claude-sonnet-5 출력 $/1M tokens
+CACHE_WRITE_MULT = 1.25      # 캐시 쓰기(5분 TTL)는 입력 단가의 1.25배
+CACHE_READ_MULT = 0.10       # 캐시 적중은 입력 단가의 0.1배
 PRICE_SEARCH_PER_1K = 10.00  # 웹 검색 $/1,000회 (web_fetch 는 현재 과금 없음)
 
 VALID_POS = ("크레딧 중간", "크레딧 종료 후", "위치 미확인")
@@ -471,28 +479,42 @@ def call_model(client, movie, ctx):
     global _tool_variant
     import anthropic
 
-    usage = {"in": 0, "out": 0, "searches": 0}
+    usage = {"in": 0, "out": 0, "cache_write": 0, "cache_read": 0, "searches": 0}
     variants = [_tool_variant] if _tool_variant else list(TOOL_VARIANTS)
 
     for search_type, fetch_type in variants:
         tools = [
             {"type": search_type, "name": "web_search", "max_uses": MAX_SEARCHES},
-            {"type": fetch_type, "name": "web_fetch", "max_uses": MAX_FETCHES},
+            {
+                "type": fetch_type,
+                "name": "web_fetch",
+                "max_uses": MAX_FETCHES,
+                "max_content_tokens": MAX_FETCH_TOKENS,
+            },
         ]
         messages = [{"role": "user", "content": build_prompt(movie, ctx)}]
         try:
             for _ in range(MAX_PAUSE_RESUMES + 1):
+                # 캐시 두 군데:
+                # - system 끝: 도구 정의 + 지시문은 모든 작품이 똑같으므로, 한 회차에
+                #   연달아 조사하는 두 번째 작품부터 캐시에서 읽는다. (SYSTEM 에
+                #   날짜 같은 가변 값을 넣으면 이 캐시가 매번 깨진다.)
+                # - 최상위 cache_control: 요청 끝을 자동으로 캐시한다. pause_turn 으로
+                #   이어 보낼 때 앞서 받은 검색 결과를 캐시 가격으로 다시 읽는다.
                 resp = client.messages.create(
                     model=MODEL,
                     max_tokens=MAX_TOKENS,
-                    system=SYSTEM,
+                    system=[{"type": "text", "text": SYSTEM, "cache_control": {"type": "ephemeral"}}],
                     messages=messages,
                     tools=tools,
+                    cache_control={"type": "ephemeral"},
                 )
                 u = getattr(resp, "usage", None)
                 if u:
                     usage["in"] += getattr(u, "input_tokens", 0) or 0
                     usage["out"] += getattr(u, "output_tokens", 0) or 0
+                    usage["cache_write"] += getattr(u, "cache_creation_input_tokens", 0) or 0
+                    usage["cache_read"] += getattr(u, "cache_read_input_tokens", 0) or 0
                     stu = getattr(u, "server_tool_use", None)
                     usage["searches"] += (getattr(stu, "web_search_requests", 0) or 0) if stu else 0
                 # 서버 도구 루프가 한도에 닿으면 pause_turn 으로 끊긴다. 응답을
@@ -781,7 +803,7 @@ def main(argv=None):
 
     tally = {"yes": 0, "no": 0, "unknown": 0}
     demoted = 0
-    total = {"in": 0, "out": 0, "searches": 0}
+    total = {"in": 0, "out": 0, "cache_write": 0, "cache_read": 0, "searches": 0}
     new_records = []
 
     for m in targets:
@@ -840,7 +862,8 @@ def main(argv=None):
     patched = patch_feed(verdicts, overrides)
 
     cost = (
-        total["in"] / 1_000_000 * PRICE_IN_PER_MTOK
+        (total["in"] + total["cache_write"] * CACHE_WRITE_MULT + total["cache_read"] * CACHE_READ_MULT)
+        / 1_000_000 * PRICE_IN_PER_MTOK
         + total["out"] / 1_000_000 * PRICE_OUT_PER_MTOK
         + total["searches"] / 1_000 * PRICE_SEARCH_PER_1K
     )
@@ -849,7 +872,8 @@ def main(argv=None):
         f"· 미확인 {tally['unknown']} · 검증 탈락 {demoted}"
     )
     print(
-        f"  토큰 입력 {total['in']:,} · 출력 {total['out']:,} · 웹 검색 {total['searches']}회"
+        f"  토큰 입력 {total['in']:,} (캐시 쓰기 {total['cache_write']:,} · 캐시 적중 {total['cache_read']:,})"
+        f" · 출력 {total['out']:,} · 웹 검색 {total['searches']}회"
         f" → 대략 ${cost:.2f}"
     )
     if patched:
