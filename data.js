@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-24)
-   관객수: KOBIS 일별 박스오피스 (기준일 20260923)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-25)
+   관객수: KOBIS 일별 박스오피스 (기준일 20260924)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-09-24';
-const BOXOFFICE_DATE = "20260923";
+const DATA_UPDATED = '2026-09-25';
+const BOXOFFICE_DATE = "20260924";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 11327978,
+    "audience": 11418527,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "145분",
     "posterPath": "/8mLepBa5l591xFidRpn65xV7hb4.jpg",
     "releaseDate": "2026-07-29",
-    "audience": 9002750,
+    "audience": 9010149,
     "boRank": 9,
     "status": "yes",
     "creditsLen": null,
@@ -61,7 +61,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 759831,
+    "audience": 781516,
     "boRank": 7,
     "status": "no",
     "creditsLen": null,
@@ -78,7 +78,7 @@ const MOVIES = [
     "meta2": "133분",
     "posterPath": "/kRHjgsICPISgEClloeARkPHP96M.jpg",
     "releaseDate": "2026-09-16",
-    "audience": 494589,
+    "audience": 549706,
     "boRank": 4,
     "status": "yes",
     "creditsLen": null,
@@ -101,7 +101,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 158588,
+    "audience": 447000,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -117,6 +117,22 @@ const MOVIES = [
     "sourceUrl": "https://www.wikitree.co.kr/articles/1161295"
   },
   {
+    "id": "tmdb-1394740",
+    "tmdbId": 1394740,
+    "title": "타짜: 벨제붑의 노래",
+    "meta": "범죄 · 드라마",
+    "meta2": "130분",
+    "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
+    "releaseDate": "2026-09-23",
+    "audience": 266462,
+    "boRank": 2,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
     "id": "resident-evil",
     "tmdbId": 1423191,
     "title": "레지던트 이블: 0번째 밤",
@@ -124,7 +140,7 @@ const MOVIES = [
     "meta2": "94분",
     "posterPath": "/fQX4fRsagskLvCXnvPfdvh62QTG.jpg",
     "releaseDate": "2026-09-17",
-    "audience": 136626,
+    "audience": 150463,
     "boRank": 8,
     "status": "no",
     "creditsLen": null,
@@ -134,38 +150,6 @@ const MOVIES = [
     "sourceUrl": "https://www.slashfilm.com/2260289/resident-evil-2026-movie-post-credits-scene-guide/"
   },
   {
-    "id": "tmdb-1394740",
-    "tmdbId": 1394740,
-    "title": "타짜: 벨제붑의 노래",
-    "meta": "범죄 · 드라마",
-    "meta2": "130분",
-    "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
-    "releaseDate": "2026-09-23",
-    "audience": 122549,
-    "boRank": 2,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
-    "id": "tmdb-1483525",
-    "tmdbId": 1483525,
-    "title": "가능한 사랑",
-    "meta": "드라마",
-    "meta2": "165분",
-    "posterPath": "/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
-    "releaseDate": "2026-09-23",
-    "audience": 22160,
-    "boRank": 6,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
     "id": "avengers-endgame",
     "tmdbId": 299534,
     "title": "어벤져스: 엔드게임",
@@ -173,7 +157,7 @@ const MOVIES = [
     "meta2": "181분",
     "posterPath": "/z7ilT5rNN9kDo8JZmgyhM6ej2xv.jpg",
     "releaseDate": "2019-04-24",
-    "audience": 21502,
+    "audience": 44668,
     "boRank": 5,
     "status": "yes",
     "creditsLen": null,
@@ -189,6 +173,22 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2019/04/avengers-endgame-2019/"
   },
   {
+    "id": "tmdb-1483525",
+    "tmdbId": 1483525,
+    "title": "가능한 사랑",
+    "meta": "드라마",
+    "meta2": "165분",
+    "posterPath": "/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
+    "releaseDate": "2026-09-23",
+    "audience": 43918,
+    "boRank": 6,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
     "id": "forgotten-island",
     "tmdbId": 1465063,
     "title": "포가튼 아일랜드",
@@ -196,8 +196,8 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/bIQY9RLkqUhdwOBExK4k3ggxddF.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 18047,
-    "boRank": 10,
+    "audience": null,
+    "boRank": null,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -427,19 +427,19 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "resident-evil": {
-    "up": 0,
-    "down": 0
-  },
   "tmdb-1394740": {
     "up": 0,
     "down": 0
   },
-  "tmdb-1483525": {
+  "resident-evil": {
     "up": 0,
     "down": 0
   },
   "avengers-endgame": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-1483525": {
     "up": 0,
     "down": 0
   },
