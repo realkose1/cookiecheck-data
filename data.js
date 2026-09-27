@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-26)
-   관객수: KOBIS 일별 박스오피스 (기준일 20260925)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-27)
+   관객수: KOBIS 일별 박스오피스 (기준일 20260926)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-09-26';
-const BOXOFFICE_DATE = "20260925";
+const DATA_UPDATED = '2026-09-27';
+const BOXOFFICE_DATE = "20260926";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 11549608,
+    "audience": 11691832,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "145분",
     "posterPath": "/8mLepBa5l591xFidRpn65xV7hb4.jpg",
     "releaseDate": "2026-07-29",
-    "audience": 9017912,
+    "audience": 9026392,
     "boRank": 9,
     "status": "yes",
     "creditsLen": null,
@@ -61,7 +61,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 873325,
+    "audience": 1305677,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -84,7 +84,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 802180,
+    "audience": 828346,
     "boRank": 6,
     "status": "no",
     "creditsLen": null,
@@ -101,7 +101,7 @@ const MOVIES = [
     "meta2": "133분",
     "posterPath": "/kRHjgsICPISgEClloeARkPHP96M.jpg",
     "releaseDate": "2026-09-16",
-    "audience": 627612,
+    "audience": 706267,
     "boRank": 4,
     "status": "yes",
     "creditsLen": null,
@@ -124,7 +124,7 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 448242,
+    "audience": 663137,
     "boRank": 2,
     "status": "no",
     "creditsLen": null,
@@ -141,7 +141,7 @@ const MOVIES = [
     "meta2": "94분",
     "posterPath": "/fQX4fRsagskLvCXnvPfdvh62QTG.jpg",
     "releaseDate": "2026-09-17",
-    "audience": 163141,
+    "audience": 177743,
     "boRank": 8,
     "status": "no",
     "creditsLen": null,
@@ -158,7 +158,7 @@ const MOVIES = [
     "meta2": "165분",
     "posterPath": "/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 65120,
+    "audience": 91672,
     "boRank": 5,
     "status": "unknown",
     "creditsLen": null,
@@ -174,7 +174,7 @@ const MOVIES = [
     "meta2": "181분",
     "posterPath": "/z7ilT5rNN9kDo8JZmgyhM6ej2xv.jpg",
     "releaseDate": "2019-04-24",
-    "audience": 63482,
+    "audience": 87897,
     "boRank": 7,
     "status": "yes",
     "creditsLen": null,
@@ -211,6 +211,22 @@ const MOVIES = [
     "source": ""
   },
   {
+    "id": "familiar-touch",
+    "tmdbId": 1265717,
+    "title": "친숙한 손길",
+    "meta": "드라마",
+    "meta2": "92분",
+    "posterPath": "/4tWJdFTBEg0hXHw41ZFCjj3Cvpo.jpg",
+    "releaseDate": "2026-09-23",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
     "id": "late-fame",
     "tmdbId": 1285895,
     "title": "나의 사적인 예술가",
@@ -226,22 +242,6 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/08/late-fame-2025/"
-  },
-  {
-    "id": "familiar-touch",
-    "tmdbId": 1265717,
-    "title": "친숙한 손길",
-    "meta": "드라마",
-    "meta2": "92분",
-    "posterPath": "/4tWJdFTBEg0hXHw41ZFCjj3Cvpo.jpg",
-    "releaseDate": "2026-09-23",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   },
   {
     "id": "dead-shot",
@@ -283,12 +283,12 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/01/back-to-the-past-2025/"
   },
   {
-    "id": "tmdb-75571",
-    "tmdbId": 75571,
-    "title": "디지몬 어드벤처: 우리들의 워 게임!",
-    "meta": "모험 · 애니메이션 · 액션",
-    "meta2": "41분",
-    "posterPath": "/jxrvPQjx2bg7xjyrq4gRGN1KhFG.jpg",
+    "id": "tmdb-97787",
+    "tmdbId": 97787,
+    "title": "디지몬 어드벤처: 운명적 만남",
+    "meta": "애니메이션 · 모험 · 액션",
+    "meta2": "20분",
+    "posterPath": "/p0SmmqmDvgpTg75hc0wPxTdsAlS.jpg",
     "releaseDate": "2026-09-16",
     "audience": null,
     "boRank": null,
@@ -368,13 +368,13 @@ const MOVIES = [
     "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16187853"
   },
   {
-    "id": "badland-rising",
-    "tmdbId": 1325614,
-    "title": "배드랜드 스나이퍼",
-    "meta": "액션 · 범죄",
-    "meta2": "97분",
-    "posterPath": "/97kdNvdoFdDGvN2N7tyQPC3vTo2.jpg",
-    "releaseDate": "2026-09-04",
+    "id": "tmdb-1364368",
+    "tmdbId": 1364368,
+    "title": "연옥: 살인마들의 자치구역",
+    "meta": "액션 · 스릴러 · 모험",
+    "meta2": "102분",
+    "posterPath": "/Aw2oCnLMoMiWA8r9LfdCK94JnaT.jpg",
+    "releaseDate": "2026-09-09",
     "audience": null,
     "boRank": null,
     "status": "unknown",
@@ -442,11 +442,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "late-fame": {
+  "familiar-touch": {
     "up": 0,
     "down": 0
   },
-  "familiar-touch": {
+  "late-fame": {
     "up": 0,
     "down": 0
   },
@@ -458,7 +458,7 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-75571": {
+  "tmdb-97787": {
     "up": 0,
     "down": 0
   },
@@ -478,7 +478,7 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "badland-rising": {
+  "tmdb-1364368": {
     "up": 0,
     "down": 0
   },

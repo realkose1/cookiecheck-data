@@ -11,6 +11,12 @@
   "reason": "Blair Moore 감독의 2026년작 'Badland Rising'에 대해 쿠키 영상 유무를 명시한 신뢰 가능한 출처(언론, aftercredits류, 독립된 후기 2건 이상)를 찾지 못함",
   "status": "unknown"
  },
+ "1364368": {
+  "attempts": 1,
+  "checkedAt": "2026-09-27",
+  "reason": "나무위키, 씨네21, TMDB, 키노라이츠, 공식 예고편 등에서 쿠키 영상(엔딩 크레딧 중간/이후 장면)의 유무를 명시한 문장을 찾지 못함",
+  "status": "unknown"
+ },
  "1394740": {
   "checkedAt": "2026-09-26",
   "cookies": [],
