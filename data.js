@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-27)
-   관객수: KOBIS 일별 박스오피스 (기준일 20260926)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-28)
+   관객수: KOBIS 일별 박스오피스 (기준일 20260927)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-09-27';
-const BOXOFFICE_DATE = "20260926";
+const DATA_UPDATED = '2026-09-28';
+const BOXOFFICE_DATE = "20260927";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 11691832,
+    "audience": 11783290,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "145분",
     "posterPath": "/8mLepBa5l591xFidRpn65xV7hb4.jpg",
     "releaseDate": "2026-07-29",
-    "audience": 9026392,
+    "audience": 9032428,
     "boRank": 9,
     "status": "yes",
     "creditsLen": null,
@@ -61,7 +61,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1305677,
+    "audience": 1566160,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -84,7 +84,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 828346,
+    "audience": 849144,
     "boRank": 6,
     "status": "no",
     "creditsLen": null,
@@ -94,6 +94,23 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/05/obsession-2025/"
   },
   {
+    "id": "tmdb-1394740",
+    "tmdbId": 1394740,
+    "title": "타짜: 벨제붑의 노래",
+    "meta": "범죄 · 드라마",
+    "meta2": "130분",
+    "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
+    "releaseDate": "2026-09-23",
+    "audience": 832953,
+    "boRank": 2,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "gukjenews.com (자동 조사)",
+    "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3705531"
+  },
+  {
     "id": "tmdb-607833",
     "tmdbId": 607833,
     "title": "인턴",
@@ -101,7 +118,7 @@ const MOVIES = [
     "meta2": "133분",
     "posterPath": "/kRHjgsICPISgEClloeARkPHP96M.jpg",
     "releaseDate": "2026-09-16",
-    "audience": 706263,
+    "audience": 756045,
     "boRank": 4,
     "status": "yes",
     "creditsLen": null,
@@ -117,23 +134,6 @@ const MOVIES = [
     "sourceUrl": "https://www.ggilbo.com/news/articleView.html?idxno=1181861"
   },
   {
-    "id": "tmdb-1394740",
-    "tmdbId": 1394740,
-    "title": "타짜: 벨제붑의 노래",
-    "meta": "범죄 · 드라마",
-    "meta2": "130분",
-    "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
-    "releaseDate": "2026-09-23",
-    "audience": 663131,
-    "boRank": 2,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "gukjenews.com (자동 조사)",
-    "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3705531"
-  },
-  {
     "id": "resident-evil",
     "tmdbId": 1423191,
     "title": "레지던트 이블: 0번째 밤",
@@ -141,7 +141,7 @@ const MOVIES = [
     "meta2": "94분",
     "posterPath": "/fQX4fRsagskLvCXnvPfdvh62QTG.jpg",
     "releaseDate": "2026-09-17",
-    "audience": 177743,
+    "audience": 186948,
     "boRank": 8,
     "status": "no",
     "creditsLen": null,
@@ -158,7 +158,7 @@ const MOVIES = [
     "meta2": "165분",
     "posterPath": "/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 91672,
+    "audience": 115936,
     "boRank": 5,
     "status": "unknown",
     "creditsLen": null,
@@ -174,7 +174,7 @@ const MOVIES = [
     "meta2": "181분",
     "posterPath": "/z7ilT5rNN9kDo8JZmgyhM6ej2xv.jpg",
     "releaseDate": "2019-04-24",
-    "audience": 87897,
+    "audience": 107954,
     "boRank": 7,
     "status": "yes",
     "creditsLen": null,
@@ -193,6 +193,29 @@ const MOVIES = [
     "tip": "",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2019/04/avengers-endgame-2019/"
+  },
+  {
+    "id": "tmdb-1586876",
+    "tmdbId": 1586876,
+    "title": "극장판 치이카와: 인어 섬의 비밀",
+    "meta": "애니메이션 · 가족 · 모험",
+    "meta2": "99분",
+    "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
+    "releaseDate": "2026-09-30",
+    "audience": 30726,
+    "boRank": 10,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "pos": "위치 미확인",
+        "len": "",
+        "desc": "엔딩 후 쿠키 영상이 있으며 그게 진짜 결말이므로 스태프롤이 끝나기 전에 영화관을 나가지 않는 것이 좋다."
+      }
+    ],
+    "tip": "",
+    "source": "나무위키",
+    "sourceUrl": "https://namu.wiki/w/%EA%B7%B9%EC%9E%A5%ED%8C%90%20%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80%3A%20%EC%9D%B8%EC%96%B4%20%EC%84%AC%EC%9D%98%20%EB%B9%84%EB%B0%80"
   },
   {
     "id": "forgotten-island",
@@ -418,11 +441,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-607833": {
+  "tmdb-1394740": {
     "up": 0,
     "down": 0
   },
-  "tmdb-1394740": {
+  "tmdb-607833": {
     "up": 0,
     "down": 0
   },
@@ -435,6 +458,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "avengers-endgame": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-1586876": {
     "up": 0,
     "down": 0
   },
