@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 11814649,
+    "audience": 11814652,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "145분",
     "posterPath": "/8mLepBa5l591xFidRpn65xV7hb4.jpg",
     "releaseDate": "2026-07-29",
-    "audience": 9034503,
+    "audience": 9034501,
     "boRank": 9,
     "status": "yes",
     "creditsLen": null,
@@ -61,7 +61,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1633608,
+    "audience": 1633621,
     "boRank": 2,
     "status": "yes",
     "creditsLen": null,
@@ -80,11 +80,11 @@ const MOVIES = [
     "id": "tmdb-1394740",
     "tmdbId": 1394740,
     "title": "타짜: 벨제붑의 노래",
-    "meta": "범죄 · 드라마",
+    "meta": "범죄 · 드라마 · 스릴러",
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 901916,
+    "audience": 901929,
     "boRank": 1,
     "status": "no",
     "creditsLen": null,
@@ -101,7 +101,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 859181,
+    "audience": 859183,
     "boRank": 6,
     "status": "no",
     "creditsLen": null,
@@ -118,7 +118,7 @@ const MOVIES = [
     "meta2": "133분",
     "posterPath": "/kRHjgsICPISgEClloeARkPHP96M.jpg",
     "releaseDate": "2026-09-16",
-    "audience": 768590,
+    "audience": 768591,
     "boRank": 5,
     "status": "yes",
     "creditsLen": null,
@@ -158,7 +158,7 @@ const MOVIES = [
     "meta2": "165분",
     "posterPath": "/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 130352,
+    "audience": 130353,
     "boRank": 4,
     "status": "unknown",
     "creditsLen": null,
@@ -227,6 +227,22 @@ const MOVIES = [
     "source": ""
   },
   {
+    "id": "familiar-touch",
+    "tmdbId": 1265717,
+    "title": "친숙한 손길",
+    "meta": "드라마",
+    "meta2": "92분",
+    "posterPath": "/4tWJdFTBEg0hXHw41ZFCjj3Cvpo.jpg",
+    "releaseDate": "2026-09-23",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
     "id": "late-fame",
     "tmdbId": 1285895,
     "title": "나의 사적인 예술가",
@@ -242,22 +258,6 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/08/late-fame-2025/"
-  },
-  {
-    "id": "familiar-touch",
-    "tmdbId": 1265717,
-    "title": "친숙한 손길",
-    "meta": "드라마",
-    "meta2": "92분",
-    "posterPath": "/4tWJdFTBEg0hXHw41ZFCjj3Cvpo.jpg",
-    "releaseDate": "2026-09-23",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   },
   {
     "id": "dead-shot",
@@ -409,22 +409,6 @@ const MOVIES = [
     "tip": "",
     "source": "gukjenews.com (자동 조사)",
     "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3696548"
-  },
-  {
-    "id": "ruffen-sj-ormen-som-ikke-kunne-s",
-    "tmdbId": 1512207,
-    "title": "리틀 드래곤:몬스터섬의 비밀",
-    "meta": "애니메이션 · 가족",
-    "meta2": "74분",
-    "posterPath": "/esGI8WI19wO0Hyvv2OFYUuvEPtx.jpg",
-    "releaseDate": "2026-09-03",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   }
 ];
 
@@ -473,11 +457,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "late-fame": {
+  "familiar-touch": {
     "up": 0,
     "down": 0
   },
-  "familiar-touch": {
+  "late-fame": {
     "up": 0,
     "down": 0
   },
@@ -510,10 +494,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "tmdb-42360": {
-    "up": 0,
-    "down": 0
-  },
-  "ruffen-sj-ormen-som-ikke-kunne-s": {
     "up": 0,
     "down": 0
   }
