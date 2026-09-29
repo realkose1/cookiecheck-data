@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-29)
-   관객수: KOBIS 일별 박스오피스 (기준일 20260928)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-09-30)
+   관객수: KOBIS 일별 박스오피스 (기준일 20260929)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-09-29';
-const BOXOFFICE_DATE = "20260928";
+const DATA_UPDATED = '2026-09-30';
+const BOXOFFICE_DATE = "20260929";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 11814648,
+    "audience": 11837349,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "145분",
     "posterPath": "/8mLepBa5l591xFidRpn65xV7hb4.jpg",
     "releaseDate": "2026-07-29",
-    "audience": 9034501,
+    "audience": 9036863,
     "boRank": 9,
     "status": "yes",
     "creditsLen": null,
@@ -61,8 +61,8 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1633608,
-    "boRank": 2,
+    "audience": 1695058,
+    "boRank": 1,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -84,8 +84,8 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 901924,
-    "boRank": 1,
+    "audience": 957988,
+    "boRank": 2,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -101,7 +101,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 859183,
+    "audience": 868472,
     "boRank": 6,
     "status": "no",
     "creditsLen": null,
@@ -118,7 +118,7 @@ const MOVIES = [
     "meta2": "133분",
     "posterPath": "/kRHjgsICPISgEClloeARkPHP96M.jpg",
     "releaseDate": "2026-09-16",
-    "audience": 768591,
+    "audience": 782609,
     "boRank": 5,
     "status": "yes",
     "creditsLen": null,
@@ -141,7 +141,7 @@ const MOVIES = [
     "meta2": "94분",
     "posterPath": "/fQX4fRsagskLvCXnvPfdvh62QTG.jpg",
     "releaseDate": "2026-09-17",
-    "audience": 191584,
+    "audience": 195642,
     "boRank": 8,
     "status": "no",
     "creditsLen": null,
@@ -158,7 +158,7 @@ const MOVIES = [
     "meta2": "165분",
     "posterPath": "/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 130353,
+    "audience": 144529,
     "boRank": 4,
     "status": "unknown",
     "creditsLen": null,
@@ -174,7 +174,7 @@ const MOVIES = [
     "meta2": "181분",
     "posterPath": "/z7ilT5rNN9kDo8JZmgyhM6ej2xv.jpg",
     "releaseDate": "2019-04-24",
-    "audience": 114206,
+    "audience": 119883,
     "boRank": 7,
     "status": "yes",
     "creditsLen": null,
@@ -195,6 +195,149 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2019/04/avengers-endgame-2019/"
   },
   {
+    "id": "tmdb-1708755",
+    "tmdbId": 1708755,
+    "title": "아버지의 집밥",
+    "meta": "드라마",
+    "meta2": "147분",
+    "posterPath": "/wapb8RjHDm8XmFarQIt4idgIUSi.jpg",
+    "releaseDate": "2026-09-09",
+    "audience": 14256,
+    "boRank": 10,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "above-below",
+    "tmdbId": 1514682,
+    "title": "카르텔 오션",
+    "meta": "스릴러 · 범죄",
+    "meta2": "96분",
+    "posterPath": "/zxTQqW2BYaBjLIvdfkXNnVfpfB3.jpg",
+    "releaseDate": "2026-09-30",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "tmdb-1305781",
+    "tmdbId": 1305781,
+    "title": "표인: 풍기대막",
+    "meta": "액션 · 모험",
+    "meta2": "127분",
+    "posterPath": "/yVEwJ0Badf4KYhhXNRNa8MIkgKP.jpg",
+    "releaseDate": "2026-09-30",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "tmdb-1586876",
+    "tmdbId": 1586876,
+    "title": "극장판 치이카와: 인어 섬의 비밀",
+    "meta": "애니메이션 · 가족 · 모험",
+    "meta2": "99분",
+    "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
+    "releaseDate": "2026-09-30",
+    "audience": null,
+    "boRank": null,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "pos": "위치 미확인",
+        "len": "",
+        "desc": "엔딩 후 쿠키 영상이 있으며 그게 진짜 결말이므로 스태프롤이 끝나기 전에 영화관을 나가지 않는 것이 좋다."
+      }
+    ],
+    "tip": "",
+    "source": "나무위키",
+    "sourceUrl": "https://namu.wiki/w/%EA%B7%B9%EC%9E%A5%ED%8C%90%20%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80%3A%20%EC%9D%B8%EC%96%B4%20%EC%84%AC%EC%9D%98%20%EB%B9%84%EB%B0%80"
+  },
+  {
+    "id": "alpha",
+    "tmdbId": 1284460,
+    "title": "알파",
+    "meta": "공포 · 드라마 · SF",
+    "meta2": "128분",
+    "posterPath": "/tUZaajRDFjitxzCQK87vlRDedox.jpg",
+    "releaseDate": "2026-09-30",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/03/alpha-2025/"
+  },
+  {
+    "id": "l-tranger",
+    "tmdbId": 1429348,
+    "title": "이방인",
+    "meta": "드라마 · 범죄",
+    "meta2": "123분",
+    "posterPath": "/2NoWaSTgKF7FcJ0Lr5NrvDDINOv.jpg",
+    "releaseDate": "2026-09-30",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "stitch-head",
+    "tmdbId": 1214130,
+    "title": "스티치 헤드: 비밀의 성 꼬마괴물",
+    "meta": "애니메이션 · 모험 · 가족",
+    "meta2": "92분",
+    "posterPath": "/dTcAE69YKmEatDPCl1BmOpFHbUb.jpg",
+    "releaseDate": "2026-09-30",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "linkin-park-unshatter",
+    "tmdbId": 1388805,
+    "title": "언섀터",
+    "meta": "음악 · 다큐멘터리",
+    "meta2": "108분",
+    "posterPath": "/l4YDO15cNt7wnWs9wX1vSzmW9bn.jpg",
+    "releaseDate": "2026-09-30",
+    "audience": null,
+    "boRank": null,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "pos": "크레딧 종료 후",
+        "len": "",
+        "desc": "크레딧이 끝난 뒤 장면이 있습니다."
+      }
+    ],
+    "tip": "",
+    "source": "TMDB 키워드",
+    "sourceUrl": "https://www.themoviedb.org/movie/1388805"
+  },
+  {
     "id": "tmdb-961214",
     "tmdbId": 961214,
     "title": "부활남: 더 레드",
@@ -202,8 +345,8 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/nLsyRK3SmtdIftozpCd8sGQMRGD.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 8395,
-    "boRank": 10,
+    "audience": null,
+    "boRank": null,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -297,118 +440,6 @@ const MOVIES = [
     "tip": "",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/01/back-to-the-past-2025/"
-  },
-  {
-    "id": "deep-water",
-    "tmdbId": 1127384,
-    "title": "딥 워터",
-    "meta": "공포 · 스릴러 · 모험",
-    "meta2": "107분",
-    "posterPath": "/zhJcsxOxqm9W6YQpquZw6TZDa06.jpg",
-    "releaseDate": "2026-09-09",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/04/deep-water-2026/"
-  },
-  {
-    "id": "practical-magic-2",
-    "tmdbId": 1302904,
-    "title": "프랙티컬 매직: 새로운 챕터",
-    "meta": "로맨스 · 판타지 · 코미디",
-    "meta2": "130분",
-    "posterPath": "/ogwQOLbCfncjvBhFb5l0OmQH8KC.jpg",
-    "releaseDate": "2026-09-09",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/09/practical-magic-2-2026/"
-  },
-  {
-    "id": "the-drama",
-    "tmdbId": 1325734,
-    "title": "더 드라마",
-    "meta": "로맨스 · 코미디 · 드라마",
-    "meta2": "107분",
-    "posterPath": "/9MKVekk642o1IXug6VSerPqIrZc.jpg",
-    "releaseDate": "2026-09-09",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/04/drama-the-2026/"
-  },
-  {
-    "id": "oasis-don-t-look-back-in-anger",
-    "tmdbId": 1447853,
-    "title": "오아시스: 돈 룩 백 인 앵거",
-    "meta": "다큐멘터리 · 음악",
-    "meta2": "123분",
-    "posterPath": "/pRMOGMnTKZO7P0J65UNORcXAU8G.jpg",
-    "releaseDate": "2026-09-09",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "topstarnews.net (자동 조사)",
-    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16187853"
-  },
-  {
-    "id": "tmdb-1364368",
-    "tmdbId": 1364368,
-    "title": "연옥: 살인마들의 자치구역",
-    "meta": "액션 · 스릴러 · 모험",
-    "meta2": "102분",
-    "posterPath": "/Aw2oCnLMoMiWA8r9LfdCK94JnaT.jpg",
-    "releaseDate": "2026-09-09",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
-    "id": "tmdb-42360",
-    "tmdbId": 42360,
-    "title": "이누야샤: 시대를 초월한 마음",
-    "meta": "액션 · 애니메이션 · 모험",
-    "meta2": "99분",
-    "posterPath": "/ixLZPFZuTSbl7nj9QPa46W84eWz.jpg",
-    "releaseDate": "2026-09-09",
-    "audience": null,
-    "boRank": null,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "desc": "엔딩 크레딧이 흐르는 동안 셋쇼마루, 자켄, 린이 돌아오지 않는 숲을 찾아와 부서진 세월의 나무 잔해를 바라본다. 사혼충이 키쿄를 회수하고, 카에데와 묘가, 싯포와 사츠키 등 등장인물들의 후일담 장면이 이어진다.",
-        "len": "",
-        "pos": "크레딧 중간"
-      },
-      {
-        "desc": "크레딧이 모두 끝난 뒤, 이누야샤와 카고메가 현대 도쿄의 신목 양쪽에 각각 앉아 나무를 통해 마음으로 대화를 나눈다. 카고메가 모두에게 도시락을 더 만들어 주고 싶다고 말한다.",
-        "len": "",
-        "pos": "크레딧 종료 후"
-      }
-    ],
-    "tip": "",
-    "source": "gukjenews.com (자동 조사)",
-    "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3696548"
   }
 ];
 
@@ -449,6 +480,38 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "tmdb-1708755": {
+    "up": 0,
+    "down": 0
+  },
+  "above-below": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-1305781": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-1586876": {
+    "up": 0,
+    "down": 0
+  },
+  "alpha": {
+    "up": 0,
+    "down": 0
+  },
+  "l-tranger": {
+    "up": 0,
+    "down": 0
+  },
+  "stitch-head": {
+    "up": 0,
+    "down": 0
+  },
+  "linkin-park-unshatter": {
+    "up": 0,
+    "down": 0
+  },
   "tmdb-961214": {
     "up": 0,
     "down": 0
@@ -470,30 +533,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "tmdb-650524": {
-    "up": 0,
-    "down": 0
-  },
-  "deep-water": {
-    "up": 0,
-    "down": 0
-  },
-  "practical-magic-2": {
-    "up": 0,
-    "down": 0
-  },
-  "the-drama": {
-    "up": 0,
-    "down": 0
-  },
-  "oasis-don-t-look-back-in-anger": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-1364368": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-42360": {
     "up": 0,
     "down": 0
   }
