@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 11837353,
+    "audience": 11837344,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "145분",
     "posterPath": "/8mLepBa5l591xFidRpn65xV7hb4.jpg",
     "releaseDate": "2026-07-29",
-    "audience": 9036863,
+    "audience": 9036860,
     "boRank": 9,
     "status": "yes",
     "creditsLen": null,
@@ -61,7 +61,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1695020,
+    "audience": 1695006,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -84,7 +84,7 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 958054,
+    "audience": 958053,
     "boRank": 2,
     "status": "no",
     "creditsLen": null,
@@ -101,7 +101,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 868484,
+    "audience": 868482,
     "boRank": 6,
     "status": "no",
     "creditsLen": null,
@@ -266,6 +266,29 @@ const MOVIES = [
     "sourceUrl": "https://namu.wiki/w/%EA%B7%B9%EC%9E%A5%ED%8C%90%20%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80%3A%20%EC%9D%B8%EC%96%B4%20%EC%84%AC%EC%9D%98%20%EB%B9%84%EB%B0%80"
   },
   {
+    "id": "linkin-park-unshatter",
+    "tmdbId": 1388805,
+    "title": "언섀터",
+    "meta": "음악 · 다큐멘터리",
+    "meta2": "108분",
+    "posterPath": "/l4YDO15cNt7wnWs9wX1vSzmW9bn.jpg",
+    "releaseDate": "2026-09-30",
+    "audience": null,
+    "boRank": null,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "pos": "크레딧 종료 후",
+        "len": "",
+        "desc": "크레딧이 끝난 뒤 장면이 있습니다."
+      }
+    ],
+    "tip": "",
+    "source": "TMDB 키워드",
+    "sourceUrl": "https://www.themoviedb.org/movie/1388805"
+  },
+  {
     "id": "alpha",
     "tmdbId": 1284460,
     "title": "알파",
@@ -297,29 +320,6 @@ const MOVIES = [
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
-  },
-  {
-    "id": "linkin-park-unshatter",
-    "tmdbId": 1388805,
-    "title": "언섀터",
-    "meta": "음악 · 다큐멘터리",
-    "meta2": "108분",
-    "posterPath": "/l4YDO15cNt7wnWs9wX1vSzmW9bn.jpg",
-    "releaseDate": "2026-09-30",
-    "audience": null,
-    "boRank": null,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "pos": "크레딧 종료 후",
-        "len": "",
-        "desc": "크레딧이 끝난 뒤 장면이 있습니다."
-      }
-    ],
-    "tip": "",
-    "source": "TMDB 키워드",
-    "sourceUrl": "https://www.themoviedb.org/movie/1388805"
   },
   {
     "id": "stitch-head",
@@ -496,15 +496,15 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "linkin-park-unshatter": {
+    "up": 0,
+    "down": 0
+  },
   "alpha": {
     "up": 0,
     "down": 0
   },
   "l-tranger": {
-    "up": 0,
-    "down": 0
-  },
-  "linkin-park-unshatter": {
     "up": 0,
     "down": 0
   },
