@@ -80,7 +80,7 @@ const MOVIES = [
     "id": "tmdb-1394740",
     "tmdbId": 1394740,
     "title": "타짜: 벨제붑의 노래",
-    "meta": "범죄 · 드라마 · 스릴러",
+    "meta": "범죄 · 드라마",
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
@@ -299,22 +299,6 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "stitch-head",
-    "tmdbId": 1214130,
-    "title": "스티치 헤드: 비밀의 성 꼬마괴물",
-    "meta": "애니메이션 · 모험 · 가족",
-    "meta2": "92분",
-    "posterPath": "/dTcAE69YKmEatDPCl1BmOpFHbUb.jpg",
-    "releaseDate": "2026-09-30",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
     "id": "linkin-park-unshatter",
     "tmdbId": 1388805,
     "title": "언섀터",
@@ -336,6 +320,22 @@ const MOVIES = [
     "tip": "",
     "source": "TMDB 키워드",
     "sourceUrl": "https://www.themoviedb.org/movie/1388805"
+  },
+  {
+    "id": "stitch-head",
+    "tmdbId": 1214130,
+    "title": "스티치 헤드: 비밀의 성 꼬마괴물",
+    "meta": "애니메이션 · 모험 · 가족",
+    "meta2": "92분",
+    "posterPath": "/dTcAE69YKmEatDPCl1BmOpFHbUb.jpg",
+    "releaseDate": "2026-09-30",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   },
   {
     "id": "tmdb-961214",
@@ -370,22 +370,6 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "familiar-touch",
-    "tmdbId": 1265717,
-    "title": "친숙한 손길",
-    "meta": "드라마",
-    "meta2": "92분",
-    "posterPath": "/4tWJdFTBEg0hXHw41ZFCjj3Cvpo.jpg",
-    "releaseDate": "2026-09-23",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
     "id": "late-fame",
     "tmdbId": 1285895,
     "title": "나의 사적인 예술가",
@@ -401,6 +385,22 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/08/late-fame-2025/"
+  },
+  {
+    "id": "familiar-touch",
+    "tmdbId": 1265717,
+    "title": "친숙한 손길",
+    "meta": "드라마",
+    "meta2": "92분",
+    "posterPath": "/4tWJdFTBEg0hXHw41ZFCjj3Cvpo.jpg",
+    "releaseDate": "2026-09-23",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   },
   {
     "id": "dead-shot",
@@ -504,11 +504,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "stitch-head": {
+  "linkin-park-unshatter": {
     "up": 0,
     "down": 0
   },
-  "linkin-park-unshatter": {
+  "stitch-head": {
     "up": 0,
     "down": 0
   },
@@ -520,11 +520,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "familiar-touch": {
+  "late-fame": {
     "up": 0,
     "down": 0
   },
-  "late-fame": {
+  "familiar-touch": {
     "up": 0,
     "down": 0
   },
