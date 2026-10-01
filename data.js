@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1766946,
+    "audience": 1766945,
     "boRank": 2,
     "status": "yes",
     "creditsLen": null,
