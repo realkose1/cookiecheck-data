@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 11857151,
+    "audience": 11857149,
     "boRank": 5,
     "status": "no",
     "creditsLen": null,
@@ -331,22 +331,6 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/08/late-fame-2025/"
   },
   {
-    "id": "das-getr-umte-abenteuer",
-    "tmdbId": 1013822,
-    "title": "꿈꾸던 모험",
-    "meta": "드라마 · 로맨스 · 미스터리",
-    "meta2": "164분",
-    "posterPath": "/7RHD1NhFz1FtkOVMmAlP0oBl8Ds.jpg",
-    "releaseDate": "2026-09-23",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
     "id": "dead-shot",
     "tmdbId": 507250,
     "title": "데드 샷",
@@ -457,10 +441,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "late-fame": {
-    "up": 0,
-    "down": 0
-  },
-  "das-getr-umte-abenteuer": {
     "up": 0,
     "down": 0
   },
