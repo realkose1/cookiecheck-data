@@ -1,10 +1,10 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-01)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-02)
    관객수: KOBIS 일별 박스오피스 (기준일 20260930)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-10-01';
+const DATA_UPDATED = '2026-10-02';
 const BOXOFFICE_DATE = "20260930";
 
 const MOVIES = [
@@ -291,11 +291,12 @@ const MOVIES = [
     "releaseDate": "2026-09-23",
     "audience": null,
     "boRank": null,
-    "status": "unknown",
+    "status": "no",
     "creditsLen": null,
     "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/09/forgotten-island-2026/"
   },
   {
     "id": "familiar-touch",
