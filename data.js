@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
    작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-02)
-   관객수: KOBIS 일별 박스오피스 (기준일 20260930)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261001)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
 const DATA_UPDATED = '2026-10-02';
-const BOXOFFICE_DATE = "20260930";
+const BOXOFFICE_DATE = "20261001";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 11857149,
+    "audience": 11875157,
     "boRank": 5,
     "status": "no",
     "creditsLen": null,
@@ -33,8 +33,8 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1766945,
-    "boRank": 2,
+    "audience": 1821889,
+    "boRank": 1,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -56,8 +56,8 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1015903,
-    "boRank": 3,
+    "audience": 1065716,
+    "boRank": 2,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -73,7 +73,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 876091,
+    "audience": 882854,
     "boRank": 8,
     "status": "no",
     "creditsLen": null,
@@ -90,7 +90,7 @@ const MOVIES = [
     "meta2": "133분",
     "posterPath": "/kRHjgsICPISgEClloeARkPHP96M.jpg",
     "releaseDate": "2026-09-16",
-    "audience": 794489,
+    "audience": 801374,
     "boRank": 7,
     "status": "yes",
     "creditsLen": null,
@@ -113,7 +113,7 @@ const MOVIES = [
     "meta2": "94분",
     "posterPath": "/fQX4fRsagskLvCXnvPfdvh62QTG.jpg",
     "releaseDate": "2026-09-17",
-    "audience": 198340,
+    "audience": 200466,
     "boRank": 9,
     "status": "no",
     "creditsLen": null,
@@ -123,22 +123,6 @@ const MOVIES = [
     "sourceUrl": "https://www.slashfilm.com/2260289/resident-evil-2026-movie-post-credits-scene-guide/"
   },
   {
-    "id": "tmdb-1483525",
-    "tmdbId": 1483525,
-    "title": "가능한 사랑",
-    "meta": "드라마",
-    "meta2": "165분",
-    "posterPath": "/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
-    "releaseDate": "2026-09-23",
-    "audience": 158204,
-    "boRank": 6,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
     "id": "tmdb-1586876",
     "tmdbId": 1586876,
     "title": "극장판 치이카와: 인어 섬의 비밀",
@@ -146,8 +130,8 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 153018,
-    "boRank": 1,
+    "audience": 198793,
+    "boRank": 3,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -162,15 +146,15 @@ const MOVIES = [
     "sourceUrl": "https://namu.wiki/w/%EA%B7%B9%EC%9E%A5%ED%8C%90%20%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80%3A%20%EC%9D%B8%EC%96%B4%20%EC%84%AC%EC%9D%98%20%EB%B9%84%EB%B0%80"
   },
   {
-    "id": "tmdb-961214",
-    "tmdbId": 961214,
-    "title": "부활남: 더 레드",
-    "meta": "액션 · 판타지",
-    "meta2": "102분",
-    "posterPath": "/nLsyRK3SmtdIftozpCd8sGQMRGD.jpg",
-    "releaseDate": "2026-09-30",
-    "audience": 51675,
-    "boRank": 4,
+    "id": "tmdb-1483525",
+    "tmdbId": 1483525,
+    "title": "가능한 사랑",
+    "meta": "드라마",
+    "meta2": "165분",
+    "posterPath": "/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
+    "releaseDate": "2026-09-23",
+    "audience": 169949,
+    "boRank": 6,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -178,15 +162,43 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "l-tranger",
-    "tmdbId": 1429348,
-    "title": "이방인",
-    "meta": "드라마 · 범죄",
-    "meta2": "123분",
-    "posterPath": "/2NoWaSTgKF7FcJ0Lr5NrvDDINOv.jpg",
-    "releaseDate": "2026-09-30",
-    "audience": 3723,
+    "id": "avengers-endgame",
+    "tmdbId": 299534,
+    "title": "어벤져스: 엔드게임",
+    "meta": "모험 · SF · 액션",
+    "meta2": "181분",
+    "posterPath": "/z7ilT5rNN9kDo8JZmgyhM6ej2xv.jpg",
+    "releaseDate": "2019-04-24",
+    "audience": 122968,
     "boRank": 10,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "pos": "크레딧 중간",
+        "len": "",
+        "desc": "2026년 9월 25일 재재개봉:\n\n원작 영화에서처럼, 스티브 로저스와 페기 카터가 집에서 춤을 추는 장면이 나옵니다. 그런데 둘이 키스하려는 순간 문을 두드리는 소리가 들립니다. 페기가 문을 열고, 스티브는 옆문에 숨습니다. 로키가 들어와 자신이 두 사람 모두를 도울 수 있다고 말합니다.\n브루스 배너는 콘크리트로 된 방에서 영상 기록을 남기고 있습니다. 그는 지난 2년간 지하 2마일 깊이의 군사 시설에 있어서 나갈 수도 없고 누구도 들어올 수 없다고 설명합니다. 그가 실험 중인 새로운 감마 치료법에 대해 설명하는 도중, 큰 소음과 전자 방해가 녹화를 방해하기 시작합니다. 화면이 끊기지만, 닥터 둠이 그를 데리러 왔다고 말하는 목소리가 들립니다.\n마지막 장면은 타임 버라이언스 오소리티(TVA)에서 펼쳐집니다. 모비우스가 통제 센터로 들어가 우주들이 서로 붕괴하고 있다는 보고를 접합니다. 장면이 끝날 때, 3000개의 우주가 붕괴했다는 보고가 나옵니다. 다중우주가 소멸되고 있는 것처럼 보입니다."
+      },
+      {
+        "pos": "크레딧 종료 후",
+        "len": "",
+        "desc": "금속끼리 부딪히는 소리가 들립니다.\n개봉 2주 후, 영화 '스파이더맨: 파 프롬 홈'의 예고편이 상영됩니다.\n\n\n2019년 6월 28일 재개봉:\n\n스탠 리를 추모하는 영상이 나오는데, 그의 카메오 출연에 대해 이야기하는 인터뷰가 포함되어 있습니다. \"Stan We Love You 3000\"이라는 문구로 마무리됩니다.\n공동 감독 앤소니 루소가 삭제된 장면을 소개합니다: \"끝까지 자리를 지켜주셔서 감사합니다... 아시다시피 이 영화에는 정말 많은 것을 담았습니다. 많은 캐릭터, 많은 액션, 많은 감정, 그리고 제 생각엔 많은 즐거움까지도요. 하지만 믿기 힘들겠지만 편집 과정에서 잘라내야 했던 장면들이 있습니다. 그렇습니다, 영화는 훨씬 더 길어질 수도 있었죠.\"\n미완성 '삭제된 장면'에서는 헐크가 위성 접시로 불타는 건물에서 사람들을 구하고, 현장의 응급 지원 요원에게 전화를 건네받아 \"스티브가 누구야?\"라고 묻습니다. 경찰관 역할은 '다이 하드'의 레지널드 벨존슨이 카메오로 출연합니다.\n화면에 \"그리고 한 가지 더…\"라는 메시지가 나타납니다.\n차가 멕시코 익스텐코 사막으로 들어갑니다. 마리아 힐과 닉 퓨리가 '얼굴 달린 사이클론'이 일으킨 사건을 조사하며 미스테리오를 소개하고 \"이 일에는 절대 끼어들지 않는 게 좋을 거야\"라고 말합니다.\n마지막으로 화면에 \"마블 스튜디오 전 직원을 대신하여 / 감사합니다\"라는 메시지가 나타납니다.\n\n2026년 9월 25일 재재개봉:\n금속끼리 부딪히는 소리 이후, 닥터 둠의 마스크가 보이고 이어서 닥터 둠 본인이 등장합니다."
+      }
+    ],
+    "tip": "",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2019/04/avengers-endgame-2019/"
+  },
+  {
+    "id": "tmdb-961214",
+    "tmdbId": 961214,
+    "title": "부활남: 더 레드",
+    "meta": "액션 · 판타지",
+    "meta2": "102분",
+    "posterPath": "/nLsyRK3SmtdIftozpCd8sGQMRGD.jpg",
+    "releaseDate": "2026-09-30",
+    "audience": 73895,
+    "boRank": 4,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -247,6 +259,22 @@ const MOVIES = [
     "tip": "",
     "source": "TMDB 키워드",
     "sourceUrl": "https://www.themoviedb.org/movie/1388805"
+  },
+  {
+    "id": "l-tranger",
+    "tmdbId": 1429348,
+    "title": "이방인",
+    "meta": "드라마 · 범죄",
+    "meta2": "123분",
+    "posterPath": "/2NoWaSTgKF7FcJ0Lr5NrvDDINOv.jpg",
+    "releaseDate": "2026-09-30",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   },
   {
     "id": "alpha",
@@ -397,19 +425,19 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-1483525": {
-    "up": 0,
-    "down": 0
-  },
   "tmdb-1586876": {
     "up": 0,
     "down": 0
   },
-  "tmdb-961214": {
+  "tmdb-1483525": {
     "up": 0,
     "down": 0
   },
-  "l-tranger": {
+  "avengers-endgame": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-961214": {
     "up": 0,
     "down": 0
   },
@@ -422,6 +450,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "linkin-park-unshatter": {
+    "up": 0,
+    "down": 0
+  },
+  "l-tranger": {
     "up": 0,
     "down": 0
   },
