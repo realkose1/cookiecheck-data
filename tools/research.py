@@ -45,7 +45,7 @@ VERDICTS_PATH = ROOT / "data" / "verdicts-auto.json"
 OVERRIDES_PATH = ROOT / "data.overrides.json"
 REVIEW_PATH = pathlib.Path("/tmp/verdict-review.md")
 
-MODEL = "claude-sonnet-5"  # translate.py 와 같은 모델을 쓴다
+MODEL = "claude-sonnet-5-5"  # translate.py 와 같은 모델을 쓴다
 
 # --- 예산과 재조사 주기 ------------------------------------------------------
 # 한 회차에 조사할 작품 수. 비용 상한이자 남의 서버(검색 대상 사이트)에 대한
@@ -141,8 +141,8 @@ SITE_LABELS = {
 # --- 비용 추정 (대략) --------------------------------------------------------
 # 로그에 "대략"이라고 찍는 이유: 서버 도구 내부 토큰까지는 세지 않는다.
 # 단가가 바뀌면 여기만 고치면 된다.
-PRICE_IN_PER_MTOK = 2.00     # claude-sonnet-5 입력 $/1M tokens
-PRICE_OUT_PER_MTOK = 10.00   # claude-sonnet-5 출력 $/1M tokens
+PRICE_IN_PER_MTOK = 2.00     # claude-sonnet-5-5 입력 $/1M tokens
+PRICE_OUT_PER_MTOK = 10.00   # claude-sonnet-5-5 출력 $/1M tokens
 CACHE_WRITE_MULT = 1.25      # 캐시 쓰기(5분 TTL)는 입력 단가의 1.25배
 CACHE_READ_MULT = 0.10       # 캐시 적중은 입력 단가의 0.1배
 PRICE_SEARCH_PER_1K = 10.00  # 웹 검색 $/1,000회 (web_fetch 는 현재 과금 없음)
