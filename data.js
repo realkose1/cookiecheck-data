@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-03)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261002)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-04)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261003)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-10-03';
-const BOXOFFICE_DATE = "20261002";
+const DATA_UPDATED = '2026-10-04';
+const BOXOFFICE_DATE = "20261003";
 
 const MOVIES = [
   {
@@ -16,8 +16,8 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 11898815,
-    "boRank": 5,
+    "audience": 11945240,
+    "boRank": 4,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -33,8 +33,8 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1890413,
-    "boRank": 1,
+    "audience": 2045444,
+    "boRank": 2,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -56,7 +56,7 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1125973,
+    "audience": 1236782,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -73,8 +73,8 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 892162,
-    "boRank": 7,
+    "audience": 903823,
+    "boRank": 9,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -90,7 +90,7 @@ const MOVIES = [
     "meta2": "133분",
     "posterPath": "/nPu9o9yHwN8Gu2Yc1av6KKMbXZf.jpg",
     "releaseDate": "2026-09-16",
-    "audience": 809238,
+    "audience": 821121,
     "boRank": 8,
     "status": "yes",
     "creditsLen": null,
@@ -113,8 +113,8 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 259216,
-    "boRank": 2,
+    "audience": 463590,
+    "boRank": 1,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -129,23 +129,6 @@ const MOVIES = [
     "sourceUrl": "https://namu.wiki/w/%EA%B7%B9%EC%9E%A5%ED%8C%90%20%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80%3A%20%EC%9D%B8%EC%96%B4%20%EC%84%AC%EC%9D%98%20%EB%B9%84%EB%B0%80"
   },
   {
-    "id": "resident-evil",
-    "tmdbId": 1423191,
-    "title": "레지던트 이블: 0번째 밤",
-    "meta": "공포 · SF · 모험",
-    "meta2": "94분",
-    "posterPath": "/fQX4fRsagskLvCXnvPfdvh62QTG.jpg",
-    "releaseDate": "2026-09-17",
-    "audience": 203366,
-    "boRank": 10,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "SlashFilm",
-    "sourceUrl": "https://www.slashfilm.com/2260289/resident-evil-2026-movie-post-credits-scene-guide/"
-  },
-  {
     "id": "tmdb-1483525",
     "tmdbId": 1483525,
     "title": "가능한 사랑",
@@ -153,7 +136,7 @@ const MOVIES = [
     "meta2": "165분",
     "posterPath": "/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 183652,
+    "audience": 203879,
     "boRank": 6,
     "status": "no",
     "creditsLen": null,
@@ -163,6 +146,22 @@ const MOVIES = [
     "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3705818"
   },
   {
+    "id": "tmdb-961214",
+    "tmdbId": 961214,
+    "title": "부활남: 더 레드",
+    "meta": "액션 · 판타지",
+    "meta2": "102분",
+    "posterPath": "/nLsyRK3SmtdIftozpCd8sGQMRGD.jpg",
+    "releaseDate": "2026-09-30",
+    "audience": 145022,
+    "boRank": 5,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
     "id": "avengers-endgame",
     "tmdbId": 299534,
     "title": "어벤져스: 엔드게임",
@@ -170,8 +169,8 @@ const MOVIES = [
     "meta2": "181분",
     "posterPath": "/z7ilT5rNN9kDo8JZmgyhM6ej2xv.jpg",
     "releaseDate": "2019-04-24",
-    "audience": 126933,
-    "boRank": 9,
+    "audience": 138085,
+    "boRank": 10,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -191,22 +190,6 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2019/04/avengers-endgame-2019/"
   },
   {
-    "id": "tmdb-961214",
-    "tmdbId": 961214,
-    "title": "부활남: 더 레드",
-    "meta": "액션 · 판타지",
-    "meta2": "102분",
-    "posterPath": "/nLsyRK3SmtdIftozpCd8sGQMRGD.jpg",
-    "releaseDate": "2026-09-30",
-    "audience": 100131,
-    "boRank": 4,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
     "id": "digger",
     "tmdbId": 1248832,
     "title": "디거",
@@ -214,8 +197,8 @@ const MOVIES = [
     "meta2": "129분",
     "posterPath": "/jV5Mfasg8dP3XK5nuXLetBN3APx.jpg",
     "releaseDate": "2026-10-03",
-    "audience": null,
-    "boRank": null,
+    "audience": 15432,
+    "boRank": 7,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -400,6 +383,23 @@ const MOVIES = [
     "source": ""
   },
   {
+    "id": "resident-evil",
+    "tmdbId": 1423191,
+    "title": "레지던트 이블: 0번째 밤",
+    "meta": "공포 · SF · 모험",
+    "meta2": "94분",
+    "posterPath": "/fQX4fRsagskLvCXnvPfdvh62QTG.jpg",
+    "releaseDate": "2026-09-17",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "SlashFilm",
+    "sourceUrl": "https://www.slashfilm.com/2260289/resident-evil-2026-movie-post-credits-scene-guide/"
+  },
+  {
     "id": "tmdb-650524",
     "tmdbId": 650524,
     "title": "백 투 더 패스트: 진나라 쟁탈전",
@@ -449,19 +449,15 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "resident-evil": {
-    "up": 0,
-    "down": 0
-  },
   "tmdb-1483525": {
     "up": 0,
     "down": 0
   },
-  "avengers-endgame": {
+  "tmdb-961214": {
     "up": 0,
     "down": 0
   },
-  "tmdb-961214": {
+  "avengers-endgame": {
     "up": 0,
     "down": 0
   },
@@ -506,6 +502,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "dead-shot": {
+    "up": 0,
+    "down": 0
+  },
+  "resident-evil": {
     "up": 0,
     "down": 0
   },
