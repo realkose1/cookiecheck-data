@@ -67,10 +67,12 @@ RESEARCH_BUDGET = 6
 # 전부 unknown 이었던 실측(6편 중 6편, $5.14)에 비추어 돈만 쓰는 쪽에 가깝다.
 RETRY_SCHEDULE_DAYS = (3, 7, 14)  # N번째 시도 뒤 대기일: 1→3일, 2→7일, 3→14일, 4번째면 중단
 # 박스오피스 순위가 없는 작품(=관객이 적어 후기·보도가 나올 가능성도 낮고, 앱
-# 화면에서도 아래쪽이다)은 더 짧게, 더 적게 두드린다. 순위가 나중에 생기면 위
+# 화면에서도 아래쪽이다)은 첫 시도 한 번으로 끝낸다. 9/19~10/1 실측에서 순위 밖
+# 해외 독립·예술영화는 재조사까지 약 20회 두드려 판정이 한 건도 나오지 않았다
+# (판정이 나온 6편은 전부 관객이 많거나 팬층이 큰 작품). 순위가 나중에 생기면 위
 # 일정으로 승격된다 — select_targets 는 매 실행 시점의 boRank 로 판단하기 때문에
 # 별도 처리가 필요 없다.
-RETRY_SCHEDULE_DAYS_UNRANKED = (7,)  # 1→7일 뒤 한 번 더, 2번째 시도면 중단
+RETRY_SCHEDULE_DAYS_UNRANKED = ()  # 첫 시도 뒤 재조사 없음
 GIVE_UP_AFTER_DAYS = 60  # 개봉 60일이 지나도록 자료가 없으면 앞으로도 안 나온다 (둘 중 먼저 오는 쪽에서 중단)
 
 # --- 모델 호출 --------------------------------------------------------------
@@ -86,7 +88,9 @@ MAX_FETCHES = 3    # 작품 하나에 허용하는 페이지 열람 횟수
 # 근거 문장이 잘려 unknown 이 늘어난다. (검증은 파이썬이 페이지를 따로 받으므로
 # 이 상한과 무관하다.)
 MAX_FETCH_TOKENS = 20000
-MAX_TOKENS = 8000
+# 8000 일 때 Sonnet 에서 '모델 응답을 해석하지 못함'이 15회 중 5회 나왔다 — 생각에
+# 출력 한도를 다 쓰고 JSON 을 못 낸 것으로 의심된다. 실패 시 stop_reason 을 찍는다.
+MAX_TOKENS = 16000
 MAX_PAUSE_RESUMES = 3  # 서버 도구 루프가 pause_turn 으로 끊길 때 이어 붙일 횟수
 
 # 서버 도구 타입은 모델/SDK 세대마다 이름이 다르다. 최신형(동적 필터링)을 먼저
@@ -525,7 +529,16 @@ def call_model(client, movie, ctx):
                 messages = messages + [{"role": "assistant", "content": resp.content}]
             _tool_variant = (search_type, fetch_type)
             text = "\n".join(b.text for b in resp.content if getattr(b, "type", "") == "text")
-            return _extract_json(text), usage
+            parsed = _extract_json(text)
+            if parsed is None:
+                # 원인을 남겨 둔다: max_tokens(출력 한도 소진) / pause_turn(이어 붙이기
+                # 한도 소진) / end_turn(JSON 없이 끝남) 중 무엇인지에 따라 고칠 곳이 다르다.
+                tail = " ".join(text.split())[-200:] if text.strip() else "(텍스트 없음)"
+                print(
+                    f"  응답 해석 실패: stop_reason={getattr(resp, 'stop_reason', None)}"
+                    f" · 출력 {usage['out']:,}토큰 · 끝부분: {tail}"
+                )
+            return parsed, usage
         except anthropic.BadRequestError as e:
             msg = str(e)
             if search_type in msg or fetch_type in msg or "tool" in msg.lower():
