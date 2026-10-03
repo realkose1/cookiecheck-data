@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 11898817,
+    "audience": 11898815,
     "boRank": 5,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1890360,
+    "audience": 1890416,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -56,7 +56,7 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1125969,
+    "audience": 1125973,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -73,7 +73,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 892164,
+    "audience": 892162,
     "boRank": 7,
     "status": "no",
     "creditsLen": null,
@@ -90,7 +90,7 @@ const MOVIES = [
     "meta2": "133분",
     "posterPath": "/nPu9o9yHwN8Gu2Yc1av6KKMbXZf.jpg",
     "releaseDate": "2026-09-16",
-    "audience": 809229,
+    "audience": 809238,
     "boRank": 8,
     "status": "yes",
     "creditsLen": null,
@@ -113,7 +113,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 259215,
+    "audience": 259216,
     "boRank": 2,
     "status": "yes",
     "creditsLen": null,
@@ -136,7 +136,7 @@ const MOVIES = [
     "meta2": "94분",
     "posterPath": "/fQX4fRsagskLvCXnvPfdvh62QTG.jpg",
     "releaseDate": "2026-09-17",
-    "audience": 203360,
+    "audience": 203366,
     "boRank": 10,
     "status": "no",
     "creditsLen": null,
@@ -155,11 +155,12 @@ const MOVIES = [
     "releaseDate": "2026-09-23",
     "audience": 183652,
     "boRank": 6,
-    "status": "unknown",
+    "status": "no",
     "creditsLen": null,
     "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "gukjenews.com · wikitree.co.kr (자동 조사)",
+    "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3705818"
   },
   {
     "id": "avengers-endgame",
@@ -197,7 +198,7 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/nLsyRK3SmtdIftozpCd8sGQMRGD.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 100117,
+    "audience": 100131,
     "boRank": 4,
     "status": "unknown",
     "creditsLen": null,
@@ -284,22 +285,6 @@ const MOVIES = [
     "sourceUrl": "https://www.themoviedb.org/movie/1388805"
   },
   {
-    "id": "l-tranger",
-    "tmdbId": 1429348,
-    "title": "이방인",
-    "meta": "드라마 · 범죄",
-    "meta2": "123분",
-    "posterPath": "/2NoWaSTgKF7FcJ0Lr5NrvDDINOv.jpg",
-    "releaseDate": "2026-09-30",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
     "id": "alpha",
     "tmdbId": 1284460,
     "title": "알파",
@@ -315,6 +300,22 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/03/alpha-2025/"
+  },
+  {
+    "id": "l-tranger",
+    "tmdbId": 1429348,
+    "title": "이방인",
+    "meta": "드라마 · 범죄",
+    "meta2": "123분",
+    "posterPath": "/2NoWaSTgKF7FcJ0Lr5NrvDDINOv.jpg",
+    "releaseDate": "2026-09-30",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   },
   {
     "id": "stitch-head",
@@ -350,22 +351,6 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/09/forgotten-island-2026/"
   },
   {
-    "id": "familiar-touch",
-    "tmdbId": 1265717,
-    "title": "친숙한 손길",
-    "meta": "드라마",
-    "meta2": "92분",
-    "posterPath": "/4tWJdFTBEg0hXHw41ZFCjj3Cvpo.jpg",
-    "releaseDate": "2026-09-23",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
     "id": "late-fame",
     "tmdbId": 1285895,
     "title": "나의 사적인 예술가",
@@ -381,6 +366,22 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/08/late-fame-2025/"
+  },
+  {
+    "id": "familiar-touch",
+    "tmdbId": 1265717,
+    "title": "친숙한 손길",
+    "meta": "드라마",
+    "meta2": "92분",
+    "posterPath": "/4tWJdFTBEg0hXHw41ZFCjj3Cvpo.jpg",
+    "releaseDate": "2026-09-23",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   },
   {
     "id": "dead-shot",
@@ -480,11 +481,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "l-tranger": {
+  "alpha": {
     "up": 0,
     "down": 0
   },
-  "alpha": {
+  "l-tranger": {
     "up": 0,
     "down": 0
   },
@@ -496,11 +497,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "familiar-touch": {
+  "late-fame": {
     "up": 0,
     "down": 0
   },
-  "late-fame": {
+  "familiar-touch": {
     "up": 0,
     "down": 0
   },
