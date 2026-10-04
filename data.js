@@ -268,21 +268,20 @@ const MOVIES = [
     "sourceUrl": "https://www.themoviedb.org/movie/1388805"
   },
   {
-    "id": "alpha",
-    "tmdbId": 1284460,
-    "title": "알파",
-    "meta": "공포 · 드라마 · SF",
-    "meta2": "128분",
-    "posterPath": "/tUZaajRDFjitxzCQK87vlRDedox.jpg",
+    "id": "stitch-head",
+    "tmdbId": 1214130,
+    "title": "스티치 헤드: 비밀의 성 꼬마괴물",
+    "meta": "애니메이션 · 모험 · 가족",
+    "meta2": "92분",
+    "posterPath": "/dTcAE69YKmEatDPCl1BmOpFHbUb.jpg",
     "releaseDate": "2026-09-30",
     "audience": null,
     "boRank": null,
-    "status": "no",
+    "status": "unknown",
     "creditsLen": null,
     "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/03/alpha-2025/"
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   },
   {
     "id": "l-tranger",
@@ -301,20 +300,21 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "stitch-head",
-    "tmdbId": 1214130,
-    "title": "스티치 헤드: 비밀의 성 꼬마괴물",
-    "meta": "애니메이션 · 모험 · 가족",
-    "meta2": "92분",
-    "posterPath": "/dTcAE69YKmEatDPCl1BmOpFHbUb.jpg",
+    "id": "alpha",
+    "tmdbId": 1284460,
+    "title": "알파",
+    "meta": "공포 · 드라마 · SF",
+    "meta2": "128분",
+    "posterPath": "/tUZaajRDFjitxzCQK87vlRDedox.jpg",
     "releaseDate": "2026-09-30",
     "audience": null,
     "boRank": null,
-    "status": "unknown",
+    "status": "no",
     "creditsLen": null,
     "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/03/alpha-2025/"
   },
   {
     "id": "forgotten-island",
@@ -477,7 +477,7 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "alpha": {
+  "stitch-head": {
     "up": 0,
     "down": 0
   },
@@ -485,7 +485,7 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "stitch-head": {
+  "alpha": {
     "up": 0,
     "down": 0
   },
