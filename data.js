@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-05)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261004)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-06)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261005)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-10-05';
-const BOXOFFICE_DATE = "20261004";
+const DATA_UPDATED = '2026-10-06';
+const BOXOFFICE_DATE = "20261005";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 11998206,
+    "audience": 12045152,
     "boRank": 4,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 2233963,
+    "audience": 2412810,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -56,7 +56,7 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1365648,
+    "audience": 1462361,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -73,8 +73,8 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 916738,
-    "boRank": 9,
+    "audience": 926976,
+    "boRank": 7,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -90,8 +90,8 @@ const MOVIES = [
     "meta2": "133분",
     "posterPath": "/nPu9o9yHwN8Gu2Yc1av6KKMbXZf.jpg",
     "releaseDate": "2026-09-16",
-    "audience": 834866,
-    "boRank": 7,
+    "audience": 844379,
+    "boRank": 8,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -113,7 +113,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 604764,
+    "audience": 736029,
     "boRank": 2,
     "status": "yes",
     "creditsLen": null,
@@ -129,23 +129,6 @@ const MOVIES = [
     "sourceUrl": "https://namu.wiki/w/%EA%B7%B9%EC%9E%A5%ED%8C%90%20%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80%3A%20%EC%9D%B8%EC%96%B4%20%EC%84%AC%EC%9D%98%20%EB%B9%84%EB%B0%80"
   },
   {
-    "id": "tmdb-1483525",
-    "tmdbId": 1483525,
-    "title": "가능한 사랑",
-    "meta": "드라마",
-    "meta2": "165분",
-    "posterPath": "/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
-    "releaseDate": "2026-09-23",
-    "audience": 230482,
-    "boRank": 6,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "gukjenews.com · wikitree.co.kr (자동 조사)",
-    "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3705818"
-  },
-  {
     "id": "tmdb-961214",
     "tmdbId": 961214,
     "title": "부활남: 더 레드",
@@ -153,7 +136,7 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/nLsyRK3SmtdIftozpCd8sGQMRGD.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 189802,
+    "audience": 225886,
     "boRank": 5,
     "status": "unknown",
     "creditsLen": null,
@@ -169,8 +152,8 @@ const MOVIES = [
     "meta2": "181분",
     "posterPath": "/z7ilT5rNN9kDo8JZmgyhM6ej2xv.jpg",
     "releaseDate": "2019-04-24",
-    "audience": 148743,
-    "boRank": 10,
+    "audience": 157612,
+    "boRank": 9,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -197,8 +180,8 @@ const MOVIES = [
     "meta2": "129분",
     "posterPath": "/jV5Mfasg8dP3XK5nuXLetBN3APx.jpg",
     "releaseDate": "2026-10-03",
-    "audience": 28551,
-    "boRank": 8,
+    "audience": 40399,
+    "boRank": 6,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -211,6 +194,22 @@ const MOVIES = [
     "tip": "",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/10/digger-2026/"
+  },
+  {
+    "id": "tmdb-1765609",
+    "tmdbId": 1765609,
+    "title": "극장판 래브라도: 망고축제를 지켜라",
+    "meta": "애니메이션 · 가족",
+    "meta2": "64분",
+    "posterPath": "/44c7U4ipQfJZ8pWmb9cJKy99jAL.jpg",
+    "releaseDate": "2026-10-03",
+    "audience": 21086,
+    "boRank": 10,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   },
   {
     "id": "above-below",
@@ -334,6 +333,23 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/09/forgotten-island-2026/"
   },
   {
+    "id": "tmdb-1483525",
+    "tmdbId": 1483525,
+    "title": "가능한 사랑",
+    "meta": "드라마",
+    "meta2": "165분",
+    "posterPath": "/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
+    "releaseDate": "2026-09-23",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "gukjenews.com · wikitree.co.kr (자동 조사)",
+    "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3705818"
+  },
+  {
     "id": "late-fame",
     "tmdbId": 1285895,
     "title": "나의 사적인 예술가",
@@ -398,29 +414,6 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "SlashFilm",
     "sourceUrl": "https://www.slashfilm.com/2260289/resident-evil-2026-movie-post-credits-scene-guide/"
-  },
-  {
-    "id": "tmdb-650524",
-    "tmdbId": 650524,
-    "title": "백 투 더 패스트: 진나라 쟁탈전",
-    "meta": "SF · 액션 · 코미디",
-    "meta2": "108분",
-    "posterPath": "/jK5Z3Gg5rV1qJoXYsvCukheviua.jpg",
-    "releaseDate": "2026-09-17",
-    "audience": null,
-    "boRank": null,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "pos": "크레딧 중간",
-        "len": "",
-        "desc": "주인공들이 현대 세계를 방문하는 긴 대체 엔딩 장면이 나옵니다.\n크레딧이 올라가는 동안, 이 영화의 사건에 앞서 방영된 TV 쇼 '과거로 가는 걸음(Step to the Past)'의 NG 장면들이 공개됩니다."
-      }
-    ],
-    "tip": "",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/01/back-to-the-past-2025/"
   }
 ];
 
@@ -449,10 +442,6 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-1483525": {
-    "up": 0,
-    "down": 0
-  },
   "tmdb-961214": {
     "up": 0,
     "down": 0
@@ -462,6 +451,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "digger": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-1765609": {
     "up": 0,
     "down": 0
   },
@@ -493,6 +486,10 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "tmdb-1483525": {
+    "up": 0,
+    "down": 0
+  },
   "late-fame": {
     "up": 0,
     "down": 0
@@ -506,10 +503,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "resident-evil": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-650524": {
     "up": 0,
     "down": 0
   }
