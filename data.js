@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
    작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-08)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261006)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261007)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
 const DATA_UPDATED = '2026-10-08';
-const BOXOFFICE_DATE = "20261006";
+const BOXOFFICE_DATE = "20261007";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 12057325,
+    "audience": 12068517,
     "boRank": 4,
     "status": "no",
     "creditsLen": null,
@@ -26,34 +26,6 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/07/odyssey-the-2026/"
   },
   {
-    "id": "spider-man-brand-new-day",
-    "tmdbId": 969681,
-    "title": "스파이더맨: 브랜드 뉴 데이",
-    "meta": "SF · 액션 · 모험",
-    "meta2": "145분",
-    "posterPath": "/8mLepBa5l591xFidRpn65xV7hb4.jpg",
-    "releaseDate": "2026-07-29",
-    "audience": 9046973,
-    "boRank": 10,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "pos": "크레딧 중간",
-        "len": "",
-        "desc": "뉴욕에서 일상을 보내는 사람들의 배경 이미지들이 나옵니다."
-      },
-      {
-        "pos": "크레딧 종료 후",
-        "len": "",
-        "desc": "스파이디 트래커가 새로운 '알 수 없는 위치'에서 스파이더맨을 '발견'합니다. 트래커 화면이 뉴욕에서 대륙, 지구 전체로 줌아웃되다가 달을 살짝 지나 우주까지 나아가는데, 이때 '스파이더맨: 뉴 유니버스'의 글리치 연출과 같은 효과로 화면이 지지직거립니다. 그리고 새로운 스파이더맨의 위치가 우주임을 표시합니다."
-      }
-    ],
-    "tip": "",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/07/spider-man-brand-new-day-2026/"
-  },
-  {
     "id": "tmdb-1418428",
     "tmdbId": 1418428,
     "title": "암살자(들)",
@@ -61,7 +33,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 2466978,
+    "audience": 2520849,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -84,7 +56,7 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1491925,
+    "audience": 1520772,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -101,8 +73,8 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 931444,
-    "boRank": 8,
+    "audience": 934137,
+    "boRank": 10,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -118,7 +90,7 @@ const MOVIES = [
     "meta2": "133분",
     "posterPath": "/nPu9o9yHwN8Gu2Yc1av6KKMbXZf.jpg",
     "releaseDate": "2026-09-16",
-    "audience": 849101,
+    "audience": 853912,
     "boRank": 7,
     "status": "yes",
     "creditsLen": null,
@@ -141,7 +113,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 769127,
+    "audience": 818352,
     "boRank": 2,
     "status": "yes",
     "creditsLen": null,
@@ -164,31 +136,14 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/nLsyRK3SmtdIftozpCd8sGQMRGD.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 235685,
-    "boRank": 5,
+    "audience": 243831,
+    "boRank": 6,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "gukjenews.com (자동 조사)",
     "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3710851"
-  },
-  {
-    "id": "resident-evil",
-    "tmdbId": 1423191,
-    "title": "레지던트 이블: 0번째 밤",
-    "meta": "공포 · SF · 모험",
-    "meta2": "94분",
-    "posterPath": "/fQX4fRsagskLvCXnvPfdvh62QTG.jpg",
-    "releaseDate": "2026-09-17",
-    "audience": 214628,
-    "boRank": 9,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "SlashFilm",
-    "sourceUrl": "https://www.slashfilm.com/2260289/resident-evil-2026-movie-post-credits-scene-guide/"
   },
   {
     "id": "digger",
@@ -198,8 +153,8 @@ const MOVIES = [
     "meta2": "129분",
     "posterPath": "/jV5Mfasg8dP3XK5nuXLetBN3APx.jpg",
     "releaseDate": "2026-10-03",
-    "audience": 45550,
-    "boRank": 6,
+    "audience": 49717,
+    "boRank": 8,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -212,6 +167,39 @@ const MOVIES = [
     "tip": "",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/10/digger-2026/"
+  },
+  {
+    "id": "tmdb-1587473",
+    "tmdbId": 1587473,
+    "title": "입에 대한 앙케트",
+    "meta": "공포",
+    "meta2": "89분",
+    "posterPath": "/cms5ib3HTaOCH4qw6aDPTV6MiW0.jpg",
+    "releaseDate": "2026-10-07",
+    "audience": 8415,
+    "boRank": 5,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "tmdb-1280738",
+    "tmdbId": 1280738,
+    "title": "퓨리어스",
+    "meta": "액션 · 범죄 · 스릴러",
+    "meta2": "114분",
+    "posterPath": "/x959xPUa6DebrSj2xNtF0NYSiCm.jpg",
+    "releaseDate": "2026-10-07",
+    "audience": 3941,
+    "boRank": 9,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/06/furious-the-2025/"
   },
   {
     "id": "tmdb-1591675",
@@ -228,23 +216,6 @@ const MOVIES = [
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
-  },
-  {
-    "id": "tmdb-1280738",
-    "tmdbId": 1280738,
-    "title": "퓨리어스",
-    "meta": "액션 · 범죄 · 스릴러",
-    "meta2": "114분",
-    "posterPath": "/x959xPUa6DebrSj2xNtF0NYSiCm.jpg",
-    "releaseDate": "2026-10-07",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/06/furious-the-2025/"
   },
   {
     "id": "ghost-in-the-cell",
@@ -395,22 +366,6 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "c-line-et-julie-vont-en-bateau",
-    "tmdbId": 27019,
-    "title": "셀린느와 줄리 배타러 가다",
-    "meta": "코미디 · 드라마 · 판타지",
-    "meta2": "194분",
-    "posterPath": "/4xLKW5uDPGfLiLqithw4UHVuz55.jpg",
-    "releaseDate": "2026-09-30",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
     "id": "forgotten-island",
     "tmdbId": 1465063,
     "title": "포가튼 아일랜드",
@@ -443,15 +398,28 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "gukjenews.com · wikitree.co.kr (자동 조사)",
     "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3705818"
+  },
+  {
+    "id": "late-fame",
+    "tmdbId": 1285895,
+    "title": "나의 사적인 예술가",
+    "meta": "드라마",
+    "meta2": "96분",
+    "posterPath": "/hv7zKr3cCdOFhNVcqWYj74Ij6KX.jpg",
+    "releaseDate": "2026-09-23",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/08/late-fame-2025/"
   }
 ];
 
 const INITIAL_VOTES = {
   "the-odyssey": {
-    "up": 0,
-    "down": 0
-  },
-  "spider-man-brand-new-day": {
     "up": 0,
     "down": 0
   },
@@ -479,19 +447,19 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "resident-evil": {
-    "up": 0,
-    "down": 0
-  },
   "digger": {
     "up": 0,
     "down": 0
   },
-  "tmdb-1591675": {
+  "tmdb-1587473": {
     "up": 0,
     "down": 0
   },
   "tmdb-1280738": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-1591675": {
     "up": 0,
     "down": 0
   },
@@ -527,15 +495,15 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "c-line-et-julie-vont-en-bateau": {
-    "up": 0,
-    "down": 0
-  },
   "forgotten-island": {
     "up": 0,
     "down": 0
   },
   "tmdb-1483525": {
+    "up": 0,
+    "down": 0
+  },
+  "late-fame": {
     "up": 0,
     "down": 0
   }
