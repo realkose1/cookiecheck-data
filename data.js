@@ -1,10 +1,10 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-07)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-08)
    관객수: KOBIS 일별 박스오피스 (기준일 20261006)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-10-07';
+const DATA_UPDATED = '2026-10-08';
 const BOXOFFICE_DATE = "20261006";
 
 const MOVIES = [
@@ -212,6 +212,22 @@ const MOVIES = [
     "tip": "",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/10/digger-2026/"
+  },
+  {
+    "id": "tmdb-1591675",
+    "tmdbId": 1591675,
+    "title": "룩백",
+    "meta": "드라마",
+    "meta2": "101분",
+    "posterPath": "/mAfcD0lspaNlZDRrzT0fdWS5C01.jpg",
+    "releaseDate": "2026-10-08",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   },
   {
     "id": "tmdb-1280738",
@@ -427,23 +443,6 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "gukjenews.com · wikitree.co.kr (자동 조사)",
     "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3705818"
-  },
-  {
-    "id": "late-fame",
-    "tmdbId": 1285895,
-    "title": "나의 사적인 예술가",
-    "meta": "드라마",
-    "meta2": "96분",
-    "posterPath": "/hv7zKr3cCdOFhNVcqWYj74Ij6KX.jpg",
-    "releaseDate": "2026-09-23",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/08/late-fame-2025/"
   }
 ];
 
@@ -485,6 +484,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "digger": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-1591675": {
     "up": 0,
     "down": 0
   },
@@ -533,10 +536,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "tmdb-1483525": {
-    "up": 0,
-    "down": 0
-  },
-  "late-fame": {
     "up": 0,
     "down": 0
   }
