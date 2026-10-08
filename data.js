@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 12068518,
+    "audience": 12068517,
     "boRank": 4,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 2520869,
+    "audience": 2520865,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -136,7 +136,7 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/nLsyRK3SmtdIftozpCd8sGQMRGD.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 243832,
+    "audience": 243830,
     "boRank": 6,
     "status": "no",
     "creditsLen": null,
@@ -218,34 +218,6 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "ghost-in-the-cell",
-    "tmdbId": 1393326,
-    "title": "고스트 인 더 셀",
-    "meta": "공포 · 코미디 · 스릴러",
-    "meta2": "106분",
-    "posterPath": "/coyrg56aluVoOUS69ciZgnn5FIy.jpg",
-    "releaseDate": "2026-10-07",
-    "audience": null,
-    "boRank": null,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "pos": "크레딧 중간",
-        "len": "",
-        "desc": "크레딧 중간에 장면이 있습니다."
-      },
-      {
-        "pos": "크레딧 종료 후",
-        "len": "",
-        "desc": "크레딧이 끝난 뒤 장면이 있습니다."
-      }
-    ],
-    "tip": "",
-    "source": "TMDB 키워드",
-    "sourceUrl": "https://www.themoviedb.org/movie/1393326"
-  },
-  {
     "id": "la-valle-dei-sorrisi",
     "tmdbId": 1092936,
     "title": "홀리보이",
@@ -253,6 +225,22 @@ const MOVIES = [
     "meta2": "123분",
     "posterPath": "/vxkPiWdut20cHrFW57nduhhMR2V.jpg",
     "releaseDate": "2026-10-07",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "tmdb-1542847",
+    "tmdbId": 1542847,
+    "title": "폴 : 디 어비스",
+    "meta": "드라마 · 스릴러",
+    "meta2": "80분",
+    "posterPath": "/aplKp4G0nS8zlz3cBqJ94jjXGI9.jpg",
+    "releaseDate": "2026-10-01",
     "audience": null,
     "boRank": null,
     "status": "unknown",
@@ -463,11 +451,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "ghost-in-the-cell": {
+  "la-valle-dei-sorrisi": {
     "up": 0,
     "down": 0
   },
-  "la-valle-dei-sorrisi": {
+  "tmdb-1542847": {
     "up": 0,
     "down": 0
   },
