@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-08)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261007)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-09)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261008)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-10-08';
-const BOXOFFICE_DATE = "20261007";
+const DATA_UPDATED = '2026-10-09';
+const BOXOFFICE_DATE = "20261008";
 
 const MOVIES = [
   {
@@ -16,8 +16,8 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 12068517,
-    "boRank": 4,
+    "audience": 12083934,
+    "boRank": 5,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 2520863,
+    "audience": 2584834,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -56,7 +56,7 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1520782,
+    "audience": 1554067,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -73,7 +73,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 934139,
+    "audience": 937773,
     "boRank": 10,
     "status": "no",
     "creditsLen": null,
@@ -83,29 +83,6 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/05/obsession-2025/"
   },
   {
-    "id": "tmdb-607833",
-    "tmdbId": 607833,
-    "title": "인턴",
-    "meta": "드라마 · 코미디",
-    "meta2": "133분",
-    "posterPath": "/nPu9o9yHwN8Gu2Yc1av6KKMbXZf.jpg",
-    "releaseDate": "2026-09-16",
-    "audience": 853944,
-    "boRank": 7,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "pos": "크레딧 종료 후",
-        "len": "",
-        "desc": "엔딩 크레딧이 모두 올라간 뒤 쿠키 영상이 한 편 이어집니다. 장면 내용은 공개되지 않았습니다."
-      }
-    ],
-    "tip": "",
-    "source": "언론 보도 (금강일보·이투데이·국제뉴스)",
-    "sourceUrl": "https://www.ggilbo.com/news/articleView.html?idxno=1181861"
-  },
-  {
     "id": "tmdb-1586876",
     "tmdbId": 1586876,
     "title": "극장판 치이카와: 인어 섬의 비밀",
@@ -113,7 +90,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 818348,
+    "audience": 873574,
     "boRank": 2,
     "status": "yes",
     "creditsLen": null,
@@ -129,6 +106,29 @@ const MOVIES = [
     "sourceUrl": "https://namu.wiki/w/%EA%B7%B9%EC%9E%A5%ED%8C%90%20%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80%3A%20%EC%9D%B8%EC%96%B4%20%EC%84%AC%EC%9D%98%20%EB%B9%84%EB%B0%80"
   },
   {
+    "id": "tmdb-607833",
+    "tmdbId": 607833,
+    "title": "인턴",
+    "meta": "드라마 · 코미디",
+    "meta2": "133분",
+    "posterPath": "/nPu9o9yHwN8Gu2Yc1av6KKMbXZf.jpg",
+    "releaseDate": "2026-09-16",
+    "audience": 860359,
+    "boRank": 8,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "pos": "크레딧 종료 후",
+        "len": "",
+        "desc": "엔딩 크레딧이 모두 올라간 뒤 쿠키 영상이 한 편 이어집니다. 장면 내용은 공개되지 않았습니다."
+      }
+    ],
+    "tip": "",
+    "source": "언론 보도 (금강일보·이투데이·국제뉴스)",
+    "sourceUrl": "https://www.ggilbo.com/news/articleView.html?idxno=1181861"
+  },
+  {
     "id": "tmdb-961214",
     "tmdbId": 961214,
     "title": "부활남: 더 레드",
@@ -136,7 +136,7 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/nLsyRK3SmtdIftozpCd8sGQMRGD.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 243829,
+    "audience": 253008,
     "boRank": 6,
     "status": "no",
     "creditsLen": null,
@@ -153,8 +153,8 @@ const MOVIES = [
     "meta2": "129분",
     "posterPath": "/jV5Mfasg8dP3XK5nuXLetBN3APx.jpg",
     "releaseDate": "2026-10-03",
-    "audience": 49719,
-    "boRank": 8,
+    "audience": 53694,
+    "boRank": 9,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -169,6 +169,22 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/10/digger-2026/"
   },
   {
+    "id": "tmdb-1591675",
+    "tmdbId": 1591675,
+    "title": "룩백",
+    "meta": "드라마",
+    "meta2": "101분",
+    "posterPath": "/mAfcD0lspaNlZDRrzT0fdWS5C01.jpg",
+    "releaseDate": "2026-10-08",
+    "audience": 20962,
+    "boRank": 4,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
     "id": "tmdb-1587473",
     "tmdbId": 1587473,
     "title": "입에 대한 앙케트",
@@ -176,8 +192,8 @@ const MOVIES = [
     "meta2": "89분",
     "posterPath": "/ioogrqn2xtQjZBuHpNXPb8qtaQG.jpg",
     "releaseDate": "2026-10-07",
-    "audience": 8416,
-    "boRank": 5,
+    "audience": 17196,
+    "boRank": 7,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -192,30 +208,14 @@ const MOVIES = [
     "meta2": "114분",
     "posterPath": "/x959xPUa6DebrSj2xNtF0NYSiCm.jpg",
     "releaseDate": "2026-10-07",
-    "audience": 3941,
-    "boRank": 9,
+    "audience": null,
+    "boRank": null,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/06/furious-the-2025/"
-  },
-  {
-    "id": "tmdb-1591675",
-    "tmdbId": 1591675,
-    "title": "룩백",
-    "meta": "드라마",
-    "meta2": "101분",
-    "posterPath": "/mAfcD0lspaNlZDRrzT0fdWS5C01.jpg",
-    "releaseDate": "2026-10-08",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   },
   {
     "id": "la-valle-dei-sorrisi",
@@ -423,11 +423,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-607833": {
+  "tmdb-1586876": {
     "up": 0,
     "down": 0
   },
-  "tmdb-1586876": {
+  "tmdb-607833": {
     "up": 0,
     "down": 0
   },
@@ -439,15 +439,15 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "tmdb-1591675": {
+    "up": 0,
+    "down": 0
+  },
   "tmdb-1587473": {
     "up": 0,
     "down": 0
   },
   "tmdb-1280738": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-1591675": {
     "up": 0,
     "down": 0
   },
