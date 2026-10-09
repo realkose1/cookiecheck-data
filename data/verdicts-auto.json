@@ -125,6 +125,12 @@
   "reason": "모델 응답을 해석하지 못함",
   "status": "unknown"
  },
+ "1542847": {
+  "attempts": 1,
+  "checkedAt": "2026-10-09",
+  "reason": "검색 도구 사용 한도를 초과해 근거 문장을 하나도 읽지 못했다. 쿠키 영상이 있다는 근거도 없다는 근거도 확인하지 못했으므로 unknown으로 답한다.",
+  "status": "unknown"
+ },
  "1587473": {
   "attempts": 1,
   "checkedAt": "2026-10-08",
