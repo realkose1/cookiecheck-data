@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-10)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261009)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-11)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261010)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-10-10';
-const BOXOFFICE_DATE = "20261009";
+const DATA_UPDATED = '2026-10-11';
+const BOXOFFICE_DATE = "20261010";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 12121277,
+    "audience": 12153889,
     "boRank": 4,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 2745971,
+    "audience": 2884459,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -56,7 +56,7 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1622935,
+    "audience": 1690371,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -73,7 +73,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 1025729,
+    "audience": 1161516,
     "boRank": 2,
     "status": "yes",
     "creditsLen": null,
@@ -96,7 +96,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 944475,
+    "audience": 950661,
     "boRank": 8,
     "status": "no",
     "creditsLen": null,
@@ -113,8 +113,8 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/nLsyRK3SmtdIftozpCd8sGQMRGD.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 273287,
-    "boRank": 5,
+    "audience": 287164,
+    "boRank": 6,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -130,7 +130,7 @@ const MOVIES = [
     "meta2": "181분",
     "posterPath": "/z7ilT5rNN9kDo8JZmgyhM6ej2xv.jpg",
     "releaseDate": "2019-04-24",
-    "audience": 165778,
+    "audience": 169898,
     "boRank": 10,
     "status": "yes",
     "creditsLen": null,
@@ -158,7 +158,7 @@ const MOVIES = [
     "meta2": "129분",
     "posterPath": "/jV5Mfasg8dP3XK5nuXLetBN3APx.jpg",
     "releaseDate": "2026-10-03",
-    "audience": 60225,
+    "audience": 65879,
     "boRank": 9,
     "status": "yes",
     "creditsLen": null,
@@ -181,8 +181,8 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/mAfcD0lspaNlZDRrzT0fdWS5C01.jpg",
     "releaseDate": "2026-10-08",
-    "audience": 35971,
-    "boRank": 6,
+    "audience": 51643,
+    "boRank": 5,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -197,7 +197,7 @@ const MOVIES = [
     "meta2": "89분",
     "posterPath": "/ioogrqn2xtQjZBuHpNXPb8qtaQG.jpg",
     "releaseDate": "2026-10-07",
-    "audience": 30219,
+    "audience": 41123,
     "boRank": 7,
     "status": "no",
     "creditsLen": null,
