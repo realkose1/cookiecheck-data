@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 12153889,
+    "audience": 12153893,
     "boRank": 4,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 2884459,
+    "audience": 2884497,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -56,7 +56,7 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1690371,
+    "audience": 1690401,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -73,7 +73,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 1161516,
+    "audience": 1161527,
     "boRank": 2,
     "status": "yes",
     "creditsLen": null,
@@ -96,7 +96,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 950661,
+    "audience": 950667,
     "boRank": 8,
     "status": "no",
     "creditsLen": null,
@@ -113,7 +113,7 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/nLsyRK3SmtdIftozpCd8sGQMRGD.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 287164,
+    "audience": 287172,
     "boRank": 6,
     "status": "no",
     "creditsLen": null,
@@ -130,7 +130,7 @@ const MOVIES = [
     "meta2": "181분",
     "posterPath": "/z7ilT5rNN9kDo8JZmgyhM6ej2xv.jpg",
     "releaseDate": "2019-04-24",
-    "audience": 169898,
+    "audience": 169899,
     "boRank": 10,
     "status": "yes",
     "creditsLen": null,
@@ -181,7 +181,7 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/mAfcD0lspaNlZDRrzT0fdWS5C01.jpg",
     "releaseDate": "2026-10-08",
-    "audience": 51643,
+    "audience": 51646,
     "boRank": 5,
     "status": "unknown",
     "creditsLen": null,
@@ -197,7 +197,7 @@ const MOVIES = [
     "meta2": "89분",
     "posterPath": "/ioogrqn2xtQjZBuHpNXPb8qtaQG.jpg",
     "releaseDate": "2026-10-07",
-    "audience": 41123,
+    "audience": 41125,
     "boRank": 7,
     "status": "no",
     "creditsLen": null,
@@ -205,6 +205,29 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "나무위키",
     "sourceUrl": "https://namu.wiki/w/%EC%9E%85%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%95%99%EC%BC%80%ED%8A%B8"
+  },
+  {
+    "id": "other-mommy",
+    "tmdbId": 1400837,
+    "title": "아더 마미",
+    "meta": "공포",
+    "meta2": "93분",
+    "posterPath": "/fGRNCssTRrhYZxNzykGGCoMsAVq.jpg",
+    "releaseDate": "2026-10-08",
+    "audience": null,
+    "boRank": null,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "pos": "크레딧 종료 후",
+        "len": "",
+        "desc": "벨 담(다른 엄마)이 카메라를 내려다보며 입술에 손가락을 갖다 대고 \"쉬이이이잇\" 하고 말합니다."
+      }
+    ],
+    "tip": "",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/10/other-mommy-2026/"
   },
   {
     "id": "tmdb-1280738",
@@ -288,29 +311,6 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "linkin-park-unshatter",
-    "tmdbId": 1388805,
-    "title": "언섀터",
-    "meta": "음악 · 다큐멘터리",
-    "meta2": "108분",
-    "posterPath": "/l4YDO15cNt7wnWs9wX1vSzmW9bn.jpg",
-    "releaseDate": "2026-09-30",
-    "audience": null,
-    "boRank": null,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "pos": "크레딧 종료 후",
-        "len": "",
-        "desc": "크레딧이 끝난 뒤 장면이 있습니다."
-      }
-    ],
-    "tip": "",
-    "source": "TMDB 키워드",
-    "sourceUrl": "https://www.themoviedb.org/movie/1388805"
-  },
-  {
     "id": "stitch-head",
     "tmdbId": 1214130,
     "title": "스티치 헤드: 비밀의 성 꼬마괴물",
@@ -342,6 +342,29 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/03/alpha-2025/"
+  },
+  {
+    "id": "linkin-park-unshatter",
+    "tmdbId": 1388805,
+    "title": "언섀터",
+    "meta": "음악 · 다큐멘터리",
+    "meta2": "108분",
+    "posterPath": "/l4YDO15cNt7wnWs9wX1vSzmW9bn.jpg",
+    "releaseDate": "2026-09-30",
+    "audience": null,
+    "boRank": null,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "pos": "크레딧 종료 후",
+        "len": "",
+        "desc": "크레딧이 끝난 뒤 장면이 있습니다."
+      }
+    ],
+    "tip": "",
+    "source": "TMDB 키워드",
+    "sourceUrl": "https://www.themoviedb.org/movie/1388805"
   },
   {
     "id": "l-tranger",
@@ -408,23 +431,6 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "gukjenews.com · wikitree.co.kr (자동 조사)",
     "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3705818"
-  },
-  {
-    "id": "late-fame",
-    "tmdbId": 1285895,
-    "title": "나의 사적인 예술가",
-    "meta": "드라마",
-    "meta2": "96분",
-    "posterPath": "/hv7zKr3cCdOFhNVcqWYj74Ij6KX.jpg",
-    "releaseDate": "2026-09-23",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/08/late-fame-2025/"
   }
 ];
 
@@ -469,6 +475,10 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "other-mommy": {
+    "up": 0,
+    "down": 0
+  },
   "tmdb-1280738": {
     "up": 0,
     "down": 0
@@ -489,15 +499,15 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "linkin-park-unshatter": {
-    "up": 0,
-    "down": 0
-  },
   "stitch-head": {
     "up": 0,
     "down": 0
   },
   "alpha": {
+    "up": 0,
+    "down": 0
+  },
+  "linkin-park-unshatter": {
     "up": 0,
     "down": 0
   },
@@ -514,10 +524,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "tmdb-1483525": {
-    "up": 0,
-    "down": 0
-  },
-  "late-fame": {
     "up": 0,
     "down": 0
   }
