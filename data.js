@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-12)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261011)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-13)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261012)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-10-12';
-const BOXOFFICE_DATE = "20261011";
+const DATA_UPDATED = '2026-10-13';
+const BOXOFFICE_DATE = "20261012";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 12179156,
+    "audience": 12188630,
     "boRank": 4,
     "status": "no",
     "creditsLen": null,
@@ -33,8 +33,8 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 2992543,
-    "boRank": 2,
+    "audience": 3023203,
+    "boRank": 1,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -56,7 +56,7 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1744160,
+    "audience": 1763144,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -73,8 +73,8 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 1281483,
-    "boRank": 1,
+    "audience": 1311572,
+    "boRank": 2,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -96,14 +96,37 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 955136,
-    "boRank": 9,
+    "audience": 957167,
+    "boRank": 10,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/05/obsession-2025/"
+  },
+  {
+    "id": "tmdb-607833",
+    "tmdbId": 607833,
+    "title": "인턴",
+    "meta": "드라마 · 코미디",
+    "meta2": "133분",
+    "posterPath": "/nPu9o9yHwN8Gu2Yc1av6KKMbXZf.jpg",
+    "releaseDate": "2026-09-16",
+    "audience": 874225,
+    "boRank": 8,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "pos": "크레딧 종료 후",
+        "len": "",
+        "desc": "엔딩 크레딧이 모두 올라간 뒤 쿠키 영상이 한 편 이어집니다. 장면 내용은 공개되지 않았습니다."
+      }
+    ],
+    "tip": "",
+    "source": "언론 보도 (금강일보·이투데이·국제뉴스)",
+    "sourceUrl": "https://www.ggilbo.com/news/articleView.html?idxno=1181861"
   },
   {
     "id": "tmdb-961214",
@@ -113,8 +136,8 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/nLsyRK3SmtdIftozpCd8sGQMRGD.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 302355,
-    "boRank": 5,
+    "audience": 306780,
+    "boRank": 6,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -130,8 +153,8 @@ const MOVIES = [
     "meta2": "129분",
     "posterPath": "/jV5Mfasg8dP3XK5nuXLetBN3APx.jpg",
     "releaseDate": "2026-10-03",
-    "audience": 70497,
-    "boRank": 8,
+    "audience": 72918,
+    "boRank": 9,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -153,8 +176,8 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/mAfcD0lspaNlZDRrzT0fdWS5C01.jpg",
     "releaseDate": "2026-10-08",
-    "audience": 62383,
-    "boRank": 6,
+    "audience": 66994,
+    "boRank": 5,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -169,7 +192,7 @@ const MOVIES = [
     "meta2": "89분",
     "posterPath": "/ioogrqn2xtQjZBuHpNXPb8qtaQG.jpg",
     "releaseDate": "2026-10-07",
-    "audience": 50473,
+    "audience": 53638,
     "boRank": 7,
     "status": "no",
     "creditsLen": null,
@@ -177,22 +200,6 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "나무위키",
     "sourceUrl": "https://namu.wiki/w/%EC%9E%85%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%95%99%EC%BC%80%ED%8A%B8"
-  },
-  {
-    "id": "tmdb-1765609",
-    "tmdbId": 1765609,
-    "title": "극장판 래브라도: 망고축제를 지켜라",
-    "meta": "애니메이션 · 가족",
-    "meta2": "64분",
-    "posterPath": "/44c7U4ipQfJZ8pWmb9cJKy99jAL.jpg",
-    "releaseDate": "2026-10-03",
-    "audience": 34805,
-    "boRank": 10,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   },
   {
     "id": "other-mommy",
@@ -402,6 +409,23 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/09/forgotten-island-2026/"
+  },
+  {
+    "id": "tmdb-1483525",
+    "tmdbId": 1483525,
+    "title": "가능한 사랑",
+    "meta": "드라마",
+    "meta2": "165분",
+    "posterPath": "/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
+    "releaseDate": "2026-09-23",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "gukjenews.com · wikitree.co.kr (자동 조사)",
+    "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3705818"
   }
 ];
 
@@ -426,6 +450,10 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "tmdb-607833": {
+    "up": 0,
+    "down": 0
+  },
   "tmdb-961214": {
     "up": 0,
     "down": 0
@@ -439,10 +467,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "tmdb-1587473": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-1765609": {
     "up": 0,
     "down": 0
   },
@@ -491,6 +515,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "forgotten-island": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-1483525": {
     "up": 0,
     "down": 0
   }
