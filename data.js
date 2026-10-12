@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3023215,
+    "audience": 3023218,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -56,7 +56,7 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1763152,
+    "audience": 1763157,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -73,7 +73,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 1311575,
+    "audience": 1311578,
     "boRank": 2,
     "status": "yes",
     "creditsLen": null,
@@ -378,22 +378,6 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "c-line-et-julie-vont-en-bateau",
-    "tmdbId": 27019,
-    "title": "셀린느와 줄리 배타러 가다",
-    "meta": "코미디 · 드라마 · 판타지",
-    "meta2": "194분",
-    "posterPath": "/4xLKW5uDPGfLiLqithw4UHVuz55.jpg",
-    "releaseDate": "2026-09-30",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
     "id": "forgotten-island",
     "tmdbId": 1465063,
     "title": "포가튼 아일랜드",
@@ -426,6 +410,23 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "gukjenews.com · wikitree.co.kr (자동 조사)",
     "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3705818"
+  },
+  {
+    "id": "late-fame",
+    "tmdbId": 1285895,
+    "title": "나의 사적인 예술가",
+    "meta": "드라마",
+    "meta2": "96분",
+    "posterPath": "/hv7zKr3cCdOFhNVcqWYj74Ij6KX.jpg",
+    "releaseDate": "2026-09-23",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/08/late-fame-2025/"
   }
 ];
 
@@ -510,15 +511,15 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "c-line-et-julie-vont-en-bateau": {
-    "up": 0,
-    "down": 0
-  },
   "forgotten-island": {
     "up": 0,
     "down": 0
   },
   "tmdb-1483525": {
+    "up": 0,
+    "down": 0
+  },
+  "late-fame": {
     "up": 0,
     "down": 0
   }
