@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 2992530,
+    "audience": 2992544,
     "boRank": 2,
     "status": "yes",
     "creditsLen": null,
@@ -56,7 +56,7 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1744153,
+    "audience": 1744160,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -73,7 +73,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 1281481,
+    "audience": 1281485,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -96,7 +96,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 955134,
+    "audience": 955136,
     "boRank": 9,
     "status": "no",
     "creditsLen": null,
@@ -113,7 +113,7 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/nLsyRK3SmtdIftozpCd8sGQMRGD.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 302354,
+    "audience": 302355,
     "boRank": 5,
     "status": "no",
     "creditsLen": null,
@@ -153,7 +153,7 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/mAfcD0lspaNlZDRrzT0fdWS5C01.jpg",
     "releaseDate": "2026-10-08",
-    "audience": 62379,
+    "audience": 62383,
     "boRank": 6,
     "status": "unknown",
     "creditsLen": null,
@@ -169,7 +169,7 @@ const MOVIES = [
     "meta2": "89분",
     "posterPath": "/ioogrqn2xtQjZBuHpNXPb8qtaQG.jpg",
     "releaseDate": "2026-10-07",
-    "audience": 50471,
+    "audience": 50473,
     "boRank": 7,
     "status": "no",
     "creditsLen": null,
@@ -198,7 +198,7 @@ const MOVIES = [
     "id": "other-mommy",
     "tmdbId": 1400837,
     "title": "아더 마미",
-    "meta": "공포 · 판타지 · 스릴러",
+    "meta": "공포",
     "meta2": "93분",
     "posterPath": "/fGRNCssTRrhYZxNzykGGCoMsAVq.jpg",
     "releaseDate": "2026-10-08",
@@ -299,22 +299,6 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "stitch-head",
-    "tmdbId": 1214130,
-    "title": "스티치 헤드: 비밀의 성 꼬마괴물",
-    "meta": "애니메이션 · 모험 · 가족",
-    "meta2": "92분",
-    "posterPath": "/dTcAE69YKmEatDPCl1BmOpFHbUb.jpg",
-    "releaseDate": "2026-09-30",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
     "id": "alpha",
     "tmdbId": 1284460,
     "title": "알파",
@@ -330,6 +314,22 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/03/alpha-2025/"
+  },
+  {
+    "id": "stitch-head",
+    "tmdbId": 1214130,
+    "title": "스티치 헤드: 비밀의 성 꼬마괴물",
+    "meta": "애니메이션 · 모험 · 가족",
+    "meta2": "92분",
+    "posterPath": "/dTcAE69YKmEatDPCl1BmOpFHbUb.jpg",
+    "releaseDate": "2026-09-30",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   },
   {
     "id": "linkin-park-unshatter",
@@ -470,11 +470,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "stitch-head": {
+  "alpha": {
     "up": 0,
     "down": 0
   },
-  "alpha": {
+  "stitch-head": {
     "up": 0,
     "down": 0
   },
