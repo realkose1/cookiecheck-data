@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-13)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261012)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-14)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261013)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-10-13';
-const BOXOFFICE_DATE = "20261012";
+const DATA_UPDATED = '2026-10-14';
+const BOXOFFICE_DATE = "20261013";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 12188627,
+    "audience": 12197801,
     "boRank": 4,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3024567,
+    "audience": 3057407,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -56,7 +56,7 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1763763,
+    "audience": 1783329,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -73,7 +73,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 1311574,
+    "audience": 1339819,
     "boRank": 2,
     "status": "yes",
     "creditsLen": null,
@@ -96,7 +96,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/df4rpubfWy0g7HCzBNtPLLKnoMH.jpg",
     "releaseDate": "2026-09-02",
-    "audience": 957163,
+    "audience": 959153,
     "boRank": 10,
     "status": "no",
     "creditsLen": null,
@@ -113,8 +113,8 @@ const MOVIES = [
     "meta2": "133분",
     "posterPath": "/nPu9o9yHwN8Gu2Yc1av6KKMbXZf.jpg",
     "releaseDate": "2026-09-16",
-    "audience": 874148,
-    "boRank": 8,
+    "audience": 878478,
+    "boRank": 5,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -136,8 +136,8 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/nLsyRK3SmtdIftozpCd8sGQMRGD.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 306979,
-    "boRank": 6,
+    "audience": 311083,
+    "boRank": 7,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -153,7 +153,7 @@ const MOVIES = [
     "meta2": "129분",
     "posterPath": "/jV5Mfasg8dP3XK5nuXLetBN3APx.jpg",
     "releaseDate": "2026-10-03",
-    "audience": 72964,
+    "audience": 75916,
     "boRank": 9,
     "status": "yes",
     "creditsLen": null,
@@ -176,8 +176,8 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/mAfcD0lspaNlZDRrzT0fdWS5C01.jpg",
     "releaseDate": "2026-10-08",
-    "audience": 66994,
-    "boRank": 5,
+    "audience": 71222,
+    "boRank": 6,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -192,14 +192,78 @@ const MOVIES = [
     "meta2": "89분",
     "posterPath": "/ioogrqn2xtQjZBuHpNXPb8qtaQG.jpg",
     "releaseDate": "2026-10-07",
-    "audience": 53639,
-    "boRank": 7,
+    "audience": 57289,
+    "boRank": 8,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "나무위키",
     "sourceUrl": "https://namu.wiki/w/%EC%9E%85%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%95%99%EC%BC%80%ED%8A%B8"
+  },
+  {
+    "id": "street-fighter",
+    "tmdbId": 1153576,
+    "title": "스트리트 파이터",
+    "meta": "액션 · 판타지",
+    "meta2": "120분",
+    "posterPath": "/3EgtiR2ewNQxjJ1qizhDe4IrpPk.jpg",
+    "releaseDate": "2026-10-14",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "whalefall",
+    "tmdbId": 1255833,
+    "title": "웨일폴: 고래에 먹힌 남자",
+    "meta": "스릴러",
+    "meta2": "106분",
+    "posterPath": "/6ke2azOZ9sfe7SMn7rPhQWd0FPD.jpg",
+    "releaseDate": "2026-10-14",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "tmdb-1279865",
+    "tmdbId": 1279865,
+    "title": "파리스 그린이 밝는 날에",
+    "meta": "애니메이션 · 드라마",
+    "meta2": "76분",
+    "posterPath": "/2qarnbiETjCO65kAhW3SRb6ZnE0.jpg",
+    "releaseDate": "2026-10-14",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "heaven-knows-what",
+    "tmdbId": 285024,
+    "title": "헤븐 노우즈 왓",
+    "meta": "드라마 · 범죄",
+    "meta2": "93분",
+    "posterPath": "/wkjBgR2GFEiYmzkXwF394Z2vMvu.jpg",
+    "releaseDate": "2026-10-14",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   },
   {
     "id": "other-mommy",
@@ -360,73 +424,6 @@ const MOVIES = [
     "tip": "",
     "source": "TMDB 키워드",
     "sourceUrl": "https://www.themoviedb.org/movie/1388805"
-  },
-  {
-    "id": "l-tranger",
-    "tmdbId": 1429348,
-    "title": "이방인",
-    "meta": "드라마 · 범죄",
-    "meta2": "123분",
-    "posterPath": "/2NoWaSTgKF7FcJ0Lr5NrvDDINOv.jpg",
-    "releaseDate": "2026-09-30",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
-    "id": "forgotten-island",
-    "tmdbId": 1465063,
-    "title": "포가튼 아일랜드",
-    "meta": "애니메이션 · 모험 · 판타지",
-    "meta2": "109분",
-    "posterPath": "/bIQY9RLkqUhdwOBExK4k3ggxddF.jpg",
-    "releaseDate": "2026-09-23",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/09/forgotten-island-2026/"
-  },
-  {
-    "id": "tmdb-1483525",
-    "tmdbId": 1483525,
-    "title": "가능한 사랑",
-    "meta": "드라마",
-    "meta2": "165분",
-    "posterPath": "/7UAzxqezg5yvZyK3k62wOAzg0Zs.jpg",
-    "releaseDate": "2026-09-23",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "gukjenews.com · wikitree.co.kr (자동 조사)",
-    "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3705818"
-  },
-  {
-    "id": "late-fame",
-    "tmdbId": 1285895,
-    "title": "나의 사적인 예술가",
-    "meta": "드라마 · 코미디",
-    "meta2": "96분",
-    "posterPath": "/hv7zKr3cCdOFhNVcqWYj74Ij6KX.jpg",
-    "releaseDate": "2026-09-23",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/08/late-fame-2025/"
   }
 ];
 
@@ -471,6 +468,22 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "street-fighter": {
+    "up": 0,
+    "down": 0
+  },
+  "whalefall": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-1279865": {
+    "up": 0,
+    "down": 0
+  },
+  "heaven-knows-what": {
+    "up": 0,
+    "down": 0
+  },
   "other-mommy": {
     "up": 0,
     "down": 0
@@ -504,22 +517,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "linkin-park-unshatter": {
-    "up": 0,
-    "down": 0
-  },
-  "l-tranger": {
-    "up": 0,
-    "down": 0
-  },
-  "forgotten-island": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-1483525": {
-    "up": 0,
-    "down": 0
-  },
-  "late-fame": {
     "up": 0,
     "down": 0
   }
