@@ -11,16 +11,34 @@
   "reason": "검색 도구 사용 한도를 초과해 쿠키 영상 유무를 직접 확인한 근거 문장을 하나도 얻지 못했다. 근거가 없으므로 unknown 으로 판정한다.",
   "status": "unknown"
  },
+ "1153576": {
+  "attempts": 1,
+  "checkedAt": "2026-10-14",
+  "reason": "2026년 작품(키타오 사쿠라이 감독) 쿠키 영상 유무를 직접 확인한 문장을 찾지 못했다. 검색에서 나온 것은 1994년 실사판 관련 글뿐이라 동명 작품으로 배제했고, 이후 검색 한도가 초과돼 추가 조사를 하지 못했다.",
+  "status": "unknown"
+ },
  "1214130": {
   "attempts": 1,
   "checkedAt": "2026-09-30",
   "reason": "모델 응답을 해석하지 못함",
   "status": "unknown"
  },
+ "1255833": {
+  "attempts": 1,
+  "checkedAt": "2026-10-14",
+  "reason": "2026년작 Brian Duffield 감독의 Whalefall은 IMDb에 후반 작업 중(Post-production)으로 올라 있고 개봉 예정일은 2026년 10월입니다. 아직 개봉 전이라 쿠키 영상이 있다거나 없다고 적은 출처를 찾지 못했습니다.",
+  "status": "unknown"
+ },
  "1265717": {
   "attempts": 2,
   "checkedAt": "2026-09-30",
   "reason": "국내외 검색에서 '친숙한 손길(Familiar Touch, 2024, Sarah Friedland)'의 쿠키/포스트크레디트 영상 유무를 명시적으로 언급한 자료를 찾지 못해 판정할 근거가 없음",
+  "status": "unknown"
+ },
+ "1279865": {
+  "attempts": 1,
+  "checkedAt": "2026-10-14",
+  "reason": "검색 도구 사용 한도를 넘겨서 쿠키 영상에 대한 '있음'이나 '없음' 근거를 하나도 찾지 못했다. 근거가 없으므로 unknown으로 판정한다.",
   "status": "unknown"
  },
  "1305781": {
@@ -159,6 +177,12 @@
   "attempts": 1,
   "checkedAt": "2026-10-07",
   "reason": "검색 도구 사용 한도를 초과해서 쿠키 영상 유무를 명시한 근거를 찾지 못했다. 근거 없이 yes/no 를 만들지 않고 unknown 으로 둔다.",
+  "status": "unknown"
+ },
+ "285024": {
+  "attempts": 1,
+  "checkedAt": "2026-10-14",
+  "reason": "검색 도구 사용 한도를 넘겨 2015년 Safdie 형제 감독작 'Heaven Knows What'의 쿠키 영상 여부를 확인할 근거를 찾지 못했다. 없음을 뒷받침하는 문장도 확보하지 못해 unknown으로 판정한다.",
   "status": "unknown"
  },
  "42360": {
