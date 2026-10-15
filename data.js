@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 12206615,
+    "audience": 12206620,
     "boRank": 7,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3085555,
+    "audience": 3085650,
     "boRank": 2,
     "status": "yes",
     "creditsLen": null,
@@ -56,7 +56,7 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1800344,
+    "audience": 1800351,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -73,7 +73,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 1415024,
+    "audience": 1415028,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -96,7 +96,7 @@ const MOVIES = [
     "meta2": "133분",
     "posterPath": "/nPu9o9yHwN8Gu2Yc1av6KKMbXZf.jpg",
     "releaseDate": "2026-09-16",
-    "audience": 881842,
+    "audience": 881684,
     "boRank": 9,
     "status": "yes",
     "creditsLen": null,
@@ -119,7 +119,7 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/nLsyRK3SmtdIftozpCd8sGQMRGD.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 314335,
+    "audience": 314343,
     "boRank": 10,
     "status": "no",
     "creditsLen": null,
@@ -281,23 +281,6 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "tmdb-1587473",
-    "tmdbId": 1587473,
-    "title": "입에 대한 앙케트",
-    "meta": "공포",
-    "meta2": "89분",
-    "posterPath": "/ioogrqn2xtQjZBuHpNXPb8qtaQG.jpg",
-    "releaseDate": "2026-10-07",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "나무위키",
-    "sourceUrl": "https://namu.wiki/w/%EC%9E%85%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%95%99%EC%BC%80%ED%8A%B8"
-  },
-  {
     "id": "digger",
     "tmdbId": 1248832,
     "title": "디거",
@@ -343,6 +326,22 @@ const MOVIES = [
     "meta": "스릴러 · 범죄",
     "meta2": "96분",
     "posterPath": "/zxTQqW2BYaBjLIvdfkXNnVfpfB3.jpg",
+    "releaseDate": "2026-09-30",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "l-tranger",
+    "tmdbId": 1429348,
+    "title": "이방인",
+    "meta": "드라마 · 범죄",
+    "meta2": "123분",
+    "posterPath": "/2NoWaSTgKF7FcJ0Lr5NrvDDINOv.jpg",
     "releaseDate": "2026-09-30",
     "audience": null,
     "boRank": null,
@@ -464,10 +463,6 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-1587473": {
-    "up": 0,
-    "down": 0
-  },
   "digger": {
     "up": 0,
     "down": 0
@@ -477,6 +472,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "above-below": {
+    "up": 0,
+    "down": 0
+  },
+  "l-tranger": {
     "up": 0,
     "down": 0
   },
