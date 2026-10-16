@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
    작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-16)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261014)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261015)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
 const DATA_UPDATED = '2026-10-16';
-const BOXOFFICE_DATE = "20261014";
+const BOXOFFICE_DATE = "20261015";
 
 const MOVIES = [
   {
@@ -16,8 +16,8 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 12206618,
-    "boRank": 7,
+    "audience": 12215228,
+    "boRank": 4,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3085651,
+    "audience": 3109162,
     "boRank": 2,
     "status": "yes",
     "creditsLen": null,
@@ -56,7 +56,7 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1800351,
+    "audience": 1816886,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -73,7 +73,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 1415025,
+    "audience": 1450447,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -96,8 +96,8 @@ const MOVIES = [
     "meta2": "133분",
     "posterPath": "/nPu9o9yHwN8Gu2Yc1av6KKMbXZf.jpg",
     "releaseDate": "2026-09-16",
-    "audience": 881684,
-    "boRank": 9,
+    "audience": 886190,
+    "boRank": 8,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -112,23 +112,6 @@ const MOVIES = [
     "sourceUrl": "https://www.ggilbo.com/news/articleView.html?idxno=1181861"
   },
   {
-    "id": "tmdb-961214",
-    "tmdbId": 961214,
-    "title": "부활남: 더 레드",
-    "meta": "액션 · 판타지",
-    "meta2": "102분",
-    "posterPath": "/nLsyRK3SmtdIftozpCd8sGQMRGD.jpg",
-    "releaseDate": "2026-09-30",
-    "audience": 314343,
-    "boRank": 10,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "gukjenews.com (자동 조사)",
-    "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3710851"
-  },
-  {
     "id": "tmdb-1591675",
     "tmdbId": 1591675,
     "title": "룩백",
@@ -136,13 +119,30 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/mAfcD0lspaNlZDRrzT0fdWS5C01.jpg",
     "releaseDate": "2026-10-08",
-    "audience": 77263,
-    "boRank": 8,
+    "audience": 80731,
+    "boRank": 9,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
+  },
+  {
+    "id": "tmdb-1587473",
+    "tmdbId": 1587473,
+    "title": "입에 대한 앙케트",
+    "meta": "공포",
+    "meta2": "89분",
+    "posterPath": "/ioogrqn2xtQjZBuHpNXPb8qtaQG.jpg",
+    "releaseDate": "2026-10-07",
+    "audience": 62127,
+    "boRank": 10,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "나무위키",
+    "sourceUrl": "https://namu.wiki/w/%EC%9E%85%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%95%99%EC%BC%80%ED%8A%B8"
   },
   {
     "id": "tmdb-1688392",
@@ -152,8 +152,8 @@ const MOVIES = [
     "meta2": "110분",
     "posterPath": "/w2MLLbXARkOYkuWn71H5Cd5tCLX.jpg",
     "releaseDate": "2026-10-14",
-    "audience": 14691,
-    "boRank": 4,
+    "audience": 20220,
+    "boRank": 7,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -168,7 +168,7 @@ const MOVIES = [
     "meta2": "120분",
     "posterPath": "/3EgtiR2ewNQxjJ1qizhDe4IrpPk.jpg",
     "releaseDate": "2026-10-14",
-    "audience": 11043,
+    "audience": 18107,
     "boRank": 5,
     "status": "unknown",
     "creditsLen": null,
@@ -184,8 +184,40 @@ const MOVIES = [
     "meta2": "106분",
     "posterPath": "/6ke2azOZ9sfe7SMn7rPhQWd0FPD.jpg",
     "releaseDate": "2026-10-14",
-    "audience": 10776,
+    "audience": 17726,
     "boRank": 6,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "luz-silenciosa",
+    "tmdbId": 2012,
+    "title": "침묵의 빛",
+    "meta": "드라마 · 로맨스",
+    "meta2": "137분",
+    "posterPath": "/4bpkqrC1XSwIBzVEFUajEH3oSm5.jpg",
+    "releaseDate": "2026-10-14",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "heaven-knows-what",
+    "tmdbId": 285024,
+    "title": "헤븐 노우즈 왓",
+    "meta": "드라마 · 범죄",
+    "meta2": "93분",
+    "posterPath": "/wkjBgR2GFEiYmzkXwF394Z2vMvu.jpg",
+    "releaseDate": "2026-10-14",
+    "audience": null,
+    "boRank": null,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -320,22 +352,6 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "above-below",
-    "tmdbId": 1514682,
-    "title": "카르텔 오션",
-    "meta": "스릴러 · 범죄",
-    "meta2": "96분",
-    "posterPath": "/zxTQqW2BYaBjLIvdfkXNnVfpfB3.jpg",
-    "releaseDate": "2026-09-30",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
     "id": "l-tranger",
     "tmdbId": 1429348,
     "title": "이방인",
@@ -352,12 +368,12 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "tmdb-1305781",
-    "tmdbId": 1305781,
-    "title": "표인: 풍기대막",
-    "meta": "액션 · 모험",
-    "meta2": "127분",
-    "posterPath": "/yVEwJ0Badf4KYhhXNRNa8MIkgKP.jpg",
+    "id": "above-below",
+    "tmdbId": 1514682,
+    "title": "카르텔 오션",
+    "meta": "스릴러 · 범죄",
+    "meta2": "96분",
+    "posterPath": "/zxTQqW2BYaBjLIvdfkXNnVfpfB3.jpg",
     "releaseDate": "2026-09-30",
     "audience": null,
     "boRank": null,
@@ -368,29 +384,12 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "alpha",
-    "tmdbId": 1284460,
-    "title": "알파",
-    "meta": "공포 · 드라마 · SF",
-    "meta2": "128분",
-    "posterPath": "/tUZaajRDFjitxzCQK87vlRDedox.jpg",
-    "releaseDate": "2026-09-30",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/03/alpha-2025/"
-  },
-  {
-    "id": "stitch-head",
-    "tmdbId": 1214130,
-    "title": "스티치 헤드: 비밀의 성 꼬마괴물",
-    "meta": "애니메이션 · 모험 · 가족",
-    "meta2": "92분",
-    "posterPath": "/dTcAE69YKmEatDPCl1BmOpFHbUb.jpg",
+    "id": "tmdb-1305781",
+    "tmdbId": 1305781,
+    "title": "표인: 풍기대막",
+    "meta": "액션 · 모험",
+    "meta2": "127분",
+    "posterPath": "/yVEwJ0Badf4KYhhXNRNa8MIkgKP.jpg",
     "releaseDate": "2026-09-30",
     "audience": null,
     "boRank": null,
@@ -423,11 +422,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-961214": {
+  "tmdb-1591675": {
     "up": 0,
     "down": 0
   },
-  "tmdb-1591675": {
+  "tmdb-1587473": {
     "up": 0,
     "down": 0
   },
@@ -440,6 +439,14 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "whalefall": {
+    "up": 0,
+    "down": 0
+  },
+  "luz-silenciosa": {
+    "up": 0,
+    "down": 0
+  },
+  "heaven-knows-what": {
     "up": 0,
     "down": 0
   },
@@ -471,23 +478,15 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "above-below": {
-    "up": 0,
-    "down": 0
-  },
   "l-tranger": {
     "up": 0,
     "down": 0
   },
+  "above-below": {
+    "up": 0,
+    "down": 0
+  },
   "tmdb-1305781": {
-    "up": 0,
-    "down": 0
-  },
-  "alpha": {
-    "up": 0,
-    "down": 0
-  },
-  "stitch-head": {
     "up": 0,
     "down": 0
   }
