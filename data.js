@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-16)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261015)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-17)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261016)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-10-16';
-const BOXOFFICE_DATE = "20261015";
+const DATA_UPDATED = '2026-10-17';
+const BOXOFFICE_DATE = "20261016";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 12215225,
+    "audience": 12227469,
     "boRank": 4,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3109159,
+    "audience": 3139201,
     "boRank": 2,
     "status": "yes",
     "creditsLen": null,
@@ -56,7 +56,7 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1816876,
+    "audience": 1838525,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -73,7 +73,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 1450437,
+    "audience": 1507859,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -96,8 +96,8 @@ const MOVIES = [
     "meta2": "133분",
     "posterPath": "/nPu9o9yHwN8Gu2Yc1av6KKMbXZf.jpg",
     "releaseDate": "2026-09-16",
-    "audience": 886190,
-    "boRank": 8,
+    "audience": 890324,
+    "boRank": 10,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -119,8 +119,8 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/mAfcD0lspaNlZDRrzT0fdWS5C01.jpg",
     "releaseDate": "2026-10-08",
-    "audience": 80731,
-    "boRank": 9,
+    "audience": 86622,
+    "boRank": 6,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -135,14 +135,30 @@ const MOVIES = [
     "meta2": "89분",
     "posterPath": "/ioogrqn2xtQjZBuHpNXPb8qtaQG.jpg",
     "releaseDate": "2026-10-07",
-    "audience": 62123,
-    "boRank": 10,
+    "audience": 66268,
+    "boRank": 9,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "나무위키",
     "sourceUrl": "https://namu.wiki/w/%EC%9E%85%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%95%99%EC%BC%80%ED%8A%B8"
+  },
+  {
+    "id": "whalefall",
+    "tmdbId": 1255833,
+    "title": "웨일폴: 고래에 먹힌 남자",
+    "meta": "스릴러",
+    "meta2": "106분",
+    "posterPath": "/6ke2azOZ9sfe7SMn7rPhQWd0FPD.jpg",
+    "releaseDate": "2026-10-14",
+    "audience": 27625,
+    "boRank": 5,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   },
   {
     "id": "tmdb-1688392",
@@ -152,7 +168,7 @@ const MOVIES = [
     "meta2": "110분",
     "posterPath": "/w2MLLbXARkOYkuWn71H5Cd5tCLX.jpg",
     "releaseDate": "2026-10-14",
-    "audience": 20220,
+    "audience": 25259,
     "boRank": 7,
     "status": "unknown",
     "creditsLen": null,
@@ -168,8 +184,8 @@ const MOVIES = [
     "meta2": "120분",
     "posterPath": "/3EgtiR2ewNQxjJ1qizhDe4IrpPk.jpg",
     "releaseDate": "2026-10-14",
-    "audience": 18107,
-    "boRank": 5,
+    "audience": 22736,
+    "boRank": 8,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -177,15 +193,15 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "whalefall",
-    "tmdbId": 1255833,
-    "title": "웨일폴: 고래에 먹힌 남자",
-    "meta": "스릴러",
-    "meta2": "106분",
-    "posterPath": "/6ke2azOZ9sfe7SMn7rPhQWd0FPD.jpg",
-    "releaseDate": "2026-10-14",
-    "audience": 17726,
-    "boRank": 6,
+    "id": "always-lalisa",
+    "tmdbId": 1489932,
+    "title": "올웨이즈 라리사",
+    "meta": "다큐멘터리 · 음악",
+    "meta2": "98분",
+    "posterPath": "/c7qIZRN2Yu581XadWd4iUYXizWw.jpg",
+    "releaseDate": "2026-10-17",
+    "audience": null,
+    "boRank": null,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -430,6 +446,10 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "whalefall": {
+    "up": 0,
+    "down": 0
+  },
   "tmdb-1688392": {
     "up": 0,
     "down": 0
@@ -438,7 +458,7 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "whalefall": {
+  "always-lalisa": {
     "up": 0,
     "down": 0
   },
