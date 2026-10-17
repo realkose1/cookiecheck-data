@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 12227469,
+    "audience": 12227452,
     "boRank": 4,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3139201,
+    "audience": 3139218,
     "boRank": 2,
     "status": "yes",
     "creditsLen": null,
@@ -56,7 +56,7 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1838525,
+    "audience": 1838530,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -73,7 +73,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 1507859,
+    "audience": 1507879,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -119,7 +119,7 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/mAfcD0lspaNlZDRrzT0fdWS5C01.jpg",
     "releaseDate": "2026-10-08",
-    "audience": 86622,
+    "audience": 86623,
     "boRank": 6,
     "status": "unknown",
     "creditsLen": null,
@@ -135,7 +135,7 @@ const MOVIES = [
     "meta2": "89분",
     "posterPath": "/ioogrqn2xtQjZBuHpNXPb8qtaQG.jpg",
     "releaseDate": "2026-10-07",
-    "audience": 66268,
+    "audience": 66270,
     "boRank": 9,
     "status": "no",
     "creditsLen": null,
@@ -152,7 +152,7 @@ const MOVIES = [
     "meta2": "106분",
     "posterPath": "/6ke2azOZ9sfe7SMn7rPhQWd0FPD.jpg",
     "releaseDate": "2026-10-14",
-    "audience": 27625,
+    "audience": 27636,
     "boRank": 5,
     "status": "unknown",
     "creditsLen": null,
@@ -184,13 +184,20 @@ const MOVIES = [
     "meta2": "120분",
     "posterPath": "/3EgtiR2ewNQxjJ1qizhDe4IrpPk.jpg",
     "releaseDate": "2026-10-14",
-    "audience": 22736,
+    "audience": 22741,
     "boRank": 8,
-    "status": "unknown",
+    "status": "yes",
     "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
+    "cookies": [
+      {
+        "pos": "위치 미확인",
+        "len": "",
+        "desc": "크레딧 이후 장면에서 해변 또는 정글 같은 곳이 나옵니다. 눈가리개를 한 채 가슴에 큰 흉터가 있는 사내가 바이슨과 그 부하들의 방문을 받는데, 이 사내는 영화 초반 류에게 패했던 사가트입니다. 속편에서 류와 켄이 바이슨과 사가트를 함께 상대하게 될 수 있음을 암시합니다."
+      }
+    ],
+    "tip": "",
+    "source": "slashfilm.com (자동 조사)",
+    "sourceUrl": "https://www.slashfilm.com/2288706/street-fighter-2026-movie-ending-explained/"
   },
   {
     "id": "always-lalisa",
@@ -209,12 +216,12 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "luz-silenciosa",
-    "tmdbId": 2012,
-    "title": "침묵의 빛",
-    "meta": "드라마 · 로맨스",
-    "meta2": "137분",
-    "posterPath": "/4bpkqrC1XSwIBzVEFUajEH3oSm5.jpg",
+    "id": "heaven-knows-what",
+    "tmdbId": 285024,
+    "title": "헤븐 노우즈 왓",
+    "meta": "드라마 · 범죄",
+    "meta2": "93분",
+    "posterPath": "/wkjBgR2GFEiYmzkXwF394Z2vMvu.jpg",
     "releaseDate": "2026-10-14",
     "audience": null,
     "boRank": null,
@@ -225,12 +232,12 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "heaven-knows-what",
-    "tmdbId": 285024,
-    "title": "헤븐 노우즈 왓",
-    "meta": "드라마 · 범죄",
-    "meta2": "93분",
-    "posterPath": "/wkjBgR2GFEiYmzkXwF394Z2vMvu.jpg",
+    "id": "luz-silenciosa",
+    "tmdbId": 2012,
+    "title": "침묵의 빛",
+    "meta": "드라마 · 로맨스",
+    "meta2": "137분",
+    "posterPath": "/4bpkqrC1XSwIBzVEFUajEH3oSm5.jpg",
     "releaseDate": "2026-10-14",
     "audience": null,
     "boRank": null,
@@ -368,12 +375,12 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "l-tranger",
-    "tmdbId": 1429348,
-    "title": "이방인",
-    "meta": "드라마 · 범죄",
-    "meta2": "123분",
-    "posterPath": "/2NoWaSTgKF7FcJ0Lr5NrvDDINOv.jpg",
+    "id": "above-below",
+    "tmdbId": 1514682,
+    "title": "카르텔 오션",
+    "meta": "스릴러 · 범죄",
+    "meta2": "96분",
+    "posterPath": "/zxTQqW2BYaBjLIvdfkXNnVfpfB3.jpg",
     "releaseDate": "2026-09-30",
     "audience": null,
     "boRank": null,
@@ -384,12 +391,12 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "above-below",
-    "tmdbId": 1514682,
-    "title": "카르텔 오션",
-    "meta": "스릴러 · 범죄",
-    "meta2": "96분",
-    "posterPath": "/zxTQqW2BYaBjLIvdfkXNnVfpfB3.jpg",
+    "id": "l-tranger",
+    "tmdbId": 1429348,
+    "title": "이방인",
+    "meta": "드라마 · 범죄",
+    "meta2": "123분",
+    "posterPath": "/2NoWaSTgKF7FcJ0Lr5NrvDDINOv.jpg",
     "releaseDate": "2026-09-30",
     "audience": null,
     "boRank": null,
@@ -462,11 +469,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "luz-silenciosa": {
+  "heaven-knows-what": {
     "up": 0,
     "down": 0
   },
-  "heaven-knows-what": {
+  "luz-silenciosa": {
     "up": 0,
     "down": 0
   },
@@ -498,11 +505,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "l-tranger": {
+  "above-below": {
     "up": 0,
     "down": 0
   },
-  "above-below": {
+  "l-tranger": {
     "up": 0,
     "down": 0
   },

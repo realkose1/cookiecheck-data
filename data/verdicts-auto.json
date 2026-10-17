@@ -12,10 +12,21 @@
   "status": "unknown"
  },
  "1153576": {
-  "attempts": 1,
-  "checkedAt": "2026-10-14",
-  "reason": "2026년 작품(키타오 사쿠라이 감독) 쿠키 영상 유무를 직접 확인한 문장을 찾지 못했다. 검색에서 나온 것은 1994년 실사판 관련 글뿐이라 동명 작품으로 배제했고, 이후 검색 한도가 초과돼 추가 조사를 하지 못했다.",
-  "status": "unknown"
+  "checkedAt": "2026-10-17",
+  "cookies": [
+   {
+    "desc": "크레딧 이후 장면에서 해변 또는 정글 같은 곳이 나옵니다. 눈가리개를 한 채 가슴에 큰 흉터가 있는 사내가 바이슨과 그 부하들의 방문을 받는데, 이 사내는 영화 초반 류에게 패했던 사가트입니다. 속편에서 류와 켄이 바이슨과 사가트를 함께 상대하게 될 수 있음을 암시합니다.",
+    "len": "",
+    "pos": "위치 미확인"
+   }
+  ],
+  "model": "claude-sonnet-5-5",
+  "quote": "Then we get the post-credits scene, which relocates to what looks like a beach or jungle landscape.",
+  "reason": "SlashFilm 기사가 2026년 파라마운트판 스트리트 파이터(감독 키타오 사쿠라이)의 포스트 크레딧 장면을 명시했습니다. 다만 기사에 크레딧 중간인지 종료 후인지는 나와 있지 않아 위치는 미확인으로 뒀습니다.",
+  "source": "slashfilm.com (자동 조사)",
+  "sourceUrl": "https://www.slashfilm.com/2288706/street-fighter-2026-movie-ending-explained/",
+  "status": "yes",
+  "tip": ""
  },
  "1214130": {
   "attempts": 1,
@@ -24,9 +35,9 @@
   "status": "unknown"
  },
  "1255833": {
-  "attempts": 1,
-  "checkedAt": "2026-10-14",
-  "reason": "2026년작 Brian Duffield 감독의 Whalefall은 IMDb에 후반 작업 중(Post-production)으로 올라 있고 개봉 예정일은 2026년 10월입니다. 아직 개봉 전이라 쿠키 영상이 있다거나 없다고 적은 출처를 찾지 못했습니다.",
+  "attempts": 2,
+  "checkedAt": "2026-10-17",
+  "reason": "'no' 로 답했으나 근거 부족 — 독립 출처 1건뿐 (yahoo.com) — 후기·블로그는 2건 필요",
   "status": "unknown"
  },
  "1265717": {
@@ -130,6 +141,12 @@
   "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3705818",
   "status": "no",
   "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다."
+ },
+ "1489932": {
+  "attempts": 1,
+  "checkedAt": "2026-10-17",
+  "reason": "쿠키 영상이 있다거나 없다고 명시한 문장을 찾지 못했다. 위키백과 문서에도 크레딧 이후 장면에 대한 언급이 없다. 검색 도구 사용 한도가 초과되어 추가 확인도 못 했다.",
+  "status": "unknown"
  },
  "1512207": {
   "attempts": 2,
