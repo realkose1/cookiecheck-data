@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-17)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261016)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-18)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261017)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-10-17';
-const BOXOFFICE_DATE = "20261016";
+const DATA_UPDATED = '2026-10-18';
+const BOXOFFICE_DATE = "20261017";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 12227452,
+    "audience": 12247715,
     "boRank": 4,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3139216,
+    "audience": 3192758,
     "boRank": 2,
     "status": "yes",
     "creditsLen": null,
@@ -56,7 +56,7 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1838530,
+    "audience": 1874944,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -73,7 +73,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 1507877,
+    "audience": 1682661,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -89,29 +89,6 @@ const MOVIES = [
     "sourceUrl": "https://namu.wiki/w/%EA%B7%B9%EC%9E%A5%ED%8C%90%20%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80%3A%20%EC%9D%B8%EC%96%B4%20%EC%84%AC%EC%9D%98%20%EB%B9%84%EB%B0%80"
   },
   {
-    "id": "tmdb-607833",
-    "tmdbId": 607833,
-    "title": "인턴",
-    "meta": "드라마 · 코미디",
-    "meta2": "133분",
-    "posterPath": "/nPu9o9yHwN8Gu2Yc1av6KKMbXZf.jpg",
-    "releaseDate": "2026-09-16",
-    "audience": 890324,
-    "boRank": 10,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "pos": "크레딧 종료 후",
-        "len": "",
-        "desc": "엔딩 크레딧이 모두 올라간 뒤 쿠키 영상이 한 편 이어집니다. 장면 내용은 공개되지 않았습니다."
-      }
-    ],
-    "tip": "",
-    "source": "언론 보도 (금강일보·이투데이·국제뉴스)",
-    "sourceUrl": "https://www.ggilbo.com/news/articleView.html?idxno=1181861"
-  },
-  {
     "id": "tmdb-1591675",
     "tmdbId": 1591675,
     "title": "룩백",
@@ -119,13 +96,36 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/mAfcD0lspaNlZDRrzT0fdWS5C01.jpg",
     "releaseDate": "2026-10-08",
-    "audience": 86623,
-    "boRank": 6,
+    "audience": 96723,
+    "boRank": 7,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
+  },
+  {
+    "id": "digger",
+    "tmdbId": 1248832,
+    "title": "디거",
+    "meta": "코미디 · 드라마",
+    "meta2": "129분",
+    "posterPath": "/jV5Mfasg8dP3XK5nuXLetBN3APx.jpg",
+    "releaseDate": "2026-10-03",
+    "audience": 85321,
+    "boRank": 10,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "pos": "크레딧 중간",
+        "len": "",
+        "desc": "엔딩 크레딧 전반부는 극장 밖 장면 위로 흘러가며, 홍수로 인한 잔해와 거대한 방조제로 가득 찬 디스토피아적인 도시의 모습을 보여줍니다."
+      }
+    ],
+    "tip": "",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/10/digger-2026/"
   },
   {
     "id": "tmdb-1587473",
@@ -135,7 +135,7 @@ const MOVIES = [
     "meta2": "89분",
     "posterPath": "/ioogrqn2xtQjZBuHpNXPb8qtaQG.jpg",
     "releaseDate": "2026-10-07",
-    "audience": 66270,
+    "audience": 72157,
     "boRank": 9,
     "status": "no",
     "creditsLen": null,
@@ -152,7 +152,7 @@ const MOVIES = [
     "meta2": "106분",
     "posterPath": "/6ke2azOZ9sfe7SMn7rPhQWd0FPD.jpg",
     "releaseDate": "2026-10-14",
-    "audience": 27636,
+    "audience": 42466,
     "boRank": 5,
     "status": "unknown",
     "creditsLen": null,
@@ -168,8 +168,8 @@ const MOVIES = [
     "meta2": "110분",
     "posterPath": "/w2MLLbXARkOYkuWn71H5Cd5tCLX.jpg",
     "releaseDate": "2026-10-14",
-    "audience": 25259,
-    "boRank": 7,
+    "audience": 35601,
+    "boRank": 6,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -184,7 +184,7 @@ const MOVIES = [
     "meta2": "120분",
     "posterPath": "/3EgtiR2ewNQxjJ1qizhDe4IrpPk.jpg",
     "releaseDate": "2026-10-14",
-    "audience": 22741,
+    "audience": 29456,
     "boRank": 8,
     "status": "yes",
     "creditsLen": null,
@@ -216,6 +216,22 @@ const MOVIES = [
     "source": ""
   },
   {
+    "id": "tmdb-1279865",
+    "tmdbId": 1279865,
+    "title": "파리스 그린이 밝는 날에",
+    "meta": "애니메이션 · 드라마",
+    "meta2": "76분",
+    "posterPath": "/2qarnbiETjCO65kAhW3SRb6ZnE0.jpg",
+    "releaseDate": "2026-10-14",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
     "id": "heaven-knows-what",
     "tmdbId": 285024,
     "title": "헤븐 노우즈 왓",
@@ -238,22 +254,6 @@ const MOVIES = [
     "meta": "드라마 · 로맨스",
     "meta2": "137분",
     "posterPath": "/4bpkqrC1XSwIBzVEFUajEH3oSm5.jpg",
-    "releaseDate": "2026-10-14",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
-    "id": "tmdb-1279865",
-    "tmdbId": 1279865,
-    "title": "파리스 그린이 밝는 날에",
-    "meta": "애니메이션 · 드라마",
-    "meta2": "76분",
-    "posterPath": "/2qarnbiETjCO65kAhW3SRb6ZnE0.jpg",
     "releaseDate": "2026-10-14",
     "audience": null,
     "boRank": null,
@@ -336,29 +336,6 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "digger",
-    "tmdbId": 1248832,
-    "title": "디거",
-    "meta": "코미디 · 드라마",
-    "meta2": "129분",
-    "posterPath": "/jV5Mfasg8dP3XK5nuXLetBN3APx.jpg",
-    "releaseDate": "2026-10-03",
-    "audience": null,
-    "boRank": null,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "pos": "크레딧 중간",
-        "len": "",
-        "desc": "엔딩 크레딧 전반부는 극장 밖 장면 위로 흘러가며, 홍수로 인한 잔해와 거대한 방조제로 가득 찬 디스토피아적인 도시의 모습을 보여줍니다."
-      }
-    ],
-    "tip": "",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/10/digger-2026/"
-  },
-  {
     "id": "tmdb-1542847",
     "tmdbId": 1542847,
     "title": "폴 : 디 어비스",
@@ -391,12 +368,12 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "l-tranger",
-    "tmdbId": 1429348,
-    "title": "이방인",
-    "meta": "드라마 · 범죄",
-    "meta2": "123분",
-    "posterPath": "/2NoWaSTgKF7FcJ0Lr5NrvDDINOv.jpg",
+    "id": "tmdb-1305781",
+    "tmdbId": 1305781,
+    "title": "표인: 풍기대막",
+    "meta": "액션 · 모험",
+    "meta2": "127분",
+    "posterPath": "/yVEwJ0Badf4KYhhXNRNa8MIkgKP.jpg",
     "releaseDate": "2026-09-30",
     "audience": null,
     "boRank": null,
@@ -407,12 +384,12 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "tmdb-1305781",
-    "tmdbId": 1305781,
-    "title": "표인: 풍기대막",
-    "meta": "액션 · 모험",
-    "meta2": "127분",
-    "posterPath": "/yVEwJ0Badf4KYhhXNRNa8MIkgKP.jpg",
+    "id": "l-tranger",
+    "tmdbId": 1429348,
+    "title": "이방인",
+    "meta": "드라마 · 범죄",
+    "meta2": "123분",
+    "posterPath": "/2NoWaSTgKF7FcJ0Lr5NrvDDINOv.jpg",
     "releaseDate": "2026-09-30",
     "audience": null,
     "boRank": null,
@@ -441,11 +418,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-607833": {
+  "tmdb-1591675": {
     "up": 0,
     "down": 0
   },
-  "tmdb-1591675": {
+  "digger": {
     "up": 0,
     "down": 0
   },
@@ -469,15 +446,15 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "tmdb-1279865": {
+    "up": 0,
+    "down": 0
+  },
   "heaven-knows-what": {
     "up": 0,
     "down": 0
   },
   "luz-silenciosa": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-1279865": {
     "up": 0,
     "down": 0
   },
@@ -497,10 +474,6 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "digger": {
-    "up": 0,
-    "down": 0
-  },
   "tmdb-1542847": {
     "up": 0,
     "down": 0
@@ -509,11 +482,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "l-tranger": {
+  "tmdb-1305781": {
     "up": 0,
     "down": 0
   },
-  "tmdb-1305781": {
+  "l-tranger": {
     "up": 0,
     "down": 0
   }
