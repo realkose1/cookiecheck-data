@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-19)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261018)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-20)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261019)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-10-19';
-const BOXOFFICE_DATE = "20261018";
+const DATA_UPDATED = '2026-10-20';
+const BOXOFFICE_DATE = "20261019";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 12267664,
+    "audience": 12275556,
     "boRank": 4,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3249172,
+    "audience": 3265447,
     "boRank": 2,
     "status": "yes",
     "creditsLen": null,
@@ -56,7 +56,7 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1911190,
+    "audience": 1924908,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -73,7 +73,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 1828907,
+    "audience": 1853135,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -89,23 +89,6 @@ const MOVIES = [
     "sourceUrl": "https://namu.wiki/w/%EA%B7%B9%EC%9E%A5%ED%8C%90%20%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80%3A%20%EC%9D%B8%EC%96%B4%20%EC%84%AC%EC%9D%98%20%EB%B9%84%EB%B0%80"
   },
   {
-    "id": "tmdb-961214",
-    "tmdbId": 961214,
-    "title": "부활남: 더 레드",
-    "meta": "액션 · 판타지",
-    "meta2": "102분",
-    "posterPath": "/nLsyRK3SmtdIftozpCd8sGQMRGD.jpg",
-    "releaseDate": "2026-09-30",
-    "audience": 326734,
-    "boRank": 10,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "gukjenews.com (자동 조사)",
-    "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3710851"
-  },
-  {
     "id": "tmdb-1591675",
     "tmdbId": 1591675,
     "title": "룩백",
@@ -113,8 +96,8 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/mAfcD0lspaNlZDRrzT0fdWS5C01.jpg",
     "releaseDate": "2026-10-08",
-    "audience": 105345,
-    "boRank": 6,
+    "audience": 107924,
+    "boRank": 7,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -129,7 +112,7 @@ const MOVIES = [
     "meta2": "89분",
     "posterPath": "/ioogrqn2xtQjZBuHpNXPb8qtaQG.jpg",
     "releaseDate": "2026-10-07",
-    "audience": 77114,
+    "audience": 78814,
     "boRank": 9,
     "status": "no",
     "creditsLen": null,
@@ -146,7 +129,7 @@ const MOVIES = [
     "meta2": "106분",
     "posterPath": "/6ke2azOZ9sfe7SMn7rPhQWd0FPD.jpg",
     "releaseDate": "2026-10-14",
-    "audience": 56363,
+    "audience": 60336,
     "boRank": 5,
     "status": "unknown",
     "creditsLen": null,
@@ -162,8 +145,8 @@ const MOVIES = [
     "meta2": "110분",
     "posterPath": "/w2MLLbXARkOYkuWn71H5Cd5tCLX.jpg",
     "releaseDate": "2026-10-14",
-    "audience": 42647,
-    "boRank": 7,
+    "audience": 44611,
+    "boRank": 8,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -171,27 +154,36 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "street-fighter",
-    "tmdbId": 1153576,
-    "title": "스트리트 파이터",
-    "meta": "액션 · 판타지",
-    "meta2": "120분",
-    "posterPath": "/3EgtiR2ewNQxjJ1qizhDe4IrpPk.jpg",
-    "releaseDate": "2026-10-14",
-    "audience": 34920,
-    "boRank": 8,
-    "status": "yes",
+    "id": "clayface",
+    "tmdbId": 1400940,
+    "title": "클레이페이스",
+    "meta": "공포 · 스릴러 · SF",
+    "meta2": "109분",
+    "posterPath": "/LSGpoSAlitss0KOvVakkeUToZo.jpg",
+    "releaseDate": "2026-10-21",
+    "audience": 3528,
+    "boRank": 6,
+    "status": "unknown",
     "creditsLen": null,
-    "cookies": [
-      {
-        "desc": "크레딧 이후 장면에서 해변 또는 정글 같은 곳이 나옵니다. 눈가리개를 한 채 가슴에 큰 흉터가 있는 사내가 바이슨과 그 부하들의 방문을 받는데, 이 사내는 영화 초반 류에게 패했던 사가트입니다. 속편에서 류와 켄이 바이슨과 사가트를 함께 상대하게 될 수 있음을 암시합니다.",
-        "len": "",
-        "pos": "위치 미확인"
-      }
-    ],
-    "tip": "",
-    "source": "slashfilm.com (자동 조사)",
-    "sourceUrl": "https://www.slashfilm.com/2288706/street-fighter-2026-movie-ending-explained/"
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "tmdb-1083624",
+    "tmdbId": 1083624,
+    "title": "수능, 출제의 비밀",
+    "meta": "코미디",
+    "meta2": "100분",
+    "posterPath": "/ohrJjtvKciICoeH80z973JnBoHo.jpg",
+    "releaseDate": "2026-10-28",
+    "audience": 1555,
+    "boRank": 10,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   },
   {
     "id": "always-lalisa",
@@ -210,20 +202,27 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "tmdb-1279865",
-    "tmdbId": 1279865,
-    "title": "파리스 그린이 밝는 날에",
-    "meta": "애니메이션 · 드라마",
-    "meta2": "76분",
-    "posterPath": "/2qarnbiETjCO65kAhW3SRb6ZnE0.jpg",
+    "id": "street-fighter",
+    "tmdbId": 1153576,
+    "title": "스트리트 파이터",
+    "meta": "액션 · 판타지",
+    "meta2": "120분",
+    "posterPath": "/3EgtiR2ewNQxjJ1qizhDe4IrpPk.jpg",
     "releaseDate": "2026-10-14",
     "audience": null,
     "boRank": null,
-    "status": "unknown",
+    "status": "yes",
     "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
+    "cookies": [
+      {
+        "desc": "크레딧 이후 장면에서 해변 또는 정글 같은 곳이 나옵니다. 눈가리개를 한 채 가슴에 큰 흉터가 있는 사내가 바이슨과 그 부하들의 방문을 받는데, 이 사내는 영화 초반 류에게 패했던 사가트입니다. 속편에서 류와 켄이 바이슨과 사가트를 함께 상대하게 될 수 있음을 암시합니다.",
+        "len": "",
+        "pos": "위치 미확인"
+      }
+    ],
+    "tip": "",
+    "source": "slashfilm.com (자동 조사)",
+    "sourceUrl": "https://www.slashfilm.com/2288706/street-fighter-2026-movie-ending-explained/"
   },
   {
     "id": "heaven-knows-what",
@@ -242,12 +241,12 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "luz-silenciosa",
-    "tmdbId": 2012,
-    "title": "침묵의 빛",
-    "meta": "드라마 · 로맨스",
-    "meta2": "137분",
-    "posterPath": "/4bpkqrC1XSwIBzVEFUajEH3oSm5.jpg",
+    "id": "tmdb-1279865",
+    "tmdbId": 1279865,
+    "title": "파리스 그린이 밝는 날에",
+    "meta": "애니메이션 · 드라마",
+    "meta2": "76분",
+    "posterPath": "/2qarnbiETjCO65kAhW3SRb6ZnE0.jpg",
     "releaseDate": "2026-10-14",
     "audience": null,
     "boRank": null,
@@ -399,22 +398,6 @@ const MOVIES = [
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
-  },
-  {
-    "id": "l-tranger",
-    "tmdbId": 1429348,
-    "title": "이방인",
-    "meta": "드라마 · 범죄",
-    "meta2": "123분",
-    "posterPath": "/2NoWaSTgKF7FcJ0Lr5NrvDDINOv.jpg",
-    "releaseDate": "2026-09-30",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   }
 ];
 
@@ -435,10 +418,6 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-961214": {
-    "up": 0,
-    "down": 0
-  },
   "tmdb-1591675": {
     "up": 0,
     "down": 0
@@ -455,7 +434,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "street-fighter": {
+  "clayface": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-1083624": {
     "up": 0,
     "down": 0
   },
@@ -463,7 +446,7 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-1279865": {
+  "street-fighter": {
     "up": 0,
     "down": 0
   },
@@ -471,7 +454,7 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "luz-silenciosa": {
+  "tmdb-1279865": {
     "up": 0,
     "down": 0
   },
@@ -504,10 +487,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "tmdb-1305781": {
-    "up": 0,
-    "down": 0
-  },
-  "l-tranger": {
     "up": 0,
     "down": 0
   }
