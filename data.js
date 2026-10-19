@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-18)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261017)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-19)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261018)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-10-18';
-const BOXOFFICE_DATE = "20261017";
+const DATA_UPDATED = '2026-10-19';
+const BOXOFFICE_DATE = "20261018";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 12247715,
+    "audience": 12267664,
     "boRank": 4,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3192758,
+    "audience": 3249178,
     "boRank": 2,
     "status": "yes",
     "creditsLen": null,
@@ -56,7 +56,7 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1874944,
+    "audience": 1911192,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -73,7 +73,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 1682661,
+    "audience": 1828909,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -89,6 +89,23 @@ const MOVIES = [
     "sourceUrl": "https://namu.wiki/w/%EA%B7%B9%EC%9E%A5%ED%8C%90%20%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80%3A%20%EC%9D%B8%EC%96%B4%20%EC%84%AC%EC%9D%98%20%EB%B9%84%EB%B0%80"
   },
   {
+    "id": "tmdb-961214",
+    "tmdbId": 961214,
+    "title": "부활남: 더 레드",
+    "meta": "액션 · 판타지",
+    "meta2": "102분",
+    "posterPath": "/nLsyRK3SmtdIftozpCd8sGQMRGD.jpg",
+    "releaseDate": "2026-09-30",
+    "audience": 326734,
+    "boRank": 10,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "gukjenews.com (자동 조사)",
+    "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3710851"
+  },
+  {
     "id": "tmdb-1591675",
     "tmdbId": 1591675,
     "title": "룩백",
@@ -96,36 +113,13 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/mAfcD0lspaNlZDRrzT0fdWS5C01.jpg",
     "releaseDate": "2026-10-08",
-    "audience": 96723,
-    "boRank": 7,
+    "audience": 105345,
+    "boRank": 6,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
-  },
-  {
-    "id": "digger",
-    "tmdbId": 1248832,
-    "title": "디거",
-    "meta": "코미디 · 드라마",
-    "meta2": "129분",
-    "posterPath": "/jV5Mfasg8dP3XK5nuXLetBN3APx.jpg",
-    "releaseDate": "2026-10-03",
-    "audience": 85321,
-    "boRank": 10,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "pos": "크레딧 중간",
-        "len": "",
-        "desc": "엔딩 크레딧 전반부는 극장 밖 장면 위로 흘러가며, 홍수로 인한 잔해와 거대한 방조제로 가득 찬 디스토피아적인 도시의 모습을 보여줍니다."
-      }
-    ],
-    "tip": "",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/10/digger-2026/"
   },
   {
     "id": "tmdb-1587473",
@@ -135,7 +129,7 @@ const MOVIES = [
     "meta2": "89분",
     "posterPath": "/ioogrqn2xtQjZBuHpNXPb8qtaQG.jpg",
     "releaseDate": "2026-10-07",
-    "audience": 72157,
+    "audience": 77118,
     "boRank": 9,
     "status": "no",
     "creditsLen": null,
@@ -148,11 +142,11 @@ const MOVIES = [
     "id": "whalefall",
     "tmdbId": 1255833,
     "title": "웨일폴: 고래에 먹힌 남자",
-    "meta": "스릴러",
+    "meta": "스릴러 · 드라마",
     "meta2": "106분",
     "posterPath": "/6ke2azOZ9sfe7SMn7rPhQWd0FPD.jpg",
     "releaseDate": "2026-10-14",
-    "audience": 42466,
+    "audience": 56363,
     "boRank": 5,
     "status": "unknown",
     "creditsLen": null,
@@ -168,8 +162,8 @@ const MOVIES = [
     "meta2": "110분",
     "posterPath": "/w2MLLbXARkOYkuWn71H5Cd5tCLX.jpg",
     "releaseDate": "2026-10-14",
-    "audience": 35601,
-    "boRank": 6,
+    "audience": 42647,
+    "boRank": 7,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -184,7 +178,7 @@ const MOVIES = [
     "meta2": "120분",
     "posterPath": "/3EgtiR2ewNQxjJ1qizhDe4IrpPk.jpg",
     "releaseDate": "2026-10-14",
-    "audience": 29456,
+    "audience": 34920,
     "boRank": 8,
     "status": "yes",
     "creditsLen": null,
@@ -336,6 +330,29 @@ const MOVIES = [
     "source": ""
   },
   {
+    "id": "digger",
+    "tmdbId": 1248832,
+    "title": "디거",
+    "meta": "코미디 · 드라마",
+    "meta2": "129분",
+    "posterPath": "/jV5Mfasg8dP3XK5nuXLetBN3APx.jpg",
+    "releaseDate": "2026-10-03",
+    "audience": null,
+    "boRank": null,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "pos": "크레딧 중간",
+        "len": "",
+        "desc": "엔딩 크레딧 전반부는 극장 밖 장면 위로 흘러가며, 홍수로 인한 잔해와 거대한 방조제로 가득 찬 디스토피아적인 도시의 모습을 보여줍니다."
+      }
+    ],
+    "tip": "",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/10/digger-2026/"
+  },
+  {
     "id": "tmdb-1542847",
     "tmdbId": 1542847,
     "title": "폴 : 디 어비스",
@@ -418,11 +435,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-1591675": {
+  "tmdb-961214": {
     "up": 0,
     "down": 0
   },
-  "digger": {
+  "tmdb-1591675": {
     "up": 0,
     "down": 0
   },
@@ -471,6 +488,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "la-valle-dei-sorrisi": {
+    "up": 0,
+    "down": 0
+  },
+  "digger": {
     "up": 0,
     "down": 0
   },
