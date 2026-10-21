@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 12284708,
+    "audience": 12284704,
     "boRank": 4,
     "status": "no",
     "creditsLen": null,
@@ -56,7 +56,7 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1936723,
+    "audience": 1936721,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -73,7 +73,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 1875609,
+    "audience": 1875607,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -259,9 +259,9 @@ const MOVIES = [
     "creditsLen": null,
     "cookies": [
       {
-        "pos": "크레딧 중간",
+        "desc": "엔딩 크레딧이 올라가는 동안 씽씽 교도소에서 실제로 올린 공연들의 영상 클립이 나온다. 크레딧 종료 후에는 추가 영상이 없다.",
         "len": "",
-        "desc": "엔딩 크레딧이 올라가는 동안 씽씽 교도소에서 실제로 올린 공연들의 영상 클립이 나온다. 크레딧 종료 후에는 추가 영상이 없다."
+        "pos": "크레딧 중간"
       }
     ],
     "tip": "",
@@ -323,22 +323,6 @@ const MOVIES = [
     "meta": "애니메이션 · 드라마",
     "meta2": "76분",
     "posterPath": "/2qarnbiETjCO65kAhW3SRb6ZnE0.jpg",
-    "releaseDate": "2026-10-14",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
-    "id": "heaven-knows-what",
-    "tmdbId": 285024,
-    "title": "헤븐 노우즈 왓",
-    "meta": "드라마 · 범죄",
-    "meta2": "93분",
-    "posterPath": "/wkjBgR2GFEiYmzkXwF394Z2vMvu.jpg",
     "releaseDate": "2026-10-14",
     "audience": null,
     "boRank": null,
@@ -435,6 +419,22 @@ const MOVIES = [
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
+  },
+  {
+    "id": "above-below",
+    "tmdbId": 1514682,
+    "title": "카르텔 오션",
+    "meta": "스릴러 · 범죄",
+    "meta2": "96분",
+    "posterPath": "/zxTQqW2BYaBjLIvdfkXNnVfpfB3.jpg",
+    "releaseDate": "2026-09-30",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   }
 ];
 
@@ -507,10 +507,6 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "heaven-knows-what": {
-    "up": 0,
-    "down": 0
-  },
   "other-mommy": {
     "up": 0,
     "down": 0
@@ -528,6 +524,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "tmdb-1542847": {
+    "up": 0,
+    "down": 0
+  },
+  "above-below": {
     "up": 0,
     "down": 0
   }
