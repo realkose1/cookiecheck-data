@@ -28,6 +28,23 @@
   "status": "yes",
   "tip": ""
  },
+ "1155828": {
+  "checkedAt": "2026-10-21",
+  "cookies": [
+   {
+    "desc": "엔딩 크레딧이 올라가는 동안 씽씽 교도소에서 실제로 올린 공연들의 영상 클립이 나온다. 크레딧 종료 후에는 추가 영상이 없다.",
+    "len": "",
+    "pos": "크레딧 중간"
+   }
+  ],
+  "model": "claude-sonnet-5-5",
+  "quote": "Video clips from the actual productions at Sing Sing are shown.",
+  "reason": "감독 Greg Kwedar의 2024년작 Sing Sing을 다룬 aftercredits.com 문서에 크레딧 도중 추가 영상 있음, 크레딧 후 추가 영상 없음이라고 적혀 있다. 이 사이트는 단독 출처로 인정된다.",
+  "source": "aftercredits.com (자동 조사)",
+  "sourceUrl": "https://aftercredits.com/2024/07/sing-sing-2023/",
+  "status": "yes",
+  "tip": ""
+ },
  "1214130": {
   "attempts": 1,
   "checkedAt": "2026-09-30",
@@ -102,6 +119,12 @@
   "sourceUrl": "https://www.wikitree.co.kr/articles/1161295",
   "status": "yes",
   "tip": ""
+ },
+ "1419053": {
+  "attempts": 1,
+  "checkedAt": "2026-10-21",
+  "reason": "2025년 Yasuhiro Aoki 감독의 ChaO로 작품은 확인했다. 하지만 쿠키 영상이 있다거나 없다고 명시한 문장은 찾지 못했다. 엔딩 크레딧 중에 제작 과정 영상이 나온다는 언급만 있었고, 이것은 쿠키 영상 여부의 근거가 아니다.",
+  "status": "unknown"
  },
  "1429348": {
   "attempts": 1,
@@ -188,6 +211,12 @@
   "attempts": 2,
   "checkedAt": "2026-09-30",
   "reason": "쿠키 영상 유무를 명시한 근거를 찾지 못함(2026년 9월 개봉 신작으로 관련 정보 부족, 도구 사용 한도로 추가 조사 불가)",
+  "status": "unknown"
+ },
+ "1727780": {
+  "attempts": 1,
+  "checkedAt": "2026-10-21",
+  "reason": "2026년 Ryan Jordan 감독의 Borderline(국내 제목 보더라인: 블랙 오퍼레이션)을 다룬 페이지는 찾았다. 하지만 쿠키 영상이 있다거나 없다고 적은 문장은 하나도 찾지 못했다. 열어 본 리뷰와 기사에도 크레딧 관련 언급이 없었다. 2025년 Jimmy Warden 감독의 동명 영화는 다른 작품이라 근거에서 제외했다.",
   "status": "unknown"
  },
  "1765609": {
