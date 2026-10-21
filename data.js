@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-21)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261020)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-22)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261021)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-10-21';
-const BOXOFFICE_DATE = "20261020";
+const DATA_UPDATED = '2026-10-22';
+const BOXOFFICE_DATE = "20261021";
 
 const MOVIES = [
   {
@@ -16,8 +16,8 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 12284704,
-    "boRank": 4,
+    "audience": 12288343,
+    "boRank": 8,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -33,8 +33,8 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3281594,
-    "boRank": 2,
+    "audience": 3295125,
+    "boRank": 4,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -56,8 +56,8 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1936721,
-    "boRank": 3,
+    "audience": 1944970,
+    "boRank": 5,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -73,7 +73,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 1875607,
+    "audience": 1904593,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -96,8 +96,8 @@ const MOVIES = [
     "meta2": "133분",
     "posterPath": "/nPu9o9yHwN8Gu2Yc1av6KKMbXZf.jpg",
     "releaseDate": "2026-09-16",
-    "audience": 897813,
-    "boRank": 6,
+    "audience": 900304,
+    "boRank": 10,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -112,98 +112,20 @@ const MOVIES = [
     "sourceUrl": "https://www.ggilbo.com/news/articleView.html?idxno=1181861"
   },
   {
-    "id": "tmdb-1591675",
-    "tmdbId": 1591675,
-    "title": "룩백",
-    "meta": "드라마",
+    "id": "tmdb-1584855",
+    "tmdbId": 1584855,
+    "title": "실낙원",
+    "meta": "스릴러 · 드라마 · SF",
     "meta2": "101분",
-    "posterPath": "/mAfcD0lspaNlZDRrzT0fdWS5C01.jpg",
-    "releaseDate": "2026-10-08",
-    "audience": 110773,
-    "boRank": 7,
+    "posterPath": "/wkm9BQLok7U2KihcCspCa663Qse.jpg",
+    "releaseDate": "2026-10-21",
+    "audience": 23977,
+    "boRank": 2,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
-  },
-  {
-    "id": "digger",
-    "tmdbId": 1248832,
-    "title": "디거",
-    "meta": "코미디 · 드라마",
-    "meta2": "129분",
-    "posterPath": "/jV5Mfasg8dP3XK5nuXLetBN3APx.jpg",
-    "releaseDate": "2026-10-03",
-    "audience": 91786,
-    "boRank": 10,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "pos": "크레딧 중간",
-        "len": "",
-        "desc": "엔딩 크레딧 전반부는 극장 밖 장면 위로 흘러가며, 홍수로 인한 잔해와 거대한 방조제로 가득 찬 디스토피아적인 도시의 모습을 보여줍니다."
-      }
-    ],
-    "tip": "",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/10/digger-2026/"
-  },
-  {
-    "id": "whalefall",
-    "tmdbId": 1255833,
-    "title": "웨일폴: 고래에 먹힌 남자",
-    "meta": "스릴러",
-    "meta2": "106분",
-    "posterPath": "/6ke2azOZ9sfe7SMn7rPhQWd0FPD.jpg",
-    "releaseDate": "2026-10-14",
-    "audience": 64804,
-    "boRank": 5,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
-    "id": "tmdb-1688392",
-    "tmdbId": 1688392,
-    "title": "전자오락수호대",
-    "meta": "애니메이션 · 판타지 · 모험",
-    "meta2": "110분",
-    "posterPath": "/w2MLLbXARkOYkuWn71H5Cd5tCLX.jpg",
-    "releaseDate": "2026-10-14",
-    "audience": 46882,
-    "boRank": 8,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
-    "id": "street-fighter",
-    "tmdbId": 1153576,
-    "title": "스트리트 파이터",
-    "meta": "액션 · 판타지",
-    "meta2": "120분",
-    "posterPath": "/3EgtiR2ewNQxjJ1qizhDe4IrpPk.jpg",
-    "releaseDate": "2026-10-14",
-    "audience": 38616,
-    "boRank": 9,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "desc": "크레딧 이후 장면에서 해변 또는 정글 같은 곳이 나옵니다. 눈가리개를 한 채 가슴에 큰 흉터가 있는 사내가 바이슨과 그 부하들의 방문을 받는데, 이 사내는 영화 초반 류에게 패했던 사가트입니다. 속편에서 류와 켄이 바이슨과 사가트를 함께 상대하게 될 수 있음을 암시합니다.",
-        "len": "",
-        "pos": "위치 미확인"
-      }
-    ],
-    "tip": "",
-    "source": "slashfilm.com (자동 조사)",
-    "sourceUrl": "https://www.slashfilm.com/2288706/street-fighter-2026-movie-ending-explained/"
   },
   {
     "id": "clayface",
@@ -213,8 +135,8 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/LSGpoSAlitss0KOvVakkeUToZo.jpg",
     "releaseDate": "2026-10-21",
-    "audience": null,
-    "boRank": null,
+    "audience": 18838,
+    "boRank": 3,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -229,6 +151,38 @@ const MOVIES = [
     "sourceUrl": "https://namu.wiki/w/%ED%81%B4%EB%A0%88%EC%9D%B4%ED%8E%98%EC%9D%B4%EC%8A%A4%28%EC%98%81%ED%99%94%29"
   },
   {
+    "id": "tmdb-1652642",
+    "tmdbId": 1652642,
+    "title": "여전히 찬란하게",
+    "meta": "드라마",
+    "meta2": "118분",
+    "posterPath": "/t9EUrwCxhppSryjEspwYi5gA7km.jpg",
+    "releaseDate": "2026-10-21",
+    "audience": 12880,
+    "boRank": 6,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "tmdb-1376681",
+    "tmdbId": 1376681,
+    "title": "킬링타임",
+    "meta": "공포 · 스릴러",
+    "meta2": "83분",
+    "posterPath": "/ijKaBymwMVvFDpxZy2hip6aQS0j.jpg",
+    "releaseDate": "2026-10-21",
+    "audience": 5421,
+    "boRank": 7,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
     "id": "leviticus",
     "tmdbId": 1564614,
     "title": "레위기",
@@ -236,6 +190,23 @@ const MOVIES = [
     "meta2": "89분",
     "posterPath": "/mrtO4O6tUdwWibPv0pKi13C1vC9.jpg",
     "releaseDate": "2026-10-21",
+    "audience": 3487,
+    "boRank": 9,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/06/leviticus-2026/"
+  },
+  {
+    "id": "verity",
+    "tmdbId": 1283515,
+    "title": "베러티",
+    "meta": "미스터리 · 스릴러",
+    "meta2": "117분",
+    "posterPath": "/mot5NwdjpbQRaKxrQvcx1xCg0Yo.jpg",
+    "releaseDate": "2026-10-22",
     "audience": null,
     "boRank": null,
     "status": "no",
@@ -243,7 +214,7 @@ const MOVIES = [
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/06/leviticus-2026/"
+    "sourceUrl": "https://aftercredits.com/2026/10/verity-2026/"
   },
   {
     "id": "sing-sing",
@@ -292,6 +263,45 @@ const MOVIES = [
     "meta2": "98분",
     "posterPath": "/c7qIZRN2Yu581XadWd4iUYXizWw.jpg",
     "releaseDate": "2026-10-17",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "street-fighter",
+    "tmdbId": 1153576,
+    "title": "스트리트 파이터",
+    "meta": "액션 · 판타지",
+    "meta2": "120분",
+    "posterPath": "/3EgtiR2ewNQxjJ1qizhDe4IrpPk.jpg",
+    "releaseDate": "2026-10-14",
+    "audience": null,
+    "boRank": null,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "desc": "크레딧 이후 장면에서 해변 또는 정글 같은 곳이 나옵니다. 눈가리개를 한 채 가슴에 큰 흉터가 있는 사내가 바이슨과 그 부하들의 방문을 받는데, 이 사내는 영화 초반 류에게 패했던 사가트입니다. 속편에서 류와 켄이 바이슨과 사가트를 함께 상대하게 될 수 있음을 암시합니다.",
+        "len": "",
+        "pos": "위치 미확인"
+      }
+    ],
+    "tip": "",
+    "source": "slashfilm.com (자동 조사)",
+    "sourceUrl": "https://www.slashfilm.com/2288706/street-fighter-2026-movie-ending-explained/"
+  },
+  {
+    "id": "whalefall",
+    "tmdbId": 1255833,
+    "title": "웨일폴: 고래에 먹힌 남자",
+    "meta": "스릴러",
+    "meta2": "106분",
+    "posterPath": "/6ke2azOZ9sfe7SMn7rPhQWd0FPD.jpg",
+    "releaseDate": "2026-10-14",
     "audience": null,
     "boRank": null,
     "status": "unknown",
@@ -372,6 +382,22 @@ const MOVIES = [
     "source": ""
   },
   {
+    "id": "tmdb-1591675",
+    "tmdbId": 1591675,
+    "title": "룩백",
+    "meta": "드라마",
+    "meta2": "101분",
+    "posterPath": "/mAfcD0lspaNlZDRrzT0fdWS5C01.jpg",
+    "releaseDate": "2026-10-08",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
     "id": "tmdb-1280738",
     "tmdbId": 1280738,
     "title": "퓨리어스",
@@ -403,38 +429,6 @@ const MOVIES = [
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
-  },
-  {
-    "id": "tmdb-1542847",
-    "tmdbId": 1542847,
-    "title": "폴 : 디 어비스",
-    "meta": "드라마 · 스릴러",
-    "meta2": "80분",
-    "posterPath": "/aplKp4G0nS8zlz3cBqJ94jjXGI9.jpg",
-    "releaseDate": "2026-10-01",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
-    "id": "above-below",
-    "tmdbId": 1514682,
-    "title": "카르텔 오션",
-    "meta": "스릴러 · 범죄",
-    "meta2": "96분",
-    "posterPath": "/zxTQqW2BYaBjLIvdfkXNnVfpfB3.jpg",
-    "releaseDate": "2026-09-30",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   }
 ];
 
@@ -459,23 +453,7 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-1591675": {
-    "up": 0,
-    "down": 0
-  },
-  "digger": {
-    "up": 0,
-    "down": 0
-  },
-  "whalefall": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-1688392": {
-    "up": 0,
-    "down": 0
-  },
-  "street-fighter": {
+  "tmdb-1584855": {
     "up": 0,
     "down": 0
   },
@@ -483,7 +461,19 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "tmdb-1652642": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-1376681": {
+    "up": 0,
+    "down": 0
+  },
   "leviticus": {
+    "up": 0,
+    "down": 0
+  },
+  "verity": {
     "up": 0,
     "down": 0
   },
@@ -496,6 +486,14 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "always-lalisa": {
+    "up": 0,
+    "down": 0
+  },
+  "street-fighter": {
+    "up": 0,
+    "down": 0
+  },
+  "whalefall": {
     "up": 0,
     "down": 0
   },
@@ -515,19 +513,15 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "tmdb-1591675": {
+    "up": 0,
+    "down": 0
+  },
   "tmdb-1280738": {
     "up": 0,
     "down": 0
   },
   "la-valle-dei-sorrisi": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-1542847": {
-    "up": 0,
-    "down": 0
-  },
-  "above-below": {
     "up": 0,
     "down": 0
   }
