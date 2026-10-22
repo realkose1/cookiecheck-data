@@ -46,7 +46,7 @@ on:
 permissions:
   contents: write
   id-token: write   # GitHub OIDC 토큰 발급 — ID 페더레이션에 필요
-  issues: write     # 자동 판정 검토 이슈 (아래 '자동 판정 검토 이슈' 단계)
+  issues: write     # 자동 판정 검토 이슈·10위 미확인 알림 (아래 같은 이름의 단계)
 
 concurrency:
   group: refresh
@@ -54,6 +54,10 @@ concurrency:
 
 jobs:
   refresh:
+    # 이 파일은 원본 저장소(cookiebox, 비공개)와 데이터 저장소 양쪽에 같은 사본으로
+    # 있다. 원본 쪽에는 시크릿이 없어서 예약 실행이 돌면 피드 갱신은 실패하고
+    # 색인만 갱신된 반쪽 커밋이 쌓인다. 그래서 데이터 저장소에서만 돈다.
+    if: github.repository == 'realkose1/cookiecheck-data'
     runs-on: ubuntu-latest
     timeout-minutes: 35
     env:
@@ -130,6 +134,10 @@ jobs:
 
       - name: 데이터 갱신
         run: |
+          # tee 로 파이프를 걸면 단계의 종료 코드가 tee 것이 되어, fetch_movies.py 가
+          # 죽어도 실행은 성공으로 끝난다. pipefail 로 실패를 그대로 드러낸다 —
+          # 개별 작품 조회 실패는 스크립트 안에서 삼키므로 여기서 죽는 건 치명적인 경우뿐이다.
+          set -o pipefail
           mkdir -p ios/data   # fetch_movies.py 가 앱 번들용 사본을 여기 쓴다
           # 로그를 파일로도 남긴다 — 아래 '실행 요약' 이 이걸 읽어 커버리지·실패를 뽑는다.
           python3 tools/fetch_movies.py 2>&1 | tee /tmp/refresh.log
@@ -141,11 +149,15 @@ jobs:
       # 늘 '판정 안 함' 이다. 그래도 조사가 통째로 터졌다고 피드 발행까지
       # 막으면 안 되므로 continue-on-error 로 둔다.
       #
-      # 색인 동기화와 같은 이유로 **아침 첫 예약(과 수동 실행)에서만** 돈다.
+      # 색인 동기화와 같은 이유로 **전체 조사는 아침 첫 예약(과 수동 실행)에서만** 돈다.
       # 하루 일곱 번 도는 건 KOBIS 집계를 놓치지 않으려는 것이지 조사 때문이
       # 아니다. RESEARCH_BUDGET=6 은 '하루 6편'이라는 뜻인데, 회차마다 돌면
       # 그날의 미확인이 바닥날 때까지 모델을 계속 부른다 — 비용도 검색 대상
       # 사이트 부담도 이유 없이 몇 배가 된다. 쿠키 유무는 급한 정보가 아니다.
+      #
+      # 단, 박스오피스 10위 안 신작은 아래 '10위 저녁 재확인' 에서 저녁에 한 번 더
+      # 본다. 신작의 쿠키를 답하는 기사는 보통 개봉 다음 날 오전 늦게(11시 전후)
+      # 올라와서, 08:17 조사는 대개 그보다 먼저 돌아 unknown 으로 끝난다.
       - name: 쿠키 자동 조사
         if: env.TRANSLATE == '1' && (github.event.schedule == '17 23 * * *' || github.event_name == 'workflow_dispatch')
         continue-on-error: true
@@ -153,6 +165,51 @@ jobs:
           python3 tools/research.py 2>&1 | tee /tmp/research.log
           # 판정이 새로 생기면 cookies.json 을 제자리에서 고치므로 사본도 다시 뜬다.
           cp ios/data/cookies.json cookies.json
+
+      # 10위 안 신작만 저녁(17:47 예약, 수동 실행에서는 위 조사 직후)에 한 번 더 본다.
+      # 아침 조사 뒤에 올라온 기사를 하루 늦게 줍지 않으려는 것이다. 예산은 3편으로
+      # 작게 잡는다 — 후보는 10위 안 미확인뿐이고, 판정이 난 작품은 건너뛴다. 오늘 아침에
+      # 본 작품을 다시 보는 건 개봉 2주 안 신작뿐이다. 로그와 검토 파일
+      # (/tmp/verdict-review.md)은 아침 조사 것에 덧붙인다.
+      - name: 쿠키 자동 조사 (10위 저녁 재확인)
+        if: env.TRANSLATE == '1' && (github.event.schedule == '47 8 * * *' || github.event_name == 'workflow_dispatch')
+        continue-on-error: true
+        run: |
+          python3 tools/research.py --top-rank 10 --budget 3 2>&1 | tee -a /tmp/research.log
+          cp ios/data/cookies.json cookies.json
+
+      # 저녁 재확인 뒤에도 10위 안에 미확인이 남아 있으면 이슈로 알린다. 앱 첫 화면에
+      # 보이는 구멍이라 사람이 data.overrides.json 으로 채울 수 있어야 한다. 이슈를 매번
+      # 새로 열면 알림이 쌓이므로 열린 이슈에 댓글로 붙이고, 다 채워지면 닫는다.
+      # /tmp/top-unknown.md 가 없으면 조사 단계가 죽은 것이다 — 모르는 채로 '다 채워졌다'
+      # 며 이슈를 닫으면 안 되므로 아무것도 하지 않는다. 파일이 있는데 비어 있어야
+      # 정말로 미확인이 없는 것이다.
+      - name: 10위 미확인 알림
+        if: env.TRANSLATE == '1' && (github.event.schedule == '47 8 * * *' || github.event_name == 'workflow_dispatch')
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          [ -e /tmp/top-unknown.md ] || { echo "top-unknown.md 없음 — 알림 생략"; exit 0; }
+          NUM=$(gh issue list --label top-unknown --state open --limit 1 --json number --jq '.[0].number // empty')
+          if [ -s /tmp/top-unknown.md ]; then
+            if [ -n "$NUM" ]; then
+              { echo "## $(date +%F)"; echo; cat /tmp/top-unknown.md; } \
+                | gh issue comment "$NUM" --body-file -
+              echo "이슈 #$NUM 에 댓글로 붙였습니다"
+            else
+              gh label create top-unknown --color D93F0B --description "박스오피스 10위 안 미확인" 2>/dev/null || true
+              { echo "## $(date +%F)"; echo; cat /tmp/top-unknown.md; } \
+                | gh issue create --title "박스오피스 10위 미확인" --label top-unknown --body-file -
+            fi
+          elif [ -n "$NUM" ]; then
+            gh issue comment "$NUM" --body "10위 안 미확인이 모두 채워졌습니다."
+            gh issue close "$NUM"
+            echo "이슈 #$NUM 을 닫았습니다"
+          else
+            echo "10위 안 미확인 없음"
+          fi
 
       - name: 실행 요약
         if: always()

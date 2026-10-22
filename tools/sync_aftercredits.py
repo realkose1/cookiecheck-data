@@ -13,7 +13,9 @@
 출력: data/ac-index.json
   { "syncedAt": ISO8601, "entries": { "<정규화제목>|<연도>": {"s","d","a","u","t"?} } }
   s: yes|no|unknown · d/a: 중간/종료후 쿠키 존재(0|1) · u: 출처 URL
-  t: 쿠키 설명(영어 원문). 번역본은 tools/translate_index.py 가 덮어쓴다.
+  t: 쿠키 설명. 동기화는 영어 원문을 담는다. 기존 항목은 한 번 한국어로 옮겨
+     두었고(원문은 data/ac-desc-en.json), 그 번역 스크립트는 이 저장소에 없다 —
+     새로 들어온 항목은 따로 번역하기 전까지 영어로 남는다.
 
 사용법:
   python3 tools/sync_aftercredits.py          # 증분 (색인 없으면 전체)
@@ -99,7 +101,8 @@ def entry_of(post):
 
     # 쿠키 설명. 본문의 스포일러 블록에 들어 있고, '있음' 글은 사실상 전부 갖고
     # 있다. 담아두면 검색으로 찾은 옛 영화도 "있다"에서 그치지 않는다.
-    # 영어 원문이라 화면에 내보내기 전에 번역이 필요하다 (tools/translate_index.py).
+    # 영어 원문이라 화면에 내보내기 전에 번역이 필요하다. 색인을 번역하는 도구는
+    # 지금 이 저장소에 없다 (위 docstring 의 t 참고).
     if status == "yes":
         body = (post.get("content") or {}).get("rendered") or ""
         if body:

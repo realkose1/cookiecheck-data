@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """data.js 갱신 — TMDB에서 한국 현재 상영작을 받아온다.
 
-SweetSpot(ios/Sources/Services/TMDBService.swift)과 같은 방식이다:
+별도 프로젝트 SweetSpot 의 TMDBService.swift 와 같은 방식이다:
   - /movie/now_playing?region=KR&language=ko-KR 로 목록을 받고
-  - /movie/{id}/release_dates 의 KR 항목에서 실제 국내 개봉일을 뽑는다
+  - 작품 상세(append_to_response=release_dates)의 KR 항목에서 실제 국내 개봉일을 뽑는다
     (type 우선순위 3 극장 > 2 극장 제한 > 1 프리미어, 같은 type 안에서는 최소값)
 
 now_playing 이 빠뜨린 KOBIS 박스오피스 TOP 10 작품은 제목으로 /search/movie 를
@@ -21,8 +21,8 @@ tools/sync_namu.py 가 채우고 tools/publish_index.sh 가 올린다.
   export TMDB_READ_TOKEN="<TMDB v4 read access token>"
   python3 tools/fetch_movies.py
 
-토큰은 SweetSpot 에 이미 있다:
-  grep '^TMDB_READ_TOKEN' ~/Desktop/SweetSpot/ios/Config/Secrets.xcconfig
+토큰은 이 저장소의 ios/Config/Secrets.xcconfig 에 있다:
+  grep '^TMDB_READ_TOKEN' ios/Config/Secrets.xcconfig
 """
 
 import datetime

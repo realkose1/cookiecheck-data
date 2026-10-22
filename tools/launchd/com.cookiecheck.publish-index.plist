@@ -29,11 +29,11 @@
     <key>ProgramArguments</key>
     <array>
         <string>/bin/zsh</string>
-        <string>/Users/user/Library/Application Support/cookiecheck/repo/tools/publish_index.sh</string>
+        <string>/Users/realkose/Library/Application Support/cookiecheck/repo/tools/publish_index.sh</string>
     </array>
 
     <key>WorkingDirectory</key>
-    <string>/Users/user/Library/Application Support/cookiecheck/repo</string>
+    <string>/Users/realkose/Library/Application Support/cookiecheck/repo</string>
 
     <!-- launchd 는 로그인 셸 환경을 물려받지 않는다. gh 가 PATH 에 없으면
          발행 단계가 통째로 조용히 실패한다. (which gh → /opt/homebrew/bin/gh)
@@ -44,11 +44,11 @@
         <key>PATH</key>
         <string>/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
         <key>HOME</key>
-        <string>/Users/user</string>
+        <string>/Users/realkose</string>
         <key>LANG</key>
         <string>ko_KR.UTF-8</string>
         <key>COOKIECHECK_ROOT</key>
-        <string>/Users/user/Library/Application Support/cookiecheck/repo</string>
+        <string>/Users/realkose/Library/Application Support/cookiecheck/repo</string>
     </dict>
 
     <key>StartCalendarInterval</key>
@@ -64,9 +64,9 @@
     <false/>
 
     <key>StandardOutPath</key>
-    <string>/Users/user/Library/Logs/cookiecheck-publish-index.log</string>
+    <string>/Users/realkose/Library/Logs/cookiecheck-publish-index.log</string>
     <key>StandardErrorPath</key>
-    <string>/Users/user/Library/Logs/cookiecheck-publish-index.log</string>
+    <string>/Users/realkose/Library/Logs/cookiecheck-publish-index.log</string>
 
     <!-- 나무위키 문서당 1초를 지키므로 budget 만큼 시간이 걸린다. 넉넉히. -->
     <key>ExitTimeOut</key>

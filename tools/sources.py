@@ -17,7 +17,8 @@ TMDB에는 쿠키 데이터가 없어서 여러 소스를 겹쳐 쓴다.
    붙어 있으면 정확하지만 커버리지가 희박하다. 키워드가 **없다는 것은 근거가 되지
    않으므로**(태깅이 안 됐을 뿐일 수 있다) '있음' 신호로만 쓰고 '없음' 판정에는 쓰지 않는다.
 
-우선순위: data.overrides.json > aftercredits > 나무위키 > TMDB 키워드 > 미확인.
+우선순위(fetch_movies.py 가 정한다): data.overrides.json > aftercredits > 나무위키 색인(data/ko-index.json)
+> 자동 조사(data/verdicts-auto.json) > 나무위키 라이브 조회 > TMDB 키워드 > 직전 피드 이월 > 미확인.
 """
 
 import datetime

@@ -24,7 +24,7 @@ PLIST_NAME="$LABEL.plist"
 STAGE_PLIST="$APP_SUPPORT/$PLIST_NAME"
 DEST_PLIST="$HOME/Library/LaunchAgents/$PLIST_NAME"
 LOG_FILE="$HOME/Library/Logs/cookiecheck-publish-index.log"
-SECRETS_XCCONFIG="/Users/user/Desktop/cookiebox/ios/Config/Secrets.xcconfig"
+SECRETS_XCCONFIG="/Users/realkose/Desktop/cookiebox/ios/Config/Secrets.xcconfig"
 
 echo "▸ 1/6 작업 사본 준비: $REPO_DIR"
 mkdir -p "$APP_SUPPORT"

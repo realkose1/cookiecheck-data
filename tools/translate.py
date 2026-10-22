@@ -1,8 +1,8 @@
 """쿠키 설명 한국어 번역 (선택 기능).
 
 aftercredits.com 의 쿠키 설명은 영어다. 이 앱은 한국어라서 그대로 두면 어색하므로
-`--translate` 를 주면 Claude API 로 번역한다. 없으면 영어 원문을 그대로 쓴다 —
-번역 실패가 파이프라인을 멈추게 하지 않는다.
+fetch_movies.py 가 기본으로 Claude API 로 번역한다(`--no-translate` 로 끈다). 패키지나
+자격증명이 없으면 영어 원문을 그대로 쓴다 — 번역 실패가 파이프라인을 멈추게 하지 않는다.
 
 필요한 것:
   pip install anthropic

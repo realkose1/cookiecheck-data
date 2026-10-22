@@ -87,7 +87,8 @@ fi
 
 # 1) 색인 갱신. 나무위키가 막혀 있으면 sync_namu.py 가 스스로 건너뛴다.
 if [[ "$SKIP_SYNC" == "0" ]]; then
-  python3 tools/sync_namu.py --budget "$BUDGET"
+  # -u: launchd 로그 파일에 진행 상황이 실시간으로 찍히게 (블록 버퍼링 방지)
+  python3 -u tools/sync_namu.py --budget "$BUDGET"
 fi
 
 [[ -f "$LOCAL" ]] || { echo "색인 파일이 없습니다: $LOCAL"; exit 1; }
@@ -107,7 +108,8 @@ publish() {
   sha=$(gh api "repos/$REPO/contents/$DEST" --jq .sha 2>/dev/null || true)
 
   local verdict
-  verdict=$(python3 tools/merge_ko_index.py \
+  # -u: launchd 로그 파일에 진행 상황이 실시간으로 찍히게 (블록 버퍼링 방지)
+  verdict=$(python3 -u tools/merge_ko_index.py \
               --local "$LOCAL" --remote "$TMP/remote.json" --out "$TMP/merged.json")
 
   if [[ "$verdict" == "SAME" ]]; then

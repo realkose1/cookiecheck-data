@@ -17,6 +17,7 @@ data/verdicts-auto.json 에 남긴다. fetch_movies.enrich() 가 다음 회차�
   python3 tools/research.py             # 최대 RESEARCH_BUDGET 편
   python3 tools/research.py --dry-run   # 모델을 부르지 않고 대상 목록만
   python3 tools/research.py --only 607833   # 한 편만 (재조사 규칙 무시, 검증용)
+  python3 tools/research.py --top-rank 10 --budget 3   # 저녁 재확인: 10위 안만, 끝나면 /tmp/top-unknown.md
 
 인증(ANTHROPIC_AUTH_TOKEN / ANTHROPIC_API_KEY)이 없으면 아무 것도 하지 않고
 '자동 조사 건너뜀 — 인증 없음' 만 찍고 정상 종료한다.
@@ -44,6 +45,7 @@ DATA_JS_PATH = ROOT / "data.js"
 VERDICTS_PATH = ROOT / "data" / "verdicts-auto.json"
 OVERRIDES_PATH = ROOT / "data.overrides.json"
 REVIEW_PATH = pathlib.Path("/tmp/verdict-review.md")
+TOP_UNKNOWN_PATH = pathlib.Path("/tmp/top-unknown.md")  # --top-rank 모드가 남기는 '10위 안 미확인' 목록
 
 MODEL = "claude-sonnet-5-5"  # translate.py 와 같은 모델을 쓴다
 
@@ -74,6 +76,17 @@ RETRY_SCHEDULE_DAYS = (3, 7, 14)  # N번째 시도 뒤 대기일: 1→3일, 2→
 # 별도 처리가 필요 없다.
 RETRY_SCHEDULE_DAYS_UNRANKED = ()  # 첫 시도 뒤 재조사 없음
 GIVE_UP_AFTER_DAYS = 60  # 개봉 60일이 지나도록 자료가 없으면 앞으로도 안 나온다 (둘 중 먼저 오는 쪽에서 중단)
+
+# 예외 — 개봉 직후 박스오피스 TOP_RANK 위 안 작품은 위 일정(3/7/14일)과 시도 횟수
+# 상한을 건너뛰고 **매일** 다시 본다. 이 작품들의 '미확인'이 앱에서 가장 눈에 띄는데,
+# 쿠키 여부를 답하는 기사는 보통 개봉 다음 날 오전 늦게(11시 전후) 올라와서 아침
+# 조사(08:17)는 그보다 먼저 돌고 unknown 으로 끝난다. 그 뒤 3일을 기다리면 답이
+# 나온 지 한참 뒤에야 화면에 반영된다. 비용은 한 회차 RESEARCH_BUDGET 이 상한이고,
+# TOP_FRESH_DAYS 가 지나면 위 일정이 그대로 적용된다(대개 거기서 멈춘다).
+# TOP_FRESH_DAYS 는 GIVE_UP_AFTER_DAYS 보다 짧아야 말이 된다 — select_targets 는 이
+# 규칙을 중단 규칙보다 먼저 보므로, 상수를 바꿔도 충돌하지 않고 이쪽이 이긴다.
+TOP_RANK = 10
+TOP_FRESH_DAYS = 14
 
 # --- 모델 호출 --------------------------------------------------------------
 # 첫 실제 실행에서 8회/6회를 꽉 채우고도(48회 검색, 편당 8회) 결과가 전부
@@ -345,11 +358,26 @@ def next_attempt_number(verdicts, key):
     return (prev.get("attempts") or 1) + 1
 
 
-def select_targets(movies, verdicts, overrides, today, budget=RESEARCH_BUDGET, verbose=True):
-    """조사할 작품을 고른다. 로그를 남기며 거르고, 박스오피스 순위 순으로 자른다."""
+def _is_fresh_top(movie, since_release):
+    """개봉 TOP_FRESH_DAYS 일 안의 박스오피스 TOP_RANK 위 안 작품인가."""
+    rank = movie.get("boRank")
+    if not rank or rank > TOP_RANK:
+        return False
+    return since_release is not None and 0 <= since_release <= TOP_FRESH_DAYS
+
+
+def select_targets(movies, verdicts, overrides, today, budget=RESEARCH_BUDGET, verbose=True,
+                   top_rank=None):
+    """조사할 작품을 고른다. 로그를 남기며 거르고, 박스오피스 순위 순으로 자른다.
+
+    top_rank 가 있으면(저녁 재확인) 박스오피스 그 순위 안 작품만 후보다. 이 모드에서는
+    오늘 이미 본 '개봉 직후 TOP 작품'도 다시 본다 — 하루 한 번 규칙은 아침 조사용이다.
+    """
     picked = []
     for m in movies:
         if m.get("status") != "unknown":
+            continue
+        if top_rank is not None and not (m.get("boRank") and m["boRank"] <= top_rank):
             continue
         key = str(m["tmdbId"])
 
@@ -378,6 +406,17 @@ def select_targets(movies, verdicts, overrides, today, budget=RESEARCH_BUDGET, v
                 continue  # 확정된 사실은 다시 묻지 않는다
 
             since_release = _days_since(m.get("releaseDate") or "", today)
+
+            # 개봉 직후 TOP 작품: 일정·횟수 상한 없이 하루 한 번(checkedAt 이 오늘 전).
+            # 저녁 재확인(top_rank 모드)은 오늘 아침에 본 것도 다시 본다. attempts 는
+            # 평소처럼 올라간다. 중단 규칙보다 먼저 본다 (상수 옆 주석 참고).
+            if _is_fresh_top(m, since_release):
+                age = _days_since(rec.get("checkedAt", ""), today)
+                if top_rank is None and age is not None and age < 1:
+                    continue
+                picked.append(m)
+                continue
+
             if since_release is not None and since_release > GIVE_UP_AFTER_DAYS:
                 if verbose:
                     print(f"  건너뜀 {m['title'][:20]} — 개봉 {since_release}일 경과, 재조사 중단")
@@ -733,14 +772,25 @@ def patch_feed(verdicts, overrides):
 # 사람 검토용 기록
 # ---------------------------------------------------------------------------
 
-def write_review(new_records, path=REVIEW_PATH):
+REVIEW_FOOTER = "---\n틀린 판정이 있으면 `data.overrides.json` 에서 고쳐 주세요 — override 가 항상 이깁니다.\n"
+
+
+def write_review(new_records, path=REVIEW_PATH, append=False):
     """새로 생긴 자동 판정을 사람이 훑어볼 수 있는 마크다운으로 남긴다.
 
     워크플로가 이 파일을 GitHub 이슈로 올린다. 틀린 게 보이면 사용자가
     data.overrides.json 으로 고친다 — override 가 항상 이기므로 그걸로 끝이다.
+
+    append=True 는 수동 실행에서 같은 job 이 research.py 를 두 번(전체 조사 → 10위
+    저녁 재확인) 돌 때 쓴다. 뒤의 실행이 앞 실행의 검토 내용을 지우거나 덮어쓰면
+    안 된다. 꼬리말은 파일 끝에 한 번만 있어야 하므로 앞 실행 것을 떼고 새로 붙인다.
     """
+    prior = ""
+    if append and path.exists():
+        prior = path.read_text(encoding="utf-8").replace(REVIEW_FOOTER, "").rstrip("\n")
+        prior = prior + "\n\n" if prior else ""
     if not new_records:
-        if path.exists():
+        if not append and path.exists():
             path.unlink()
         return
     mark = {"yes": "🍪 있음", "no": "🚫 없음"}
@@ -755,9 +805,52 @@ def write_review(new_records, path=REVIEW_PATH):
         for c in rec.get("cookies", []):
             lines.append(f"- 쿠키: [{c['pos']}] {c['desc']}")
         lines.append("")
-    lines.append("---")
-    lines.append("틀린 판정이 있으면 `data.overrides.json` 에서 고쳐 주세요 — override 가 항상 이깁니다.")
-    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    lines.append(REVIEW_FOOTER.rstrip("\n"))
+    path.write_text(prior + "\n".join(lines) + "\n", encoding="utf-8")
+
+
+# ---------------------------------------------------------------------------
+# 10위 안 미확인 알림
+# ---------------------------------------------------------------------------
+
+def top_unknown_markdown(movies, verdicts, overrides, top_rank):
+    """피드에서 박스오피스 top_rank 위 안인데 아직 미확인인 작품 목록 (마크다운).
+
+    없으면 빈 문자열이다. 워크플로가 이 파일로 이슈를 열거나(내용 있음) 닫는다(비어 있음).
+    사람이 override 를 달아 둔 작품은 뺀다 — tip 만 적은 override 는 status 를 안 바꿔
+    피드에 계속 unknown 으로 남는데, 이미 사람이 본 작품을 매일 알리면 이슈가 안 닫힌다.
+    """
+    rows = [
+        m for m in movies
+        if m.get("status") == "unknown" and m.get("boRank") and m["boRank"] <= top_rank
+        and str(m.get("tmdbId")) not in overrides
+    ]
+    if not rows:
+        return ""
+    rows.sort(key=lambda m: (m["boRank"], m.get("title") or ""))
+    lines = []
+    for m in rows:
+        reason = " ".join(((verdicts.get(str(m["tmdbId"])) or {}).get("reason") or "조사 기록 없음").split())
+        if len(reason) > 120:
+            reason = reason[:119] + "…"
+        lines.append(
+            f"- **{m['boRank']}위** {m.get('title')} · 개봉 {m.get('releaseDate') or '?'}"
+            f" · tmdbId `{m['tmdbId']}` — 마지막 사유: {reason}"
+        )
+    lines += ["", "---", "`data.overrides.json` 에 tmdbId 를 키로 넣어 채울 수 있습니다 — override 가 항상 이깁니다."]
+    return "\n".join(lines) + "\n"
+
+
+def write_top_unknown(top_rank, path=TOP_UNKNOWN_PATH):
+    """조사·제자리 패치가 끝난 뒤의 피드를 읽어 알림 파일을 쓴다 (없으면 빈 파일)."""
+    movies = _load_json(FEED_PATH, {}).get("movies", [])
+    if not movies:
+        # 피드를 못 읽은 것을 '10위 안 미확인이 없다'로 알리면 안 된다 — 파일을 만들지 않는다.
+        return
+    path.write_text(
+        top_unknown_markdown(movies, _load_json(VERDICTS_PATH, {}), load_overrides(), top_rank),
+        encoding="utf-8",
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -771,13 +864,37 @@ def have_credentials():
     )
 
 
+def load_overrides():
+    return {k: v for k, v in _load_json(OVERRIDES_PATH, {}).items() if not k.startswith("_")}
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description="미확인 작품 쿠키 자동 조사")
     ap.add_argument("--dry-run", action="store_true", help="모델을 부르지 않고 대상 목록만 찍는다")
     ap.add_argument("--only", type=str, default=None, help="이 tmdbId 한 편만 조사한다 (재조사 규칙 무시)")
     ap.add_argument("--budget", type=int, default=RESEARCH_BUDGET)
+    ap.add_argument(
+        "--top-rank", type=int, default=None, metavar="N",
+        help="박스오피스 N위 안만 조사한다(저녁 재확인). 끝나면 /tmp/top-unknown.md 에 남은 미확인을 적는다",
+    )
     args = ap.parse_args(argv)
+    if args.top_rank is not None and args.top_rank < 1:
+        ap.error("--top-rank 는 1 이상이어야 합니다")
 
+    # 알림 파일은 '이번 실행이 끝까지 돈 결과'여야 한다. 먼저 지워 두면 조사가 도중에
+    # 죽었을 때 워크플로가 파일 없음으로 알아보고 아무것도 하지 않는다 (낡은 목록으로
+    # 알리거나, 빈 파일로 오해해 이슈를 닫는 일이 없다). 대상이 하나도 없어 일찍
+    # 끝나도 목록은 쓴다 — 그때 피드 상태가 바로 알려야 할 내용이다.
+    alert = args.top_rank is not None and not args.dry_run
+    if alert:
+        TOP_UNKNOWN_PATH.unlink(missing_ok=True)
+    rc = run(args)
+    if alert and rc == 0:
+        write_top_unknown(args.top_rank)
+    return rc
+
+
+def run(args):
     today = datetime.date.today().isoformat()
     feed = _load_json(FEED_PATH, {})
     movies = feed.get("movies", [])
@@ -786,7 +903,7 @@ def main(argv=None):
         return 0
 
     verdicts = _load_json(VERDICTS_PATH, {})
-    overrides = {k: v for k, v in _load_json(OVERRIDES_PATH, {}).items() if not k.startswith("_")}
+    overrides = load_overrides()
 
     if args.only:
         targets = [m for m in movies if str(m.get("tmdbId")) == args.only]
@@ -795,7 +912,7 @@ def main(argv=None):
             return 1
     else:
         targets = select_targets(movies, verdicts, overrides, datetime.date.today(),
-                                 budget=args.budget)
+                                 budget=args.budget, top_rank=args.top_rank)
 
     if not targets:
         print("자동 조사 대상 없음 — 미확인 작품이 없거나 모두 최근에 조사했습니다")
@@ -882,7 +999,7 @@ def main(argv=None):
     VERDICTS_PATH.write_text(
         json.dumps(verdicts, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8"
     )
-    write_review(new_records)
+    write_review(new_records, append=args.top_rank is not None)
     patched = patch_feed(verdicts, overrides)
 
     cost = (
