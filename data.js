@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-22)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261021)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-23)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261022)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-10-22';
-const BOXOFFICE_DATE = "20261021";
+const DATA_UPDATED = '2026-10-23';
+const BOXOFFICE_DATE = "20261022";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 12288340,
+    "audience": 12291025,
     "boRank": 8,
     "status": "no",
     "creditsLen": null,
@@ -33,8 +33,8 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3295130,
-    "boRank": 4,
+    "audience": 3306269,
+    "boRank": 3,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -56,8 +56,8 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1944972,
-    "boRank": 5,
+    "audience": 1952559,
+    "boRank": 6,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -73,7 +73,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 1904591,
+    "audience": 1927843,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -89,27 +89,20 @@ const MOVIES = [
     "sourceUrl": "https://namu.wiki/w/%EA%B7%B9%EC%9E%A5%ED%8C%90%20%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80%3A%20%EC%9D%B8%EC%96%B4%20%EC%84%AC%EC%9D%98%20%EB%B9%84%EB%B0%80"
   },
   {
-    "id": "tmdb-607833",
-    "tmdbId": 607833,
-    "title": "인턴",
-    "meta": "드라마 · 코미디",
-    "meta2": "133분",
-    "posterPath": "/nPu9o9yHwN8Gu2Yc1av6KKMbXZf.jpg",
-    "releaseDate": "2026-09-16",
-    "audience": 900304,
+    "id": "tmdb-1591675",
+    "tmdbId": 1591675,
+    "title": "룩백",
+    "meta": "드라마",
+    "meta2": "101분",
+    "posterPath": "/mAfcD0lspaNlZDRrzT0fdWS5C01.jpg",
+    "releaseDate": "2026-10-08",
+    "audience": 115427,
     "boRank": 10,
-    "status": "yes",
+    "status": "unknown",
     "creditsLen": null,
-    "cookies": [
-      {
-        "pos": "크레딧 종료 후",
-        "len": "",
-        "desc": "엔딩 크레딧이 모두 올라간 뒤 쿠키 영상이 한 편 이어집니다. 장면 내용은 공개되지 않았습니다."
-      }
-    ],
-    "tip": "",
-    "source": "언론 보도 (금강일보·이투데이·국제뉴스)",
-    "sourceUrl": "https://www.ggilbo.com/news/articleView.html?idxno=1181861"
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   },
   {
     "id": "tmdb-1584855",
@@ -119,7 +112,7 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/wkm9BQLok7U2KihcCspCa663Qse.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 23987,
+    "audience": 38172,
     "boRank": 2,
     "status": "unknown",
     "creditsLen": null,
@@ -135,8 +128,8 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/LSGpoSAlitss0KOvVakkeUToZo.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 18839,
-    "boRank": 3,
+    "audience": 28907,
+    "boRank": 4,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -158,20 +151,37 @@ const MOVIES = [
     "meta2": "118분",
     "posterPath": "/t9EUrwCxhppSryjEspwYi5gA7km.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 12964,
-    "boRank": 6,
+    "audience": 19351,
+    "boRank": 7,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
       {
-        "pos": "위치 미확인",
+        "desc": "톱스타뉴스 보도에 따르면 쿠키 영상이 엔딩 크레딧과 함께 나온다. 영상의 구체적인 내용과 정확한 위치(크레딧 중간인지 종료 후인지)는 확인하지 못했다.",
         "len": "",
-        "desc": "톱스타뉴스 보도에 따르면 쿠키 영상이 엔딩 크레딧과 함께 나온다. 영상의 구체적인 내용과 정확한 위치(크레딧 중간인지 종료 후인지)는 확인하지 못했다."
+        "pos": "위치 미확인"
       }
     ],
     "tip": "",
     "source": "topstarnews.net (자동 조사)",
     "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16254660"
+  },
+  {
+    "id": "verity",
+    "tmdbId": 1283515,
+    "title": "베러티",
+    "meta": "미스터리 · 스릴러",
+    "meta2": "117분",
+    "posterPath": "/mot5NwdjpbQRaKxrQvcx1xCg0Yo.jpg",
+    "releaseDate": "2026-10-22",
+    "audience": 8777,
+    "boRank": 5,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/10/verity-2026/"
   },
   {
     "id": "tmdb-1376681",
@@ -181,8 +191,8 @@ const MOVIES = [
     "meta2": "83분",
     "posterPath": "/ijKaBymwMVvFDpxZy2hip6aQS0j.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 5421,
-    "boRank": 7,
+    "audience": 7877,
+    "boRank": 9,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -198,23 +208,6 @@ const MOVIES = [
     "meta2": "89분",
     "posterPath": "/mrtO4O6tUdwWibPv0pKi13C1vC9.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 3487,
-    "boRank": 9,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/06/leviticus-2026/"
-  },
-  {
-    "id": "verity",
-    "tmdbId": 1283515,
-    "title": "베러티",
-    "meta": "미스터리 · 스릴러",
-    "meta2": "117분",
-    "posterPath": "/mot5NwdjpbQRaKxrQvcx1xCg0Yo.jpg",
-    "releaseDate": "2026-10-22",
     "audience": null,
     "boRank": null,
     "status": "no",
@@ -222,7 +215,7 @@ const MOVIES = [
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/10/verity-2026/"
+    "sourceUrl": "https://aftercredits.com/2026/06/leviticus-2026/"
   },
   {
     "id": "sing-sing",
@@ -374,22 +367,6 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "tmdb-1591675",
-    "tmdbId": 1591675,
-    "title": "룩백",
-    "meta": "드라마",
-    "meta2": "101분",
-    "posterPath": "/mAfcD0lspaNlZDRrzT0fdWS5C01.jpg",
-    "releaseDate": "2026-10-08",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
     "id": "tmdb-1280738",
     "tmdbId": 1280738,
     "title": "퓨리어스",
@@ -464,7 +441,7 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-607833": {
+  "tmdb-1591675": {
     "up": 0,
     "down": 0
   },
@@ -480,15 +457,15 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "verity": {
+    "up": 0,
+    "down": 0
+  },
   "tmdb-1376681": {
     "up": 0,
     "down": 0
   },
   "leviticus": {
-    "up": 0,
-    "down": 0
-  },
-  "verity": {
     "up": 0,
     "down": 0
   },
@@ -521,10 +498,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "the-dresden-sun": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-1591675": {
     "up": 0,
     "down": 0
   },
