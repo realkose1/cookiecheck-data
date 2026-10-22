@@ -65,7 +65,13 @@ jobs:
       TMDB_READ_TOKEN: ${{ secrets.TMDB_READ_TOKEN }}
       KOBIS_API_KEY: ${{ secrets.KOBIS_API_KEY }}   # 일별 박스오피스 (관객수)
     steps:
+      # 예약 실행은 기본으로 '실행이 생성된 시점'의 커밋(github.sha)을 받는다. 앞 실행이
+      # 도는 동안 concurrency 로 기다린 실행은 그 커밋이 낡아서, 앞 실행이 올린 판정을
+      # 모른 채 같은 작품을 다시 조사하고 틀린 알림을 남긴 뒤 push 에서 충돌했다
+      # (2026-10-22). 시작 시점의 최신 main 을 받는다.
       - uses: actions/checkout@v5
+        with:
+          ref: main
 
       # 쿠키 색인 갱신 (모두 증분). 인증이 필요 없고 가장 오래 걸리므로 먼저 돌려서
       # 아래에서 받는 Anthropic 토큰의 유효 시간을 아낀다.
