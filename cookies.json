@@ -154,11 +154,18 @@
    "releaseDate": "2026-10-21",
    "audience": 12964,
    "boRank": 6,
-   "status": "unknown",
+   "status": "yes",
    "creditsLen": null,
-   "cookies": [],
-   "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-   "source": ""
+   "cookies": [
+    {
+     "pos": "위치 미확인",
+     "len": "",
+     "desc": "톱스타뉴스 보도에 따르면 쿠키 영상이 엔딩 크레딧과 함께 나온다. 영상의 구체적인 내용과 정확한 위치(크레딧 중간인지 종료 후인지)는 확인하지 못했다."
+    }
+   ],
+   "tip": "",
+   "source": "topstarnews.net (자동 조사)",
+   "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16254660"
   },
   {
    "id": "tmdb-1376681",
