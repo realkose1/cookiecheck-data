@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3295125,
+    "audience": 3295132,
     "boRank": 4,
     "status": "yes",
     "creditsLen": null,
@@ -56,7 +56,7 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1944970,
+    "audience": 1944974,
     "boRank": 5,
     "status": "no",
     "creditsLen": null,
@@ -73,7 +73,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 1904593,
+    "audience": 1904592,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -119,7 +119,7 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/wkm9BQLok7U2KihcCspCa663Qse.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 23977,
+    "audience": 23990,
     "boRank": 2,
     "status": "unknown",
     "creditsLen": null,
@@ -135,7 +135,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/LSGpoSAlitss0KOvVakkeUToZo.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 18838,
+    "audience": 18839,
     "boRank": 3,
     "status": "yes",
     "creditsLen": null,
@@ -158,7 +158,7 @@ const MOVIES = [
     "meta2": "118분",
     "posterPath": "/t9EUrwCxhppSryjEspwYi5gA7km.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 12880,
+    "audience": 12964,
     "boRank": 6,
     "status": "unknown",
     "creditsLen": null,
@@ -176,11 +176,12 @@ const MOVIES = [
     "releaseDate": "2026-10-21",
     "audience": 5421,
     "boRank": 7,
-    "status": "unknown",
+    "status": "no",
     "creditsLen": null,
     "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "topstarnews.net (자동 조사)",
+    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16253869"
   },
   {
     "id": "leviticus",
@@ -327,22 +328,6 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "tmdb-1279865",
-    "tmdbId": 1279865,
-    "title": "파리스 그린이 밝는 날에",
-    "meta": "애니메이션 · 드라마",
-    "meta2": "76분",
-    "posterPath": "/2qarnbiETjCO65kAhW3SRb6ZnE0.jpg",
-    "releaseDate": "2026-10-14",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
     "id": "other-mommy",
     "tmdbId": 1400837,
     "title": "아더 마미",
@@ -429,6 +414,29 @@ const MOVIES = [
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
+  },
+  {
+    "id": "digger",
+    "tmdbId": 1248832,
+    "title": "디거",
+    "meta": "코미디 · 드라마",
+    "meta2": "129분",
+    "posterPath": "/jV5Mfasg8dP3XK5nuXLetBN3APx.jpg",
+    "releaseDate": "2026-10-03",
+    "audience": null,
+    "boRank": null,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "pos": "크레딧 중간",
+        "len": "",
+        "desc": "엔딩 크레딧 전반부는 극장 밖 장면 위로 흘러가며, 홍수로 인한 잔해와 거대한 방조제로 가득 찬 디스토피아적인 도시의 모습을 보여줍니다."
+      }
+    ],
+    "tip": "",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/10/digger-2026/"
   }
 ];
 
@@ -501,10 +509,6 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-1279865": {
-    "up": 0,
-    "down": 0
-  },
   "other-mommy": {
     "up": 0,
     "down": 0
@@ -522,6 +526,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "la-valle-dei-sorrisi": {
+    "up": 0,
+    "down": 0
+  },
+  "digger": {
     "up": 0,
     "down": 0
   }
