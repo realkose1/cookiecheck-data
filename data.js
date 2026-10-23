@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 12291025,
+    "audience": 12291026,
     "boRank": 8,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3306269,
+    "audience": 3306283,
     "boRank": 3,
     "status": "yes",
     "creditsLen": null,
@@ -56,7 +56,7 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1952559,
+    "audience": 1952558,
     "boRank": 6,
     "status": "no",
     "creditsLen": null,
@@ -73,7 +73,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 1927843,
+    "audience": 1927845,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -112,7 +112,7 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/wkm9BQLok7U2KihcCspCa663Qse.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 38172,
+    "audience": 38183,
     "boRank": 2,
     "status": "unknown",
     "creditsLen": null,
@@ -128,7 +128,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/LSGpoSAlitss0KOvVakkeUToZo.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 28907,
+    "audience": 28908,
     "boRank": 4,
     "status": "yes",
     "creditsLen": null,
@@ -151,7 +151,7 @@ const MOVIES = [
     "meta2": "118분",
     "posterPath": "/t9EUrwCxhppSryjEspwYi5gA7km.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 19351,
+    "audience": 19473,
     "boRank": 7,
     "status": "yes",
     "creditsLen": null,
@@ -174,7 +174,7 @@ const MOVIES = [
     "meta2": "117분",
     "posterPath": "/mot5NwdjpbQRaKxrQvcx1xCg0Yo.jpg",
     "releaseDate": "2026-10-22",
-    "audience": 8777,
+    "audience": 8774,
     "boRank": 5,
     "status": "no",
     "creditsLen": null,
@@ -241,22 +241,6 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2024/07/sing-sing-2023/"
   },
   {
-    "id": "chao",
-    "tmdbId": 1419053,
-    "title": "차오",
-    "meta": "애니메이션 · 판타지 · 로맨스",
-    "meta2": "90분",
-    "posterPath": "/kCWRNQyOgKqTFcsIDbkbQbmeYbJ.jpg",
-    "releaseDate": "2026-10-21",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
     "id": "always-lalisa",
     "tmdbId": 1489932,
     "title": "올웨이즈 라리사",
@@ -318,6 +302,22 @@ const MOVIES = [
     "meta": "스릴러",
     "meta2": "95분",
     "posterPath": "/9fllGHikTyVNQBmZjkhTMDqicjh.jpg",
+    "releaseDate": "2026-10-14",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "tmdb-1279865",
+    "tmdbId": 1279865,
+    "title": "파리스 그린이 밝는 날에",
+    "meta": "애니메이션 · 드라마",
+    "meta2": "76분",
+    "posterPath": "/2qarnbiETjCO65kAhW3SRb6ZnE0.jpg",
     "releaseDate": "2026-10-14",
     "audience": null,
     "boRank": null,
@@ -473,10 +473,6 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "chao": {
-    "up": 0,
-    "down": 0
-  },
   "always-lalisa": {
     "up": 0,
     "down": 0
@@ -490,6 +486,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "borderline": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-1279865": {
     "up": 0,
     "down": 0
   },
