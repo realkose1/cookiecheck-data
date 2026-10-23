@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-23)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261022)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-24)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261023)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-10-23';
-const BOXOFFICE_DATE = "20261022";
+const DATA_UPDATED = '2026-10-24';
+const BOXOFFICE_DATE = "20261023";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 12291024,
+    "audience": 12295616,
     "boRank": 8,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3306279,
+    "audience": 3319707,
     "boRank": 3,
     "status": "yes",
     "creditsLen": null,
@@ -49,23 +49,6 @@ const MOVIES = [
     "sourceUrl": "https://www.wikitree.co.kr/articles/1161295"
   },
   {
-    "id": "tmdb-1394740",
-    "tmdbId": 1394740,
-    "title": "타짜: 벨제붑의 노래",
-    "meta": "범죄 · 드라마",
-    "meta2": "130분",
-    "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
-    "releaseDate": "2026-09-23",
-    "audience": 1952558,
-    "boRank": 6,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "gukjenews.com (자동 조사)",
-    "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3705531"
-  },
-  {
     "id": "tmdb-1586876",
     "tmdbId": 1586876,
     "title": "극장판 치이카와: 인어 섬의 비밀",
@@ -73,7 +56,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 1927845,
+    "audience": 1967565,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -89,6 +72,46 @@ const MOVIES = [
     "sourceUrl": "https://namu.wiki/w/%EA%B7%B9%EC%9E%A5%ED%8C%90%20%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80%3A%20%EC%9D%B8%EC%96%B4%20%EC%84%AC%EC%9D%98%20%EB%B9%84%EB%B0%80"
   },
   {
+    "id": "tmdb-1394740",
+    "tmdbId": 1394740,
+    "title": "타짜: 벨제붑의 노래",
+    "meta": "범죄 · 드라마",
+    "meta2": "130분",
+    "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
+    "releaseDate": "2026-09-23",
+    "audience": 1962927,
+    "boRank": 5,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "gukjenews.com (자동 조사)",
+    "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3705531"
+  },
+  {
+    "id": "tmdb-607833",
+    "tmdbId": 607833,
+    "title": "인턴",
+    "meta": "드라마 · 코미디",
+    "meta2": "133분",
+    "posterPath": "/nPu9o9yHwN8Gu2Yc1av6KKMbXZf.jpg",
+    "releaseDate": "2026-09-16",
+    "audience": 905434,
+    "boRank": 10,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "pos": "크레딧 종료 후",
+        "len": "",
+        "desc": "엔딩 크레딧이 모두 올라간 뒤 쿠키 영상이 한 편 이어집니다. 장면 내용은 공개되지 않았습니다."
+      }
+    ],
+    "tip": "",
+    "source": "언론 보도 (금강일보·이투데이·국제뉴스)",
+    "sourceUrl": "https://www.ggilbo.com/news/articleView.html?idxno=1181861"
+  },
+  {
     "id": "tmdb-1591675",
     "tmdbId": 1591675,
     "title": "룩백",
@@ -96,8 +119,8 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/mAfcD0lspaNlZDRrzT0fdWS5C01.jpg",
     "releaseDate": "2026-10-08",
-    "audience": 115427,
-    "boRank": 10,
+    "audience": 118773,
+    "boRank": 9,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -112,7 +135,7 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/wkm9BQLok7U2KihcCspCa663Qse.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 38178,
+    "audience": 54644,
     "boRank": 2,
     "status": "no",
     "creditsLen": null,
@@ -129,7 +152,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/LSGpoSAlitss0KOvVakkeUToZo.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 28908,
+    "audience": 40942,
     "boRank": 4,
     "status": "yes",
     "creditsLen": null,
@@ -152,7 +175,7 @@ const MOVIES = [
     "meta2": "118분",
     "posterPath": "/t9EUrwCxhppSryjEspwYi5gA7km.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 19473,
+    "audience": 24945,
     "boRank": 7,
     "status": "yes",
     "creditsLen": null,
@@ -175,8 +198,8 @@ const MOVIES = [
     "meta2": "117분",
     "posterPath": "/mot5NwdjpbQRaKxrQvcx1xCg0Yo.jpg",
     "releaseDate": "2026-10-22",
-    "audience": 8774,
-    "boRank": 5,
+    "audience": 15013,
+    "boRank": 6,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -185,21 +208,20 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/10/verity-2026/"
   },
   {
-    "id": "tmdb-1376681",
-    "tmdbId": 1376681,
-    "title": "킬링타임",
-    "meta": "공포 · 스릴러",
-    "meta2": "83분",
-    "posterPath": "/ijKaBymwMVvFDpxZy2hip6aQS0j.jpg",
-    "releaseDate": "2026-10-21",
-    "audience": 7877,
-    "boRank": 9,
-    "status": "no",
+    "id": "tmdb-1797226",
+    "tmdbId": 1797226,
+    "title": "하이브 치어링 파티",
+    "meta": "음악",
+    "meta2": "60분",
+    "posterPath": "/8udWFUoL5NxqKR1xtYinhcxY3gn.jpg",
+    "releaseDate": "2026-10-24",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
     "creditsLen": null,
     "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "topstarnews.net (자동 조사)",
-    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16253869"
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   },
   {
     "id": "leviticus",
@@ -434,11 +456,15 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "tmdb-1586876": {
+    "up": 0,
+    "down": 0
+  },
   "tmdb-1394740": {
     "up": 0,
     "down": 0
   },
-  "tmdb-1586876": {
+  "tmdb-607833": {
     "up": 0,
     "down": 0
   },
@@ -462,7 +488,7 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-1376681": {
+  "tmdb-1797226": {
     "up": 0,
     "down": 0
   },
