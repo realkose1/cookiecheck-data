@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 12295616,
+    "audience": 12295615,
     "boRank": 8,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3319707,
+    "audience": 3319714,
     "boRank": 3,
     "status": "yes",
     "creditsLen": null,
@@ -56,7 +56,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 1967565,
+    "audience": 1967579,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -79,7 +79,7 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1962927,
+    "audience": 1962930,
     "boRank": 5,
     "status": "no",
     "creditsLen": null,
@@ -135,7 +135,7 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/wkm9BQLok7U2KihcCspCa663Qse.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 54644,
+    "audience": 54651,
     "boRank": 2,
     "status": "no",
     "creditsLen": null,
@@ -152,7 +152,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/LSGpoSAlitss0KOvVakkeUToZo.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 40942,
+    "audience": 40947,
     "boRank": 4,
     "status": "yes",
     "creditsLen": null,
@@ -175,7 +175,7 @@ const MOVIES = [
     "meta2": "118분",
     "posterPath": "/t9EUrwCxhppSryjEspwYi5gA7km.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 24945,
+    "audience": 24951,
     "boRank": 7,
     "status": "yes",
     "creditsLen": null,
@@ -198,7 +198,7 @@ const MOVIES = [
     "meta2": "117분",
     "posterPath": "/mot5NwdjpbQRaKxrQvcx1xCg0Yo.jpg",
     "releaseDate": "2026-10-22",
-    "audience": 15013,
+    "audience": 15019,
     "boRank": 6,
     "status": "no",
     "creditsLen": null,
@@ -374,22 +374,6 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/10/other-mommy-2026/"
   },
   {
-    "id": "the-dresden-sun",
-    "tmdbId": 846049,
-    "title": "사이버 카르텔",
-    "meta": "SF · 액션 · 스릴러",
-    "meta2": "130분",
-    "posterPath": "/5la2zd33GEE6S2Om6BknO7LEOKe.jpg",
-    "releaseDate": "2026-10-08",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
     "id": "tmdb-1280738",
     "tmdbId": 1280738,
     "title": "퓨리어스",
@@ -444,6 +428,22 @@ const MOVIES = [
     "tip": "",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/10/digger-2026/"
+  },
+  {
+    "id": "above-below",
+    "tmdbId": 1514682,
+    "title": "카르텔 오션",
+    "meta": "스릴러 · 범죄",
+    "meta2": "96분",
+    "posterPath": "/zxTQqW2BYaBjLIvdfkXNnVfpfB3.jpg",
+    "releaseDate": "2026-09-30",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   }
 ];
 
@@ -524,10 +524,6 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "the-dresden-sun": {
-    "up": 0,
-    "down": 0
-  },
   "tmdb-1280738": {
     "up": 0,
     "down": 0
@@ -537,6 +533,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "digger": {
+    "up": 0,
+    "down": 0
+  },
+  "above-below": {
     "up": 0,
     "down": 0
   }
