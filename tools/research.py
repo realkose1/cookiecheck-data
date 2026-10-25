@@ -77,16 +77,17 @@ RETRY_SCHEDULE_DAYS = (3, 7, 14)  # N번째 시도 뒤 대기일: 1→3일, 2→
 RETRY_SCHEDULE_DAYS_UNRANKED = ()  # 첫 시도 뒤 재조사 없음
 GIVE_UP_AFTER_DAYS = 60  # 개봉 60일이 지나도록 자료가 없으면 앞으로도 안 나온다 (둘 중 먼저 오는 쪽에서 중단)
 
-# 예외 — 개봉 직후 박스오피스 TOP_RANK 위 안 작품은 위 일정(3/7/14일)과 시도 횟수
-# 상한을 건너뛰고 **매일** 다시 본다. 이 작품들의 '미확인'이 앱에서 가장 눈에 띄는데,
-# 쿠키 여부를 답하는 기사는 보통 개봉 다음 날 오전 늦게(11시 전후) 올라와서 아침
-# 조사(08:17)는 그보다 먼저 돌고 unknown 으로 끝난다. 그 뒤 3일을 기다리면 답이
-# 나온 지 한참 뒤에야 화면에 반영된다. 비용은 한 회차 RESEARCH_BUDGET 이 상한이고,
-# TOP_FRESH_DAYS 가 지나면 위 일정이 그대로 적용된다(대개 거기서 멈춘다).
-# TOP_FRESH_DAYS 는 GIVE_UP_AFTER_DAYS 보다 짧아야 말이 된다 — select_targets 는 이
-# 규칙을 중단 규칙보다 먼저 보므로, 상수를 바꿔도 충돌하지 않고 이쪽이 이긴다.
+# 예외 — 지금 박스오피스 TOP_RANK 위 안 작품은 위 일정(3/7/14일)·시도 횟수 상한·
+# GIVE_UP_AFTER_DAYS 를 모두 건너뛰고 **매일** 다시 본다. 이 작품들의 '미확인'이 앱 첫
+# 화면에서 가장 눈에 띄기 때문이다. 쿠키 여부를 답하는 기사는 보통 개봉 다음 날 오전
+# 늦게(11시 전후) 올라와서 아침 조사(08:17)는 그보다 먼저 돌고 unknown 으로 끝난다.
+#
+# 처음에는 '개봉 14일 안'으로 한정했는데, 입소문으로 늦게 순위에 오르는 작품이 빠졌다
+# — 룩백(2026-10-08 개봉)은 16일째에 10위 안에 들어와 옛 일정대로 11/1 까지 기다렸고,
+# 그동안 "쿠키 영상은 없다" 기사가 이미 두 건 있었다. 그래서 개봉일은 보지 않는다.
+# 비용은 한 회차 RESEARCH_BUDGET 이 상한이고, 10위 안 미확인은 많아야 몇 편이다.
+# 순위 밖으로 밀려나면 위 일정이 그대로 적용된다(대개 거기서 멈춘다).
 TOP_RANK = 10
-TOP_FRESH_DAYS = 14
 
 # --- 모델 호출 --------------------------------------------------------------
 # 첫 실제 실행에서 8회/6회를 꽉 채우고도(48회 검색, 편당 8회) 결과가 전부
@@ -358,12 +359,12 @@ def next_attempt_number(verdicts, key):
     return (prev.get("attempts") or 1) + 1
 
 
-def _is_fresh_top(movie, since_release):
-    """개봉 TOP_FRESH_DAYS 일 안의 박스오피스 TOP_RANK 위 안 작품인가."""
+def _is_top(movie, since_release):
+    """개봉한(개봉일을 모르면 개봉한 것으로 본다) 박스오피스 TOP_RANK 위 안 작품인가."""
     rank = movie.get("boRank")
     if not rank or rank > TOP_RANK:
         return False
-    return since_release is not None and 0 <= since_release <= TOP_FRESH_DAYS
+    return since_release is None or since_release >= 0
 
 
 def select_targets(movies, verdicts, overrides, today, budget=RESEARCH_BUDGET, verbose=True,
@@ -371,7 +372,7 @@ def select_targets(movies, verdicts, overrides, today, budget=RESEARCH_BUDGET, v
     """조사할 작품을 고른다. 로그를 남기며 거르고, 박스오피스 순위 순으로 자른다.
 
     top_rank 가 있으면(저녁 재확인) 박스오피스 그 순위 안 작품만 후보다. 이 모드에서는
-    오늘 이미 본 '개봉 직후 TOP 작품'도 다시 본다 — 하루 한 번 규칙은 아침 조사용이다.
+    오늘 이미 본 TOP 작품도 다시 본다 — 하루 한 번 규칙은 아침 조사용이다.
     """
     picked = []
     for m in movies:
@@ -407,10 +408,10 @@ def select_targets(movies, verdicts, overrides, today, budget=RESEARCH_BUDGET, v
 
             since_release = _days_since(m.get("releaseDate") or "", today)
 
-            # 개봉 직후 TOP 작품: 일정·횟수 상한 없이 하루 한 번(checkedAt 이 오늘 전).
+            # TOP 작품: 일정·횟수 상한·개봉 경과일 없이 하루 한 번(checkedAt 이 오늘 전).
             # 저녁 재확인(top_rank 모드)은 오늘 아침에 본 것도 다시 본다. attempts 는
             # 평소처럼 올라간다. 중단 규칙보다 먼저 본다 (상수 옆 주석 참고).
-            if _is_fresh_top(m, since_release):
+            if _is_top(m, since_release):
                 age = _days_since(rec.get("checkedAt", ""), today)
                 if top_rank is None and age is not None and age < 1:
                     continue
