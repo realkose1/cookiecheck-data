@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-24)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261023)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-25)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261024)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-10-24';
-const BOXOFFICE_DATE = "20261023";
+const DATA_UPDATED = '2026-10-25';
+const BOXOFFICE_DATE = "20261024";
 
 const MOVIES = [
   {
@@ -16,8 +16,8 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 12295615,
-    "boRank": 8,
+    "audience": 12303703,
+    "boRank": 7,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -33,8 +33,8 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3319711,
-    "boRank": 3,
+    "audience": 3348403,
+    "boRank": 2,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -56,7 +56,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 1967578,
+    "audience": 2112687,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -79,7 +79,7 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1962930,
+    "audience": 1982705,
     "boRank": 5,
     "status": "no",
     "creditsLen": null,
@@ -89,29 +89,6 @@ const MOVIES = [
     "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3705531"
   },
   {
-    "id": "tmdb-607833",
-    "tmdbId": 607833,
-    "title": "인턴",
-    "meta": "드라마 · 코미디",
-    "meta2": "133분",
-    "posterPath": "/nPu9o9yHwN8Gu2Yc1av6KKMbXZf.jpg",
-    "releaseDate": "2026-09-16",
-    "audience": 905434,
-    "boRank": 10,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "pos": "크레딧 종료 후",
-        "len": "",
-        "desc": "엔딩 크레딧이 모두 올라간 뒤 쿠키 영상이 한 편 이어집니다. 장면 내용은 공개되지 않았습니다."
-      }
-    ],
-    "tip": "",
-    "source": "언론 보도 (금강일보·이투데이·국제뉴스)",
-    "sourceUrl": "https://www.ggilbo.com/news/articleView.html?idxno=1181861"
-  },
-  {
     "id": "tmdb-1591675",
     "tmdbId": 1591675,
     "title": "룩백",
@@ -119,8 +96,8 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/mAfcD0lspaNlZDRrzT0fdWS5C01.jpg",
     "releaseDate": "2026-10-08",
-    "audience": 118773,
-    "boRank": 9,
+    "audience": 126056,
+    "boRank": 8,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -135,8 +112,8 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/wkm9BQLok7U2KihcCspCa663Qse.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 54651,
-    "boRank": 2,
+    "audience": 82565,
+    "boRank": 3,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -152,7 +129,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/LSGpoSAlitss0KOvVakkeUToZo.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 40947,
+    "audience": 61177,
     "boRank": 4,
     "status": "yes",
     "creditsLen": null,
@@ -175,8 +152,8 @@ const MOVIES = [
     "meta2": "118분",
     "posterPath": "/t9EUrwCxhppSryjEspwYi5gA7km.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 24951,
-    "boRank": 7,
+    "audience": 33948,
+    "boRank": 6,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -198,14 +175,31 @@ const MOVIES = [
     "meta2": "117분",
     "posterPath": "/mot5NwdjpbQRaKxrQvcx1xCg0Yo.jpg",
     "releaseDate": "2026-10-22",
-    "audience": 15019,
-    "boRank": 6,
+    "audience": 20884,
+    "boRank": 9,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/10/verity-2026/"
+  },
+  {
+    "id": "tmdb-1376681",
+    "tmdbId": 1376681,
+    "title": "킬링타임",
+    "meta": "공포 · 스릴러",
+    "meta2": "83분",
+    "posterPath": "/ijKaBymwMVvFDpxZy2hip6aQS0j.jpg",
+    "releaseDate": "2026-10-21",
+    "audience": 15034,
+    "boRank": 10,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "topstarnews.net (자동 조사)",
+    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16253869"
   },
   {
     "id": "tmdb-1797226",
@@ -254,14 +248,30 @@ const MOVIES = [
     "creditsLen": null,
     "cookies": [
       {
-        "desc": "엔딩 크레딧이 올라가는 동안 씽씽 교도소에서 실제로 올린 공연들의 영상 클립이 나온다. 크레딧 종료 후에는 추가 영상이 없다.",
+        "pos": "위치 미확인",
         "len": "",
-        "pos": "크레딧 중간"
+        "desc": "쿠키 영상이 있습니다. 자세한 내용은 출처를 확인하세요."
       }
     ],
     "tip": "",
-    "source": "aftercredits.com (자동 조사)",
-    "sourceUrl": "https://aftercredits.com/2024/07/sing-sing-2023/"
+    "source": "나무위키",
+    "sourceUrl": "https://namu.wiki/w/%EC%94%BD%EC%94%BD%28%EC%98%81%ED%99%94%29"
+  },
+  {
+    "id": "chao",
+    "tmdbId": 1419053,
+    "title": "차오",
+    "meta": "애니메이션 · 판타지 · 로맨스",
+    "meta2": "90분",
+    "posterPath": "/kCWRNQyOgKqTFcsIDbkbQbmeYbJ.jpg",
+    "releaseDate": "2026-10-21",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   },
   {
     "id": "always-lalisa",
@@ -405,45 +415,6 @@ const MOVIES = [
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
-  },
-  {
-    "id": "digger",
-    "tmdbId": 1248832,
-    "title": "디거",
-    "meta": "코미디 · 드라마",
-    "meta2": "129분",
-    "posterPath": "/jV5Mfasg8dP3XK5nuXLetBN3APx.jpg",
-    "releaseDate": "2026-10-03",
-    "audience": null,
-    "boRank": null,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "pos": "크레딧 중간",
-        "len": "",
-        "desc": "엔딩 크레딧 전반부는 극장 밖 장면 위로 흘러가며, 홍수로 인한 잔해와 거대한 방조제로 가득 찬 디스토피아적인 도시의 모습을 보여줍니다."
-      }
-    ],
-    "tip": "",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/10/digger-2026/"
-  },
-  {
-    "id": "above-below",
-    "tmdbId": 1514682,
-    "title": "카르텔 오션",
-    "meta": "스릴러 · 범죄",
-    "meta2": "96분",
-    "posterPath": "/zxTQqW2BYaBjLIvdfkXNnVfpfB3.jpg",
-    "releaseDate": "2026-09-30",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   }
 ];
 
@@ -461,10 +432,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "tmdb-1394740": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-607833": {
     "up": 0,
     "down": 0
   },
@@ -488,6 +455,10 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "tmdb-1376681": {
+    "up": 0,
+    "down": 0
+  },
   "tmdb-1797226": {
     "up": 0,
     "down": 0
@@ -497,6 +468,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "sing-sing": {
+    "up": 0,
+    "down": 0
+  },
+  "chao": {
     "up": 0,
     "down": 0
   },
@@ -529,14 +504,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "la-valle-dei-sorrisi": {
-    "up": 0,
-    "down": 0
-  },
-  "digger": {
-    "up": 0,
-    "down": 0
-  },
-  "above-below": {
     "up": 0,
     "down": 0
   }
