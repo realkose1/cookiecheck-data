@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-26)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261025)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-27)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261026)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-10-26';
-const BOXOFFICE_DATE = "20261025";
+const DATA_UPDATED = '2026-10-27';
+const BOXOFFICE_DATE = "20261026";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 12311211,
+    "audience": 12314610,
     "boRank": 6,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3374510,
+    "audience": 3382129,
     "boRank": 2,
     "status": "yes",
     "creditsLen": null,
@@ -56,7 +56,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 2248126,
+    "audience": 2268277,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -79,7 +79,7 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 1999477,
+    "audience": 2006488,
     "boRank": 4,
     "status": "no",
     "creditsLen": null,
@@ -96,7 +96,7 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/mAfcD0lspaNlZDRrzT0fdWS5C01.jpg",
     "releaseDate": "2026-10-08",
-    "audience": 131051,
+    "audience": 133300,
     "boRank": 8,
     "status": "no",
     "creditsLen": null,
@@ -113,7 +113,7 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/wkm9BQLok7U2KihcCspCa663Qse.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 104874,
+    "audience": 112193,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -130,7 +130,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/LSGpoSAlitss0KOvVakkeUToZo.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 77153,
+    "audience": 84050,
     "boRank": 5,
     "status": "yes",
     "creditsLen": null,
@@ -153,7 +153,7 @@ const MOVIES = [
     "meta2": "118분",
     "posterPath": "/t9EUrwCxhppSryjEspwYi5gA7km.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 41037,
+    "audience": 44204,
     "boRank": 7,
     "status": "yes",
     "creditsLen": null,
@@ -176,7 +176,7 @@ const MOVIES = [
     "meta2": "117분",
     "posterPath": "/mot5NwdjpbQRaKxrQvcx1xCg0Yo.jpg",
     "releaseDate": "2026-10-22",
-    "audience": 25190,
+    "audience": 27432,
     "boRank": 9,
     "status": "no",
     "creditsLen": null,
@@ -193,7 +193,7 @@ const MOVIES = [
     "meta2": "83분",
     "posterPath": "/ijKaBymwMVvFDpxZy2hip6aQS0j.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 19121,
+    "audience": 20422,
     "boRank": 10,
     "status": "no",
     "creditsLen": null,
@@ -362,6 +362,22 @@ const MOVIES = [
     "source": ""
   },
   {
+    "id": "heaven-knows-what",
+    "tmdbId": 285024,
+    "title": "헤븐 노우즈 왓",
+    "meta": "드라마",
+    "meta2": "93분",
+    "posterPath": "/wkjBgR2GFEiYmzkXwF394Z2vMvu.jpg",
+    "releaseDate": "2026-10-14",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
     "id": "other-mommy",
     "tmdbId": 1400837,
     "title": "아더 마미",
@@ -400,22 +416,6 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/06/furious-the-2025/"
-  },
-  {
-    "id": "la-valle-dei-sorrisi",
-    "tmdbId": 1092936,
-    "title": "홀리보이",
-    "meta": "스릴러 · 드라마 · 판타지",
-    "meta2": "123분",
-    "posterPath": "/vxkPiWdut20cHrFW57nduhhMR2V.jpg",
-    "releaseDate": "2026-10-07",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   }
 ];
 
@@ -496,15 +496,15 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "heaven-knows-what": {
+    "up": 0,
+    "down": 0
+  },
   "other-mommy": {
     "up": 0,
     "down": 0
   },
   "tmdb-1280738": {
-    "up": 0,
-    "down": 0
-  },
-  "la-valle-dei-sorrisi": {
     "up": 0,
     "down": 0
   }
