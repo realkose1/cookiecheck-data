@@ -10,7 +10,7 @@
    "meta2": "173분",
    "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
    "releaseDate": "2026-08-05",
-   "audience": 12314610,
+   "audience": 12314607,
    "boRank": 6,
    "status": "no",
    "creditsLen": null,
@@ -27,7 +27,7 @@
    "meta2": "131분",
    "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
    "releaseDate": "2026-09-23",
-   "audience": 3382055,
+   "audience": 3382046,
    "boRank": 2,
    "status": "yes",
    "creditsLen": null,
@@ -50,7 +50,7 @@
    "meta2": "99분",
    "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
    "releaseDate": "2026-09-30",
-   "audience": 2268268,
+   "audience": 2268257,
    "boRank": 1,
    "status": "yes",
    "creditsLen": null,
@@ -73,7 +73,7 @@
    "meta2": "130분",
    "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
    "releaseDate": "2026-09-23",
-   "audience": 2006483,
+   "audience": 2006480,
    "boRank": 4,
    "status": "no",
    "creditsLen": null,
@@ -372,29 +372,6 @@
    "source": ""
   },
   {
-   "id": "other-mommy",
-   "tmdbId": 1400837,
-   "title": "아더 마미",
-   "meta": "공포",
-   "meta2": "93분",
-   "posterPath": "/fGRNCssTRrhYZxNzykGGCoMsAVq.jpg",
-   "releaseDate": "2026-10-08",
-   "audience": null,
-   "boRank": null,
-   "status": "yes",
-   "creditsLen": null,
-   "cookies": [
-    {
-     "pos": "크레딧 종료 후",
-     "len": "",
-     "desc": "벨 담(다른 엄마)이 카메라를 내려다보며 입술에 손가락을 갖다 대고 \"쉬이이이잇\" 하고 말합니다."
-    }
-   ],
-   "tip": "",
-   "source": "aftercredits.com",
-   "sourceUrl": "https://aftercredits.com/2026/10/other-mommy-2026/"
-  },
-  {
    "id": "tmdb-1280738",
    "tmdbId": 1280738,
    "title": "퓨리어스",
@@ -410,6 +387,22 @@
    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
    "source": "aftercredits.com",
    "sourceUrl": "https://aftercredits.com/2026/06/furious-the-2025/"
+  },
+  {
+   "id": "la-valle-dei-sorrisi",
+   "tmdbId": 1092936,
+   "title": "홀리보이",
+   "meta": "스릴러 · 드라마 · 판타지",
+   "meta2": "123분",
+   "posterPath": "/vxkPiWdut20cHrFW57nduhhMR2V.jpg",
+   "releaseDate": "2026-10-07",
+   "audience": null,
+   "boRank": null,
+   "status": "unknown",
+   "creditsLen": null,
+   "cookies": [],
+   "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+   "source": ""
   }
  ]
 }
