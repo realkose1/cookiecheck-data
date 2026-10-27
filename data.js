@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-27)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261026)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-28)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261027)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-10-27';
-const BOXOFFICE_DATE = "20261026";
+const DATA_UPDATED = '2026-10-28';
+const BOXOFFICE_DATE = "20261027";
 
 const MOVIES = [
   {
@@ -16,8 +16,8 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 12314606,
-    "boRank": 6,
+    "audience": 12317358,
+    "boRank": 7,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -33,8 +33,8 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3382043,
-    "boRank": 2,
+    "audience": 3389455,
+    "boRank": 4,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -56,7 +56,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 2268255,
+    "audience": 2286581,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -79,14 +79,37 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 2006478,
-    "boRank": 4,
+    "audience": 2015759,
+    "boRank": 3,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "gukjenews.com (자동 조사)",
     "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3705531"
+  },
+  {
+    "id": "tmdb-607833",
+    "tmdbId": 607833,
+    "title": "인턴",
+    "meta": "드라마 · 코미디",
+    "meta2": "133분",
+    "posterPath": "/nPu9o9yHwN8Gu2Yc1av6KKMbXZf.jpg",
+    "releaseDate": "2026-09-16",
+    "audience": 908419,
+    "boRank": 10,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "pos": "크레딧 종료 후",
+        "len": "",
+        "desc": "엔딩 크레딧이 모두 올라간 뒤 쿠키 영상이 한 편 이어집니다. 장면 내용은 공개되지 않았습니다."
+      }
+    ],
+    "tip": "",
+    "source": "언론 보도 (금강일보·이투데이·국제뉴스)",
+    "sourceUrl": "https://www.ggilbo.com/news/articleView.html?idxno=1181861"
   },
   {
     "id": "tmdb-1591675",
@@ -96,7 +119,7 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/mAfcD0lspaNlZDRrzT0fdWS5C01.jpg",
     "releaseDate": "2026-10-08",
-    "audience": 133300,
+    "audience": 135600,
     "boRank": 8,
     "status": "no",
     "creditsLen": null,
@@ -113,8 +136,8 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/wkm9BQLok7U2KihcCspCa663Qse.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 112191,
-    "boRank": 3,
+    "audience": 121604,
+    "boRank": 2,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -130,7 +153,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/LSGpoSAlitss0KOvVakkeUToZo.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 84196,
+    "audience": 90472,
     "boRank": 5,
     "status": "yes",
     "creditsLen": null,
@@ -153,8 +176,8 @@ const MOVIES = [
     "meta2": "118분",
     "posterPath": "/t9EUrwCxhppSryjEspwYi5gA7km.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 44204,
-    "boRank": 7,
+    "audience": 48444,
+    "boRank": 6,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -176,7 +199,7 @@ const MOVIES = [
     "meta2": "117분",
     "posterPath": "/mot5NwdjpbQRaKxrQvcx1xCg0Yo.jpg",
     "releaseDate": "2026-10-22",
-    "audience": 27433,
+    "audience": 29707,
     "boRank": 9,
     "status": "no",
     "creditsLen": null,
@@ -186,21 +209,77 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/10/verity-2026/"
   },
   {
-    "id": "tmdb-1376681",
-    "tmdbId": 1376681,
-    "title": "킬링타임",
-    "meta": "공포 · 스릴러",
-    "meta2": "83분",
-    "posterPath": "/ijKaBymwMVvFDpxZy2hip6aQS0j.jpg",
-    "releaseDate": "2026-10-21",
-    "audience": 20426,
-    "boRank": 10,
+    "id": "heart-of-the-beast",
+    "tmdbId": 1263337,
+    "title": "하트 오브 비스트",
+    "meta": "모험 · 스릴러",
+    "meta2": "102분",
+    "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
+    "releaseDate": "2026-10-28",
+    "audience": null,
+    "boRank": null,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "topstarnews.net (자동 조사)",
-    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16253869"
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/09/heart-of-the-beast-2026/"
+  },
+  {
+    "id": "sense-and-sensibility",
+    "tmdbId": 1503762,
+    "title": "이성과 감성",
+    "meta": "드라마 · 로맨스",
+    "meta2": "133분",
+    "posterPath": "/pWVWIaa1eVTKikijG0pyWi9Ulvb.jpg",
+    "releaseDate": "2026-10-28",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/10/sense-and-sensibility-2026/"
+  },
+  {
+    "id": "shaun-the-sheep-the-beast-of-mos",
+    "tmdbId": 1477104,
+    "title": "숀 더 쉽: 공포의 털보 괴물",
+    "meta": "애니메이션 · SF · 코미디",
+    "meta2": "81분",
+    "posterPath": "/9ju4vGzFpenSDvbQVA86gdpaS8n.jpg",
+    "releaseDate": "2026-10-28",
+    "audience": null,
+    "boRank": null,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "pos": "크레딧 중간",
+        "len": "",
+        "desc": "여러 등장인물이 할로윈 의상을 입고 춤을 춥니다. 이어서 짧은 장면이 나오는데, 쓰레기 더미 속에 있는 헤어그로(Hair-Grow) 병을 까마귀가 쪼아 먹자 눈이 충혈되면서 변하기 시작합니다."
+      }
+    ],
+    "tip": "",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/09/shaun-the-sheep-the-beast-of-mossy-bottom-2026/"
+  },
+  {
+    "id": "tmdb-1590933",
+    "tmdbId": 1590933,
+    "title": "그대, 별처럼",
+    "meta": "드라마 · 로맨스",
+    "meta2": "135분",
+    "posterPath": "/phTrle2mrBqjhsFMYrK9Uacu6cd.jpg",
+    "releaseDate": "2026-10-28",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   },
   {
     "id": "tmdb-1797226",
@@ -265,6 +344,22 @@ const MOVIES = [
     "meta": "애니메이션 · 판타지 · 로맨스",
     "meta2": "90분",
     "posterPath": "/kCWRNQyOgKqTFcsIDbkbQbmeYbJ.jpg",
+    "releaseDate": "2026-10-21",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "tmdb-1728590",
+    "tmdbId": 1728590,
+    "title": "눈 둘 데가 없네",
+    "meta": "드라마",
+    "meta2": "73분",
+    "posterPath": "/iHhmuWaxDKuULzauyOzBXPT32fJ.jpg",
     "releaseDate": "2026-10-21",
     "audience": null,
     "boRank": null,
@@ -360,55 +455,6 @@ const MOVIES = [
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
-  },
-  {
-    "id": "heaven-knows-what",
-    "tmdbId": 285024,
-    "title": "헤븐 노우즈 왓",
-    "meta": "드라마",
-    "meta2": "93분",
-    "posterPath": "/wkjBgR2GFEiYmzkXwF394Z2vMvu.jpg",
-    "releaseDate": "2026-10-14",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
-    "id": "tmdb-1280738",
-    "tmdbId": 1280738,
-    "title": "퓨리어스",
-    "meta": "액션 · 범죄 · 스릴러",
-    "meta2": "114분",
-    "posterPath": "/x959xPUa6DebrSj2xNtF0NYSiCm.jpg",
-    "releaseDate": "2026-10-07",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/06/furious-the-2025/"
-  },
-  {
-    "id": "la-valle-dei-sorrisi",
-    "tmdbId": 1092936,
-    "title": "홀리보이",
-    "meta": "스릴러 · 드라마 · 판타지",
-    "meta2": "123분",
-    "posterPath": "/vxkPiWdut20cHrFW57nduhhMR2V.jpg",
-    "releaseDate": "2026-10-07",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   }
 ];
 
@@ -426,6 +472,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "tmdb-1394740": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-607833": {
     "up": 0,
     "down": 0
   },
@@ -449,7 +499,19 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-1376681": {
+  "heart-of-the-beast": {
+    "up": 0,
+    "down": 0
+  },
+  "sense-and-sensibility": {
+    "up": 0,
+    "down": 0
+  },
+  "shaun-the-sheep-the-beast-of-mos": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-1590933": {
     "up": 0,
     "down": 0
   },
@@ -466,6 +528,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "chao": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-1728590": {
     "up": 0,
     "down": 0
   },
@@ -486,18 +552,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "tmdb-1279865": {
-    "up": 0,
-    "down": 0
-  },
-  "heaven-knows-what": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-1280738": {
-    "up": 0,
-    "down": 0
-  },
-  "la-valle-dei-sorrisi": {
     "up": 0,
     "down": 0
   }
