@@ -195,7 +195,7 @@ const MOVIES = [
     "id": "verity",
     "tmdbId": 1283515,
     "title": "베러티",
-    "meta": "미스터리 · 스릴러",
+    "meta": "미스터리 · 스릴러 · 드라마",
     "meta2": "117분",
     "posterPath": "/mot5NwdjpbQRaKxrQvcx1xCg0Yo.jpg",
     "releaseDate": "2026-10-22",
