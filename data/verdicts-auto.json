@@ -5,6 +5,23 @@
   "reason": "검색 결과에서 이 작품(2026년, Valeska Grisebach 감독, 'Das geträumte Abenteuer')에 대한 쿠키 영상 관련 정보를 전혀 찾을 수 없어 근거가 없으므로 unknown으로 판정함",
   "status": "unknown"
  },
+ "1083624": {
+  "checkedAt": "2026-10-29",
+  "cookies": [
+   {
+    "desc": "엔딩 크레딧과 함께 쿠키 영상이 나온다. 이용재 감독은 이 영상을 '술꾼도시여자들'의 인기에 살짝 편승한 것이라고 설명했다. 영상의 구체적인 내용과 정확한 위치(크레딧 중간인지 종료 후인지)는 확인하지 못했다.",
+    "len": "",
+    "pos": "위치 미확인"
+   }
+  ],
+  "model": "claude-sonnet-5-5",
+  "quote": "쿠키 영상은 엔딩 크레딧과 함께 나온다.",
+  "reason": "톱스타뉴스는 쿠키 영상이 있다고 보도했고, 노컷뉴스는 이용재 감독이 쿠키 영상의 의도를 직접 설명했다고 전한다. 두 기사 모두 2026년 개봉작인 이 영화를 다루고 있다. 다만 크레딧 중간인지 종료 후인지는 기사에 없어 위치는 미확인으로 두었다.",
+  "source": "topstarnews.net · nocutnews.co.kr (자동 조사)",
+  "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16260889",
+  "status": "yes",
+  "tip": ""
+ },
  "1092936": {
   "attempts": 1,
   "checkedAt": "2026-10-07",
@@ -218,10 +235,15 @@
   "status": "unknown"
  },
  "1590933": {
-  "attempts": 1,
-  "checkedAt": "2026-10-28",
-  "reason": "검색과 열어 본 페이지(나무위키는 접근 불가, eiga.com 리뷰 모음, note.com 리뷰)에서 쿠키 영상이 있다거나 없다고 적은 문장을 찾지 못했다. 조사 한도 안에서는 근거가 없어 unknown으로 둔다.",
-  "status": "unknown"
+  "checkedAt": "2026-10-29",
+  "cookies": [],
+  "model": "claude-sonnet-5-5",
+  "quote": "롯데시네마에서 단독 개봉했으며 쿠키 영상은 없다.",
+  "reason": "국내 개봉일(10/28)에 나온 톱스타뉴스 보도가 쿠키 영상은 없다고 명시했다. 이 기사는 후지이 미치히토 감독과 나기라 유 원작 소설, 요코하마 류세이·히로세 스즈 출연을 언급해 동명 작품이 아님을 확인했다.",
+  "source": "topstarnews.net (자동 조사)",
+  "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16260993",
+  "status": "no",
+  "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다."
  },
  "1591675": {
   "attempts": 3,
@@ -292,6 +314,12 @@
   "attempts": 1,
   "checkedAt": "2026-10-14",
   "reason": "검색 도구 사용 한도를 넘겨 2015년 Safdie 형제 감독작 'Heaven Knows What'의 쿠키 영상 여부를 확인할 근거를 찾지 못했다. 없음을 뒷받침하는 문장도 확보하지 못해 unknown으로 판정한다.",
+  "status": "unknown"
+ },
+ "379088": {
+  "attempts": 1,
+  "checkedAt": "2026-10-29",
+  "reason": "검색에서 '진격의 거인: 홍련의 화살'(2014, 아라키 테츠로)의 쿠키 영상 유무를 직접 적은 문장을 찾지 못했다. 나무위키 페이지는 열리지 않았다. 나온 쿠키 관련 글은 실사 영화 'Attack on Titan'(2015)과 '더 라스트 어택' 얘기여서 다른 작품이다.",
   "status": "unknown"
  },
  "42360": {

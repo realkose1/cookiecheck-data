@@ -1,30 +1,13 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-28)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261027)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-29)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261028)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-10-28';
-const BOXOFFICE_DATE = "20261027";
+const DATA_UPDATED = '2026-10-29';
+const BOXOFFICE_DATE = "20261028";
 
 const MOVIES = [
-  {
-    "id": "the-odyssey",
-    "tmdbId": 1368337,
-    "title": "오디세이",
-    "meta": "모험 · 액션 · 판타지",
-    "meta2": "173분",
-    "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
-    "releaseDate": "2026-08-05",
-    "audience": 12317357,
-    "boRank": 7,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/07/odyssey-the-2026/"
-  },
   {
     "id": "tmdb-1418428",
     "tmdbId": 1418428,
@@ -33,8 +16,8 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3389455,
-    "boRank": 4,
+    "audience": 3399183,
+    "boRank": 5,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -56,7 +39,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 2286522,
+    "audience": 2342824,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -79,54 +62,14 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 2015756,
-    "boRank": 3,
+    "audience": 2022736,
+    "boRank": 7,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "gukjenews.com (자동 조사)",
     "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3705531"
-  },
-  {
-    "id": "tmdb-607833",
-    "tmdbId": 607833,
-    "title": "인턴",
-    "meta": "드라마 · 코미디",
-    "meta2": "133분",
-    "posterPath": "/nPu9o9yHwN8Gu2Yc1av6KKMbXZf.jpg",
-    "releaseDate": "2026-09-16",
-    "audience": 908419,
-    "boRank": 10,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "pos": "크레딧 종료 후",
-        "len": "",
-        "desc": "엔딩 크레딧이 모두 올라간 뒤 쿠키 영상이 한 편 이어집니다. 장면 내용은 공개되지 않았습니다."
-      }
-    ],
-    "tip": "",
-    "source": "언론 보도 (금강일보·이투데이·국제뉴스)",
-    "sourceUrl": "https://www.ggilbo.com/news/articleView.html?idxno=1181861"
-  },
-  {
-    "id": "tmdb-1591675",
-    "tmdbId": 1591675,
-    "title": "룩백",
-    "meta": "드라마",
-    "meta2": "101분",
-    "posterPath": "/mAfcD0lspaNlZDRrzT0fdWS5C01.jpg",
-    "releaseDate": "2026-10-08",
-    "audience": 135602,
-    "boRank": 8,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "언론 보도 (톱스타뉴스·국제뉴스) · 관람 후기",
-    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16241770"
   },
   {
     "id": "tmdb-1584855",
@@ -136,8 +79,8 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/wkm9BQLok7U2KihcCspCa663Qse.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 121608,
-    "boRank": 2,
+    "audience": 128848,
+    "boRank": 6,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -153,8 +96,8 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/LSGpoSAlitss0KOvVakkeUToZo.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 90470,
-    "boRank": 5,
+    "audience": 95634,
+    "boRank": 8,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -176,8 +119,8 @@ const MOVIES = [
     "meta2": "118분",
     "posterPath": "/t9EUrwCxhppSryjEspwYi5gA7km.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 48448,
-    "boRank": 6,
+    "audience": 52543,
+    "boRank": 10,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -192,21 +135,77 @@ const MOVIES = [
     "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16254660"
   },
   {
-    "id": "verity",
-    "tmdbId": 1283515,
-    "title": "베러티",
-    "meta": "미스터리 · 스릴러 · 드라마",
-    "meta2": "117분",
-    "posterPath": "/mot5NwdjpbQRaKxrQvcx1xCg0Yo.jpg",
-    "releaseDate": "2026-10-22",
-    "audience": 29707,
-    "boRank": 9,
+    "id": "tmdb-379088",
+    "tmdbId": 379088,
+    "title": "진격의 거인: 홍련의 화살",
+    "meta": "애니메이션 · 액션 · 모험",
+    "meta2": "118분",
+    "posterPath": "/oMuxM0n4EZ4SILoTUsdruJoUAfe.jpg",
+    "releaseDate": "2015-01-28",
+    "audience": 36713,
+    "boRank": 4,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "heart-of-the-beast",
+    "tmdbId": 1263337,
+    "title": "하트 오브 비스트",
+    "meta": "모험 · 스릴러",
+    "meta2": "102분",
+    "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
+    "releaseDate": "2026-10-28",
+    "audience": 30964,
+    "boRank": 2,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/10/verity-2026/"
+    "sourceUrl": "https://aftercredits.com/2026/09/heart-of-the-beast-2026/"
+  },
+  {
+    "id": "tmdb-1083624",
+    "tmdbId": 1083624,
+    "title": "수능, 출제의 비밀",
+    "meta": "코미디",
+    "meta2": "100분",
+    "posterPath": "/ohrJjtvKciICoeH80z973JnBoHo.jpg",
+    "releaseDate": "2026-10-28",
+    "audience": 16916,
+    "boRank": 3,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "pos": "위치 미확인",
+        "len": "",
+        "desc": "엔딩 크레딧과 함께 쿠키 영상이 나온다. 이용재 감독은 이 영상을 '술꾼도시여자들'의 인기에 살짝 편승한 것이라고 설명했다. 영상의 구체적인 내용과 정확한 위치(크레딧 중간인지 종료 후인지)는 확인하지 못했다."
+      }
+    ],
+    "tip": "",
+    "source": "topstarnews.net · nocutnews.co.kr (자동 조사)",
+    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16260889"
+  },
+  {
+    "id": "tmdb-1590933",
+    "tmdbId": 1590933,
+    "title": "그대, 별처럼",
+    "meta": "드라마 · 로맨스",
+    "meta2": "135분",
+    "posterPath": "/phTrle2mrBqjhsFMYrK9Uacu6cd.jpg",
+    "releaseDate": "2026-10-28",
+    "audience": 7699,
+    "boRank": 9,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "topstarnews.net (자동 조사)",
+    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16260993"
   },
   {
     "id": "sense-and-sensibility",
@@ -224,23 +223,6 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/10/sense-and-sensibility-2026/"
-  },
-  {
-    "id": "heart-of-the-beast",
-    "tmdbId": 1263337,
-    "title": "하트 오브 비스트",
-    "meta": "모험 · 스릴러",
-    "meta2": "102분",
-    "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
-    "releaseDate": "2026-10-28",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/09/heart-of-the-beast-2026/"
   },
   {
     "id": "shaun-the-sheep-the-beast-of-mos",
@@ -266,22 +248,6 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/09/shaun-the-sheep-the-beast-of-mossy-bottom-2026/"
   },
   {
-    "id": "tmdb-1590933",
-    "tmdbId": 1590933,
-    "title": "그대, 별처럼",
-    "meta": "드라마 · 로맨스",
-    "meta2": "135분",
-    "posterPath": "/phTrle2mrBqjhsFMYrK9Uacu6cd.jpg",
-    "releaseDate": "2026-10-28",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
     "id": "tmdb-1797226",
     "tmdbId": 1797226,
     "title": "하이브 치어링 파티",
@@ -296,6 +262,23 @@ const MOVIES = [
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
+  },
+  {
+    "id": "verity",
+    "tmdbId": 1283515,
+    "title": "베러티",
+    "meta": "미스터리 · 스릴러 · 드라마",
+    "meta2": "117분",
+    "posterPath": "/u0wEvdDBNrNZNtLxLrzoiXT09nj.jpg",
+    "releaseDate": "2026-10-22",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/10/verity-2026/"
   },
   {
     "id": "leviticus",
@@ -443,10 +426,6 @@ const MOVIES = [
 ];
 
 const INITIAL_VOTES = {
-  "the-odyssey": {
-    "up": 0,
-    "down": 0
-  },
   "tmdb-1418428": {
     "up": 0,
     "down": 0
@@ -456,14 +435,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "tmdb-1394740": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-607833": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-1591675": {
     "up": 0,
     "down": 0
   },
@@ -479,11 +450,7 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "verity": {
-    "up": 0,
-    "down": 0
-  },
-  "sense-and-sensibility": {
+  "tmdb-379088": {
     "up": 0,
     "down": 0
   },
@@ -491,7 +458,7 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "shaun-the-sheep-the-beast-of-mos": {
+  "tmdb-1083624": {
     "up": 0,
     "down": 0
   },
@@ -499,7 +466,19 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "sense-and-sensibility": {
+    "up": 0,
+    "down": 0
+  },
+  "shaun-the-sheep-the-beast-of-mos": {
+    "up": 0,
+    "down": 0
+  },
   "tmdb-1797226": {
+    "up": 0,
+    "down": 0
+  },
+  "verity": {
     "up": 0,
     "down": 0
   },
