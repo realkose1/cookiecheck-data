@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3389455,
+    "audience": 3389458,
     "boRank": 4,
     "status": "yes",
     "creditsLen": null,
@@ -119,7 +119,7 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/mAfcD0lspaNlZDRrzT0fdWS5C01.jpg",
     "releaseDate": "2026-10-08",
-    "audience": 135600,
+    "audience": 135602,
     "boRank": 8,
     "status": "no",
     "creditsLen": null,
@@ -136,7 +136,7 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/wkm9BQLok7U2KihcCspCa663Qse.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 121604,
+    "audience": 121610,
     "boRank": 2,
     "status": "no",
     "creditsLen": null,
@@ -153,7 +153,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/LSGpoSAlitss0KOvVakkeUToZo.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 90472,
+    "audience": 90470,
     "boRank": 5,
     "status": "yes",
     "creditsLen": null,
@@ -176,7 +176,7 @@ const MOVIES = [
     "meta2": "118분",
     "posterPath": "/t9EUrwCxhppSryjEspwYi5gA7km.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 48444,
+    "audience": 48448,
     "boRank": 6,
     "status": "yes",
     "creditsLen": null,
@@ -354,22 +354,6 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "tmdb-1728590",
-    "tmdbId": 1728590,
-    "title": "눈 둘 데가 없네",
-    "meta": "드라마",
-    "meta2": "73분",
-    "posterPath": "/iHhmuWaxDKuULzauyOzBXPT32fJ.jpg",
-    "releaseDate": "2026-10-21",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
     "id": "always-lalisa",
     "tmdbId": 1489932,
     "title": "올웨이즈 라리사",
@@ -528,10 +512,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "chao": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-1728590": {
     "up": 0,
     "down": 0
   },
