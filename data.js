@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3389456,
+    "audience": 3389455,
     "boRank": 4,
     "status": "yes",
     "creditsLen": null,
@@ -79,7 +79,7 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 2015758,
+    "audience": 2015756,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -209,23 +209,6 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/10/verity-2026/"
   },
   {
-    "id": "heart-of-the-beast",
-    "tmdbId": 1263337,
-    "title": "하트 오브 비스트",
-    "meta": "모험 · 스릴러",
-    "meta2": "102분",
-    "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
-    "releaseDate": "2026-10-28",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/09/heart-of-the-beast-2026/"
-  },
-  {
     "id": "sense-and-sensibility",
     "tmdbId": 1503762,
     "title": "이성과 감성",
@@ -241,6 +224,23 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/10/sense-and-sensibility-2026/"
+  },
+  {
+    "id": "heart-of-the-beast",
+    "tmdbId": 1263337,
+    "title": "하트 오브 비스트",
+    "meta": "모험 · 스릴러",
+    "meta2": "102분",
+    "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
+    "releaseDate": "2026-10-28",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/09/heart-of-the-beast-2026/"
   },
   {
     "id": "shaun-the-sheep-the-beast-of-mos",
@@ -483,11 +483,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "heart-of-the-beast": {
+  "sense-and-sensibility": {
     "up": 0,
     "down": 0
   },
-  "sense-and-sensibility": {
+  "heart-of-the-beast": {
     "up": 0,
     "down": 0
   },
