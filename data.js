@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-29)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261028)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-30)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261029)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-10-29';
-const BOXOFFICE_DATE = "20261028";
+const DATA_UPDATED = '2026-10-30';
+const BOXOFFICE_DATE = "20261029";
 
 const MOVIES = [
   {
@@ -16,8 +16,8 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3399113,
-    "boRank": 5,
+    "audience": 3406692,
+    "boRank": 4,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -39,8 +39,8 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 2342816,
-    "boRank": 1,
+    "audience": 2362206,
+    "boRank": 2,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -62,8 +62,8 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 2022693,
-    "boRank": 7,
+    "audience": 2029059,
+    "boRank": 5,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -79,7 +79,7 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/wkm9BQLok7U2KihcCspCa663Qse.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 128850,
+    "audience": 134365,
     "boRank": 6,
     "status": "no",
     "creditsLen": null,
@@ -96,7 +96,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/LSGpoSAlitss0KOvVakkeUToZo.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 95635,
+    "audience": 98823,
     "boRank": 8,
     "status": "yes",
     "creditsLen": null,
@@ -119,8 +119,8 @@ const MOVIES = [
     "meta2": "118분",
     "posterPath": "/t9EUrwCxhppSryjEspwYi5gA7km.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 52546,
-    "boRank": 10,
+    "audience": 55718,
+    "boRank": 9,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -135,22 +135,6 @@ const MOVIES = [
     "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16254660"
   },
   {
-    "id": "tmdb-379088",
-    "tmdbId": 379088,
-    "title": "진격의 거인: 홍련의 화살",
-    "meta": "애니메이션 · 액션 · 모험",
-    "meta2": "118분",
-    "posterPath": "/oMuxM0n4EZ4SILoTUsdruJoUAfe.jpg",
-    "releaseDate": "2015-01-28",
-    "audience": 36713,
-    "boRank": 4,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
     "id": "heart-of-the-beast",
     "tmdbId": 1263337,
     "title": "하트 오브 비스트",
@@ -158,14 +142,37 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 30975,
-    "boRank": 2,
+    "audience": 52436,
+    "boRank": 1,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/09/heart-of-the-beast-2026/"
+  },
+  {
+    "id": "tmdb-379088",
+    "tmdbId": 379088,
+    "title": "진격의 거인: 홍련의 화살",
+    "meta": "애니메이션 · 액션 · 모험",
+    "meta2": "118분",
+    "posterPath": "/oMuxM0n4EZ4SILoTUsdruJoUAfe.jpg",
+    "releaseDate": "2015-01-28",
+    "audience": 42061,
+    "boRank": 7,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "pos": "위치 미확인",
+        "len": "",
+        "desc": "재개봉 관련 언론 보도에 따르면 쿠키 영상이 2개 있다. 기사에는 각 영상이 나오는 위치와 내용이 적혀 있지 않다."
+      }
+    ],
+    "tip": "",
+    "source": "topstarnews.net (자동 조사)",
+    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16261165"
   },
   {
     "id": "tmdb-1083624",
@@ -175,7 +182,7 @@ const MOVIES = [
     "meta2": "100분",
     "posterPath": "/ohrJjtvKciICoeH80z973JnBoHo.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 16919,
+    "audience": 26967,
     "boRank": 3,
     "status": "yes",
     "creditsLen": null,
@@ -191,21 +198,20 @@ const MOVIES = [
     "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16260889"
   },
   {
-    "id": "tmdb-1590933",
-    "tmdbId": 1590933,
-    "title": "그대, 별처럼",
-    "meta": "드라마 · 로맨스",
-    "meta2": "135분",
-    "posterPath": "/phTrle2mrBqjhsFMYrK9Uacu6cd.jpg",
-    "releaseDate": "2026-10-28",
-    "audience": 7699,
-    "boRank": 9,
-    "status": "no",
+    "id": "tmdb-1545057",
+    "tmdbId": 1545057,
+    "title": "최종면접",
+    "meta": "미스터리",
+    "meta2": "108분",
+    "posterPath": "/wImwvRmbR28hPNDmaj5W7zvxk0T.jpg",
+    "releaseDate": "2026-11-04",
+    "audience": 6353,
+    "boRank": 10,
+    "status": "unknown",
     "creditsLen": null,
     "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "topstarnews.net (자동 조사)",
-    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16260993"
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   },
   {
     "id": "sense-and-sensibility",
@@ -246,6 +252,23 @@ const MOVIES = [
     "tip": "",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/09/shaun-the-sheep-the-beast-of-mossy-bottom-2026/"
+  },
+  {
+    "id": "tmdb-1590933",
+    "tmdbId": 1590933,
+    "title": "그대, 별처럼",
+    "meta": "드라마 · 로맨스",
+    "meta2": "135분",
+    "posterPath": "/phTrle2mrBqjhsFMYrK9Uacu6cd.jpg",
+    "releaseDate": "2026-10-28",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "topstarnews.net (자동 조사)",
+    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16260993"
   },
   {
     "id": "tmdb-1797226",
@@ -406,22 +429,6 @@ const MOVIES = [
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
-  },
-  {
-    "id": "tmdb-1279865",
-    "tmdbId": 1279865,
-    "title": "파리스 그린이 밝는 날에",
-    "meta": "애니메이션 · 드라마",
-    "meta2": "76분",
-    "posterPath": "/2qarnbiETjCO65kAhW3SRb6ZnE0.jpg",
-    "releaseDate": "2026-10-14",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   }
 ];
 
@@ -450,11 +457,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-379088": {
+  "heart-of-the-beast": {
     "up": 0,
     "down": 0
   },
-  "heart-of-the-beast": {
+  "tmdb-379088": {
     "up": 0,
     "down": 0
   },
@@ -462,7 +469,7 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-1590933": {
+  "tmdb-1545057": {
     "up": 0,
     "down": 0
   },
@@ -471,6 +478,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "shaun-the-sheep-the-beast-of-mos": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-1590933": {
     "up": 0,
     "down": 0
   },
@@ -507,10 +518,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "borderline": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-1279865": {
     "up": 0,
     "down": 0
   }
