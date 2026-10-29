@@ -79,7 +79,7 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/wkm9BQLok7U2KihcCspCa663Qse.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 134365,
+    "audience": 134366,
     "boRank": 6,
     "status": "no",
     "creditsLen": null,
@@ -142,7 +142,7 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 52436,
+    "audience": 52438,
     "boRank": 1,
     "status": "no",
     "creditsLen": null,
@@ -165,9 +165,9 @@ const MOVIES = [
     "creditsLen": null,
     "cookies": [
       {
-        "pos": "위치 미확인",
+        "desc": "재개봉 관련 언론 보도에 따르면 쿠키 영상이 2개 있다. 기사에는 각 영상이 나오는 위치와 내용이 적혀 있지 않다.",
         "len": "",
-        "desc": "재개봉 관련 언론 보도에 따르면 쿠키 영상이 2개 있다. 기사에는 각 영상이 나오는 위치와 내용이 적혀 있지 않다."
+        "pos": "위치 미확인"
       }
     ],
     "tip": "",
@@ -254,6 +254,22 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/09/shaun-the-sheep-the-beast-of-mossy-bottom-2026/"
   },
   {
+    "id": "live",
+    "tmdbId": 1740268,
+    "title": "요루시카 라이브 [도작]",
+    "meta": "음악",
+    "meta2": "88분",
+    "posterPath": "/rixGhS0BF2UH6BPwpeK3wPxbPwe.jpg",
+    "releaseDate": "2026-10-28",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
     "id": "tmdb-1590933",
     "tmdbId": 1590933,
     "title": "그대, 별처럼",
@@ -290,7 +306,7 @@ const MOVIES = [
     "id": "verity",
     "tmdbId": 1283515,
     "title": "베러티",
-    "meta": "미스터리 · 스릴러 · 드라마",
+    "meta": "미스터리 · 스릴러",
     "meta2": "117분",
     "posterPath": "/u0wEvdDBNrNZNtLxLrzoiXT09nj.jpg",
     "releaseDate": "2026-10-22",
@@ -413,22 +429,6 @@ const MOVIES = [
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
-  },
-  {
-    "id": "borderline",
-    "tmdbId": 1727780,
-    "title": "보더라인: 블랙 오퍼레이션",
-    "meta": "스릴러",
-    "meta2": "95분",
-    "posterPath": "/9fllGHikTyVNQBmZjkhTMDqicjh.jpg",
-    "releaseDate": "2026-10-14",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   }
 ];
 
@@ -481,6 +481,10 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "live": {
+    "up": 0,
+    "down": 0
+  },
   "tmdb-1590933": {
     "up": 0,
     "down": 0
@@ -514,10 +518,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "whalefall": {
-    "up": 0,
-    "down": 0
-  },
-  "borderline": {
     "up": 0,
     "down": 0
   }
