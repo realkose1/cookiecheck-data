@@ -1,13 +1,30 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-30)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261029)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-10-31)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261030)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-10-30';
-const BOXOFFICE_DATE = "20261029";
+const DATA_UPDATED = '2026-10-31';
+const BOXOFFICE_DATE = "20261030";
 
 const MOVIES = [
+  {
+    "id": "the-odyssey",
+    "tmdbId": 1368337,
+    "title": "오디세이",
+    "meta": "모험 · 액션 · 판타지",
+    "meta2": "173분",
+    "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
+    "releaseDate": "2026-08-05",
+    "audience": 12324783,
+    "boRank": 10,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/07/odyssey-the-2026/"
+  },
   {
     "id": "tmdb-1418428",
     "tmdbId": 1418428,
@@ -16,7 +33,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3406692,
+    "audience": 3416348,
     "boRank": 4,
     "status": "yes",
     "creditsLen": null,
@@ -39,8 +56,8 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 2362201,
-    "boRank": 2,
+    "audience": 2393381,
+    "boRank": 1,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -62,7 +79,7 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 2028826,
+    "audience": 2035989,
     "boRank": 5,
     "status": "no",
     "creditsLen": null,
@@ -79,8 +96,8 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/wkm9BQLok7U2KihcCspCa663Qse.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 134376,
-    "boRank": 6,
+    "audience": 139559,
+    "boRank": 7,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -96,7 +113,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/LSGpoSAlitss0KOvVakkeUToZo.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 98823,
+    "audience": 103214,
     "boRank": 8,
     "status": "yes",
     "creditsLen": null,
@@ -112,29 +129,6 @@ const MOVIES = [
     "sourceUrl": "https://namu.wiki/w/%ED%81%B4%EB%A0%88%EC%9D%B4%ED%8E%98%EC%9D%B4%EC%8A%A4%28%EC%98%81%ED%99%94%29"
   },
   {
-    "id": "tmdb-1652642",
-    "tmdbId": 1652642,
-    "title": "여전히 찬란하게",
-    "meta": "드라마",
-    "meta2": "118분",
-    "posterPath": "/t9EUrwCxhppSryjEspwYi5gA7km.jpg",
-    "releaseDate": "2026-10-21",
-    "audience": 55722,
-    "boRank": 9,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "desc": "톱스타뉴스 보도에 따르면 쿠키 영상이 엔딩 크레딧과 함께 나온다. 영상의 구체적인 내용과 정확한 위치(크레딧 중간인지 종료 후인지)는 확인하지 못했다.",
-        "len": "",
-        "pos": "위치 미확인"
-      }
-    ],
-    "tip": "",
-    "source": "topstarnews.net (자동 조사)",
-    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16254660"
-  },
-  {
     "id": "heart-of-the-beast",
     "tmdbId": 1263337,
     "title": "하트 오브 비스트",
@@ -142,8 +136,8 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 52448,
-    "boRank": 1,
+    "audience": 82521,
+    "boRank": 2,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -159,8 +153,8 @@ const MOVIES = [
     "meta2": "118분",
     "posterPath": "/oMuxM0n4EZ4SILoTUsdruJoUAfe.jpg",
     "releaseDate": "2015-01-28",
-    "audience": 42061,
-    "boRank": 7,
+    "audience": 48253,
+    "boRank": 6,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -182,7 +176,7 @@ const MOVIES = [
     "meta2": "100분",
     "posterPath": "/ohrJjtvKciICoeH80z973JnBoHo.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 26968,
+    "audience": 39510,
     "boRank": 3,
     "status": "yes",
     "creditsLen": null,
@@ -198,20 +192,21 @@ const MOVIES = [
     "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16260889"
   },
   {
-    "id": "tmdb-1545057",
-    "tmdbId": 1545057,
-    "title": "최종면접",
-    "meta": "미스터리",
-    "meta2": "108분",
-    "posterPath": "/wImwvRmbR28hPNDmaj5W7zvxk0T.jpg",
-    "releaseDate": "2026-11-04",
-    "audience": 6353,
-    "boRank": 10,
-    "status": "unknown",
+    "id": "tmdb-1590933",
+    "tmdbId": 1590933,
+    "title": "그대, 별처럼",
+    "meta": "드라마 · 로맨스",
+    "meta2": "135분",
+    "posterPath": "/phTrle2mrBqjhsFMYrK9Uacu6cd.jpg",
+    "releaseDate": "2026-10-28",
+    "audience": 13719,
+    "boRank": 9,
+    "status": "no",
     "creditsLen": null,
     "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "topstarnews.net (자동 조사)",
+    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16260993"
   },
   {
     "id": "sense-and-sensibility",
@@ -268,23 +263,6 @@ const MOVIES = [
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
-  },
-  {
-    "id": "tmdb-1590933",
-    "tmdbId": 1590933,
-    "title": "그대, 별처럼",
-    "meta": "드라마 · 로맨스",
-    "meta2": "135분",
-    "posterPath": "/phTrle2mrBqjhsFMYrK9Uacu6cd.jpg",
-    "releaseDate": "2026-10-28",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "topstarnews.net (자동 조사)",
-    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16260993"
   },
   {
     "id": "tmdb-1797226",
@@ -429,10 +407,46 @@ const MOVIES = [
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
+  },
+  {
+    "id": "borderline",
+    "tmdbId": 1727780,
+    "title": "보더라인: 블랙 오퍼레이션",
+    "meta": "스릴러",
+    "meta2": "95분",
+    "posterPath": "/9fllGHikTyVNQBmZjkhTMDqicjh.jpg",
+    "releaseDate": "2026-10-14",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "tmdb-1279865",
+    "tmdbId": 1279865,
+    "title": "파리스 그린이 밝는 날에",
+    "meta": "애니메이션 · 드라마",
+    "meta2": "76분",
+    "posterPath": "/2qarnbiETjCO65kAhW3SRb6ZnE0.jpg",
+    "releaseDate": "2026-10-14",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   }
 ];
 
 const INITIAL_VOTES = {
+  "the-odyssey": {
+    "up": 0,
+    "down": 0
+  },
   "tmdb-1418428": {
     "up": 0,
     "down": 0
@@ -453,10 +467,6 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-1652642": {
-    "up": 0,
-    "down": 0
-  },
   "heart-of-the-beast": {
     "up": 0,
     "down": 0
@@ -469,7 +479,7 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-1545057": {
+  "tmdb-1590933": {
     "up": 0,
     "down": 0
   },
@@ -482,10 +492,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "live": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-1590933": {
     "up": 0,
     "down": 0
   },
@@ -518,6 +524,14 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "whalefall": {
+    "up": 0,
+    "down": 0
+  },
+  "borderline": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-1279865": {
     "up": 0,
     "down": 0
   }
