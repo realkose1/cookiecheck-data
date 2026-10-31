@@ -265,6 +265,22 @@ const MOVIES = [
     "source": ""
   },
   {
+    "id": "tmdb-1797226",
+    "tmdbId": 1797226,
+    "title": "하이브 치어링 파티",
+    "meta": "음악",
+    "meta2": "60분",
+    "posterPath": "/8udWFUoL5NxqKR1xtYinhcxY3gn.jpg",
+    "releaseDate": "2026-10-24",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
     "id": "verity",
     "tmdbId": 1283515,
     "title": "베러티",
@@ -336,29 +352,6 @@ const MOVIES = [
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
-  },
-  {
-    "id": "tmdb-1652642",
-    "tmdbId": 1652642,
-    "title": "여전히 찬란하게",
-    "meta": "드라마",
-    "meta2": "118분",
-    "posterPath": "/t9EUrwCxhppSryjEspwYi5gA7km.jpg",
-    "releaseDate": "2026-10-21",
-    "audience": null,
-    "boRank": null,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "desc": "톱스타뉴스 보도에 따르면 쿠키 영상이 엔딩 크레딧과 함께 나온다. 영상의 구체적인 내용과 정확한 위치(크레딧 중간인지 종료 후인지)는 확인하지 못했다.",
-        "len": "",
-        "pos": "위치 미확인"
-      }
-    ],
-    "tip": "",
-    "source": "topstarnews.net (자동 조사)",
-    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16254660"
   },
   {
     "id": "always-lalisa",
@@ -502,6 +495,10 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "tmdb-1797226": {
+    "up": 0,
+    "down": 0
+  },
   "verity": {
     "up": 0,
     "down": 0
@@ -515,10 +512,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "chao": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-1652642": {
     "up": 0,
     "down": 0
   },
