@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-01)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261031)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-02)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261101)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-11-01';
-const BOXOFFICE_DATE = "20261031";
+const DATA_UPDATED = '2026-11-02';
+const BOXOFFICE_DATE = "20261101";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 12330169,
+    "audience": 12335269,
     "boRank": 9,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3432778,
+    "audience": 3447943,
     "boRank": 4,
     "status": "yes",
     "creditsLen": null,
@@ -56,7 +56,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 2490845,
+    "audience": 2583838,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -79,7 +79,7 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 2046485,
+    "audience": 2055474,
     "boRank": 6,
     "status": "no",
     "creditsLen": null,
@@ -96,7 +96,7 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 151277,
+    "audience": 215211,
     "boRank": 2,
     "status": "no",
     "creditsLen": null,
@@ -113,7 +113,7 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/wkm9BQLok7U2KihcCspCa663Qse.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 146222,
+    "audience": 151423,
     "boRank": 8,
     "status": "no",
     "creditsLen": null,
@@ -123,23 +123,6 @@ const MOVIES = [
     "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16253774"
   },
   {
-    "id": "tmdb-1591675",
-    "tmdbId": 1591675,
-    "title": "룩백",
-    "meta": "드라마",
-    "meta2": "101분",
-    "posterPath": "/mAfcD0lspaNlZDRrzT0fdWS5C01.jpg",
-    "releaseDate": "2026-10-08",
-    "audience": 145975,
-    "boRank": 10,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "언론 보도 (톱스타뉴스·국제뉴스) · 관람 후기",
-    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16241770"
-  },
-  {
     "id": "clayface",
     "tmdbId": 1400940,
     "title": "클레이페이스",
@@ -147,7 +130,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/LSGpoSAlitss0KOvVakkeUToZo.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 110076,
+    "audience": 115464,
     "boRank": 7,
     "status": "yes",
     "creditsLen": null,
@@ -170,7 +153,7 @@ const MOVIES = [
     "meta2": "118분",
     "posterPath": "/oMuxM0n4EZ4SILoTUsdruJoUAfe.jpg",
     "releaseDate": "2015-01-28",
-    "audience": 60866,
+    "audience": 72323,
     "boRank": 5,
     "status": "yes",
     "creditsLen": null,
@@ -193,7 +176,7 @@ const MOVIES = [
     "meta2": "100분",
     "posterPath": "/ohrJjtvKciICoeH80z973JnBoHo.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 56564,
+    "audience": 71760,
     "boRank": 3,
     "status": "yes",
     "creditsLen": null,
@@ -207,6 +190,22 @@ const MOVIES = [
     "tip": "",
     "source": "topstarnews.net · nocutnews.co.kr (자동 조사)",
     "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16260889"
+  },
+  {
+    "id": "tmdb-1545057",
+    "tmdbId": 1545057,
+    "title": "최종면접",
+    "meta": "미스터리",
+    "meta2": "108분",
+    "posterPath": "/wImwvRmbR28hPNDmaj5W7zvxk0T.jpg",
+    "releaseDate": "2026-11-04",
+    "audience": 14574,
+    "boRank": 10,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   },
   {
     "id": "sense-and-sensibility",
@@ -440,22 +439,6 @@ const MOVIES = [
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
-  },
-  {
-    "id": "tmdb-1279865",
-    "tmdbId": 1279865,
-    "title": "파리스 그린이 밝는 날에",
-    "meta": "애니메이션 · 드라마",
-    "meta2": "76분",
-    "posterPath": "/2qarnbiETjCO65kAhW3SRb6ZnE0.jpg",
-    "releaseDate": "2026-10-14",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   }
 ];
 
@@ -484,10 +467,6 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-1591675": {
-    "up": 0,
-    "down": 0
-  },
   "clayface": {
     "up": 0,
     "down": 0
@@ -497,6 +476,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "tmdb-1083624": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-1545057": {
     "up": 0,
     "down": 0
   },
@@ -549,10 +532,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "borderline": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-1279865": {
     "up": 0,
     "down": 0
   }
