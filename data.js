@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3447944,
+    "audience": 3447957,
     "boRank": 4,
     "status": "yes",
     "creditsLen": null,
@@ -56,7 +56,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 2583840,
+    "audience": 2583855,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -79,7 +79,7 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 2055475,
+    "audience": 2055476,
     "boRank": 6,
     "status": "no",
     "creditsLen": null,
@@ -96,7 +96,7 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 215214,
+    "audience": 215242,
     "boRank": 2,
     "status": "no",
     "creditsLen": null,
@@ -113,7 +113,7 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/wkm9BQLok7U2KihcCspCa663Qse.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 151424,
+    "audience": 151431,
     "boRank": 8,
     "status": "no",
     "creditsLen": null,
@@ -176,7 +176,7 @@ const MOVIES = [
     "meta2": "100분",
     "posterPath": "/ohrJjtvKciICoeH80z973JnBoHo.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 71760,
+    "audience": 71768,
     "boRank": 3,
     "status": "yes",
     "creditsLen": null,
@@ -281,20 +281,21 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "tmdb-1797226",
-    "tmdbId": 1797226,
-    "title": "하이브 치어링 파티",
-    "meta": "음악",
-    "meta2": "60분",
-    "posterPath": "/8udWFUoL5NxqKR1xtYinhcxY3gn.jpg",
-    "releaseDate": "2026-10-24",
+    "id": "lone-samurai",
+    "tmdbId": 1546050,
+    "title": "론 사무라이",
+    "meta": "판타지 · 액션",
+    "meta2": "96분",
+    "posterPath": "/2HfKZ9WFZD7k1TXRZ9uYrZreRRk.jpg",
+    "releaseDate": "2026-10-28",
     "audience": null,
     "boRank": null,
-    "status": "unknown",
+    "status": "no",
     "creditsLen": null,
     "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2025/12/lone-samurai-2025/"
   },
   {
     "id": "verity",
@@ -352,22 +353,6 @@ const MOVIES = [
     "tip": "",
     "source": "나무위키",
     "sourceUrl": "https://namu.wiki/w/%EC%94%BD%EC%94%BD%28%EC%98%81%ED%99%94%29"
-  },
-  {
-    "id": "chao",
-    "tmdbId": 1419053,
-    "title": "차오",
-    "meta": "애니메이션 · 판타지 · 로맨스",
-    "meta2": "90분",
-    "posterPath": "/kCWRNQyOgKqTFcsIDbkbQbmeYbJ.jpg",
-    "releaseDate": "2026-10-21",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   },
   {
     "id": "always-lalisa",
@@ -439,6 +424,22 @@ const MOVIES = [
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
+  },
+  {
+    "id": "tmdb-1279865",
+    "tmdbId": 1279865,
+    "title": "파리스 그린이 밝는 날에",
+    "meta": "애니메이션 · 드라마",
+    "meta2": "76분",
+    "posterPath": "/2qarnbiETjCO65kAhW3SRb6ZnE0.jpg",
+    "releaseDate": "2026-10-14",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   }
 ];
 
@@ -499,7 +500,7 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-1797226": {
+  "lone-samurai": {
     "up": 0,
     "down": 0
   },
@@ -512,10 +513,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "sing-sing": {
-    "up": 0,
-    "down": 0
-  },
-  "chao": {
     "up": 0,
     "down": 0
   },
@@ -532,6 +529,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "borderline": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-1279865": {
     "up": 0,
     "down": 0
   }
