@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-02)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261101)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-03)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261102)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-11-02';
-const BOXOFFICE_DATE = "20261101";
+const DATA_UPDATED = '2026-11-03';
+const BOXOFFICE_DATE = "20261102";
 
 const MOVIES = [
   {
@@ -16,8 +16,8 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 12335268,
-    "boRank": 9,
+    "audience": 12337120,
+    "boRank": 8,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -33,8 +33,8 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3447957,
-    "boRank": 4,
+    "audience": 3453120,
+    "boRank": 3,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -56,8 +56,8 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 2583855,
-    "boRank": 1,
+    "audience": 2599013,
+    "boRank": 2,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -79,7 +79,7 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 2055475,
+    "audience": 2059032,
     "boRank": 6,
     "status": "no",
     "creditsLen": null,
@@ -96,8 +96,8 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 216718,
-    "boRank": 2,
+    "audience": 236097,
+    "boRank": 1,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -113,8 +113,8 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/wkm9BQLok7U2KihcCspCa663Qse.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 151427,
-    "boRank": 8,
+    "audience": 153033,
+    "boRank": 9,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -130,7 +130,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/LSGpoSAlitss0KOvVakkeUToZo.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 115464,
+    "audience": 117985,
     "boRank": 7,
     "status": "yes",
     "creditsLen": null,
@@ -146,6 +146,29 @@ const MOVIES = [
     "sourceUrl": "https://namu.wiki/w/%ED%81%B4%EB%A0%88%EC%9D%B4%ED%8E%98%EC%9D%B4%EC%8A%A4%28%EC%98%81%ED%99%94%29"
   },
   {
+    "id": "tmdb-1083624",
+    "tmdbId": 1083624,
+    "title": "수능, 출제의 비밀",
+    "meta": "코미디",
+    "meta2": "100분",
+    "posterPath": "/ohrJjtvKciICoeH80z973JnBoHo.jpg",
+    "releaseDate": "2026-10-28",
+    "audience": 76614,
+    "boRank": 4,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "desc": "엔딩 크레딧과 함께 쿠키 영상이 나온다. 이용재 감독은 이 영상을 '술꾼도시여자들'의 인기에 살짝 편승한 것이라고 설명했다. 영상의 구체적인 내용과 정확한 위치(크레딧 중간인지 종료 후인지)는 확인하지 못했다.",
+        "len": "",
+        "pos": "위치 미확인"
+      }
+    ],
+    "tip": "",
+    "source": "topstarnews.net · nocutnews.co.kr (자동 조사)",
+    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16260889"
+  },
+  {
     "id": "tmdb-379088",
     "tmdbId": 379088,
     "title": "진격의 거인: 홍련의 화살",
@@ -153,7 +176,7 @@ const MOVIES = [
     "meta2": "118분",
     "posterPath": "/oMuxM0n4EZ4SILoTUsdruJoUAfe.jpg",
     "releaseDate": "2015-01-28",
-    "audience": 72324,
+    "audience": 76399,
     "boRank": 5,
     "status": "yes",
     "creditsLen": null,
@@ -169,37 +192,14 @@ const MOVIES = [
     "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16261165"
   },
   {
-    "id": "tmdb-1083624",
-    "tmdbId": 1083624,
-    "title": "수능, 출제의 비밀",
-    "meta": "코미디",
-    "meta2": "100분",
-    "posterPath": "/ohrJjtvKciICoeH80z973JnBoHo.jpg",
-    "releaseDate": "2026-10-28",
-    "audience": 71768,
-    "boRank": 3,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "desc": "엔딩 크레딧과 함께 쿠키 영상이 나온다. 이용재 감독은 이 영상을 '술꾼도시여자들'의 인기에 살짝 편승한 것이라고 설명했다. 영상의 구체적인 내용과 정확한 위치(크레딧 중간인지 종료 후인지)는 확인하지 못했다.",
-        "len": "",
-        "pos": "위치 미확인"
-      }
-    ],
-    "tip": "",
-    "source": "topstarnews.net · nocutnews.co.kr (자동 조사)",
-    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16260889"
-  },
-  {
-    "id": "tmdb-1545057",
-    "tmdbId": 1545057,
-    "title": "최종면접",
-    "meta": "미스터리",
-    "meta2": "108분",
-    "posterPath": "/wImwvRmbR28hPNDmaj5W7zvxk0T.jpg",
+    "id": "tmdb-1567517",
+    "tmdbId": 1567517,
+    "title": "욕쟁이 할머니",
+    "meta": "다큐멘터리",
+    "meta2": "73분",
+    "posterPath": "/wlXq2JRCmg1weFF0D88sNulbrWX.jpg",
     "releaseDate": "2026-11-04",
-    "audience": 14574,
+    "audience": 2490,
     "boRank": 10,
     "status": "unknown",
     "creditsLen": null,
@@ -472,15 +472,15 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-379088": {
-    "up": 0,
-    "down": 0
-  },
   "tmdb-1083624": {
     "up": 0,
     "down": 0
   },
-  "tmdb-1545057": {
+  "tmdb-379088": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-1567517": {
     "up": 0,
     "down": 0
   },
