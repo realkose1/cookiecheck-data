@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-03)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261102)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-04)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261103)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-11-03';
-const BOXOFFICE_DATE = "20261102";
+const DATA_UPDATED = '2026-11-04';
+const BOXOFFICE_DATE = "20261103";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "173분",
     "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
     "releaseDate": "2026-08-05",
-    "audience": 12337116,
+    "audience": 12339006,
     "boRank": 8,
     "status": "no",
     "creditsLen": null,
@@ -33,8 +33,8 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3453117,
-    "boRank": 3,
+    "audience": 3457554,
+    "boRank": 4,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -56,7 +56,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 2599005,
+    "audience": 2613518,
     "boRank": 2,
     "status": "yes",
     "creditsLen": null,
@@ -79,7 +79,7 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 2059032,
+    "audience": 2061976,
     "boRank": 6,
     "status": "no",
     "creditsLen": null,
@@ -96,7 +96,7 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 236100,
+    "audience": 253377,
     "boRank": 1,
     "status": "no",
     "creditsLen": null,
@@ -113,7 +113,7 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/wkm9BQLok7U2KihcCspCa663Qse.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 153033,
+    "audience": 154872,
     "boRank": 9,
     "status": "no",
     "creditsLen": null,
@@ -130,7 +130,7 @@ const MOVIES = [
     "meta2": "109분",
     "posterPath": "/LSGpoSAlitss0KOvVakkeUToZo.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 117985,
+    "audience": 120336,
     "boRank": 7,
     "status": "yes",
     "creditsLen": null,
@@ -153,8 +153,8 @@ const MOVIES = [
     "meta2": "100분",
     "posterPath": "/ohrJjtvKciICoeH80z973JnBoHo.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 76615,
-    "boRank": 4,
+    "audience": 81966,
+    "boRank": 3,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -176,7 +176,7 @@ const MOVIES = [
     "meta2": "118분",
     "posterPath": "/oMuxM0n4EZ4SILoTUsdruJoUAfe.jpg",
     "releaseDate": "2015-01-28",
-    "audience": 76397,
+    "audience": 80393,
     "boRank": 5,
     "status": "yes",
     "creditsLen": null,
@@ -192,15 +192,86 @@ const MOVIES = [
     "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16261165"
   },
   {
-    "id": "tmdb-1567517",
-    "tmdbId": 1567517,
-    "title": "욕쟁이 할머니",
-    "meta": "다큐멘터리",
-    "meta2": "73분",
-    "posterPath": "/wlXq2JRCmg1weFF0D88sNulbrWX.jpg",
-    "releaseDate": "2026-11-04",
-    "audience": 2490,
+    "id": "tmdb-1652642",
+    "tmdbId": 1652642,
+    "title": "여전히 찬란하게",
+    "meta": "드라마",
+    "meta2": "118분",
+    "posterPath": "/t9EUrwCxhppSryjEspwYi5gA7km.jpg",
+    "releaseDate": "2026-10-21",
+    "audience": 64081,
     "boRank": 10,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "desc": "톱스타뉴스 보도에 따르면 쿠키 영상이 엔딩 크레딧과 함께 나온다. 영상의 구체적인 내용과 정확한 위치(크레딧 중간인지 종료 후인지)는 확인하지 못했다.",
+        "len": "",
+        "pos": "위치 미확인"
+      }
+    ],
+    "tip": "",
+    "source": "topstarnews.net (자동 조사)",
+    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16254660"
+  },
+  {
+    "id": "wild-horse-nine",
+    "tmdbId": 891621,
+    "title": "와일드 호스 나인",
+    "meta": "코미디 · 범죄 · 스릴러",
+    "meta2": "117분",
+    "posterPath": "/iVWvR4BWhdirFIMQwS1yNp2Hcft.jpg",
+    "releaseDate": "2026-11-04",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "tmdb-822653",
+    "tmdbId": 822653,
+    "title": "극장판 마법소녀 마도카☆마키카 <발푸르기스의 회천>",
+    "meta": "애니메이션 · 드라마 · 미스터리",
+    "meta2": "120분",
+    "posterPath": "/2EhEAK8AvVaC01dhJ7rXBd2orZr.jpg",
+    "releaseDate": "2026-11-04",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "sanguine",
+    "tmdbId": 1468846,
+    "title": "변이",
+    "meta": "SF · 공포",
+    "meta2": "104분",
+    "posterPath": "/f52mjDYWRuLuaRwhE4R2kdkOlQb.jpg",
+    "releaseDate": "2026-11-04",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "bajo-tus-pies",
+    "tmdbId": 1180894,
+    "title": "잠들 수 없는 집",
+    "meta": "공포",
+    "meta2": "94분",
+    "posterPath": "/cXd3ldZahrBgZo71QLZ76I4Z9wG.jpg",
+    "releaseDate": "2026-11-04",
+    "audience": null,
+    "boRank": null,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -368,77 +439,6 @@ const MOVIES = [
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
-  },
-  {
-    "id": "street-fighter",
-    "tmdbId": 1153576,
-    "title": "스트리트 파이터",
-    "meta": "액션 · 판타지",
-    "meta2": "120분",
-    "posterPath": "/3EgtiR2ewNQxjJ1qizhDe4IrpPk.jpg",
-    "releaseDate": "2026-10-14",
-    "audience": null,
-    "boRank": null,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "desc": "크레딧 이후 장면에서 해변 또는 정글 같은 곳이 나옵니다. 눈가리개를 한 채 가슴에 큰 흉터가 있는 사내가 바이슨과 그 부하들의 방문을 받는데, 이 사내는 영화 초반 류에게 패했던 사가트입니다. 속편에서 류와 켄이 바이슨과 사가트를 함께 상대하게 될 수 있음을 암시합니다.",
-        "len": "",
-        "pos": "위치 미확인"
-      }
-    ],
-    "tip": "",
-    "source": "slashfilm.com (자동 조사)",
-    "sourceUrl": "https://www.slashfilm.com/2288706/street-fighter-2026-movie-ending-explained/"
-  },
-  {
-    "id": "whalefall",
-    "tmdbId": 1255833,
-    "title": "웨일폴: 고래에 먹힌 남자",
-    "meta": "스릴러",
-    "meta2": "106분",
-    "posterPath": "/6ke2azOZ9sfe7SMn7rPhQWd0FPD.jpg",
-    "releaseDate": "2026-10-14",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
-    "id": "borderline",
-    "tmdbId": 1727780,
-    "title": "보더라인: 블랙 오퍼레이션",
-    "meta": "스릴러",
-    "meta2": "95분",
-    "posterPath": "/9fllGHikTyVNQBmZjkhTMDqicjh.jpg",
-    "releaseDate": "2026-10-14",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
-    "id": "tmdb-1279865",
-    "tmdbId": 1279865,
-    "title": "파리스 그린이 밝는 날에",
-    "meta": "애니메이션 · 드라마",
-    "meta2": "76분",
-    "posterPath": "/2qarnbiETjCO65kAhW3SRb6ZnE0.jpg",
-    "releaseDate": "2026-10-14",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   }
 ];
 
@@ -479,7 +479,23 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-1567517": {
+  "tmdb-1652642": {
+    "up": 0,
+    "down": 0
+  },
+  "wild-horse-nine": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-822653": {
+    "up": 0,
+    "down": 0
+  },
+  "sanguine": {
+    "up": 0,
+    "down": 0
+  },
+  "bajo-tus-pies": {
     "up": 0,
     "down": 0
   },
@@ -516,22 +532,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "always-lalisa": {
-    "up": 0,
-    "down": 0
-  },
-  "street-fighter": {
-    "up": 0,
-    "down": 0
-  },
-  "whalefall": {
-    "up": 0,
-    "down": 0
-  },
-  "borderline": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-1279865": {
     "up": 0,
     "down": 0
   }
