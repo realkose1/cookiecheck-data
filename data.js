@@ -352,6 +352,23 @@ const MOVIES = [
     "source": ""
   },
   {
+    "id": "lone-samurai",
+    "tmdbId": 1546050,
+    "title": "론 사무라이",
+    "meta": "판타지 · 액션",
+    "meta2": "96분",
+    "posterPath": "/2HfKZ9WFZD7k1TXRZ9uYrZreRRk.jpg",
+    "releaseDate": "2026-10-28",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2025/12/lone-samurai-2025/"
+  },
+  {
     "id": "verity",
     "tmdbId": 1283515,
     "title": "베러티",
@@ -416,22 +433,6 @@ const MOVIES = [
     "meta2": "90분",
     "posterPath": "/kCWRNQyOgKqTFcsIDbkbQbmeYbJ.jpg",
     "releaseDate": "2026-10-21",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
-    "id": "always-lalisa",
-    "tmdbId": 1489932,
-    "title": "올웨이즈 라리사",
-    "meta": "다큐멘터리 · 음악",
-    "meta2": "98분",
-    "posterPath": "/c7qIZRN2Yu581XadWd4iUYXizWw.jpg",
-    "releaseDate": "2026-10-17",
     "audience": null,
     "boRank": null,
     "status": "unknown",
@@ -515,6 +516,10 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "lone-samurai": {
+    "up": 0,
+    "down": 0
+  },
   "verity": {
     "up": 0,
     "down": 0
@@ -528,10 +533,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "chao": {
-    "up": 0,
-    "down": 0
-  },
-  "always-lalisa": {
     "up": 0,
     "down": 0
   }
