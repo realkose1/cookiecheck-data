@@ -1,30 +1,13 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-04)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261103)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-05)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261104)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-11-04';
-const BOXOFFICE_DATE = "20261103";
+const DATA_UPDATED = '2026-11-05';
+const BOXOFFICE_DATE = "20261104";
 
 const MOVIES = [
-  {
-    "id": "the-odyssey",
-    "tmdbId": 1368337,
-    "title": "오디세이",
-    "meta": "모험 · 액션 · 판타지",
-    "meta2": "173분",
-    "posterPath": "/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg",
-    "releaseDate": "2026-08-05",
-    "audience": 12339006,
-    "boRank": 8,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/07/odyssey-the-2026/"
-  },
   {
     "id": "tmdb-1418428",
     "tmdbId": 1418428,
@@ -33,8 +16,8 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3457554,
-    "boRank": 4,
+    "audience": 3460804,
+    "boRank": 8,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -56,8 +39,8 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 2613565,
-    "boRank": 2,
+    "audience": 2627527,
+    "boRank": 3,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -79,8 +62,8 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 2061976,
-    "boRank": 6,
+    "audience": 2064093,
+    "boRank": 9,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -96,54 +79,14 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 253812,
-    "boRank": 1,
+    "audience": 271037,
+    "boRank": 2,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/09/heart-of-the-beast-2026/"
-  },
-  {
-    "id": "tmdb-1584855",
-    "tmdbId": 1584855,
-    "title": "실낙원",
-    "meta": "스릴러 · 드라마 · SF",
-    "meta2": "101분",
-    "posterPath": "/wkm9BQLok7U2KihcCspCa663Qse.jpg",
-    "releaseDate": "2026-10-21",
-    "audience": 154879,
-    "boRank": 9,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "topstarnews.net (자동 조사)",
-    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16253774"
-  },
-  {
-    "id": "clayface",
-    "tmdbId": 1400940,
-    "title": "클레이페이스",
-    "meta": "공포 · 스릴러 · SF",
-    "meta2": "109분",
-    "posterPath": "/LSGpoSAlitss0KOvVakkeUToZo.jpg",
-    "releaseDate": "2026-10-21",
-    "audience": 120336,
-    "boRank": 7,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "pos": "위치 미확인",
-        "len": "",
-        "desc": "쿠키 영상이 있습니다. 자세한 내용은 출처를 확인하세요."
-      }
-    ],
-    "tip": "",
-    "source": "나무위키",
-    "sourceUrl": "https://namu.wiki/w/%ED%81%B4%EB%A0%88%EC%9D%B4%ED%8E%98%EC%9D%B4%EC%8A%A4%28%EC%98%81%ED%99%94%29"
   },
   {
     "id": "tmdb-1083624",
@@ -153,8 +96,8 @@ const MOVIES = [
     "meta2": "100분",
     "posterPath": "/ohrJjtvKciICoeH80z973JnBoHo.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 81967,
-    "boRank": 3,
+    "audience": 87319,
+    "boRank": 5,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -169,29 +112,6 @@ const MOVIES = [
     "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16260889"
   },
   {
-    "id": "tmdb-379088",
-    "tmdbId": 379088,
-    "title": "진격의 거인: 홍련의 화살",
-    "meta": "애니메이션 · 액션 · 모험",
-    "meta2": "118분",
-    "posterPath": "/oMuxM0n4EZ4SILoTUsdruJoUAfe.jpg",
-    "releaseDate": "2015-01-28",
-    "audience": 80393,
-    "boRank": 5,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "desc": "재개봉 관련 언론 보도에 따르면 쿠키 영상이 2개 있다. 기사에는 각 영상이 나오는 위치와 내용이 적혀 있지 않다.",
-        "len": "",
-        "pos": "위치 미확인"
-      }
-    ],
-    "tip": "",
-    "source": "topstarnews.net (자동 조사)",
-    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16261165"
-  },
-  {
     "id": "tmdb-1652642",
     "tmdbId": 1652642,
     "title": "여전히 찬란하게",
@@ -199,7 +119,7 @@ const MOVIES = [
     "meta2": "118분",
     "posterPath": "/t9EUrwCxhppSryjEspwYi5gA7km.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 64082,
+    "audience": 65469,
     "boRank": 10,
     "status": "yes",
     "creditsLen": null,
@@ -215,6 +135,22 @@ const MOVIES = [
     "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16254660"
   },
   {
+    "id": "tmdb-1545057",
+    "tmdbId": 1545057,
+    "title": "최종면접",
+    "meta": "미스터리",
+    "meta2": "108분",
+    "posterPath": "/wImwvRmbR28hPNDmaj5W7zvxk0T.jpg",
+    "releaseDate": "2026-11-04",
+    "audience": 42569,
+    "boRank": 1,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
     "id": "wild-horse-nine",
     "tmdbId": 891621,
     "title": "와일드 호스 나인",
@@ -222,13 +158,31 @@ const MOVIES = [
     "meta2": "117분",
     "posterPath": "/iVWvR4BWhdirFIMQwS1yNp2Hcft.jpg",
     "releaseDate": "2026-11-04",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
+    "audience": 4456,
+    "boRank": 6,
+    "status": "no",
     "creditsLen": null,
     "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "topstarnews.net (자동 조사)",
+    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16268191"
+  },
+  {
+    "id": "tmdb-1337732",
+    "tmdbId": 1337732,
+    "title": "낮과 밤은 서로에게",
+    "meta": "로맨스 · 드라마",
+    "meta2": "80분",
+    "posterPath": "/j88kf5fDOFiR5zrgVsIT1qe7hwD.jpg",
+    "releaseDate": "2026-11-04",
+    "audience": 4368,
+    "boRank": 7,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "topstarnews.net (자동 조사)",
+    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16268074"
   },
   {
     "id": "tmdb-822653",
@@ -360,6 +314,29 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/10/verity-2026/"
   },
   {
+    "id": "clayface",
+    "tmdbId": 1400940,
+    "title": "클레이페이스",
+    "meta": "공포 · 스릴러 · SF",
+    "meta2": "109분",
+    "posterPath": "/LSGpoSAlitss0KOvVakkeUToZo.jpg",
+    "releaseDate": "2026-10-21",
+    "audience": null,
+    "boRank": null,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "pos": "위치 미확인",
+        "len": "",
+        "desc": "쿠키 영상이 있습니다. 자세한 내용은 출처를 확인하세요."
+      }
+    ],
+    "tip": "",
+    "source": "나무위키",
+    "sourceUrl": "https://namu.wiki/w/%ED%81%B4%EB%A0%88%EC%9D%B4%ED%8E%98%EC%9D%B4%EC%8A%A4%28%EC%98%81%ED%99%94%29"
+  },
+  {
     "id": "leviticus",
     "tmdbId": 1564614,
     "title": "레위기",
@@ -437,31 +414,10 @@ const MOVIES = [
     "tip": "",
     "source": "slashfilm.com (자동 조사)",
     "sourceUrl": "https://www.slashfilm.com/2288706/street-fighter-2026-movie-ending-explained/"
-  },
-  {
-    "id": "whalefall",
-    "tmdbId": 1255833,
-    "title": "웨일폴: 고래에 먹힌 남자",
-    "meta": "스릴러",
-    "meta2": "106분",
-    "posterPath": "/6ke2azOZ9sfe7SMn7rPhQWd0FPD.jpg",
-    "releaseDate": "2026-10-14",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/10/whalefall-2026/"
   }
 ];
 
 const INITIAL_VOTES = {
-  "the-odyssey": {
-    "up": 0,
-    "down": 0
-  },
   "tmdb-1418428": {
     "up": 0,
     "down": 0
@@ -478,19 +434,7 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-1584855": {
-    "up": 0,
-    "down": 0
-  },
-  "clayface": {
-    "up": 0,
-    "down": 0
-  },
   "tmdb-1083624": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-379088": {
     "up": 0,
     "down": 0
   },
@@ -498,7 +442,15 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "tmdb-1545057": {
+    "up": 0,
+    "down": 0
+  },
   "wild-horse-nine": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-1337732": {
     "up": 0,
     "down": 0
   },
@@ -530,6 +482,10 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "clayface": {
+    "up": 0,
+    "down": 0
+  },
   "leviticus": {
     "up": 0,
     "down": 0
@@ -543,10 +499,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "street-fighter": {
-    "up": 0,
-    "down": 0
-  },
-  "whalefall": {
     "up": 0,
     "down": 0
   }
