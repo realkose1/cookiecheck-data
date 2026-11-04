@@ -56,7 +56,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 2613518,
+    "audience": 2613565,
     "boRank": 2,
     "status": "yes",
     "creditsLen": null,
@@ -96,7 +96,7 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 253377,
+    "audience": 253812,
     "boRank": 1,
     "status": "no",
     "creditsLen": null,
@@ -113,7 +113,7 @@ const MOVIES = [
     "meta2": "101분",
     "posterPath": "/wkm9BQLok7U2KihcCspCa663Qse.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 154872,
+    "audience": 154880,
     "boRank": 9,
     "status": "no",
     "creditsLen": null,
@@ -153,7 +153,7 @@ const MOVIES = [
     "meta2": "100분",
     "posterPath": "/ohrJjtvKciICoeH80z973JnBoHo.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 81966,
+    "audience": 81967,
     "boRank": 3,
     "status": "yes",
     "creditsLen": null,
@@ -199,7 +199,7 @@ const MOVIES = [
     "meta2": "118분",
     "posterPath": "/t9EUrwCxhppSryjEspwYi5gA7km.jpg",
     "releaseDate": "2026-10-21",
-    "audience": 64081,
+    "audience": 64082,
     "boRank": 10,
     "status": "yes",
     "creditsLen": null,
@@ -240,11 +240,18 @@ const MOVIES = [
     "releaseDate": "2026-11-04",
     "audience": null,
     "boRank": null,
-    "status": "unknown",
+    "status": "yes",
     "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
+    "cookies": [
+      {
+        "pos": "크레딧 종료 후",
+        "len": "",
+        "desc": "엔딩 크레딧이 끝난 뒤 장면이 나옵니다. 영문 위키피디아는 큐베가 나즈카소코츠네에서 세상에 저주가 넘쳐나는 이유를 의아해하면서도 흥미로워하는 모습이라고 적었습니다. 이어 전화벨이 울리고 누군가의 손이 수화기를 잡습니다. 일본 해설 사이트 gamepedia.jp는 오프닝에서 나온 '원환의 전화'가 다시 울리고 정체불명의 인물이 받는다고 설명합니다."
+      }
+    ],
+    "tip": "",
+    "source": "en.wikipedia.org · gamepedia.jp (자동 조사)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Puella_Magi_Madoka_Magica:_Walpurgisnacht:_Rising"
   },
   {
     "id": "sanguine",
@@ -336,39 +343,6 @@ const MOVIES = [
     "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16260993"
   },
   {
-    "id": "live",
-    "tmdbId": 1740268,
-    "title": "요루시카 라이브 [도작]",
-    "meta": "음악",
-    "meta2": "88분",
-    "posterPath": "/rixGhS0BF2UH6BPwpeK3wPxbPwe.jpg",
-    "releaseDate": "2026-10-28",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
-    "id": "lone-samurai",
-    "tmdbId": 1546050,
-    "title": "론 사무라이",
-    "meta": "판타지 · 액션",
-    "meta2": "96분",
-    "posterPath": "/2HfKZ9WFZD7k1TXRZ9uYrZreRRk.jpg",
-    "releaseDate": "2026-10-28",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2025/12/lone-samurai-2025/"
-  },
-  {
     "id": "verity",
     "tmdbId": 1283515,
     "title": "베러티",
@@ -426,13 +400,52 @@ const MOVIES = [
     "sourceUrl": "https://namu.wiki/w/%EC%94%BD%EC%94%BD%28%EC%98%81%ED%99%94%29"
   },
   {
-    "id": "chao",
-    "tmdbId": 1419053,
-    "title": "차오",
-    "meta": "애니메이션 · 판타지 · 로맨스",
-    "meta2": "90분",
-    "posterPath": "/kCWRNQyOgKqTFcsIDbkbQbmeYbJ.jpg",
-    "releaseDate": "2026-10-21",
+    "id": "always-lalisa",
+    "tmdbId": 1489932,
+    "title": "올웨이즈 라리사",
+    "meta": "다큐멘터리 · 음악",
+    "meta2": "98분",
+    "posterPath": "/c7qIZRN2Yu581XadWd4iUYXizWw.jpg",
+    "releaseDate": "2026-10-17",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "street-fighter",
+    "tmdbId": 1153576,
+    "title": "스트리트 파이터",
+    "meta": "액션 · 판타지",
+    "meta2": "120분",
+    "posterPath": "/3EgtiR2ewNQxjJ1qizhDe4IrpPk.jpg",
+    "releaseDate": "2026-10-14",
+    "audience": null,
+    "boRank": null,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "desc": "크레딧 이후 장면에서 해변 또는 정글 같은 곳이 나옵니다. 눈가리개를 한 채 가슴에 큰 흉터가 있는 사내가 바이슨과 그 부하들의 방문을 받는데, 이 사내는 영화 초반 류에게 패했던 사가트입니다. 속편에서 류와 켄이 바이슨과 사가트를 함께 상대하게 될 수 있음을 암시합니다.",
+        "len": "",
+        "pos": "위치 미확인"
+      }
+    ],
+    "tip": "",
+    "source": "slashfilm.com (자동 조사)",
+    "sourceUrl": "https://www.slashfilm.com/2288706/street-fighter-2026-movie-ending-explained/"
+  },
+  {
+    "id": "whalefall",
+    "tmdbId": 1255833,
+    "title": "웨일폴: 고래에 먹힌 남자",
+    "meta": "스릴러",
+    "meta2": "106분",
+    "posterPath": "/6ke2azOZ9sfe7SMn7rPhQWd0FPD.jpg",
+    "releaseDate": "2026-10-14",
     "audience": null,
     "boRank": null,
     "status": "unknown",
@@ -512,14 +525,6 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "live": {
-    "up": 0,
-    "down": 0
-  },
-  "lone-samurai": {
-    "up": 0,
-    "down": 0
-  },
   "verity": {
     "up": 0,
     "down": 0
@@ -532,7 +537,15 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "chao": {
+  "always-lalisa": {
+    "up": 0,
+    "down": 0
+  },
+  "street-fighter": {
+    "up": 0,
+    "down": 0
+  },
+  "whalefall": {
     "up": 0,
     "down": 0
   }
