@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3460804,
+    "audience": 3460805,
     "boRank": 8,
     "status": "yes",
     "creditsLen": null,
@@ -68,8 +68,8 @@ const MOVIES = [
     "creditsLen": null,
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/10/tazza-the-song-of-beelzebub-2026/"
+    "source": "gukjenews.com (자동 조사)",
+    "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3705531"
   },
   {
     "id": "heart-of-the-beast",
@@ -79,7 +79,7 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 271037,
+    "audience": 271042,
     "boRank": 2,
     "status": "no",
     "creditsLen": null,
@@ -96,7 +96,7 @@ const MOVIES = [
     "meta2": "100분",
     "posterPath": "/ohrJjtvKciICoeH80z973JnBoHo.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 87319,
+    "audience": 87318,
     "boRank": 5,
     "status": "yes",
     "creditsLen": null,
@@ -142,7 +142,7 @@ const MOVIES = [
     "meta2": "108분",
     "posterPath": "/wImwvRmbR28hPNDmaj5W7zvxk0T.jpg",
     "releaseDate": "2026-11-04",
-    "audience": 42569,
+    "audience": 42574,
     "boRank": 1,
     "status": "unknown",
     "creditsLen": null,
@@ -323,12 +323,18 @@ const MOVIES = [
     "releaseDate": "2026-10-21",
     "audience": null,
     "boRank": null,
-    "status": "no",
+    "status": "yes",
     "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/10/clayface-2026/"
+    "cookies": [
+      {
+        "pos": "위치 미확인",
+        "len": "",
+        "desc": "쿠키 영상이 있습니다. 자세한 내용은 출처를 확인하세요."
+      }
+    ],
+    "tip": "",
+    "source": "나무위키",
+    "sourceUrl": "https://namu.wiki/w/%ED%81%B4%EB%A0%88%EC%9D%B4%ED%8E%98%EC%9D%B4%EC%8A%A4%28%EC%98%81%ED%99%94%29"
   },
   {
     "id": "leviticus",
@@ -371,22 +377,6 @@ const MOVIES = [
     "sourceUrl": "https://namu.wiki/w/%EC%94%BD%EC%94%BD%28%EC%98%81%ED%99%94%29"
   },
   {
-    "id": "always-lalisa",
-    "tmdbId": 1489932,
-    "title": "올웨이즈 라리사",
-    "meta": "다큐멘터리 · 음악",
-    "meta2": "98분",
-    "posterPath": "/c7qIZRN2Yu581XadWd4iUYXizWw.jpg",
-    "releaseDate": "2026-10-17",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
     "id": "street-fighter",
     "tmdbId": 1153576,
     "title": "스트리트 파이터",
@@ -400,14 +390,30 @@ const MOVIES = [
     "creditsLen": null,
     "cookies": [
       {
-        "pos": "크레딧 중간",
+        "desc": "크레딧 이후 장면에서 해변 또는 정글 같은 곳이 나옵니다. 눈가리개를 한 채 가슴에 큰 흉터가 있는 사내가 바이슨과 그 부하들의 방문을 받는데, 이 사내는 영화 초반 류에게 패했던 사가트입니다. 속편에서 류와 켄이 바이슨과 사가트를 함께 상대하게 될 수 있음을 암시합니다.",
         "len": "",
-        "desc": "엔딩 크레디트가 나오는 동안 (원작 게임에 등장하는) 사가트가 정글에서 운동하는 모습을 보여주는 애니메이션 장면이 나옵니다. 사가트가 운동을 멈추자 베가, 캐미, 바이슨이 그와 합류합니다."
+        "pos": "위치 미확인"
       }
     ],
     "tip": "",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/10/street-fighter-2026/"
+    "source": "slashfilm.com (자동 조사)",
+    "sourceUrl": "https://www.slashfilm.com/2288706/street-fighter-2026-movie-ending-explained/"
+  },
+  {
+    "id": "whalefall",
+    "tmdbId": 1255833,
+    "title": "웨일폴: 고래에 먹힌 남자",
+    "meta": "스릴러",
+    "meta2": "106분",
+    "posterPath": "/6ke2azOZ9sfe7SMn7rPhQWd0FPD.jpg",
+    "releaseDate": "2026-10-14",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   }
 ];
 
@@ -488,11 +494,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "always-lalisa": {
+  "street-fighter": {
     "up": 0,
     "down": 0
   },
-  "street-fighter": {
+  "whalefall": {
     "up": 0,
     "down": 0
   }
