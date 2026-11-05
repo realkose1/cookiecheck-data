@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-05)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261104)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-06)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261105)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-11-05';
-const BOXOFFICE_DATE = "20261104";
+const DATA_UPDATED = '2026-11-06';
+const BOXOFFICE_DATE = "20261105";
 
 const MOVIES = [
   {
@@ -16,8 +16,8 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3460789,
-    "boRank": 8,
+    "audience": 3464138,
+    "boRank": 7,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -39,8 +39,8 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 2627526,
-    "boRank": 3,
+    "audience": 2639791,
+    "boRank": 4,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -62,8 +62,8 @@ const MOVIES = [
     "meta2": "130분",
     "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 2064093,
-    "boRank": 9,
+    "audience": 2065996,
+    "boRank": 10,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -79,8 +79,8 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 271042,
-    "boRank": 2,
+    "audience": 289081,
+    "boRank": 3,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -96,8 +96,8 @@ const MOVIES = [
     "meta2": "100분",
     "posterPath": "/ohrJjtvKciICoeH80z973JnBoHo.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 87318,
-    "boRank": 5,
+    "audience": 91820,
+    "boRank": 6,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -112,29 +112,6 @@ const MOVIES = [
     "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16260889"
   },
   {
-    "id": "tmdb-1652642",
-    "tmdbId": 1652642,
-    "title": "여전히 찬란하게",
-    "meta": "드라마",
-    "meta2": "118분",
-    "posterPath": "/t9EUrwCxhppSryjEspwYi5gA7km.jpg",
-    "releaseDate": "2026-10-21",
-    "audience": 65469,
-    "boRank": 10,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "desc": "톱스타뉴스 보도에 따르면 쿠키 영상이 엔딩 크레딧과 함께 나온다. 영상의 구체적인 내용과 정확한 위치(크레딧 중간인지 종료 후인지)는 확인하지 못했다.",
-        "len": "",
-        "pos": "위치 미확인"
-      }
-    ],
-    "tip": "",
-    "source": "topstarnews.net (자동 조사)",
-    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16254660"
-  },
-  {
     "id": "tmdb-1545057",
     "tmdbId": 1545057,
     "title": "최종면접",
@@ -142,13 +119,36 @@ const MOVIES = [
     "meta2": "108분",
     "posterPath": "/wImwvRmbR28hPNDmaj5W7zvxk0T.jpg",
     "releaseDate": "2026-11-04",
-    "audience": 42574,
-    "boRank": 1,
+    "audience": 62296,
+    "boRank": 2,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
+  },
+  {
+    "id": "tmdb-1777750",
+    "tmdbId": 1777750,
+    "title": "명탐정 코난: 30호 살인 사건",
+    "meta": "애니메이션 · 액션 · 미스터리",
+    "meta2": "94분",
+    "posterPath": "/8VIxElJnoGXJH4p3Av2BQwgcxpC.jpg",
+    "releaseDate": "2026-11-05",
+    "audience": 28165,
+    "boRank": 1,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "pos": "크레딧 종료 후",
+        "len": "",
+        "desc": "엔딩 크레디트가 끝난 뒤 쿠키 영상이 1개 나온다. 기사 두 건 모두 장면의 내용은 적지 않았다."
+      }
+    ],
+    "tip": "",
+    "source": "ggilbo.com · topstarnews.net (자동 조사)",
+    "sourceUrl": "https://www.ggilbo.com/news/articleView.html?idxno=1190372"
   },
   {
     "id": "wild-horse-nine",
@@ -158,8 +158,8 @@ const MOVIES = [
     "meta2": "117분",
     "posterPath": "/iVWvR4BWhdirFIMQwS1yNp2Hcft.jpg",
     "releaseDate": "2026-11-04",
-    "audience": 4456,
-    "boRank": 6,
+    "audience": 7281,
+    "boRank": 8,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -175,14 +175,30 @@ const MOVIES = [
     "meta2": "80분",
     "posterPath": "/j88kf5fDOFiR5zrgVsIT1qe7hwD.jpg",
     "releaseDate": "2026-11-04",
-    "audience": 4368,
-    "boRank": 7,
+    "audience": 6494,
+    "boRank": 9,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "topstarnews.net (자동 조사)",
     "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16268074"
+  },
+  {
+    "id": "the-cat-in-the-hat",
+    "tmdbId": 1117898,
+    "title": "모자 쓴 고양이",
+    "meta": "애니메이션 · 판타지 · 코미디",
+    "meta2": "107분",
+    "posterPath": "/lgLg6T1kv7fjfANRNM1QSvPKDJM.jpg",
+    "releaseDate": "2026-11-06",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   },
   {
     "id": "tmdb-822653",
@@ -398,22 +414,6 @@ const MOVIES = [
     "tip": "",
     "source": "slashfilm.com (자동 조사)",
     "sourceUrl": "https://www.slashfilm.com/2288706/street-fighter-2026-movie-ending-explained/"
-  },
-  {
-    "id": "whalefall",
-    "tmdbId": 1255833,
-    "title": "웨일폴: 고래에 먹힌 남자",
-    "meta": "스릴러",
-    "meta2": "106분",
-    "posterPath": "/6ke2azOZ9sfe7SMn7rPhQWd0FPD.jpg",
-    "releaseDate": "2026-10-14",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   }
 ];
 
@@ -438,11 +438,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-1652642": {
+  "tmdb-1545057": {
     "up": 0,
     "down": 0
   },
-  "tmdb-1545057": {
+  "tmdb-1777750": {
     "up": 0,
     "down": 0
   },
@@ -451,6 +451,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "tmdb-1337732": {
+    "up": 0,
+    "down": 0
+  },
+  "the-cat-in-the-hat": {
     "up": 0,
     "down": 0
   },
@@ -495,10 +499,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "street-fighter": {
-    "up": 0,
-    "down": 0
-  },
-  "whalefall": {
     "up": 0,
     "down": 0
   }
