@@ -188,7 +188,7 @@ const MOVIES = [
     "id": "the-cat-in-the-hat",
     "tmdbId": 1117898,
     "title": "모자 쓴 고양이",
-    "meta": "애니메이션 · 판타지 · 코미디",
+    "meta": "애니메이션 · 판타지 · 모험",
     "meta2": "107분",
     "posterPath": "/lgLg6T1kv7fjfANRNM1QSvPKDJM.jpg",
     "releaseDate": "2026-11-06",
