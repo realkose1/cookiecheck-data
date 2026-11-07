@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
    작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-08)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261106)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261107)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
 const DATA_UPDATED = '2026-11-08';
-const BOXOFFICE_DATE = "20261106";
+const BOXOFFICE_DATE = "20261107";
 
 const MOVIES = [
   {
@@ -16,8 +16,8 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3467225,
-    "boRank": 8,
+    "audience": 3471993,
+    "boRank": 9,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -39,8 +39,8 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 2658246,
-    "boRank": 3,
+    "audience": 2725861,
+    "boRank": 1,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -62,14 +62,30 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 309256,
-    "boRank": 2,
+    "audience": 347364,
+    "boRank": 3,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/09/heart-of-the-beast-2026/"
+  },
+  {
+    "id": "tmdb-1545057",
+    "tmdbId": 1545057,
+    "title": "최종면접",
+    "meta": "미스터리",
+    "meta2": "108분",
+    "posterPath": "/wImwvRmbR28hPNDmaj5W7zvxk0T.jpg",
+    "releaseDate": "2026-11-04",
+    "audience": 129665,
+    "boRank": 2,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   },
   {
     "id": "tmdb-1083624",
@@ -79,8 +95,8 @@ const MOVIES = [
     "meta2": "100분",
     "posterPath": "/ohrJjtvKciICoeH80z973JnBoHo.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 95458,
-    "boRank": 6,
+    "audience": 99887,
+    "boRank": 10,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -95,20 +111,27 @@ const MOVIES = [
     "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16260889"
   },
   {
-    "id": "tmdb-1545057",
-    "tmdbId": 1545057,
-    "title": "최종면접",
-    "meta": "미스터리",
-    "meta2": "108분",
-    "posterPath": "/wImwvRmbR28hPNDmaj5W7zvxk0T.jpg",
-    "releaseDate": "2026-11-04",
-    "audience": 85071,
-    "boRank": 1,
-    "status": "unknown",
+    "id": "tmdb-379088",
+    "tmdbId": 379088,
+    "title": "진격의 거인: 홍련의 화살",
+    "meta": "애니메이션 · 액션 · 모험",
+    "meta2": "118분",
+    "posterPath": "/oMuxM0n4EZ4SILoTUsdruJoUAfe.jpg",
+    "releaseDate": "2015-01-28",
+    "audience": 90880,
+    "boRank": 7,
+    "status": "yes",
     "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
+    "cookies": [
+      {
+        "desc": "재개봉 관련 언론 보도에 따르면 쿠키 영상이 2개 있다. 기사에는 각 영상이 나오는 위치와 내용이 적혀 있지 않다.",
+        "len": "",
+        "pos": "위치 미확인"
+      }
+    ],
+    "tip": "",
+    "source": "topstarnews.net (자동 조사)",
+    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16261165"
   },
   {
     "id": "tmdb-1777750",
@@ -118,7 +141,7 @@ const MOVIES = [
     "meta2": "94분",
     "posterPath": "/8VIxElJnoGXJH4p3Av2BQwgcxpC.jpg",
     "releaseDate": "2026-11-05",
-    "audience": 46368,
+    "audience": 80778,
     "boRank": 4,
     "status": "yes",
     "creditsLen": null,
@@ -134,39 +157,6 @@ const MOVIES = [
     "sourceUrl": "https://www.ggilbo.com/news/articleView.html?idxno=1190372"
   },
   {
-    "id": "wild-horse-nine",
-    "tmdbId": 891621,
-    "title": "와일드 호스 나인",
-    "meta": "코미디 · 범죄 · 스릴러",
-    "meta2": "117분",
-    "posterPath": "/iVWvR4BWhdirFIMQwS1yNp2Hcft.jpg",
-    "releaseDate": "2026-11-04",
-    "audience": 10491,
-    "boRank": 7,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "topstarnews.net (자동 조사)",
-    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16268191"
-  },
-  {
-    "id": "tmdb-1567517",
-    "tmdbId": 1567517,
-    "title": "욕쟁이 할머니",
-    "meta": "다큐멘터리",
-    "meta2": "73분",
-    "posterPath": "/wlXq2JRCmg1weFF0D88sNulbrWX.jpg",
-    "releaseDate": "2026-11-04",
-    "audience": 6408,
-    "boRank": 10,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
     "id": "the-cat-in-the-hat",
     "tmdbId": 1117898,
     "title": "모자 쓴 고양이",
@@ -174,8 +164,8 @@ const MOVIES = [
     "meta2": "107분",
     "posterPath": "/lgLg6T1kv7fjfANRNM1QSvPKDJM.jpg",
     "releaseDate": "2026-11-06",
-    "audience": 4366,
-    "boRank": 9,
+    "audience": 17241,
+    "boRank": 5,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -193,6 +183,23 @@ const MOVIES = [
     "tip": "",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/11/cat-in-the-hat-the-2026/"
+  },
+  {
+    "id": "wild-horse-nine",
+    "tmdbId": 891621,
+    "title": "와일드 호스 나인",
+    "meta": "코미디 · 범죄 · 스릴러",
+    "meta2": "117분",
+    "posterPath": "/iVWvR4BWhdirFIMQwS1yNp2Hcft.jpg",
+    "releaseDate": "2026-11-04",
+    "audience": 15810,
+    "boRank": 8,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "topstarnews.net (자동 조사)",
+    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16268191"
   },
   {
     "id": "tmdb-822653",
@@ -409,6 +416,22 @@ const MOVIES = [
     "tip": "",
     "source": "slashfilm.com (자동 조사)",
     "sourceUrl": "https://www.slashfilm.com/2288706/street-fighter-2026-movie-ending-explained/"
+  },
+  {
+    "id": "whalefall",
+    "tmdbId": 1255833,
+    "title": "웨일폴: 고래에 먹힌 남자",
+    "meta": "스릴러",
+    "meta2": "106분",
+    "posterPath": "/6ke2azOZ9sfe7SMn7rPhQWd0FPD.jpg",
+    "releaseDate": "2026-10-14",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   }
 ];
 
@@ -425,11 +448,15 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "tmdb-1545057": {
+    "up": 0,
+    "down": 0
+  },
   "tmdb-1083624": {
     "up": 0,
     "down": 0
   },
-  "tmdb-1545057": {
+  "tmdb-379088": {
     "up": 0,
     "down": 0
   },
@@ -437,15 +464,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "wild-horse-nine": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-1567517": {
-    "up": 0,
-    "down": 0
-  },
   "the-cat-in-the-hat": {
+    "up": 0,
+    "down": 0
+  },
+  "wild-horse-nine": {
     "up": 0,
     "down": 0
   },
@@ -490,6 +513,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "street-fighter": {
+    "up": 0,
+    "down": 0
+  },
+  "whalefall": {
     "up": 0,
     "down": 0
   }
