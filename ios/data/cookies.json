@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07",
+ "updated": "2026-11-08",
  "boxofficeDate": "20261106",
  "movies": [
   {
@@ -231,7 +231,7 @@
    "id": "sense-and-sensibility",
    "tmdbId": 1503762,
    "title": "이성과 감성",
-   "meta": "로맨스 · 드라마 · 역사",
+   "meta": "드라마 · 로맨스",
    "meta2": "133분",
    "posterPath": "/pWVWIaa1eVTKikijG0pyWi9Ulvb.jpg",
    "releaseDate": "2026-10-28",
