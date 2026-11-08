@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3471993,
+    "audience": 3471997,
     "boRank": 9,
     "status": "yes",
     "creditsLen": null,
@@ -39,7 +39,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 2725861,
+    "audience": 2725867,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -62,7 +62,7 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 347364,
+    "audience": 347366,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -79,7 +79,7 @@ const MOVIES = [
     "meta2": "108분",
     "posterPath": "/wImwvRmbR28hPNDmaj5W7zvxk0T.jpg",
     "releaseDate": "2026-11-04",
-    "audience": 129665,
+    "audience": 129687,
     "boRank": 2,
     "status": "unknown",
     "creditsLen": null,
@@ -164,7 +164,7 @@ const MOVIES = [
     "meta2": "107분",
     "posterPath": "/lgLg6T1kv7fjfANRNM1QSvPKDJM.jpg",
     "releaseDate": "2026-11-06",
-    "audience": 17241,
+    "audience": 17255,
     "boRank": 5,
     "status": "yes",
     "creditsLen": null,
@@ -231,6 +231,22 @@ const MOVIES = [
     "meta": "SF · 공포",
     "meta2": "104분",
     "posterPath": "/f52mjDYWRuLuaRwhE4R2kdkOlQb.jpg",
+    "releaseDate": "2026-11-04",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "bajo-tus-pies",
+    "tmdbId": 1180894,
+    "title": "잠들 수 없는 집",
+    "meta": "공포",
+    "meta2": "94분",
+    "posterPath": "/cXd3ldZahrBgZo71QLZ76I4Z9wG.jpg",
     "releaseDate": "2026-11-04",
     "audience": null,
     "boRank": null,
@@ -378,23 +394,6 @@ const MOVIES = [
     "sourceUrl": "https://namu.wiki/w/%EC%94%BD%EC%94%BD%28%EC%98%81%ED%99%94%29"
   },
   {
-    "id": "tmdb-1584855",
-    "tmdbId": 1584855,
-    "title": "실낙원",
-    "meta": "스릴러 · 드라마 · SF",
-    "meta2": "101분",
-    "posterPath": "/wkm9BQLok7U2KihcCspCa663Qse.jpg",
-    "releaseDate": "2026-10-21",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "topstarnews.net (자동 조사)",
-    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16253774"
-  },
-  {
     "id": "street-fighter",
     "tmdbId": 1153576,
     "title": "스트리트 파이터",
@@ -480,6 +479,10 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "bajo-tus-pies": {
+    "up": 0,
+    "down": 0
+  },
   "sense-and-sensibility": {
     "up": 0,
     "down": 0
@@ -505,10 +508,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "sing-sing": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-1584855": {
     "up": 0,
     "down": 0
   },
