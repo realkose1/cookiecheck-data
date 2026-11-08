@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-08",
- "boxofficeDate": "20261107",
+ "updated": "2026-11-09",
+ "boxofficeDate": "20261108",
  "movies": [
   {
    "id": "tmdb-1418428",
@@ -10,7 +10,7 @@
    "meta2": "131분",
    "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
    "releaseDate": "2026-09-23",
-   "audience": 3471997,
+   "audience": 3476469,
    "boRank": 9,
    "status": "yes",
    "creditsLen": null,
@@ -26,6 +26,29 @@
    "sourceUrl": "https://www.wikitree.co.kr/articles/1161295"
   },
   {
+   "id": "tmdb-1218925",
+   "tmdbId": 1218925,
+   "title": "극장판 체인소 맨:  레제편",
+   "meta": "애니메이션 · 액션 · 로맨스",
+   "meta2": "100분",
+   "posterPath": "/oTn0PoR8gSMpMqJaT2pUtkkN0Ia.jpg",
+   "releaseDate": "2025-09-24",
+   "audience": 3464574,
+   "boRank": 10,
+   "status": "yes",
+   "creditsLen": null,
+   "cookies": [
+    {
+     "pos": "크레딧 종료 후",
+     "len": "",
+     "desc": "덴지는 카페에서 꽃다발을 들고 레제가 돌아오기를 기다리고 있습니다. 그런데 또 다른 골칫거리 친구인 파워가 나타납니다. 그러자 덴지는 꽃을 먹기 시작하고, 파워도 함께 꽃을 먹기 시작합니다."
+    }
+   ],
+   "tip": "",
+   "source": "aftercredits.com",
+   "sourceUrl": "https://aftercredits.com/2025/10/chainsaw-man-the-movie-reze-arc-2025/"
+  },
+  {
    "id": "tmdb-1586876",
    "tmdbId": 1586876,
    "title": "극장판 치이카와: 인어 섬의 비밀",
@@ -33,7 +56,7 @@
    "meta2": "99분",
    "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
    "releaseDate": "2026-09-30",
-   "audience": 2725867,
+   "audience": 2788839,
    "boRank": 1,
    "status": "yes",
    "creditsLen": null,
@@ -56,7 +79,7 @@
    "meta2": "102분",
    "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
    "releaseDate": "2026-10-28",
-   "audience": 347366,
+   "audience": 379755,
    "boRank": 3,
    "status": "no",
    "creditsLen": null,
@@ -73,59 +96,13 @@
    "meta2": "108분",
    "posterPath": "/wImwvRmbR28hPNDmaj5W7zvxk0T.jpg",
    "releaseDate": "2026-11-04",
-   "audience": 129687,
+   "audience": 166766,
    "boRank": 2,
    "status": "unknown",
    "creditsLen": null,
    "cookies": [],
    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
    "source": ""
-  },
-  {
-   "id": "tmdb-1083624",
-   "tmdbId": 1083624,
-   "title": "수능, 출제의 비밀",
-   "meta": "코미디",
-   "meta2": "100분",
-   "posterPath": "/ohrJjtvKciICoeH80z973JnBoHo.jpg",
-   "releaseDate": "2026-10-28",
-   "audience": 99887,
-   "boRank": 10,
-   "status": "yes",
-   "creditsLen": null,
-   "cookies": [
-    {
-     "desc": "엔딩 크레딧과 함께 쿠키 영상이 나온다. 이용재 감독은 이 영상을 '술꾼도시여자들'의 인기에 살짝 편승한 것이라고 설명했다. 영상의 구체적인 내용과 정확한 위치(크레딧 중간인지 종료 후인지)는 확인하지 못했다.",
-     "len": "",
-     "pos": "위치 미확인"
-    }
-   ],
-   "tip": "",
-   "source": "topstarnews.net · nocutnews.co.kr (자동 조사)",
-   "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16260889"
-  },
-  {
-   "id": "tmdb-379088",
-   "tmdbId": 379088,
-   "title": "진격의 거인: 홍련의 화살",
-   "meta": "애니메이션 · 액션 · 모험",
-   "meta2": "118분",
-   "posterPath": "/oMuxM0n4EZ4SILoTUsdruJoUAfe.jpg",
-   "releaseDate": "2015-01-28",
-   "audience": 90880,
-   "boRank": 7,
-   "status": "yes",
-   "creditsLen": null,
-   "cookies": [
-    {
-     "desc": "재개봉 관련 언론 보도에 따르면 쿠키 영상이 2개 있다. 기사에는 각 영상이 나오는 위치와 내용이 적혀 있지 않다.",
-     "len": "",
-     "pos": "위치 미확인"
-    }
-   ],
-   "tip": "",
-   "source": "topstarnews.net (자동 조사)",
-   "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16261165"
   },
   {
    "id": "tmdb-1777750",
@@ -135,7 +112,7 @@
    "meta2": "94분",
    "posterPath": "/8VIxElJnoGXJH4p3Av2BQwgcxpC.jpg",
    "releaseDate": "2026-11-05",
-   "audience": 80778,
+   "audience": 108164,
    "boRank": 4,
    "status": "yes",
    "creditsLen": null,
@@ -151,6 +128,29 @@
    "sourceUrl": "https://www.ggilbo.com/news/articleView.html?idxno=1190372"
   },
   {
+   "id": "tmdb-379088",
+   "tmdbId": 379088,
+   "title": "진격의 거인: 홍련의 화살",
+   "meta": "애니메이션 · 액션 · 모험",
+   "meta2": "118분",
+   "posterPath": "/oMuxM0n4EZ4SILoTUsdruJoUAfe.jpg",
+   "releaseDate": "2015-01-28",
+   "audience": 97101,
+   "boRank": 7,
+   "status": "yes",
+   "creditsLen": null,
+   "cookies": [
+    {
+     "desc": "재개봉 관련 언론 보도에 따르면 쿠키 영상이 2개 있다. 기사에는 각 영상이 나오는 위치와 내용이 적혀 있지 않다.",
+     "len": "",
+     "pos": "위치 미확인"
+    }
+   ],
+   "tip": "",
+   "source": "topstarnews.net (자동 조사)",
+   "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16261165"
+  },
+  {
    "id": "the-cat-in-the-hat",
    "tmdbId": 1117898,
    "title": "모자 쓴 고양이",
@@ -158,7 +158,7 @@
    "meta2": "107분",
    "posterPath": "/lgLg6T1kv7fjfANRNM1QSvPKDJM.jpg",
    "releaseDate": "2026-11-06",
-   "audience": 17255,
+   "audience": 31448,
    "boRank": 5,
    "status": "yes",
    "creditsLen": null,
@@ -186,7 +186,7 @@
    "meta2": "117분",
    "posterPath": "/iVWvR4BWhdirFIMQwS1yNp2Hcft.jpg",
    "releaseDate": "2026-11-04",
-   "audience": 15810,
+   "audience": 21394,
    "boRank": 8,
    "status": "no",
    "creditsLen": null,
@@ -225,22 +225,6 @@
    "meta": "SF · 공포",
    "meta2": "104분",
    "posterPath": "/f52mjDYWRuLuaRwhE4R2kdkOlQb.jpg",
-   "releaseDate": "2026-11-04",
-   "audience": null,
-   "boRank": null,
-   "status": "unknown",
-   "creditsLen": null,
-   "cookies": [],
-   "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-   "source": ""
-  },
-  {
-   "id": "bajo-tus-pies",
-   "tmdbId": 1180894,
-   "title": "잠들 수 없는 집",
-   "meta": "공포",
-   "meta2": "94분",
-   "posterPath": "/cXd3ldZahrBgZo71QLZ76I4Z9wG.jpg",
    "releaseDate": "2026-11-04",
    "audience": null,
    "boRank": null,
@@ -365,29 +349,6 @@
    "sourceUrl": "https://aftercredits.com/2026/06/leviticus-2026/"
   },
   {
-   "id": "sing-sing",
-   "tmdbId": 1155828,
-   "title": "씽씽",
-   "meta": "드라마",
-   "meta2": "107분",
-   "posterPath": "/vGYMJS08GefWciLXSRpVJdWAdzs.jpg",
-   "releaseDate": "2026-10-21",
-   "audience": null,
-   "boRank": null,
-   "status": "yes",
-   "creditsLen": null,
-   "cookies": [
-    {
-     "pos": "위치 미확인",
-     "len": "",
-     "desc": "쿠키 영상이 있습니다. 자세한 내용은 출처를 확인하세요."
-    }
-   ],
-   "tip": "",
-   "source": "나무위키",
-   "sourceUrl": "https://namu.wiki/w/%EC%94%BD%EC%94%BD%28%EC%98%81%ED%99%94%29"
-  },
-  {
    "id": "street-fighter",
    "tmdbId": 1153576,
    "title": "스트리트 파이터",
@@ -425,6 +386,55 @@
    "cookies": [],
    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
    "source": ""
+  },
+  {
+   "id": "borderline",
+   "tmdbId": 1727780,
+   "title": "보더라인: 블랙 오퍼레이션",
+   "meta": "스릴러",
+   "meta2": "95분",
+   "posterPath": "/9fllGHikTyVNQBmZjkhTMDqicjh.jpg",
+   "releaseDate": "2026-10-14",
+   "audience": null,
+   "boRank": null,
+   "status": "unknown",
+   "creditsLen": null,
+   "cookies": [],
+   "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+   "source": ""
+  },
+  {
+   "id": "tmdb-1279865",
+   "tmdbId": 1279865,
+   "title": "파리스 그린이 밝는 날에",
+   "meta": "애니메이션 · 드라마",
+   "meta2": "76분",
+   "posterPath": "/2qarnbiETjCO65kAhW3SRb6ZnE0.jpg",
+   "releaseDate": "2026-10-14",
+   "audience": null,
+   "boRank": null,
+   "status": "unknown",
+   "creditsLen": null,
+   "cookies": [],
+   "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+   "source": ""
+  },
+  {
+   "id": "tmdb-1591675",
+   "tmdbId": 1591675,
+   "title": "룩백",
+   "meta": "드라마",
+   "meta2": "101분",
+   "posterPath": "/mAfcD0lspaNlZDRrzT0fdWS5C01.jpg",
+   "releaseDate": "2026-10-08",
+   "audience": null,
+   "boRank": null,
+   "status": "no",
+   "creditsLen": null,
+   "cookies": [],
+   "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+   "source": "언론 보도 (톱스타뉴스·국제뉴스) · 관람 후기",
+   "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16241770"
   }
  ]
 }
