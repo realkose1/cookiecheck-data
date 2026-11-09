@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-09)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261108)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-10)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261109)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-11-09';
-const BOXOFFICE_DATE = "20261108";
+const DATA_UPDATED = '2026-11-10';
+const BOXOFFICE_DATE = "20261109";
 
 const MOVIES = [
   {
@@ -16,8 +16,8 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3476471,
-    "boRank": 9,
+    "audience": 3478353,
+    "boRank": 7,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -32,29 +32,6 @@ const MOVIES = [
     "sourceUrl": "https://www.wikitree.co.kr/articles/1161295"
   },
   {
-    "id": "tmdb-1218925",
-    "tmdbId": 1218925,
-    "title": "극장판 체인소 맨:  레제편",
-    "meta": "애니메이션 · 액션 · 로맨스",
-    "meta2": "100분",
-    "posterPath": "/oTn0PoR8gSMpMqJaT2pUtkkN0Ia.jpg",
-    "releaseDate": "2025-09-24",
-    "audience": 3464574,
-    "boRank": 10,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "pos": "크레딧 종료 후",
-        "len": "",
-        "desc": "덴지는 카페에서 꽃다발을 들고 레제가 돌아오기를 기다리고 있습니다. 그런데 또 다른 골칫거리 친구인 파워가 나타납니다. 그러자 덴지는 꽃을 먹기 시작하고, 파워도 함께 꽃을 먹기 시작합니다."
-      }
-    ],
-    "tip": "",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2025/10/chainsaw-man-the-movie-reze-arc-2025/"
-  },
-  {
     "id": "tmdb-1586876",
     "tmdbId": 1586876,
     "title": "극장판 치이카와: 인어 섬의 비밀",
@@ -62,8 +39,8 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 2788843,
-    "boRank": 1,
+    "audience": 2797524,
+    "boRank": 3,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -78,6 +55,40 @@ const MOVIES = [
     "sourceUrl": "https://namu.wiki/w/%EA%B7%B9%EC%9E%A5%ED%8C%90%20%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80%3A%20%EC%9D%B8%EC%96%B4%20%EC%84%AC%EC%9D%98%20%EB%B9%84%EB%B0%80"
   },
   {
+    "id": "tmdb-1394740",
+    "tmdbId": 1394740,
+    "title": "타짜: 벨제붑의 노래",
+    "meta": "범죄 · 드라마",
+    "meta2": "130분",
+    "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
+    "releaseDate": "2026-09-23",
+    "audience": 2073293,
+    "boRank": 8,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "gukjenews.com (자동 조사)",
+    "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3705531"
+  },
+  {
+    "id": "ford-v-ferrari",
+    "tmdbId": 359724,
+    "title": "포드 V 페라리",
+    "meta": "드라마 · 역사 · 액션",
+    "meta2": "153분",
+    "posterPath": "/wBUoWL4z0nsvC9cYT3VCc74X3jE.jpg",
+    "releaseDate": "2019-12-04",
+    "audience": 1377306,
+    "boRank": 10,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2019/11/ford-v-ferrari-2019/"
+  },
+  {
     "id": "heart-of-the-beast",
     "tmdbId": 1263337,
     "title": "하트 오브 비스트",
@@ -85,8 +96,8 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 379755,
-    "boRank": 3,
+    "audience": 389825,
+    "boRank": 2,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -102,8 +113,8 @@ const MOVIES = [
     "meta2": "108분",
     "posterPath": "/wImwvRmbR28hPNDmaj5W7zvxk0T.jpg",
     "releaseDate": "2026-11-04",
-    "audience": 166802,
-    "boRank": 2,
+    "audience": 179192,
+    "boRank": 1,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -118,7 +129,7 @@ const MOVIES = [
     "meta2": "94분",
     "posterPath": "/8VIxElJnoGXJH4p3Av2BQwgcxpC.jpg",
     "releaseDate": "2026-11-05",
-    "audience": 108164,
+    "audience": 115609,
     "boRank": 4,
     "status": "yes",
     "creditsLen": null,
@@ -134,29 +145,6 @@ const MOVIES = [
     "sourceUrl": "https://www.ggilbo.com/news/articleView.html?idxno=1190372"
   },
   {
-    "id": "tmdb-379088",
-    "tmdbId": 379088,
-    "title": "진격의 거인: 홍련의 화살",
-    "meta": "애니메이션 · 액션 · 모험",
-    "meta2": "118분",
-    "posterPath": "/oMuxM0n4EZ4SILoTUsdruJoUAfe.jpg",
-    "releaseDate": "2015-01-28",
-    "audience": 97105,
-    "boRank": 7,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "desc": "재개봉 관련 언론 보도에 따르면 쿠키 영상이 2개 있다. 기사에는 각 영상이 나오는 위치와 내용이 적혀 있지 않다.",
-        "len": "",
-        "pos": "위치 미확인"
-      }
-    ],
-    "tip": "",
-    "source": "topstarnews.net (자동 조사)",
-    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16261165"
-  },
-  {
     "id": "the-cat-in-the-hat",
     "tmdbId": 1117898,
     "title": "모자 쓴 고양이",
@@ -164,8 +152,8 @@ const MOVIES = [
     "meta2": "107분",
     "posterPath": "/lgLg6T1kv7fjfANRNM1QSvPKDJM.jpg",
     "releaseDate": "2026-11-06",
-    "audience": 31447,
-    "boRank": 5,
+    "audience": 32745,
+    "boRank": 9,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -192,8 +180,8 @@ const MOVIES = [
     "meta2": "117분",
     "posterPath": "/iVWvR4BWhdirFIMQwS1yNp2Hcft.jpg",
     "releaseDate": "2026-11-04",
-    "audience": 21393,
-    "boRank": 8,
+    "audience": 24309,
+    "boRank": 5,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -449,11 +437,15 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-1218925": {
+  "tmdb-1586876": {
     "up": 0,
     "down": 0
   },
-  "tmdb-1586876": {
+  "tmdb-1394740": {
+    "up": 0,
+    "down": 0
+  },
+  "ford-v-ferrari": {
     "up": 0,
     "down": 0
   },
@@ -466,10 +458,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "tmdb-1777750": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-379088": {
     "up": 0,
     "down": 0
   },
