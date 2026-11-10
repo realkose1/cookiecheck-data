@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-10)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261109)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-11)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261110)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-11-10';
-const BOXOFFICE_DATE = "20261109";
+const DATA_UPDATED = '2026-11-11';
+const BOXOFFICE_DATE = "20261110";
 
 const MOVIES = [
   {
@@ -16,8 +16,8 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3478353,
-    "boRank": 7,
+    "audience": 3479992,
+    "boRank": 8,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -39,7 +39,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 2797524,
+    "audience": 2805455,
     "boRank": 3,
     "status": "yes",
     "creditsLen": null,
@@ -55,40 +55,6 @@ const MOVIES = [
     "sourceUrl": "https://namu.wiki/w/%EA%B7%B9%EC%9E%A5%ED%8C%90%20%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80%3A%20%EC%9D%B8%EC%96%B4%20%EC%84%AC%EC%9D%98%20%EB%B9%84%EB%B0%80"
   },
   {
-    "id": "tmdb-1394740",
-    "tmdbId": 1394740,
-    "title": "타짜: 벨제붑의 노래",
-    "meta": "범죄 · 드라마",
-    "meta2": "130분",
-    "posterPath": "/ueigb5zra1tj6FTK9yhh2P33P9B.jpg",
-    "releaseDate": "2026-09-23",
-    "audience": 2073293,
-    "boRank": 8,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "gukjenews.com (자동 조사)",
-    "sourceUrl": "https://www.gukjenews.com/news/articleView.html?idxno=3705531"
-  },
-  {
-    "id": "ford-v-ferrari",
-    "tmdbId": 359724,
-    "title": "포드 V 페라리",
-    "meta": "드라마 · 역사 · 액션",
-    "meta2": "153분",
-    "posterPath": "/wBUoWL4z0nsvC9cYT3VCc74X3jE.jpg",
-    "releaseDate": "2019-12-04",
-    "audience": 1377306,
-    "boRank": 10,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2019/11/ford-v-ferrari-2019/"
-  },
-  {
     "id": "heart-of-the-beast",
     "tmdbId": 1263337,
     "title": "하트 오브 비스트",
@@ -96,7 +62,7 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 389837,
+    "audience": 399051,
     "boRank": 2,
     "status": "no",
     "creditsLen": null,
@@ -113,7 +79,7 @@ const MOVIES = [
     "meta2": "108분",
     "posterPath": "/wImwvRmbR28hPNDmaj5W7zvxk0T.jpg",
     "releaseDate": "2026-11-04",
-    "audience": 179066,
+    "audience": 191066,
     "boRank": 1,
     "status": "unknown",
     "creditsLen": null,
@@ -129,7 +95,7 @@ const MOVIES = [
     "meta2": "94분",
     "posterPath": "/8VIxElJnoGXJH4p3Av2BQwgcxpC.jpg",
     "releaseDate": "2026-11-05",
-    "audience": 115609,
+    "audience": 121907,
     "boRank": 4,
     "status": "yes",
     "creditsLen": null,
@@ -145,6 +111,52 @@ const MOVIES = [
     "sourceUrl": "https://www.ggilbo.com/news/articleView.html?idxno=1190372"
   },
   {
+    "id": "tmdb-1083624",
+    "tmdbId": 1083624,
+    "title": "수능, 출제의 비밀",
+    "meta": "코미디",
+    "meta2": "100분",
+    "posterPath": "/ohrJjtvKciICoeH80z973JnBoHo.jpg",
+    "releaseDate": "2026-10-28",
+    "audience": 105430,
+    "boRank": 6,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "desc": "엔딩 크레딧과 함께 쿠키 영상이 나온다. 이용재 감독은 이 영상을 '술꾼도시여자들'의 인기에 살짝 편승한 것이라고 설명했다. 영상의 구체적인 내용과 정확한 위치(크레딧 중간인지 종료 후인지)는 확인하지 못했다.",
+        "len": "",
+        "pos": "위치 미확인"
+      }
+    ],
+    "tip": "",
+    "source": "topstarnews.net · nocutnews.co.kr (자동 조사)",
+    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16260889"
+  },
+  {
+    "id": "tmdb-1652642",
+    "tmdbId": 1652642,
+    "title": "여전히 찬란하게",
+    "meta": "드라마",
+    "meta2": "118분",
+    "posterPath": "/t9EUrwCxhppSryjEspwYi5gA7km.jpg",
+    "releaseDate": "2026-10-21",
+    "audience": 71351,
+    "boRank": 9,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "desc": "톱스타뉴스 보도에 따르면 쿠키 영상이 엔딩 크레딧과 함께 나온다. 영상의 구체적인 내용과 정확한 위치(크레딧 중간인지 종료 후인지)는 확인하지 못했다.",
+        "len": "",
+        "pos": "위치 미확인"
+      }
+    ],
+    "tip": "",
+    "source": "topstarnews.net (자동 조사)",
+    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16254660"
+  },
+  {
     "id": "the-cat-in-the-hat",
     "tmdbId": 1117898,
     "title": "모자 쓴 고양이",
@@ -152,8 +164,8 @@ const MOVIES = [
     "meta2": "107분",
     "posterPath": "/lgLg6T1kv7fjfANRNM1QSvPKDJM.jpg",
     "releaseDate": "2026-11-06",
-    "audience": 32745,
-    "boRank": 9,
+    "audience": 33991,
+    "boRank": 10,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -180,7 +192,7 @@ const MOVIES = [
     "meta2": "117분",
     "posterPath": "/iVWvR4BWhdirFIMQwS1yNp2Hcft.jpg",
     "releaseDate": "2026-11-04",
-    "audience": 24309,
+    "audience": 27219,
     "boRank": 5,
     "status": "no",
     "creditsLen": null,
@@ -188,6 +200,111 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "topstarnews.net (자동 조사)",
     "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16268191"
+  },
+  {
+    "id": "fall-2-deadpoint",
+    "tmdbId": 1101412,
+    "title": "폴2: 데드포인트",
+    "meta": "스릴러",
+    "meta2": "99분",
+    "posterPath": "/v62qy8mNmseNhhsB2SXfpnbu741.jpg",
+    "releaseDate": "2026-11-11",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/09/fall-2-deadpoint-2026/"
+  },
+  {
+    "id": "ebenezer",
+    "tmdbId": 1567605,
+    "title": "스크루지: 크리스마스 캐럴",
+    "meta": "판타지 · 코미디",
+    "meta2": "116분",
+    "posterPath": "/mgWk3zPFLKisvKNtJGf6zxDX5gA.jpg",
+    "releaseDate": "2026-11-11",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "la-bataille-de-gaulle-l-ge-de-fe",
+    "tmdbId": 1165366,
+    "title": "드골: 저항의 시작",
+    "meta": "역사 · 드라마 · 전쟁",
+    "meta2": "160분",
+    "posterPath": "/jIQoQrDSoBtxmLsymBsmElJqHOL.jpg",
+    "releaseDate": "2026-11-11",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "pressure",
+    "tmdbId": 1318413,
+    "title": "프레셔",
+    "meta": "스릴러 · 역사 · 전쟁",
+    "meta2": "100분",
+    "posterPath": "/TDagKyMKPlTP9LKXfOF9sDhkTR.jpg",
+    "releaseDate": "2026-11-11",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/05/pressure-2026/"
+  },
+  {
+    "id": "mother-mary",
+    "tmdbId": 1102883,
+    "title": "마더 메리",
+    "meta": "음악 · 스릴러 · 공포",
+    "meta2": "113분",
+    "posterPath": "/h1OiG9wLxJPzDa8GtomZ7D5d9H1.jpg",
+    "releaseDate": "2026-11-11",
+    "audience": null,
+    "boRank": null,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "pos": "크레딧 중간",
+        "len": "",
+        "desc": "엔딩 크레딧의 앞부분에서는 무대 위에서 마더 메리가 노래 \"Dark Cradle\"을 부르는 장면이 흐릅니다. 크레딧 후반부에는 붉은 드레스와 스케치북이 담긴 영상이 나옵니다."
+      }
+    ],
+    "tip": "",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/04/mother-mary-2026/"
+  },
+  {
+    "id": "the-virgin-suicides",
+    "tmdbId": 1443,
+    "title": "처녀 자살 소동",
+    "meta": "드라마 · 로맨스",
+    "meta2": "97분",
+    "posterPath": "/bxEuunUExRCGtDqTQguuZekFTwy.jpg",
+    "releaseDate": "2026-11-11",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   },
   {
     "id": "tmdb-822653",
@@ -300,142 +417,6 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "topstarnews.net (자동 조사)",
     "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16260993"
-  },
-  {
-    "id": "verity",
-    "tmdbId": 1283515,
-    "title": "베러티",
-    "meta": "미스터리 · 스릴러",
-    "meta2": "117분",
-    "posterPath": "/u0wEvdDBNrNZNtLxLrzoiXT09nj.jpg",
-    "releaseDate": "2026-10-22",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/10/verity-2026/"
-  },
-  {
-    "id": "clayface",
-    "tmdbId": 1400940,
-    "title": "클레이페이스",
-    "meta": "공포 · 스릴러 · SF",
-    "meta2": "109분",
-    "posterPath": "/LSGpoSAlitss0KOvVakkeUToZo.jpg",
-    "releaseDate": "2026-10-21",
-    "audience": null,
-    "boRank": null,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "pos": "위치 미확인",
-        "len": "",
-        "desc": "쿠키 영상이 있습니다. 자세한 내용은 출처를 확인하세요."
-      }
-    ],
-    "tip": "",
-    "source": "나무위키",
-    "sourceUrl": "https://namu.wiki/w/%ED%81%B4%EB%A0%88%EC%9D%B4%ED%8E%98%EC%9D%B4%EC%8A%A4%28%EC%98%81%ED%99%94%29"
-  },
-  {
-    "id": "leviticus",
-    "tmdbId": 1564614,
-    "title": "레위기",
-    "meta": "공포 · 로맨스",
-    "meta2": "89분",
-    "posterPath": "/mrtO4O6tUdwWibPv0pKi13C1vC9.jpg",
-    "releaseDate": "2026-10-21",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/06/leviticus-2026/"
-  },
-  {
-    "id": "tmdb-1376681",
-    "tmdbId": 1376681,
-    "title": "킬링타임",
-    "meta": "공포 · 스릴러",
-    "meta2": "83분",
-    "posterPath": "/ijKaBymwMVvFDpxZy2hip6aQS0j.jpg",
-    "releaseDate": "2026-10-21",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "topstarnews.net (자동 조사)",
-    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16253869"
-  },
-  {
-    "id": "sing-sing",
-    "tmdbId": 1155828,
-    "title": "씽씽",
-    "meta": "드라마",
-    "meta2": "107분",
-    "posterPath": "/vGYMJS08GefWciLXSRpVJdWAdzs.jpg",
-    "releaseDate": "2026-10-21",
-    "audience": null,
-    "boRank": null,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "pos": "위치 미확인",
-        "len": "",
-        "desc": "쿠키 영상이 있습니다. 자세한 내용은 출처를 확인하세요."
-      }
-    ],
-    "tip": "",
-    "source": "나무위키",
-    "sourceUrl": "https://namu.wiki/w/%EC%94%BD%EC%94%BD%28%EC%98%81%ED%99%94%29"
-  },
-  {
-    "id": "street-fighter",
-    "tmdbId": 1153576,
-    "title": "스트리트 파이터",
-    "meta": "액션 · 판타지 · 코미디",
-    "meta2": "120분",
-    "posterPath": "/3EgtiR2ewNQxjJ1qizhDe4IrpPk.jpg",
-    "releaseDate": "2026-10-14",
-    "audience": null,
-    "boRank": null,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "desc": "크레딧 이후 장면에서 해변 또는 정글 같은 곳이 나옵니다. 눈가리개를 한 채 가슴에 큰 흉터가 있는 사내가 바이슨과 그 부하들의 방문을 받는데, 이 사내는 영화 초반 류에게 패했던 사가트입니다. 속편에서 류와 켄이 바이슨과 사가트를 함께 상대하게 될 수 있음을 암시합니다.",
-        "len": "",
-        "pos": "위치 미확인"
-      }
-    ],
-    "tip": "",
-    "source": "slashfilm.com (자동 조사)",
-    "sourceUrl": "https://www.slashfilm.com/2288706/street-fighter-2026-movie-ending-explained/"
-  },
-  {
-    "id": "whalefall",
-    "tmdbId": 1255833,
-    "title": "웨일폴: 고래에 먹힌 남자",
-    "meta": "스릴러",
-    "meta2": "106분",
-    "posterPath": "/6ke2azOZ9sfe7SMn7rPhQWd0FPD.jpg",
-    "releaseDate": "2026-10-14",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   }
 ];
 
@@ -445,14 +426,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "tmdb-1586876": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-1394740": {
-    "up": 0,
-    "down": 0
-  },
-  "ford-v-ferrari": {
     "up": 0,
     "down": 0
   },
@@ -468,11 +441,43 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "tmdb-1083624": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-1652642": {
+    "up": 0,
+    "down": 0
+  },
   "the-cat-in-the-hat": {
     "up": 0,
     "down": 0
   },
   "wild-horse-nine": {
+    "up": 0,
+    "down": 0
+  },
+  "fall-2-deadpoint": {
+    "up": 0,
+    "down": 0
+  },
+  "ebenezer": {
+    "up": 0,
+    "down": 0
+  },
+  "la-bataille-de-gaulle-l-ge-de-fe": {
+    "up": 0,
+    "down": 0
+  },
+  "pressure": {
+    "up": 0,
+    "down": 0
+  },
+  "mother-mary": {
+    "up": 0,
+    "down": 0
+  },
+  "the-virgin-suicides": {
     "up": 0,
     "down": 0
   },
@@ -497,34 +502,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "tmdb-1590933": {
-    "up": 0,
-    "down": 0
-  },
-  "verity": {
-    "up": 0,
-    "down": 0
-  },
-  "clayface": {
-    "up": 0,
-    "down": 0
-  },
-  "leviticus": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-1376681": {
-    "up": 0,
-    "down": 0
-  },
-  "sing-sing": {
-    "up": 0,
-    "down": 0
-  },
-  "street-fighter": {
-    "up": 0,
-    "down": 0
-  },
-  "whalefall": {
     "up": 0,
     "down": 0
   }
