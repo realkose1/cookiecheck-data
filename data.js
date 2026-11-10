@@ -346,22 +346,6 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "bajo-tus-pies",
-    "tmdbId": 1180894,
-    "title": "잠들 수 없는 집",
-    "meta": "공포",
-    "meta2": "94분",
-    "posterPath": "/cXd3ldZahrBgZo71QLZ76I4Z9wG.jpg",
-    "releaseDate": "2026-11-04",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
     "id": "sense-and-sensibility",
     "tmdbId": 1503762,
     "title": "이성과 감성",
@@ -417,6 +401,23 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "topstarnews.net (자동 조사)",
     "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16260993"
+  },
+  {
+    "id": "verity",
+    "tmdbId": 1283515,
+    "title": "베러티",
+    "meta": "미스터리 · 스릴러",
+    "meta2": "117분",
+    "posterPath": "/u0wEvdDBNrNZNtLxLrzoiXT09nj.jpg",
+    "releaseDate": "2026-10-22",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/10/verity-2026/"
   }
 ];
 
@@ -489,10 +490,6 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "bajo-tus-pies": {
-    "up": 0,
-    "down": 0
-  },
   "sense-and-sensibility": {
     "up": 0,
     "down": 0
@@ -502,6 +499,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "tmdb-1590933": {
+    "up": 0,
+    "down": 0
+  },
+  "verity": {
     "up": 0,
     "down": 0
   }
