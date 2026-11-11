@@ -253,10 +253,21 @@
   "status": "unknown"
  },
  "1545057": {
-  "attempts": 7,
-  "checkedAt": "2026-11-11",
-  "reason": "출처끼리 충돌한다. 이투데이(개봉 전 기사)는 쿠키영상이 마련돼 있다고 했는데, 톱스타뉴스·금강일보·팬플러스는 쿠키 영상이 없다고 했다. 톱스타뉴스는 같은 문구를 다른 영화에도 반복해 쓰는 정형 기사라 독립된 확인으로 보기 어렵다. 따라서 yes와 no 어느 쪽도 확정하지 않는다.",
-  "status": "unknown"
+  "checkedAt": "2026-11-12",
+  "cookies": [
+   {
+    "desc": "본편 외에 쿠키영상이 따로 마련돼 있다고 보도됐다. 영상의 내용과 크레딧 중간인지 종료 후인지는 확인하지 못했다.",
+    "len": "",
+    "pos": "위치 미확인"
+   }
+  ],
+  "model": "claude-sonnet-5-5",
+  "quote": "영화에는 본편 외에 쿠키영상도 마련돼 있어 관람 시 함께 확인할 수 있다.",
+  "reason": "이투데이 보도(2026-11-02, 조이현·김재원 출연, 11월 4일 개봉)가 쿠키영상이 있다고 명시했다. 같은 매체의 다른 기사에서 김정훈 감독 작품임을 확인했다. 위치는 확인하지 못했다.",
+  "source": "etoday.co.kr (자동 조사)",
+  "sourceUrl": "https://www.etoday.co.kr/news/view/2642935",
+  "status": "yes",
+  "tip": ""
  },
  "1567517": {
   "attempts": 2,
@@ -265,8 +276,8 @@
   "status": "unknown"
  },
  "1567605": {
-  "attempts": 1,
-  "checkedAt": "2026-11-11",
+  "attempts": 2,
+  "checkedAt": "2026-11-12",
   "reason": "'no' 로 답했으나 근거 부족 — 독립 출처 1건뿐 (attractionsmagazine.com) — 후기·블로그는 2건 필요",
   "status": "unknown"
  },
@@ -390,6 +401,12 @@
   "attempts": 1,
   "checkedAt": "2026-10-14",
   "reason": "검색 도구 사용 한도를 넘겨 2015년 Safdie 형제 감독작 'Heaven Knows What'의 쿠키 영상 여부를 확인할 근거를 찾지 못했다. 없음을 뒷받침하는 문장도 확보하지 못해 unknown으로 판정한다.",
+  "status": "unknown"
+ },
+ "313369": {
+  "attempts": 1,
+  "checkedAt": "2026-11-12",
+  "reason": "'no' 로 답했으나 근거 부족 — 검증을 통과한 출처가 없음",
   "status": "unknown"
  },
  "31347": {
