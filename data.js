@@ -39,7 +39,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 2805458,
+    "audience": 2805456,
     "boRank": 3,
     "status": "yes",
     "creditsLen": null,
@@ -62,7 +62,7 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 399056,
+    "audience": 399054,
     "boRank": 2,
     "status": "no",
     "creditsLen": null,
@@ -249,6 +249,23 @@ const MOVIES = [
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
+  },
+  {
+    "id": "pressure",
+    "tmdbId": 1318413,
+    "title": "프레셔",
+    "meta": "스릴러 · 역사 · 전쟁",
+    "meta2": "100분",
+    "posterPath": "/TDagKyMKPlTP9LKXfOF9sDhkTR.jpg",
+    "releaseDate": "2026-11-11",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/05/pressure-2026/"
   },
   {
     "id": "mother-mary",
@@ -466,6 +483,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "la-bataille-de-gaulle-l-ge-de-fe": {
+    "up": 0,
+    "down": 0
+  },
+  "pressure": {
     "up": 0,
     "down": 0
   },
