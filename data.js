@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "131분",
     "posterPath": "/c55ijsOdntj6P25vDwHLdgsBpmV.jpg",
     "releaseDate": "2026-09-23",
-    "audience": 3479992,
+    "audience": 3479995,
     "boRank": 8,
     "status": "yes",
     "creditsLen": null,
@@ -39,7 +39,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 2805457,
+    "audience": 2805458,
     "boRank": 3,
     "status": "yes",
     "creditsLen": null,
@@ -62,7 +62,7 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 399054,
+    "audience": 399056,
     "boRank": 2,
     "status": "no",
     "creditsLen": null,
@@ -79,7 +79,7 @@ const MOVIES = [
     "meta2": "108분",
     "posterPath": "/wImwvRmbR28hPNDmaj5W7zvxk0T.jpg",
     "releaseDate": "2026-11-04",
-    "audience": 191069,
+    "audience": 191078,
     "boRank": 1,
     "status": "unknown",
     "creditsLen": null,
@@ -251,23 +251,6 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "pressure",
-    "tmdbId": 1318413,
-    "title": "프레셔",
-    "meta": "스릴러 · 역사 · 전쟁",
-    "meta2": "100분",
-    "posterPath": "/TDagKyMKPlTP9LKXfOF9sDhkTR.jpg",
-    "releaseDate": "2026-11-11",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/05/pressure-2026/"
-  },
-  {
     "id": "mother-mary",
     "tmdbId": 1102883,
     "title": "마더 메리",
@@ -297,6 +280,22 @@ const MOVIES = [
     "meta": "드라마 · 로맨스",
     "meta2": "97분",
     "posterPath": "/bxEuunUExRCGtDqTQguuZekFTwy.jpg",
+    "releaseDate": "2026-11-11",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "tmdb-31347",
+    "tmdbId": 31347,
+    "title": "극장판 카드캡터 체리 : 봉인된 카드",
+    "meta": "애니메이션 · 모험 · 판타지",
+    "meta2": "93분",
+    "posterPath": "/ezYcCER756g37B4Y7kZKfr2flgc.jpg",
     "releaseDate": "2026-11-11",
     "audience": null,
     "boRank": null,
@@ -403,13 +402,13 @@ const MOVIES = [
     "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16260993"
   },
   {
-    "id": "verity",
-    "tmdbId": 1283515,
-    "title": "베러티",
-    "meta": "미스터리 · 스릴러",
-    "meta2": "117분",
-    "posterPath": "/u0wEvdDBNrNZNtLxLrzoiXT09nj.jpg",
-    "releaseDate": "2026-10-22",
+    "id": "merrily-we-roll-along",
+    "tmdbId": 1306400,
+    "title": "메릴리 위 롤 어롱",
+    "meta": "코미디 · 음악",
+    "meta2": "145분",
+    "posterPath": "/7SUG4X8oSi3PJDdpBwZh1WtHRNN.jpg",
+    "releaseDate": "2026-10-28",
     "audience": null,
     "boRank": null,
     "status": "no",
@@ -417,7 +416,7 @@ const MOVIES = [
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/10/verity-2026/"
+    "sourceUrl": "https://aftercredits.com/2025/12/merrily-we-roll-along-2025/"
   }
 ];
 
@@ -470,15 +469,15 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "pressure": {
-    "up": 0,
-    "down": 0
-  },
   "mother-mary": {
     "up": 0,
     "down": 0
   },
   "the-virgin-suicides": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-31347": {
     "up": 0,
     "down": 0
   },
@@ -502,7 +501,7 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "verity": {
+  "merrily-we-roll-along": {
     "up": 0,
     "down": 0
   }
