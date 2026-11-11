@@ -95,9 +95,9 @@ const MOVIES = [
     "creditsLen": null,
     "cookies": [
       {
-        "pos": "위치 미확인",
+        "desc": "본편 외에 쿠키영상이 따로 마련돼 있다고 보도됐다. 영상의 내용과 크레딧 중간인지 종료 후인지는 확인하지 못했다.",
         "len": "",
-        "desc": "본편 외에 쿠키영상이 따로 마련돼 있다고 보도됐다. 영상의 내용과 크레딧 중간인지 종료 후인지는 확인하지 못했다."
+        "pos": "위치 미확인"
       }
     ],
     "tip": "",
@@ -350,6 +350,22 @@ const MOVIES = [
     "source": ""
   },
   {
+    "id": "bajo-tus-pies",
+    "tmdbId": 1180894,
+    "title": "잠들 수 없는 집",
+    "meta": "공포",
+    "meta2": "94분",
+    "posterPath": "/cXd3ldZahrBgZo71QLZ76I4Z9wG.jpg",
+    "releaseDate": "2026-11-04",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
     "id": "sense-and-sensibility",
     "tmdbId": 1503762,
     "title": "이성과 감성",
@@ -388,23 +404,6 @@ const MOVIES = [
     "tip": "",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/09/shaun-the-sheep-the-beast-of-mossy-bottom-2026/"
-  },
-  {
-    "id": "tmdb-1590933",
-    "tmdbId": 1590933,
-    "title": "그대, 별처럼",
-    "meta": "드라마 · 로맨스",
-    "meta2": "135분",
-    "posterPath": "/phTrle2mrBqjhsFMYrK9Uacu6cd.jpg",
-    "releaseDate": "2026-10-28",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "topstarnews.net (자동 조사)",
-    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16260993"
   }
 ];
 
@@ -481,15 +480,15 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "bajo-tus-pies": {
+    "up": 0,
+    "down": 0
+  },
   "sense-and-sensibility": {
     "up": 0,
     "down": 0
   },
   "shaun-the-sheep-the-beast-of-mos": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-1590933": {
     "up": 0,
     "down": 0
   }
