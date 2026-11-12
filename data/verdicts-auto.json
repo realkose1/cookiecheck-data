@@ -276,8 +276,8 @@
   "status": "unknown"
  },
  "1567605": {
-  "attempts": 2,
-  "checkedAt": "2026-11-12",
+  "attempts": 3,
+  "checkedAt": "2026-11-13",
   "reason": "'no' 로 답했으나 근거 부족 — 독립 출처 1건뿐 (attractionsmagazine.com) — 후기·블로그는 2건 필요",
   "status": "unknown"
  },
@@ -404,10 +404,15 @@
   "status": "unknown"
  },
  "313369": {
-  "attempts": 1,
-  "checkedAt": "2026-11-12",
-  "reason": "'no' 로 답했으나 근거 부족 — 검증을 통과한 출처가 없음",
-  "status": "unknown"
+  "checkedAt": "2026-11-13",
+  "cookies": [],
+  "model": "claude-sonnet-5-5",
+  "quote": "Are There Any Extras After The Credits? No",
+  "reason": "감독 Damien Chazelle의 2016년작 La La Land 페이지(aftercredits.com)에 크레딧 중간과 크레딧 종료 후 쿠키가 모두 No라고 적혀 있다.",
+  "source": "aftercredits.com (자동 조사)",
+  "sourceUrl": "https://aftercredits.com/2016/12/la-la-land-2016/",
+  "status": "no",
+  "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다."
  },
  "31347": {
   "attempts": 1,
