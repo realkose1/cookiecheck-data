@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-12)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261111)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-13)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261112)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-11-12';
-const BOXOFFICE_DATE = "20261111";
+const DATA_UPDATED = '2026-11-13';
+const BOXOFFICE_DATE = "20261112";
 
 const MOVIES = [
   {
@@ -16,8 +16,8 @@ const MOVIES = [
     "meta2": "127분",
     "posterPath": "/ad9ndytwOckyShSc0A6tx1rZRkW.jpg",
     "releaseDate": "2016-12-07",
-    "audience": 3817391,
-    "boRank": 3,
+    "audience": 3824603,
+    "boRank": 4,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -32,8 +32,8 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 2825112,
-    "boRank": 1,
+    "audience": 2832920,
+    "boRank": 3,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -55,8 +55,8 @@ const MOVIES = [
     "meta2": "155분",
     "posterPath": "/7zV8FTYofAORGm0Umgh1mNNCym8.jpg",
     "releaseDate": "2021-10-20",
-    "audience": 1669992,
-    "boRank": 8,
+    "audience": 1673949,
+    "boRank": 7,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -72,7 +72,7 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 408347,
+    "audience": 414939,
     "boRank": 5,
     "status": "no",
     "creditsLen": null,
@@ -89,8 +89,8 @@ const MOVIES = [
     "meta2": "108분",
     "posterPath": "/wImwvRmbR28hPNDmaj5W7zvxk0T.jpg",
     "releaseDate": "2026-11-04",
-    "audience": 203885,
-    "boRank": 4,
+    "audience": 213797,
+    "boRank": 2,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -112,7 +112,7 @@ const MOVIES = [
     "meta2": "94분",
     "posterPath": "/8VIxElJnoGXJH4p3Av2BQwgcxpC.jpg",
     "releaseDate": "2026-11-05",
-    "audience": 131191,
+    "audience": 136755,
     "boRank": 6,
     "status": "yes",
     "creditsLen": null,
@@ -135,8 +135,8 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/v62qy8mNmseNhhsB2SXfpnbu741.jpg",
     "releaseDate": "2026-11-11",
-    "audience": 20133,
-    "boRank": 2,
+    "audience": 32504,
+    "boRank": 1,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -150,10 +150,10 @@ const MOVIES = [
     "title": "프레셔",
     "meta": "스릴러 · 역사 · 전쟁",
     "meta2": "100분",
-    "posterPath": "/TDagKyMKPlTP9LKXfOF9sDhkTR.jpg",
+    "posterPath": "/uwqjK4bKEWLfdJX2Oc7odnChH7Y.jpg",
     "releaseDate": "2026-11-11",
-    "audience": 9503,
-    "boRank": 7,
+    "audience": 12691,
+    "boRank": 9,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -169,8 +169,24 @@ const MOVIES = [
     "meta2": "116분",
     "posterPath": "/mgWk3zPFLKisvKNtJGf6zxDX5gA.jpg",
     "releaseDate": "2026-11-11",
-    "audience": 3874,
+    "audience": 6077,
     "boRank": 10,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "tmdb-1244809",
+    "tmdbId": 1244809,
+    "title": "폭설",
+    "meta": "스릴러 · 미스터리 · 드라마",
+    "meta2": "89분",
+    "posterPath": "/xiBYIFWBrLD7Z7jWrt0e7YLLmfC.jpg",
+    "releaseDate": "2026-11-18",
+    "audience": 3831,
+    "boRank": 8,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -381,29 +397,6 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/10/sense-and-sensibility-2026/"
-  },
-  {
-    "id": "shaun-the-sheep-the-beast-of-mos",
-    "tmdbId": 1477104,
-    "title": "숀 더 쉽: 공포의 털보 괴물",
-    "meta": "애니메이션 · SF · 코미디",
-    "meta2": "81분",
-    "posterPath": "/9ju4vGzFpenSDvbQVA86gdpaS8n.jpg",
-    "releaseDate": "2026-10-28",
-    "audience": null,
-    "boRank": null,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "pos": "크레딧 중간",
-        "len": "",
-        "desc": "여러 등장인물이 할로윈 의상을 입고 춤을 춥니다. 이어서 짧은 장면이 나오는데, 쓰레기 더미 속에 있는 헤어그로(Hair-Grow) 병을 까마귀가 쪼아 먹자 눈이 충혈되면서 변하기 시작합니다."
-      }
-    ],
-    "tip": "",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/09/shaun-the-sheep-the-beast-of-mossy-bottom-2026/"
   }
 ];
 
@@ -441,6 +434,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "ebenezer": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-1244809": {
     "up": 0,
     "down": 0
   },
@@ -485,10 +482,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "sense-and-sensibility": {
-    "up": 0,
-    "down": 0
-  },
-  "shaun-the-sheep-the-beast-of-mos": {
     "up": 0,
     "down": 0
   }
