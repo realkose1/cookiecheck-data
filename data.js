@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-13)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261112)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-14)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261113)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-11-13';
-const BOXOFFICE_DATE = "20261112";
+const DATA_UPDATED = '2026-11-14';
+const BOXOFFICE_DATE = "20261113";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "127분",
     "posterPath": "/ad9ndytwOckyShSc0A6tx1rZRkW.jpg",
     "releaseDate": "2016-12-07",
-    "audience": 3824603,
+    "audience": 3833314,
     "boRank": 4,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 2832920,
+    "audience": 2845874,
     "boRank": 3,
     "status": "yes",
     "creditsLen": null,
@@ -56,7 +56,7 @@ const MOVIES = [
     "meta2": "155분",
     "posterPath": "/7zV8FTYofAORGm0Umgh1mNNCym8.jpg",
     "releaseDate": "2021-10-20",
-    "audience": 1673951,
+    "audience": 1678578,
     "boRank": 7,
     "status": "no",
     "creditsLen": null,
@@ -73,7 +73,7 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 414946,
+    "audience": 422856,
     "boRank": 5,
     "status": "no",
     "creditsLen": null,
@@ -90,7 +90,7 @@ const MOVIES = [
     "meta2": "108분",
     "posterPath": "/wImwvRmbR28hPNDmaj5W7zvxk0T.jpg",
     "releaseDate": "2026-11-04",
-    "audience": 213784,
+    "audience": 227532,
     "boRank": 2,
     "status": "yes",
     "creditsLen": null,
@@ -113,7 +113,7 @@ const MOVIES = [
     "meta2": "94분",
     "posterPath": "/8VIxElJnoGXJH4p3Av2BQwgcxpC.jpg",
     "releaseDate": "2026-11-05",
-    "audience": 136755,
+    "audience": 143815,
     "boRank": 6,
     "status": "yes",
     "creditsLen": null,
@@ -136,7 +136,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/v62qy8mNmseNhhsB2SXfpnbu741.jpg",
     "releaseDate": "2026-11-11",
-    "audience": 32505,
+    "audience": 51662,
     "boRank": 1,
     "status": "no",
     "creditsLen": null,
@@ -153,7 +153,7 @@ const MOVIES = [
     "meta2": "100분",
     "posterPath": "/uwqjK4bKEWLfdJX2Oc7odnChH7Y.jpg",
     "releaseDate": "2026-11-11",
-    "audience": 12691,
+    "audience": 15655,
     "boRank": 9,
     "status": "no",
     "creditsLen": null,
@@ -170,23 +170,7 @@ const MOVIES = [
     "meta2": "116분",
     "posterPath": "/mgWk3zPFLKisvKNtJGf6zxDX5gA.jpg",
     "releaseDate": "2026-11-11",
-    "audience": 6078,
-    "boRank": 10,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
-    "id": "tmdb-1244809",
-    "tmdbId": 1244809,
-    "title": "폭설",
-    "meta": "스릴러 · 미스터리 · 드라마",
-    "meta2": "89분",
-    "posterPath": "/xiBYIFWBrLD7Z7jWrt0e7YLLmfC.jpg",
-    "releaseDate": "2026-11-18",
-    "audience": 3841,
+    "audience": 9293,
     "boRank": 8,
     "status": "unknown",
     "creditsLen": null,
@@ -405,6 +389,23 @@ const MOVIES = [
     "tip": "",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/09/shaun-the-sheep-the-beast-of-mossy-bottom-2026/"
+  },
+  {
+    "id": "tmdb-1590933",
+    "tmdbId": 1590933,
+    "title": "그대, 별처럼",
+    "meta": "드라마 · 로맨스",
+    "meta2": "135분",
+    "posterPath": "/phTrle2mrBqjhsFMYrK9Uacu6cd.jpg",
+    "releaseDate": "2026-10-28",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "topstarnews.net (자동 조사)",
+    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16260993"
   }
 ];
 
@@ -442,10 +443,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "ebenezer": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-1244809": {
     "up": 0,
     "down": 0
   },
@@ -490,6 +487,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "shaun-the-sheep-the-beast-of-mos": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-1590933": {
     "up": 0,
     "down": 0
   }
