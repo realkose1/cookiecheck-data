@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-15)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261114)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-16)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261115)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-11-15';
-const BOXOFFICE_DATE = "20261114";
+const DATA_UPDATED = '2026-11-16';
+const BOXOFFICE_DATE = "20261115";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "127분",
     "posterPath": "/ad9ndytwOckyShSc0A6tx1rZRkW.jpg",
     "releaseDate": "2016-12-07",
-    "audience": 3848676,
+    "audience": 3861038,
     "boRank": 6,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 2903064,
+    "audience": 2949092,
     "boRank": 1,
     "status": "yes",
     "creditsLen": null,
@@ -56,8 +56,8 @@ const MOVIES = [
     "meta2": "155분",
     "posterPath": "/7zV8FTYofAORGm0Umgh1mNNCym8.jpg",
     "releaseDate": "2021-10-20",
-    "audience": 1685795,
-    "boRank": 10,
+    "audience": 1691825,
+    "boRank": 8,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -73,8 +73,8 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 440508,
-    "boRank": 4,
+    "audience": 452532,
+    "boRank": 7,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -90,7 +90,7 @@ const MOVIES = [
     "meta2": "108분",
     "posterPath": "/wImwvRmbR28hPNDmaj5W7zvxk0T.jpg",
     "releaseDate": "2026-11-04",
-    "audience": 259396,
+    "audience": 283279,
     "boRank": 3,
     "status": "yes",
     "creditsLen": null,
@@ -113,8 +113,8 @@ const MOVIES = [
     "meta2": "94분",
     "posterPath": "/8VIxElJnoGXJH4p3Av2BQwgcxpC.jpg",
     "releaseDate": "2026-11-05",
-    "audience": 160349,
-    "boRank": 5,
+    "audience": 173355,
+    "boRank": 4,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -136,7 +136,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/v62qy8mNmseNhhsB2SXfpnbu741.jpg",
     "releaseDate": "2026-11-11",
-    "audience": 100100,
+    "audience": 140032,
     "boRank": 2,
     "status": "no",
     "creditsLen": null,
@@ -153,7 +153,7 @@ const MOVIES = [
     "meta2": "107분",
     "posterPath": "/lgLg6T1kv7fjfANRNM1QSvPKDJM.jpg",
     "releaseDate": "2026-11-06",
-    "audience": 46653,
+    "audience": 52669,
     "boRank": 9,
     "status": "yes",
     "creditsLen": null,
@@ -181,13 +181,30 @@ const MOVIES = [
     "meta2": "72분",
     "posterPath": "/y2ieGfORhEawIg1mHQgHFqqvVof.jpg",
     "releaseDate": "2026-11-14",
-    "audience": 13008,
-    "boRank": 7,
+    "audience": 25481,
+    "boRank": 5,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
+  },
+  {
+    "id": "ebenezer",
+    "tmdbId": 1567605,
+    "title": "스크루지: 크리스마스 캐럴",
+    "meta": "판타지 · 코미디",
+    "meta2": "116분",
+    "posterPath": "/mgWk3zPFLKisvKNtJGf6zxDX5gA.jpg",
+    "releaseDate": "2026-11-11",
+    "audience": 19783,
+    "boRank": 10,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/11/ebenezer-2026/"
   },
   {
     "id": "mutiny",
@@ -205,23 +222,6 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/08/mutiny-2026/"
-  },
-  {
-    "id": "ebenezer",
-    "tmdbId": 1567605,
-    "title": "스크루지: 크리스마스 캐럴",
-    "meta": "판타지 · 코미디",
-    "meta2": "116분",
-    "posterPath": "/mgWk3zPFLKisvKNtJGf6zxDX5gA.jpg",
-    "releaseDate": "2026-11-11",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/11/ebenezer-2026/"
   },
   {
     "id": "la-bataille-de-gaulle-l-ge-de-fe",
@@ -447,11 +447,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "mutiny": {
+  "ebenezer": {
     "up": 0,
     "down": 0
   },
-  "ebenezer": {
+  "mutiny": {
     "up": 0,
     "down": 0
   },
