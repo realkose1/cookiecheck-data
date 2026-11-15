@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "127분",
     "posterPath": "/ad9ndytwOckyShSc0A6tx1rZRkW.jpg",
     "releaseDate": "2016-12-07",
-    "audience": 3848679,
+    "audience": 3848680,
     "boRank": 6,
     "status": "no",
     "creditsLen": null,
@@ -56,7 +56,7 @@ const MOVIES = [
     "meta2": "155분",
     "posterPath": "/7zV8FTYofAORGm0Umgh1mNNCym8.jpg",
     "releaseDate": "2021-10-20",
-    "audience": 1685790,
+    "audience": 1685795,
     "boRank": 10,
     "status": "no",
     "creditsLen": null,
@@ -73,7 +73,7 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 440492,
+    "audience": 440508,
     "boRank": 4,
     "status": "no",
     "creditsLen": null,
@@ -90,7 +90,7 @@ const MOVIES = [
     "meta2": "108분",
     "posterPath": "/wImwvRmbR28hPNDmaj5W7zvxk0T.jpg",
     "releaseDate": "2026-11-04",
-    "audience": 259375,
+    "audience": 259396,
     "boRank": 3,
     "status": "yes",
     "creditsLen": null,
@@ -113,7 +113,7 @@ const MOVIES = [
     "meta2": "94분",
     "posterPath": "/8VIxElJnoGXJH4p3Av2BQwgcxpC.jpg",
     "releaseDate": "2026-11-05",
-    "audience": 160347,
+    "audience": 160349,
     "boRank": 5,
     "status": "yes",
     "creditsLen": null,
@@ -136,7 +136,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/v62qy8mNmseNhhsB2SXfpnbu741.jpg",
     "releaseDate": "2026-11-11",
-    "audience": 100093,
+    "audience": 100100,
     "boRank": 2,
     "status": "no",
     "creditsLen": null,
@@ -153,7 +153,7 @@ const MOVIES = [
     "meta2": "107분",
     "posterPath": "/lgLg6T1kv7fjfANRNM1QSvPKDJM.jpg",
     "releaseDate": "2026-11-06",
-    "audience": 46624,
+    "audience": 46653,
     "boRank": 9,
     "status": "yes",
     "creditsLen": null,
@@ -216,11 +216,12 @@ const MOVIES = [
     "releaseDate": "2026-11-11",
     "audience": null,
     "boRank": null,
-    "status": "unknown",
+    "status": "no",
     "creditsLen": null,
     "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/11/ebenezer-2026/"
   },
   {
     "id": "la-bataille-de-gaulle-l-ge-de-fe",
@@ -324,8 +325,8 @@ const MOVIES = [
     "creditsLen": null,
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "topstarnews.net (자동 조사)",
-    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16268191"
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/11/wild-horse-nine-2026/"
   },
   {
     "id": "tmdb-822653",
@@ -349,22 +350,6 @@ const MOVIES = [
     "tip": "",
     "source": "en.wikipedia.org · gamepedia.jp (자동 조사)",
     "sourceUrl": "https://en.wikipedia.org/wiki/Puella_Magi_Madoka_Magica:_Walpurgisnacht:_Rising"
-  },
-  {
-    "id": "sanguine",
-    "tmdbId": 1468846,
-    "title": "변이",
-    "meta": "SF · 공포",
-    "meta2": "104분",
-    "posterPath": "/f52mjDYWRuLuaRwhE4R2kdkOlQb.jpg",
-    "releaseDate": "2026-11-04",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   },
   {
     "id": "sense-and-sensibility",
@@ -405,6 +390,23 @@ const MOVIES = [
     "tip": "",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/09/shaun-the-sheep-the-beast-of-mossy-bottom-2026/"
+  },
+  {
+    "id": "tmdb-1590933",
+    "tmdbId": 1590933,
+    "title": "그대, 별처럼",
+    "meta": "드라마 · 로맨스",
+    "meta2": "135분",
+    "posterPath": "/phTrle2mrBqjhsFMYrK9Uacu6cd.jpg",
+    "releaseDate": "2026-10-28",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "topstarnews.net (자동 조사)",
+    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16260993"
   }
 ];
 
@@ -481,15 +483,15 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "sanguine": {
-    "up": 0,
-    "down": 0
-  },
   "sense-and-sensibility": {
     "up": 0,
     "down": 0
   },
   "shaun-the-sheep-the-beast-of-mos": {
+    "up": 0,
+    "down": 0
+  },
+  "tmdb-1590933": {
     "up": 0,
     "down": 0
   }
