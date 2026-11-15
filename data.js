@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "127분",
     "posterPath": "/ad9ndytwOckyShSc0A6tx1rZRkW.jpg",
     "releaseDate": "2016-12-07",
-    "audience": 3861038,
+    "audience": 3861040,
     "boRank": 6,
     "status": "no",
     "creditsLen": null,
