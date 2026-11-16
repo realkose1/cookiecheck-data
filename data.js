@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-16)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261115)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-17)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261116)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-11-16';
-const BOXOFFICE_DATE = "20261115";
+const DATA_UPDATED = '2026-11-17';
+const BOXOFFICE_DATE = "20261116";
 
 const MOVIES = [
   {
@@ -16,8 +16,8 @@ const MOVIES = [
     "meta2": "127분",
     "posterPath": "/ad9ndytwOckyShSc0A6tx1rZRkW.jpg",
     "releaseDate": "2016-12-07",
-    "audience": 3861037,
-    "boRank": 6,
+    "audience": 3865360,
+    "boRank": 4,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -33,8 +33,8 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 2949095,
-    "boRank": 1,
+    "audience": 2955239,
+    "boRank": 3,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -56,8 +56,8 @@ const MOVIES = [
     "meta2": "155분",
     "posterPath": "/7zV8FTYofAORGm0Umgh1mNNCym8.jpg",
     "releaseDate": "2021-10-20",
-    "audience": 1691824,
-    "boRank": 8,
+    "audience": 1694654,
+    "boRank": 7,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -73,8 +73,8 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 452535,
-    "boRank": 7,
+    "audience": 456111,
+    "boRank": 5,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -90,8 +90,8 @@ const MOVIES = [
     "meta2": "108분",
     "posterPath": "/wImwvRmbR28hPNDmaj5W7zvxk0T.jpg",
     "releaseDate": "2026-11-04",
-    "audience": 283290,
-    "boRank": 3,
+    "audience": 290881,
+    "boRank": 2,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -113,8 +113,8 @@ const MOVIES = [
     "meta2": "94분",
     "posterPath": "/8VIxElJnoGXJH4p3Av2BQwgcxpC.jpg",
     "releaseDate": "2026-11-05",
-    "audience": 173355,
-    "boRank": 4,
+    "audience": 176692,
+    "boRank": 6,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -136,8 +136,8 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/v62qy8mNmseNhhsB2SXfpnbu741.jpg",
     "releaseDate": "2026-11-11",
-    "audience": 140037,
-    "boRank": 2,
+    "audience": 151649,
+    "boRank": 1,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -146,48 +146,21 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/09/fall-2-deadpoint-2026/"
   },
   {
-    "id": "the-cat-in-the-hat",
-    "tmdbId": 1117898,
-    "title": "모자 쓴 고양이",
-    "meta": "애니메이션 · 판타지 · 모험",
-    "meta2": "107분",
-    "posterPath": "/lgLg6T1kv7fjfANRNM1QSvPKDJM.jpg",
-    "releaseDate": "2026-11-06",
-    "audience": 52675,
-    "boRank": 9,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "pos": "크레딧 중간",
-        "len": "",
-        "desc": "Pig in a Wig의 생일이라 Cat in the Hat이 그에게 Thing들이 든 상자를 선물합니다. 상자가 갑자기 터지듯 열리면서 방 안이 Thing들로 가득 차고, 사무실에서 큰 파티가 벌어집니다.\n이어서 닥터 수스(시어도어 가이젤)의 사진과 함께 다음과 같은 헌정 문구가 나옵니다.\n테오도르 가이젤과 천재의 해에 바칩니다\n크레딧이 계속 올라가는 동안 Cat in the Hat 노래가 흘러나오고, Cat in the Hat이 관객에게 그 노래에 대해 이야기하며 속편과 스핀오프 제작을 제안합니다."
-      },
-      {
-        "pos": "크레딧 종료 후",
-        "len": "",
-        "desc": "Go-Backer가 화면에 나타납니다. 이 장치가 작동하면서 영화가 처음으로 되감기고 워너 브라더스 로고가 나옵니다. 로고가 뒤집히며 열리고 Cat in the Hat의 실루엣이 나타나 \"다시 한번 해보자!\"라고 외칩니다. 그가 노래를 시작하려고 박자를 세는 순간 인사팀의 셰리가 나타나 영화는 끝났다고 말하고, 로고는 쾅 하고 닫힙니다."
-      }
-    ],
-    "tip": "",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/11/cat-in-the-hat-the-2026/"
-  },
-  {
-    "id": "tmdb-1791261",
-    "tmdbId": 1791261,
-    "title": "극장판 마카앤로니: 기억탐험 대소동!",
-    "meta": "애니메이션 · 가족 · 모험",
-    "meta2": "72분",
-    "posterPath": "/y2ieGfORhEawIg1mHQgHFqqvVof.jpg",
-    "releaseDate": "2026-11-14",
-    "audience": 25481,
-    "boRank": 5,
-    "status": "unknown",
+    "id": "wild-horse-nine",
+    "tmdbId": 891621,
+    "title": "와일드 호스 나인",
+    "meta": "코미디 · 범죄 · 스릴러",
+    "meta2": "117분",
+    "posterPath": "/iVWvR4BWhdirFIMQwS1yNp2Hcft.jpg",
+    "releaseDate": "2026-11-04",
+    "audience": 41198,
+    "boRank": 8,
+    "status": "no",
     "creditsLen": null,
     "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/11/wild-horse-nine-2026/"
   },
   {
     "id": "ebenezer",
@@ -197,8 +170,8 @@ const MOVIES = [
     "meta2": "116분",
     "posterPath": "/mgWk3zPFLKisvKNtJGf6zxDX5gA.jpg",
     "releaseDate": "2026-11-11",
-    "audience": 19794,
-    "boRank": 10,
+    "audience": 21360,
+    "boRank": 9,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -312,21 +285,32 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "wild-horse-nine",
-    "tmdbId": 891621,
-    "title": "와일드 호스 나인",
-    "meta": "코미디 · 범죄 · 스릴러",
-    "meta2": "117분",
-    "posterPath": "/iVWvR4BWhdirFIMQwS1yNp2Hcft.jpg",
-    "releaseDate": "2026-11-04",
+    "id": "the-cat-in-the-hat",
+    "tmdbId": 1117898,
+    "title": "모자 쓴 고양이",
+    "meta": "애니메이션 · 판타지 · 모험",
+    "meta2": "107분",
+    "posterPath": "/lgLg6T1kv7fjfANRNM1QSvPKDJM.jpg",
+    "releaseDate": "2026-11-06",
     "audience": null,
     "boRank": null,
-    "status": "no",
+    "status": "yes",
     "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "topstarnews.net (자동 조사)",
-    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16268191"
+    "cookies": [
+      {
+        "pos": "크레딧 중간",
+        "len": "",
+        "desc": "Pig in a Wig의 생일이라 Cat in the Hat이 그에게 Thing들이 든 상자를 선물합니다. 상자가 갑자기 터지듯 열리면서 방 안이 Thing들로 가득 차고, 사무실에서 큰 파티가 벌어집니다.\n이어서 닥터 수스(시어도어 가이젤)의 사진과 함께 다음과 같은 헌정 문구가 나옵니다.\n테오도르 가이젤과 천재의 해에 바칩니다\n크레딧이 계속 올라가는 동안 Cat in the Hat 노래가 흘러나오고, Cat in the Hat이 관객에게 그 노래에 대해 이야기하며 속편과 스핀오프 제작을 제안합니다."
+      },
+      {
+        "pos": "크레딧 종료 후",
+        "len": "",
+        "desc": "Go-Backer가 화면에 나타납니다. 이 장치가 작동하면서 영화가 처음으로 되감기고 워너 브라더스 로고가 나옵니다. 로고가 뒤집히며 열리고 Cat in the Hat의 실루엣이 나타나 \"다시 한번 해보자!\"라고 외칩니다. 그가 노래를 시작하려고 박자를 세는 순간 인사팀의 셰리가 나타나 영화는 끝났다고 말하고, 로고는 쾅 하고 닫힙니다."
+      }
+    ],
+    "tip": "",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/11/cat-in-the-hat-the-2026/"
   },
   {
     "id": "tmdb-822653",
@@ -407,6 +391,23 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "topstarnews.net (자동 조사)",
     "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16260993"
+  },
+  {
+    "id": "lone-samurai",
+    "tmdbId": 1546050,
+    "title": "론 사무라이",
+    "meta": "판타지 · 액션",
+    "meta2": "96분",
+    "posterPath": "/2HfKZ9WFZD7k1TXRZ9uYrZreRRk.jpg",
+    "releaseDate": "2026-10-28",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2025/12/lone-samurai-2025/"
   }
 ];
 
@@ -439,11 +440,7 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "the-cat-in-the-hat": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-1791261": {
+  "wild-horse-nine": {
     "up": 0,
     "down": 0
   },
@@ -475,7 +472,7 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "wild-horse-nine": {
+  "the-cat-in-the-hat": {
     "up": 0,
     "down": 0
   },
@@ -492,6 +489,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "tmdb-1590933": {
+    "up": 0,
+    "down": 0
+  },
+  "lone-samurai": {
     "up": 0,
     "down": 0
   }
