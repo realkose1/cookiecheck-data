@@ -90,7 +90,7 @@ const MOVIES = [
     "meta2": "108분",
     "posterPath": "/wImwvRmbR28hPNDmaj5W7zvxk0T.jpg",
     "releaseDate": "2026-11-04",
-    "audience": 290881,
+    "audience": 290882,
     "boRank": 2,
     "status": "yes",
     "creditsLen": null,
@@ -159,8 +159,8 @@ const MOVIES = [
     "creditsLen": null,
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "topstarnews.net (자동 조사)",
-    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16268191"
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/11/wild-horse-nine-2026/"
   },
   {
     "id": "ebenezer",
