@@ -159,8 +159,8 @@ const MOVIES = [
     "creditsLen": null,
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/11/wild-horse-nine-2026/"
+    "source": "topstarnews.net (자동 조사)",
+    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16268191"
   },
   {
     "id": "ebenezer",
@@ -336,6 +336,22 @@ const MOVIES = [
     "sourceUrl": "https://en.wikipedia.org/wiki/Puella_Magi_Madoka_Magica:_Walpurgisnacht:_Rising"
   },
   {
+    "id": "bajo-tus-pies",
+    "tmdbId": 1180894,
+    "title": "잠들 수 없는 집",
+    "meta": "공포",
+    "meta2": "94분",
+    "posterPath": "/cXd3ldZahrBgZo71QLZ76I4Z9wG.jpg",
+    "releaseDate": "2026-11-04",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
     "id": "sense-and-sensibility",
     "tmdbId": 1503762,
     "title": "이성과 감성",
@@ -391,23 +407,6 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "topstarnews.net (자동 조사)",
     "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16260993"
-  },
-  {
-    "id": "lone-samurai",
-    "tmdbId": 1546050,
-    "title": "론 사무라이",
-    "meta": "판타지 · 액션",
-    "meta2": "96분",
-    "posterPath": "/2HfKZ9WFZD7k1TXRZ9uYrZreRRk.jpg",
-    "releaseDate": "2026-10-28",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2025/12/lone-samurai-2025/"
   }
 ];
 
@@ -480,6 +479,10 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "bajo-tus-pies": {
+    "up": 0,
+    "down": 0
+  },
   "sense-and-sensibility": {
     "up": 0,
     "down": 0
@@ -489,10 +492,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "tmdb-1590933": {
-    "up": 0,
-    "down": 0
-  },
-  "lone-samurai": {
     "up": 0,
     "down": 0
   }
