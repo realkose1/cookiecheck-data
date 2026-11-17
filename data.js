@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-17)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261116)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-18)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261117)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-11-17';
-const BOXOFFICE_DATE = "20261116";
+const DATA_UPDATED = '2026-11-18';
+const BOXOFFICE_DATE = "20261117";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "127분",
     "posterPath": "/ad9ndytwOckyShSc0A6tx1rZRkW.jpg",
     "releaseDate": "2016-12-07",
-    "audience": 3865360,
+    "audience": 3869819,
     "boRank": 4,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 2955232,
+    "audience": 2960938,
     "boRank": 3,
     "status": "yes",
     "creditsLen": null,
@@ -56,8 +56,8 @@ const MOVIES = [
     "meta2": "155분",
     "posterPath": "/7zV8FTYofAORGm0Umgh1mNNCym8.jpg",
     "releaseDate": "2021-10-20",
-    "audience": 1694654,
-    "boRank": 7,
+    "audience": 1698379,
+    "boRank": 6,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -73,7 +73,7 @@ const MOVIES = [
     "meta2": "102분",
     "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
     "releaseDate": "2026-10-28",
-    "audience": 456111,
+    "audience": 460120,
     "boRank": 5,
     "status": "no",
     "creditsLen": null,
@@ -90,7 +90,7 @@ const MOVIES = [
     "meta2": "108분",
     "posterPath": "/wImwvRmbR28hPNDmaj5W7zvxk0T.jpg",
     "releaseDate": "2026-11-04",
-    "audience": 290882,
+    "audience": 298250,
     "boRank": 2,
     "status": "yes",
     "creditsLen": null,
@@ -113,8 +113,8 @@ const MOVIES = [
     "meta2": "94분",
     "posterPath": "/8VIxElJnoGXJH4p3Av2BQwgcxpC.jpg",
     "releaseDate": "2026-11-05",
-    "audience": 176692,
-    "boRank": 6,
+    "audience": 179904,
+    "boRank": 7,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -136,7 +136,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/v62qy8mNmseNhhsB2SXfpnbu741.jpg",
     "releaseDate": "2026-11-11",
-    "audience": 151643,
+    "audience": 163184,
     "boRank": 1,
     "status": "no",
     "creditsLen": null,
@@ -146,23 +146,6 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/09/fall-2-deadpoint-2026/"
   },
   {
-    "id": "wild-horse-nine",
-    "tmdbId": 891621,
-    "title": "와일드 호스 나인",
-    "meta": "코미디 · 범죄 · 스릴러",
-    "meta2": "117분",
-    "posterPath": "/iVWvR4BWhdirFIMQwS1yNp2Hcft.jpg",
-    "releaseDate": "2026-11-04",
-    "audience": 41198,
-    "boRank": 8,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "topstarnews.net (자동 조사)",
-    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16268191"
-  },
-  {
     "id": "ebenezer",
     "tmdbId": 1567605,
     "title": "스크루지: 크리스마스 캐럴",
@@ -170,7 +153,7 @@ const MOVIES = [
     "meta2": "116분",
     "posterPath": "/mgWk3zPFLKisvKNtJGf6zxDX5gA.jpg",
     "releaseDate": "2026-11-11",
-    "audience": 21360,
+    "audience": 23553,
     "boRank": 9,
     "status": "no",
     "creditsLen": null,
@@ -178,6 +161,61 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/11/ebenezer-2026/"
+  },
+  {
+    "id": "tmdb-1453303",
+    "tmdbId": 1453303,
+    "title": "호루몽",
+    "meta": "다큐멘터리",
+    "meta2": "101분",
+    "posterPath": "/vH6TqikyX2FwjgToCwtearQ3ziB.jpg",
+    "releaseDate": "2026-11-11",
+    "audience": 11255,
+    "boRank": 10,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "other-mommy",
+    "tmdbId": 1400837,
+    "title": "아더 마미",
+    "meta": "공포",
+    "meta2": "93분",
+    "posterPath": "/fGRNCssTRrhYZxNzykGGCoMsAVq.jpg",
+    "releaseDate": "2026-11-18",
+    "audience": 3121,
+    "boRank": 8,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "pos": "크레딧 종료 후",
+        "len": "",
+        "desc": "벨 담(다른 엄마)이 카메라를 내려다보며 입술에 손가락을 갖다 대고 \"쉬이이이잇\" 하고 말합니다."
+      }
+    ],
+    "tip": "",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/10/other-mommy-2026/"
+  },
+  {
+    "id": "the-hunger-games-sunrise-on-the",
+    "tmdbId": 1300968,
+    "title": "헝거게임 50번째 추첨의 날",
+    "meta": "SF · 액션 · 모험",
+    "meta2": "159분",
+    "posterPath": "/6ehDHRVDtwe1oMu6EMtKC3SoVER.jpg",
+    "releaseDate": "2026-11-18",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   },
   {
     "id": "mutiny",
@@ -313,6 +351,23 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/11/cat-in-the-hat-the-2026/"
   },
   {
+    "id": "wild-horse-nine",
+    "tmdbId": 891621,
+    "title": "와일드 호스 나인",
+    "meta": "코미디 · 범죄 · 스릴러",
+    "meta2": "117분",
+    "posterPath": "/iVWvR4BWhdirFIMQwS1yNp2Hcft.jpg",
+    "releaseDate": "2026-11-04",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "topstarnews.net (자동 조사)",
+    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16268191"
+  },
+  {
     "id": "tmdb-822653",
     "tmdbId": 822653,
     "title": "극장판 마법소녀 마도카☆마키카 <발푸르기스의 회천>",
@@ -350,63 +405,6 @@ const MOVIES = [
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
-  },
-  {
-    "id": "sense-and-sensibility",
-    "tmdbId": 1503762,
-    "title": "이성과 감성",
-    "meta": "드라마 · 로맨스",
-    "meta2": "133분",
-    "posterPath": "/pWVWIaa1eVTKikijG0pyWi9Ulvb.jpg",
-    "releaseDate": "2026-10-28",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/10/sense-and-sensibility-2026/"
-  },
-  {
-    "id": "shaun-the-sheep-the-beast-of-mos",
-    "tmdbId": 1477104,
-    "title": "숀 더 쉽: 공포의 털보 괴물",
-    "meta": "애니메이션 · SF · 코미디",
-    "meta2": "81분",
-    "posterPath": "/9ju4vGzFpenSDvbQVA86gdpaS8n.jpg",
-    "releaseDate": "2026-10-28",
-    "audience": null,
-    "boRank": null,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "pos": "크레딧 중간",
-        "len": "",
-        "desc": "여러 등장인물이 할로윈 의상을 입고 춤을 춥니다. 이어서 짧은 장면이 나오는데, 쓰레기 더미 속에 있는 헤어그로(Hair-Grow) 병을 까마귀가 쪼아 먹자 눈이 충혈되면서 변하기 시작합니다."
-      }
-    ],
-    "tip": "",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/09/shaun-the-sheep-the-beast-of-mossy-bottom-2026/"
-  },
-  {
-    "id": "tmdb-1590933",
-    "tmdbId": 1590933,
-    "title": "그대, 별처럼",
-    "meta": "드라마 · 로맨스",
-    "meta2": "135분",
-    "posterPath": "/phTrle2mrBqjhsFMYrK9Uacu6cd.jpg",
-    "releaseDate": "2026-10-28",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "topstarnews.net (자동 조사)",
-    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16260993"
   }
 ];
 
@@ -439,11 +437,19 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "wild-horse-nine": {
+  "ebenezer": {
     "up": 0,
     "down": 0
   },
-  "ebenezer": {
+  "tmdb-1453303": {
+    "up": 0,
+    "down": 0
+  },
+  "other-mommy": {
+    "up": 0,
+    "down": 0
+  },
+  "the-hunger-games-sunrise-on-the": {
     "up": 0,
     "down": 0
   },
@@ -475,23 +481,15 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "wild-horse-nine": {
+    "up": 0,
+    "down": 0
+  },
   "tmdb-822653": {
     "up": 0,
     "down": 0
   },
   "bajo-tus-pies": {
-    "up": 0,
-    "down": 0
-  },
-  "sense-and-sensibility": {
-    "up": 0,
-    "down": 0
-  },
-  "shaun-the-sheep-the-beast-of-mos": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-1590933": {
     "up": 0,
     "down": 0
   }
