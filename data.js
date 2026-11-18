@@ -134,7 +134,7 @@ const MOVIES = [
     "title": "폴2: 데드포인트",
     "meta": "스릴러",
     "meta2": "99분",
-    "posterPath": "/v62qy8mNmseNhhsB2SXfpnbu741.jpg",
+    "posterPath": "/9fhPxF6clLRoQfpmgn5jGpL6BTA.jpg",
     "releaseDate": "2026-11-11",
     "audience": 163182,
     "boRank": 1,
@@ -153,7 +153,7 @@ const MOVIES = [
     "meta2": "116분",
     "posterPath": "/mgWk3zPFLKisvKNtJGf6zxDX5gA.jpg",
     "releaseDate": "2026-11-11",
-    "audience": 23555,
+    "audience": 23554,
     "boRank": 9,
     "status": "no",
     "creditsLen": null,
@@ -233,22 +233,6 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/08/mutiny-2026/"
-  },
-  {
-    "id": "la-bataille-de-gaulle-l-ge-de-fe",
-    "tmdbId": 1165366,
-    "title": "드골: 저항의 시작",
-    "meta": "역사 · 드라마 · 전쟁",
-    "meta2": "160분",
-    "posterPath": "/jIQoQrDSoBtxmLsymBsmElJqHOL.jpg",
-    "releaseDate": "2026-11-11",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   },
   {
     "id": "pressure",
@@ -364,8 +348,8 @@ const MOVIES = [
     "creditsLen": null,
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/11/wild-horse-nine-2026/"
+    "source": "topstarnews.net (자동 조사)",
+    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16268191"
   },
   {
     "id": "tmdb-822653",
@@ -405,6 +389,23 @@ const MOVIES = [
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
+  },
+  {
+    "id": "sense-and-sensibility",
+    "tmdbId": 1503762,
+    "title": "이성과 감성",
+    "meta": "드라마 · 로맨스",
+    "meta2": "133분",
+    "posterPath": "/pWVWIaa1eVTKikijG0pyWi9Ulvb.jpg",
+    "releaseDate": "2026-10-28",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/10/sense-and-sensibility-2026/"
   }
 ];
 
@@ -457,10 +458,6 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "la-bataille-de-gaulle-l-ge-de-fe": {
-    "up": 0,
-    "down": 0
-  },
   "pressure": {
     "up": 0,
     "down": 0
@@ -490,6 +487,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "bajo-tus-pies": {
+    "up": 0,
+    "down": 0
+  },
+  "sense-and-sensibility": {
     "up": 0,
     "down": 0
   }
