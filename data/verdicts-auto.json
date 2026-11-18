@@ -80,6 +80,17 @@
   "reason": "모델 응답을 해석하지 못함",
   "status": "unknown"
  },
+ "1244809": {
+  "checkedAt": "2026-11-19",
+  "cookies": [],
+  "model": "claude-sonnet-5-5",
+  "quote": "한편 영화 '폭설'은 엔딩 크레디트 이후 공개되는 쿠키 영상이 없다.",
+  "reason": "감독(홍의정, 박선우)과 2026년 개봉일이 일치하는 금강일보 기사가 쿠키 영상이 없다고 명시했다. 다만 이 문장은 엔딩 크레딧 이후 영상만 언급하며, 크레딧 중간 영상은 따로 다루지 않는다.",
+  "source": "ggilbo.com (자동 조사)",
+  "sourceUrl": "https://www.ggilbo.com/news/articleView.html?idxno=1193922",
+  "status": "no",
+  "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다."
+ },
  "1255833": {
   "attempts": 2,
   "checkedAt": "2026-10-17",
@@ -99,10 +110,15 @@
   "status": "unknown"
  },
  "1300968": {
-  "attempts": 1,
-  "checkedAt": "2026-11-18",
-  "reason": "'no' 로 답했으나 근거 부족 — 독립 출처 1건뿐 (yahoo.com) — 후기·블로그는 2건 필요",
-  "status": "unknown"
+  "checkedAt": "2026-11-19",
+  "cookies": [],
+  "model": "claude-sonnet-5-5",
+  "quote": "No post-credits scene, no mid-credits scene, nothing at all.",
+  "reason": "SlashFilm(언론 보도)이 Francis Lawrence 감독의 2026년작 이 영화에 중간·종료 후 크레딧 영상이 모두 없다고 명시했고, 해당 문장을 페이지에서 직접 확인했다.",
+  "source": "slashfilm.com (자동 조사)",
+  "sourceUrl": "https://www.slashfilm.com/2301252/the-hunger-games-sunrise-on-the-reaping-post-credits-scene-guide/",
+  "status": "no",
+  "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다."
  },
  "1305781": {
   "attempts": 1,
@@ -158,6 +174,12 @@
  "14069": {
   "checkedAt": "2026-09-19",
   "reason": "2006년 호소다 마모루 감독판에 대해 쿠키 영상의 유무를 명시한 문장을 어떤 출처(나무위키·일본어 자료·영문 자료)에서도 확인하지 못했다.",
+  "status": "unknown"
+ },
+ "1410955": {
+  "attempts": 1,
+  "checkedAt": "2026-11-19",
+  "reason": "연도(2026)와 감독이 맞는 실사 영화판 'うるわしの宵の月'의 쿠키 유무를 확정할 문장을 열어 확인하지 못했다. 검색 결과에 관객 후기 두 건이 보였다. 하나는 엔딩크레딧 뒤에도 볼거리가 있다는 막연한 말이고, 다른 하나는 엔딩크레딧에서 원작 만화 그림과 실사를 비교하는 연출이 나온다는 내용이다. 둘 다 쿠키 영상이라고 단정할 수 없다. 또 이 후기들은 ",
   "status": "unknown"
  },
  "1418428": {
