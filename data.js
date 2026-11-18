@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-18)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261117)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-19)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261118)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-11-18';
-const BOXOFFICE_DATE = "20261117";
+const DATA_UPDATED = '2026-11-19';
+const BOXOFFICE_DATE = "20261118";
 
 const MOVIES = [
   {
@@ -16,8 +16,8 @@ const MOVIES = [
     "meta2": "127분",
     "posterPath": "/ad9ndytwOckyShSc0A6tx1rZRkW.jpg",
     "releaseDate": "2016-12-07",
-    "audience": 3869821,
-    "boRank": 4,
+    "audience": 3877339,
+    "boRank": 6,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -33,8 +33,8 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 2960937,
-    "boRank": 3,
+    "audience": 2969265,
+    "boRank": 5,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -49,40 +49,6 @@ const MOVIES = [
     "sourceUrl": "https://namu.wiki/w/%EA%B7%B9%EC%9E%A5%ED%8C%90%20%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80%3A%20%EC%9D%B8%EC%96%B4%20%EC%84%AC%EC%9D%98%20%EB%B9%84%EB%B0%80"
   },
   {
-    "id": "dune",
-    "tmdbId": 438631,
-    "title": "듄",
-    "meta": "SF · 모험",
-    "meta2": "155분",
-    "posterPath": "/7zV8FTYofAORGm0Umgh1mNNCym8.jpg",
-    "releaseDate": "2021-10-20",
-    "audience": 1698379,
-    "boRank": 6,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2021/10/dune-2021/"
-  },
-  {
-    "id": "heart-of-the-beast",
-    "tmdbId": 1263337,
-    "title": "하트 오브 비스트",
-    "meta": "모험 · 스릴러",
-    "meta2": "102분",
-    "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
-    "releaseDate": "2026-10-28",
-    "audience": 460120,
-    "boRank": 5,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/09/heart-of-the-beast-2026/"
-  },
-  {
     "id": "tmdb-1545057",
     "tmdbId": 1545057,
     "title": "최종면접",
@@ -90,8 +56,8 @@ const MOVIES = [
     "meta2": "108분",
     "posterPath": "/wImwvRmbR28hPNDmaj5W7zvxk0T.jpg",
     "releaseDate": "2026-11-04",
-    "audience": 298254,
-    "boRank": 2,
+    "audience": 302710,
+    "boRank": 7,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -113,8 +79,8 @@ const MOVIES = [
     "meta2": "94분",
     "posterPath": "/8VIxElJnoGXJH4p3Av2BQwgcxpC.jpg",
     "releaseDate": "2026-11-05",
-    "audience": 179904,
-    "boRank": 7,
+    "audience": 182521,
+    "boRank": 9,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -136,8 +102,8 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/9fhPxF6clLRoQfpmgn5jGpL6BTA.jpg",
     "releaseDate": "2026-11-11",
-    "audience": 163182,
-    "boRank": 1,
+    "audience": 175288,
+    "boRank": 4,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -146,37 +112,69 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/09/fall-2-deadpoint-2026/"
   },
   {
-    "id": "ebenezer",
-    "tmdbId": 1567605,
-    "title": "스크루지: 크리스마스 캐럴",
-    "meta": "판타지 · 코미디",
-    "meta2": "116분",
-    "posterPath": "/mgWk3zPFLKisvKNtJGf6zxDX5gA.jpg",
-    "releaseDate": "2026-11-11",
-    "audience": 23554,
-    "boRank": 9,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/11/ebenezer-2026/"
-  },
-  {
-    "id": "tmdb-1453303",
-    "tmdbId": 1453303,
-    "title": "호루몽",
-    "meta": "다큐멘터리",
-    "meta2": "101분",
-    "posterPath": "/vH6TqikyX2FwjgToCwtearQ3ziB.jpg",
-    "releaseDate": "2026-11-11",
-    "audience": 11255,
-    "boRank": 10,
+    "id": "tmdb-1244809",
+    "tmdbId": 1244809,
+    "title": "폭설",
+    "meta": "스릴러 · 미스터리 · 드라마",
+    "meta2": "89분",
+    "posterPath": "/xiBYIFWBrLD7Z7jWrt0e7YLLmfC.jpg",
+    "releaseDate": "2026-11-18",
+    "audience": 63668,
+    "boRank": 1,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
+  },
+  {
+    "id": "the-hunger-games-sunrise-on-the",
+    "tmdbId": 1300968,
+    "title": "헝거게임 50번째 추첨의 날",
+    "meta": "SF · 액션 · 모험",
+    "meta2": "159분",
+    "posterPath": "/6ehDHRVDtwe1oMu6EMtKC3SoVER.jpg",
+    "releaseDate": "2026-11-18",
+    "audience": 21591,
+    "boRank": 3,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "tmdb-1410955",
+    "tmdbId": 1410955,
+    "title": "아름다운 초저녁달",
+    "meta": "로맨스 · 드라마",
+    "meta2": "119분",
+    "posterPath": "/qb1ExMXRfo1hvZT691C8zfaFQ3r.jpg",
+    "releaseDate": "2026-11-18",
+    "audience": 4668,
+    "boRank": 8,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "the-death-of-robin-hood",
+    "tmdbId": 1284465,
+    "title": "데스 오브 로빈 후드",
+    "meta": "모험 · 드라마 · 액션",
+    "meta2": "123분",
+    "posterPath": "/a1PxMgPpqIXdtq8HEqoPY3zuUAQ.jpg",
+    "releaseDate": "2026-11-19",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/06/death-of-robin-hood-the-2026/"
   },
   {
     "id": "other-mommy",
@@ -186,8 +184,8 @@ const MOVIES = [
     "meta2": "93분",
     "posterPath": "/fGRNCssTRrhYZxNzykGGCoMsAVq.jpg",
     "releaseDate": "2026-11-18",
-    "audience": 3121,
-    "boRank": 8,
+    "audience": null,
+    "boRank": null,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -200,22 +198,6 @@ const MOVIES = [
     "tip": "",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/10/other-mommy-2026/"
-  },
-  {
-    "id": "the-hunger-games-sunrise-on-the",
-    "tmdbId": 1300968,
-    "title": "헝거게임 50번째 추첨의 날",
-    "meta": "SF · 액션 · 모험",
-    "meta2": "159분",
-    "posterPath": "/6ehDHRVDtwe1oMu6EMtKC3SoVER.jpg",
-    "releaseDate": "2026-11-18",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   },
   {
     "id": "mutiny",
@@ -233,6 +215,23 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/08/mutiny-2026/"
+  },
+  {
+    "id": "ebenezer",
+    "tmdbId": 1567605,
+    "title": "스크루지: 크리스마스 캐럴",
+    "meta": "판타지 · 코미디",
+    "meta2": "116분",
+    "posterPath": "/mgWk3zPFLKisvKNtJGf6zxDX5gA.jpg",
+    "releaseDate": "2026-11-11",
+    "audience": null,
+    "boRank": null,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/11/ebenezer-2026/"
   },
   {
     "id": "la-bataille-de-gaulle-l-ge-de-fe",
@@ -417,14 +416,6 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "dune": {
-    "up": 0,
-    "down": 0
-  },
-  "heart-of-the-beast": {
-    "up": 0,
-    "down": 0
-  },
   "tmdb-1545057": {
     "up": 0,
     "down": 0
@@ -437,15 +428,7 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "ebenezer": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-1453303": {
-    "up": 0,
-    "down": 0
-  },
-  "other-mommy": {
+  "tmdb-1244809": {
     "up": 0,
     "down": 0
   },
@@ -453,7 +436,23 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "tmdb-1410955": {
+    "up": 0,
+    "down": 0
+  },
+  "the-death-of-robin-hood": {
+    "up": 0,
+    "down": 0
+  },
+  "other-mommy": {
+    "up": 0,
+    "down": 0
+  },
   "mutiny": {
+    "up": 0,
+    "down": 0
+  },
+  "ebenezer": {
     "up": 0,
     "down": 0
   },
