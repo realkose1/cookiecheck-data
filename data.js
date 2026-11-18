@@ -149,7 +149,7 @@ const MOVIES = [
     "id": "ebenezer",
     "tmdbId": 1567605,
     "title": "스크루지: 크리스마스 캐럴",
-    "meta": "판타지 · 코미디 · 공포",
+    "meta": "판타지 · 코미디",
     "meta2": "116분",
     "posterPath": "/mgWk3zPFLKisvKNtJGf6zxDX5gA.jpg",
     "releaseDate": "2026-11-11",
@@ -233,6 +233,22 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/08/mutiny-2026/"
+  },
+  {
+    "id": "la-bataille-de-gaulle-l-ge-de-fe",
+    "tmdbId": 1165366,
+    "title": "드골: 저항의 시작",
+    "meta": "역사 · 드라마 · 전쟁",
+    "meta2": "160분",
+    "posterPath": "/jIQoQrDSoBtxmLsymBsmElJqHOL.jpg",
+    "releaseDate": "2026-11-11",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   },
   {
     "id": "pressure",
@@ -389,23 +405,6 @@ const MOVIES = [
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
-  },
-  {
-    "id": "sense-and-sensibility",
-    "tmdbId": 1503762,
-    "title": "이성과 감성",
-    "meta": "드라마 · 로맨스",
-    "meta2": "133분",
-    "posterPath": "/pWVWIaa1eVTKikijG0pyWi9Ulvb.jpg",
-    "releaseDate": "2026-10-28",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/10/sense-and-sensibility-2026/"
   }
 ];
 
@@ -458,6 +457,10 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
+  "la-bataille-de-gaulle-l-ge-de-fe": {
+    "up": 0,
+    "down": 0
+  },
   "pressure": {
     "up": 0,
     "down": 0
@@ -487,10 +490,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "bajo-tus-pies": {
-    "up": 0,
-    "down": 0
-  },
-  "sense-and-sensibility": {
     "up": 0,
     "down": 0
   }
