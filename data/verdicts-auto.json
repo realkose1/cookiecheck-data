@@ -98,6 +98,12 @@
   "reason": "검색 도구 사용 한도를 넘겨서 쿠키 영상에 대한 '있음'이나 '없음' 근거를 하나도 찾지 못했다. 근거가 없으므로 unknown으로 판정한다.",
   "status": "unknown"
  },
+ "1300968": {
+  "attempts": 1,
+  "checkedAt": "2026-11-18",
+  "reason": "'no' 로 답했으나 근거 부족 — 독립 출처 1건뿐 (yahoo.com) — 후기·블로그는 2건 필요",
+  "status": "unknown"
+ },
  "1305781": {
   "attempts": 1,
   "checkedAt": "2026-10-01",
