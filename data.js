@@ -184,7 +184,7 @@ const MOVIES = [
     "title": "아더 마미",
     "meta": "공포",
     "meta2": "93분",
-    "posterPath": "/fGRNCssTRrhYZxNzykGGCoMsAVq.jpg",
+    "posterPath": "/2wlzy9T4jsaFAqUtPQNwBj41DYN.jpg",
     "releaseDate": "2026-11-18",
     "audience": null,
     "boRank": null,
