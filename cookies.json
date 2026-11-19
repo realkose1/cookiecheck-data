@@ -113,7 +113,7 @@
    "meta2": "89분",
    "posterPath": "/xiBYIFWBrLD7Z7jWrt0e7YLLmfC.jpg",
    "releaseDate": "2026-11-18",
-   "audience": 112291,
+   "audience": 112295,
    "boRank": 1,
    "status": "no",
    "creditsLen": null,
@@ -149,11 +149,18 @@
    "releaseDate": "2026-11-18",
    "audience": 7572,
    "boRank": 8,
-   "status": "unknown",
+   "status": "yes",
    "creditsLen": null,
-   "cookies": [],
-   "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-   "source": ""
+   "cookies": [
+    {
+     "pos": "크레딧 종료 후",
+     "len": "",
+     "desc": "엔딩 크레딧이 모두 끝난 뒤에 쿠키 영상이 이어진다. 구체적인 내용은 확인하지 못했다."
+    }
+   ],
+   "tip": "",
+   "source": "topstarnews.net · srtimes.kr (자동 조사)",
+   "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16280520"
   },
   {
    "id": "bang-dream-ave-mujica-prima-auro",
