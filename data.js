@@ -102,7 +102,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/9fhPxF6clLRoQfpmgn5jGpL6BTA.jpg",
     "releaseDate": "2026-11-11",
-    "audience": 175288,
+    "audience": 175286,
     "boRank": 4,
     "status": "no",
     "creditsLen": null,
@@ -236,22 +236,6 @@ const MOVIES = [
     "sourceUrl": "https://aftercredits.com/2026/11/ebenezer-2026/"
   },
   {
-    "id": "la-bataille-de-gaulle-l-ge-de-fe",
-    "tmdbId": 1165366,
-    "title": "드골: 저항의 시작",
-    "meta": "역사 · 드라마 · 전쟁",
-    "meta2": "160분",
-    "posterPath": "/jIQoQrDSoBtxmLsymBsmElJqHOL.jpg",
-    "releaseDate": "2026-11-11",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
     "id": "pressure",
     "tmdbId": 1318413,
     "title": "프레셔",
@@ -267,6 +251,22 @@ const MOVIES = [
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/05/pressure-2026/"
+  },
+  {
+    "id": "la-bataille-de-gaulle-l-ge-de-fe",
+    "tmdbId": 1165366,
+    "title": "드골: 저항의 시작",
+    "meta": "역사 · 드라마 · 전쟁",
+    "meta2": "160분",
+    "posterPath": "/jIQoQrDSoBtxmLsymBsmElJqHOL.jpg",
+    "releaseDate": "2026-11-11",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   },
   {
     "id": "mother-mary",
@@ -458,11 +458,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "la-bataille-de-gaulle-l-ge-de-fe": {
+  "pressure": {
     "up": 0,
     "down": 0
   },
-  "pressure": {
+  "la-bataille-de-gaulle-l-ge-de-fe": {
     "up": 0,
     "down": 0
   },
