@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-19)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261118)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-20)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261119)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-11-19';
-const BOXOFFICE_DATE = "20261118";
+const DATA_UPDATED = '2026-11-20';
+const BOXOFFICE_DATE = "20261119";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "127분",
     "posterPath": "/ad9ndytwOckyShSc0A6tx1rZRkW.jpg",
     "releaseDate": "2016-12-07",
-    "audience": 3877341,
+    "audience": 3882128,
     "boRank": 6,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 2969265,
+    "audience": 2978093,
     "boRank": 5,
     "status": "yes",
     "creditsLen": null,
@@ -56,7 +56,7 @@ const MOVIES = [
     "meta2": "108분",
     "posterPath": "/wImwvRmbR28hPNDmaj5W7zvxk0T.jpg",
     "releaseDate": "2026-11-04",
-    "audience": 302711,
+    "audience": 307077,
     "boRank": 7,
     "status": "yes",
     "creditsLen": null,
@@ -72,6 +72,23 @@ const MOVIES = [
     "sourceUrl": "https://www.etoday.co.kr/news/view/2642935"
   },
   {
+    "id": "fall-2-deadpoint",
+    "tmdbId": 1101412,
+    "title": "폴2: 데드포인트",
+    "meta": "스릴러",
+    "meta2": "99분",
+    "posterPath": "/9fhPxF6clLRoQfpmgn5jGpL6BTA.jpg",
+    "releaseDate": "2026-11-11",
+    "audience": 187520,
+    "boRank": 2,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/09/fall-2-deadpoint-2026/"
+  },
+  {
     "id": "tmdb-1777750",
     "tmdbId": 1777750,
     "title": "명탐정 코난: 30호 살인 사건",
@@ -79,7 +96,7 @@ const MOVIES = [
     "meta2": "94분",
     "posterPath": "/8VIxElJnoGXJH4p3Av2BQwgcxpC.jpg",
     "releaseDate": "2026-11-05",
-    "audience": 182521,
+    "audience": 185319,
     "boRank": 9,
     "status": "yes",
     "creditsLen": null,
@@ -95,23 +112,6 @@ const MOVIES = [
     "sourceUrl": "https://www.ggilbo.com/news/articleView.html?idxno=1190372"
   },
   {
-    "id": "fall-2-deadpoint",
-    "tmdbId": 1101412,
-    "title": "폴2: 데드포인트",
-    "meta": "스릴러",
-    "meta2": "99분",
-    "posterPath": "/9fhPxF6clLRoQfpmgn5jGpL6BTA.jpg",
-    "releaseDate": "2026-11-11",
-    "audience": 175286,
-    "boRank": 4,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/09/fall-2-deadpoint-2026/"
-  },
-  {
     "id": "tmdb-1244809",
     "tmdbId": 1244809,
     "title": "폭설",
@@ -119,7 +119,7 @@ const MOVIES = [
     "meta2": "89분",
     "posterPath": "/xiBYIFWBrLD7Z7jWrt0e7YLLmfC.jpg",
     "releaseDate": "2026-11-18",
-    "audience": 63697,
+    "audience": 112291,
     "boRank": 1,
     "status": "no",
     "creditsLen": null,
@@ -136,7 +136,7 @@ const MOVIES = [
     "meta2": "159분",
     "posterPath": "/6ehDHRVDtwe1oMu6EMtKC3SoVER.jpg",
     "releaseDate": "2026-11-18",
-    "audience": 21589,
+    "audience": 32617,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -153,8 +153,24 @@ const MOVIES = [
     "meta2": "119분",
     "posterPath": "/qb1ExMXRfo1hvZT691C8zfaFQ3r.jpg",
     "releaseDate": "2026-11-18",
-    "audience": 4668,
+    "audience": 7572,
     "boRank": 8,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "bang-dream-ave-mujica-prima-auro",
+    "tmdbId": 1614539,
+    "title": "영화 뱅드림! 아베 무지카 프리마 오로라",
+    "meta": "애니메이션 · 드라마 · 음악",
+    "meta2": "82분",
+    "posterPath": "/3wIX4rSyf51w3hO2sddXz4gBnp.jpg",
+    "releaseDate": "2026-11-19",
+    "audience": 2753,
+    "boRank": 10,
     "status": "unknown",
     "creditsLen": null,
     "cookies": [],
@@ -390,22 +406,6 @@ const MOVIES = [
     "tip": "",
     "source": "en.wikipedia.org · gamepedia.jp (자동 조사)",
     "sourceUrl": "https://en.wikipedia.org/wiki/Puella_Magi_Madoka_Magica:_Walpurgisnacht:_Rising"
-  },
-  {
-    "id": "bajo-tus-pies",
-    "tmdbId": 1180894,
-    "title": "잠들 수 없는 집",
-    "meta": "공포",
-    "meta2": "94분",
-    "posterPath": "/cXd3ldZahrBgZo71QLZ76I4Z9wG.jpg",
-    "releaseDate": "2026-11-04",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   }
 ];
 
@@ -422,11 +422,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "tmdb-1777750": {
+  "fall-2-deadpoint": {
     "up": 0,
     "down": 0
   },
-  "fall-2-deadpoint": {
+  "tmdb-1777750": {
     "up": 0,
     "down": 0
   },
@@ -439,6 +439,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "tmdb-1410955": {
+    "up": 0,
+    "down": 0
+  },
+  "bang-dream-ave-mujica-prima-auro": {
     "up": 0,
     "down": 0
   },
@@ -487,10 +491,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "tmdb-822653": {
-    "up": 0,
-    "down": 0
-  },
-  "bajo-tus-pies": {
     "up": 0,
     "down": 0
   }
