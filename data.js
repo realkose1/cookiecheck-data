@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-20)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261119)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-21)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261120)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-11-20';
-const BOXOFFICE_DATE = "20261119";
+const DATA_UPDATED = '2026-11-21';
+const BOXOFFICE_DATE = "20261120";
 
 const MOVIES = [
   {
@@ -16,8 +16,8 @@ const MOVIES = [
     "meta2": "127분",
     "posterPath": "/ad9ndytwOckyShSc0A6tx1rZRkW.jpg",
     "releaseDate": "2016-12-07",
-    "audience": 3882128,
-    "boRank": 6,
+    "audience": 3887566,
+    "boRank": 7,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -33,8 +33,8 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 2978093,
-    "boRank": 5,
+    "audience": 2988603,
+    "boRank": 4,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -49,6 +49,23 @@ const MOVIES = [
     "sourceUrl": "https://namu.wiki/w/%EA%B7%B9%EC%9E%A5%ED%8C%90%20%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80%3A%20%EC%9D%B8%EC%96%B4%20%EC%84%AC%EC%9D%98%20%EB%B9%84%EB%B0%80"
   },
   {
+    "id": "heart-of-the-beast",
+    "tmdbId": 1263337,
+    "title": "하트 오브 비스트",
+    "meta": "모험 · 스릴러",
+    "meta2": "102분",
+    "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
+    "releaseDate": "2026-10-28",
+    "audience": 467765,
+    "boRank": 8,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/09/heart-of-the-beast-2026/"
+  },
+  {
     "id": "tmdb-1545057",
     "tmdbId": 1545057,
     "title": "최종면접",
@@ -56,8 +73,8 @@ const MOVIES = [
     "meta2": "108분",
     "posterPath": "/wImwvRmbR28hPNDmaj5W7zvxk0T.jpg",
     "releaseDate": "2026-11-04",
-    "audience": 307076,
-    "boRank": 7,
+    "audience": 312885,
+    "boRank": 6,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -79,8 +96,8 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/9fhPxF6clLRoQfpmgn5jGpL6BTA.jpg",
     "releaseDate": "2026-11-11",
-    "audience": 187526,
-    "boRank": 2,
+    "audience": 199999,
+    "boRank": 3,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -96,7 +113,7 @@ const MOVIES = [
     "meta2": "94분",
     "posterPath": "/8VIxElJnoGXJH4p3Av2BQwgcxpC.jpg",
     "releaseDate": "2026-11-05",
-    "audience": 185319,
+    "audience": 188446,
     "boRank": 9,
     "status": "yes",
     "creditsLen": null,
@@ -119,7 +136,7 @@ const MOVIES = [
     "meta2": "89분",
     "posterPath": "/xiBYIFWBrLD7Z7jWrt0e7YLLmfC.jpg",
     "releaseDate": "2026-11-18",
-    "audience": 112306,
+    "audience": 180899,
     "boRank": 1,
     "status": "no",
     "creditsLen": null,
@@ -136,8 +153,8 @@ const MOVIES = [
     "meta2": "159분",
     "posterPath": "/6ehDHRVDtwe1oMu6EMtKC3SoVER.jpg",
     "releaseDate": "2026-11-18",
-    "audience": 32618,
-    "boRank": 3,
+    "audience": 47380,
+    "boRank": 2,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -153,8 +170,8 @@ const MOVIES = [
     "meta2": "119분",
     "posterPath": "/qb1ExMXRfo1hvZT691C8zfaFQ3r.jpg",
     "releaseDate": "2026-11-18",
-    "audience": 7572,
-    "boRank": 8,
+    "audience": 9928,
+    "boRank": 10,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -167,22 +184,6 @@ const MOVIES = [
     "tip": "",
     "source": "topstarnews.net · srtimes.kr (자동 조사)",
     "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16280520"
-  },
-  {
-    "id": "bang-dream-ave-mujica-prima-auro",
-    "tmdbId": 1614539,
-    "title": "영화 뱅드림! 아베 무지카 프리마 오로라",
-    "meta": "애니메이션 · 드라마 · 음악",
-    "meta2": "82분",
-    "posterPath": "/3wIX4rSyf51w3hO2sddXz4gBnp.jpg",
-    "releaseDate": "2026-11-19",
-    "audience": 2753,
-    "boRank": 10,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   },
   {
     "id": "the-death-of-robin-hood",
@@ -388,8 +389,8 @@ const MOVIES = [
     "creditsLen": null,
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "topstarnews.net (자동 조사)",
-    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16268191"
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/11/wild-horse-nine-2026/"
   },
   {
     "id": "tmdb-822653",
@@ -413,6 +414,22 @@ const MOVIES = [
     "tip": "",
     "source": "en.wikipedia.org · gamepedia.jp (자동 조사)",
     "sourceUrl": "https://en.wikipedia.org/wiki/Puella_Magi_Madoka_Magica:_Walpurgisnacht:_Rising"
+  },
+  {
+    "id": "bajo-tus-pies",
+    "tmdbId": 1180894,
+    "title": "잠들 수 없는 집",
+    "meta": "공포",
+    "meta2": "94분",
+    "posterPath": "/cXd3ldZahrBgZo71QLZ76I4Z9wG.jpg",
+    "releaseDate": "2026-11-04",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   }
 ];
 
@@ -422,6 +439,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "tmdb-1586876": {
+    "up": 0,
+    "down": 0
+  },
+  "heart-of-the-beast": {
     "up": 0,
     "down": 0
   },
@@ -446,10 +467,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "tmdb-1410955": {
-    "up": 0,
-    "down": 0
-  },
-  "bang-dream-ave-mujica-prima-auro": {
     "up": 0,
     "down": 0
   },
@@ -498,6 +515,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "tmdb-822653": {
+    "up": 0,
+    "down": 0
+  },
+  "bajo-tus-pies": {
     "up": 0,
     "down": 0
   }
