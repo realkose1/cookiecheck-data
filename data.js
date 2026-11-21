@@ -332,22 +332,6 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "tmdb-31347",
-    "tmdbId": 31347,
-    "title": "극장판 카드캡터 체리 : 봉인된 카드",
-    "meta": "애니메이션 · 모험 · 판타지",
-    "meta2": "93분",
-    "posterPath": "/ezYcCER756g37B4Y7kZKfr2flgc.jpg",
-    "releaseDate": "2026-11-11",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
-  },
-  {
     "id": "the-cat-in-the-hat",
     "tmdbId": 1117898,
     "title": "모자 쓴 고양이",
@@ -499,10 +483,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "the-virgin-suicides": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-31347": {
     "up": 0,
     "down": 0
   },
