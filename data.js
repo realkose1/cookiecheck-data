@@ -142,8 +142,8 @@ const MOVIES = [
     "creditsLen": null,
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/11/hunger-games-sunrise-on-the-reaping-the-2026/"
+    "source": "slashfilm.com (자동 조사)",
+    "sourceUrl": "https://www.slashfilm.com/2301252/the-hunger-games-sunrise-on-the-reaping-post-credits-scene-guide/"
   },
   {
     "id": "the-cat-in-the-hat",
