@@ -246,7 +246,7 @@ const MOVIES = [
     "id": "ebenezer",
     "tmdbId": 1567605,
     "title": "스크루지: 크리스마스 캐럴",
-    "meta": "판타지 · 드라마 · 공포",
+    "meta": "판타지 · 코미디",
     "meta2": "116분",
     "posterPath": "/mgWk3zPFLKisvKNtJGf6zxDX5gA.jpg",
     "releaseDate": "2026-11-11",
