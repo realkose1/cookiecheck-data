@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-24)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261123)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-25)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261124)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-11-24';
-const BOXOFFICE_DATE = "20261123";
+const DATA_UPDATED = '2026-11-25';
+const BOXOFFICE_DATE = "20261124";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "127분",
     "posterPath": "/ad9ndytwOckyShSc0A6tx1rZRkW.jpg",
     "releaseDate": "2016-12-07",
-    "audience": 3906658,
+    "audience": 3910122,
     "boRank": 6,
     "status": "no",
     "creditsLen": null,
@@ -33,7 +33,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 3075238,
+    "audience": 3081238,
     "boRank": 3,
     "status": "yes",
     "creditsLen": null,
@@ -49,23 +49,6 @@ const MOVIES = [
     "sourceUrl": "https://namu.wiki/w/%EA%B7%B9%EC%9E%A5%ED%8C%90%20%EC%B9%98%EC%9D%B4%EC%B9%B4%EC%99%80%3A%20%EC%9D%B8%EC%96%B4%20%EC%84%AC%EC%9D%98%20%EB%B9%84%EB%B0%80"
   },
   {
-    "id": "heart-of-the-beast",
-    "tmdbId": 1263337,
-    "title": "하트 오브 비스트",
-    "meta": "모험 · 스릴러",
-    "meta2": "102분",
-    "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
-    "releaseDate": "2026-10-28",
-    "audience": 474817,
-    "boRank": 9,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/09/heart-of-the-beast-2026/"
-  },
-  {
     "id": "tmdb-1244809",
     "tmdbId": 1244809,
     "title": "폭설",
@@ -73,7 +56,7 @@ const MOVIES = [
     "meta2": "89분",
     "posterPath": "/xiBYIFWBrLD7Z7jWrt0e7YLLmfC.jpg",
     "releaseDate": "2026-11-18",
-    "audience": 462141,
+    "audience": 499696,
     "boRank": 1,
     "status": "no",
     "creditsLen": null,
@@ -83,6 +66,23 @@ const MOVIES = [
     "sourceUrl": "https://www.ggilbo.com/news/articleView.html?idxno=1193922"
   },
   {
+    "id": "heart-of-the-beast",
+    "tmdbId": 1263337,
+    "title": "하트 오브 비스트",
+    "meta": "모험 · 스릴러",
+    "meta2": "102분",
+    "posterPath": "/zC4E522V1n3H4SGdYOaiqhF5DnS.jpg",
+    "releaseDate": "2026-10-28",
+    "audience": 476795,
+    "boRank": 9,
+    "status": "no",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/09/heart-of-the-beast-2026/"
+  },
+  {
     "id": "tmdb-1545057",
     "tmdbId": 1545057,
     "title": "최종면접",
@@ -90,8 +90,8 @@ const MOVIES = [
     "meta2": "108분",
     "posterPath": "/wImwvRmbR28hPNDmaj5W7zvxk0T.jpg",
     "releaseDate": "2026-11-04",
-    "audience": 327605,
-    "boRank": 7,
+    "audience": 330291,
+    "boRank": 8,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -113,7 +113,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/9fhPxF6clLRoQfpmgn5jGpL6BTA.jpg",
     "releaseDate": "2026-11-11",
-    "audience": 246493,
+    "audience": 251691,
     "boRank": 4,
     "status": "no",
     "creditsLen": null,
@@ -130,8 +130,8 @@ const MOVIES = [
     "meta2": "94분",
     "posterPath": "/8VIxElJnoGXJH4p3Av2BQwgcxpC.jpg",
     "releaseDate": "2026-11-05",
-    "audience": 201253,
-    "boRank": 8,
+    "audience": 202979,
+    "boRank": 10,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -153,7 +153,7 @@ const MOVIES = [
     "meta2": "159분",
     "posterPath": "/6ehDHRVDtwe1oMu6EMtKC3SoVER.jpg",
     "releaseDate": "2026-11-18",
-    "audience": 98465,
+    "audience": 107499,
     "boRank": 2,
     "status": "no",
     "creditsLen": null,
@@ -170,8 +170,8 @@ const MOVIES = [
     "meta2": "119분",
     "posterPath": "/qb1ExMXRfo1hvZT691C8zfaFQ3r.jpg",
     "releaseDate": "2026-11-18",
-    "audience": 15279,
-    "boRank": 10,
+    "audience": 18569,
+    "boRank": 7,
     "status": "yes",
     "creditsLen": null,
     "cookies": [
@@ -184,6 +184,70 @@ const MOVIES = [
     "tip": "",
     "source": "topstarnews.net · srtimes.kr (자동 조사)",
     "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16280520"
+  },
+  {
+    "id": "hexed",
+    "tmdbId": 1538497,
+    "title": "헥스: 마녀왕국",
+    "meta": "모험 · 애니메이션 · 가족",
+    "meta2": "110분",
+    "posterPath": "/rgnSY4Yz3tm8gutVedML3d8UYWy.jpg",
+    "releaseDate": "2026-11-25",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "focker-in-law",
+    "tmdbId": 1400336,
+    "title": "미트 페어런츠 4",
+    "meta": "코미디 · 로맨스",
+    "meta2": "106분",
+    "posterPath": "/2IfBmpzSuHzjThm2RxgYjIRCU11.jpg",
+    "releaseDate": "2026-11-25",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "lilo-scratch",
+    "tmdbId": 1720486,
+    "title": "Lilo & Scratch",
+    "meta": "애니메이션 · 코미디 · 가족",
+    "meta2": "",
+    "posterPath": "/tbGwR0B0HDPTwX9BbQEIuIHDk3z.jpg",
+    "releaseDate": "2026-11-25",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
+    "id": "la-bataille-de-gaulle-j-cris-ton",
+    "tmdbId": 1165369,
+    "title": "드골2: 자유의 시대",
+    "meta": "드라마 · 전쟁 · 역사",
+    "meta2": "160분",
+    "posterPath": "/3wxvG7GIs3PTExEjhF4fvB0KbBO.jpg",
+    "releaseDate": "2026-11-25",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
   },
   {
     "id": "the-death-of-robin-hood",
@@ -358,62 +422,6 @@ const MOVIES = [
     "tip": "",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/11/cat-in-the-hat-the-2026/"
-  },
-  {
-    "id": "wild-horse-nine",
-    "tmdbId": 891621,
-    "title": "와일드 호스 나인",
-    "meta": "코미디 · 범죄 · 스릴러",
-    "meta2": "117분",
-    "posterPath": "/iVWvR4BWhdirFIMQwS1yNp2Hcft.jpg",
-    "releaseDate": "2026-11-04",
-    "audience": null,
-    "boRank": null,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/11/wild-horse-nine-2026/"
-  },
-  {
-    "id": "tmdb-822653",
-    "tmdbId": 822653,
-    "title": "극장판 마법소녀 마도카☆마키카 <발푸르기스의 회천>",
-    "meta": "애니메이션 · 드라마 · 미스터리",
-    "meta2": "120분",
-    "posterPath": "/2EhEAK8AvVaC01dhJ7rXBd2orZr.jpg",
-    "releaseDate": "2026-11-04",
-    "audience": null,
-    "boRank": null,
-    "status": "yes",
-    "creditsLen": null,
-    "cookies": [
-      {
-        "desc": "엔딩 크레딧이 끝난 뒤 장면이 나옵니다. 영문 위키피디아는 큐베가 나즈카소코츠네에서 세상에 저주가 넘쳐나는 이유를 의아해하면서도 흥미로워하는 모습이라고 적었습니다. 이어 전화벨이 울리고 누군가의 손이 수화기를 잡습니다. 일본 해설 사이트 gamepedia.jp는 오프닝에서 나온 '원환의 전화'가 다시 울리고 정체불명의 인물이 받는다고 설명합니다.",
-        "len": "",
-        "pos": "크레딧 종료 후"
-      }
-    ],
-    "tip": "",
-    "source": "en.wikipedia.org · gamepedia.jp (자동 조사)",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Puella_Magi_Madoka_Magica:_Walpurgisnacht:_Rising"
-  },
-  {
-    "id": "bajo-tus-pies",
-    "tmdbId": 1180894,
-    "title": "잠들 수 없는 집",
-    "meta": "공포",
-    "meta2": "94분",
-    "posterPath": "/cXd3ldZahrBgZo71QLZ76I4Z9wG.jpg",
-    "releaseDate": "2026-11-04",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   }
 ];
 
@@ -426,11 +434,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "heart-of-the-beast": {
+  "tmdb-1244809": {
     "up": 0,
     "down": 0
   },
-  "tmdb-1244809": {
+  "heart-of-the-beast": {
     "up": 0,
     "down": 0
   },
@@ -451,6 +459,22 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "tmdb-1410955": {
+    "up": 0,
+    "down": 0
+  },
+  "hexed": {
+    "up": 0,
+    "down": 0
+  },
+  "focker-in-law": {
+    "up": 0,
+    "down": 0
+  },
+  "lilo-scratch": {
+    "up": 0,
+    "down": 0
+  },
+  "la-bataille-de-gaulle-j-cris-ton": {
     "up": 0,
     "down": 0
   },
@@ -487,18 +511,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "the-cat-in-the-hat": {
-    "up": 0,
-    "down": 0
-  },
-  "wild-horse-nine": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-822653": {
-    "up": 0,
-    "down": 0
-  },
-  "bajo-tus-pies": {
     "up": 0,
     "down": 0
   }
