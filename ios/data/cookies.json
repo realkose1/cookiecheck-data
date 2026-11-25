@@ -10,7 +10,7 @@
    "meta2": "127분",
    "posterPath": "/ad9ndytwOckyShSc0A6tx1rZRkW.jpg",
    "releaseDate": "2016-12-07",
-   "audience": 3910122,
+   "audience": 3910121,
    "boRank": 6,
    "status": "no",
    "creditsLen": null,
@@ -50,7 +50,7 @@
    "meta2": "89분",
    "posterPath": "/xiBYIFWBrLD7Z7jWrt0e7YLLmfC.jpg",
    "releaseDate": "2026-11-18",
-   "audience": 499716,
+   "audience": 499714,
    "boRank": 1,
    "status": "no",
    "creditsLen": null,
@@ -147,14 +147,14 @@
    "meta2": "159분",
    "posterPath": "/6ehDHRVDtwe1oMu6EMtKC3SoVER.jpg",
    "releaseDate": "2026-11-18",
-   "audience": 107499,
+   "audience": 107500,
    "boRank": 2,
    "status": "no",
    "creditsLen": null,
    "cookies": [],
    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-   "source": "slashfilm.com (자동 조사)",
-   "sourceUrl": "https://www.slashfilm.com/2301252/the-hunger-games-sunrise-on-the-reaping-post-credits-scene-guide/"
+   "source": "aftercredits.com",
+   "sourceUrl": "https://aftercredits.com/2026/11/hunger-games-sunrise-on-the-reaping-the-2026/"
   },
   {
    "id": "tmdb-1410955",
@@ -189,11 +189,18 @@
    "releaseDate": "2026-11-25",
    "audience": null,
    "boRank": null,
-   "status": "unknown",
+   "status": "yes",
    "creditsLen": null,
-   "cookies": [],
-   "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-   "source": ""
+   "cookies": [
+    {
+     "pos": "크레딧 중간",
+     "len": "",
+     "desc": "빌리와 앨리스가 기다리는 동안, 어리둥절한 계산원이 고양이 피규어 여러 개를 스캔하는 장면이 나옵니다. 계산원은 마지막 피규어를 든 채 봉투가 필요한지 묻습니다. 비프 로저 크럼척이 피규어를 낚아채며 괜찮다고, 자기가 직접 가져왔다고 말합니다. 빌리가 계산원에게 현금을 건네는 사이, 크럼척은 물건이 가득 찬 주전자 안으로 뛰어듭니다. 주전자는 유리문을 부수며 가게 밖으로 미끄러지듯 나갑니다. 빌리는 마법을 써서 계산원의 손에 있는 돈을 불려 파손된 문의 값을 치릅니다."
+    }
+   ],
+   "tip": "",
+   "source": "aftercredits.com",
+   "sourceUrl": "https://aftercredits.com/2026/11/hexed-2026/"
   },
   {
    "id": "focker-in-law",
@@ -205,11 +212,18 @@
    "releaseDate": "2026-11-25",
    "audience": null,
    "boRank": null,
-   "status": "unknown",
+   "status": "yes",
    "creditsLen": null,
-   "cookies": [],
-   "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-   "source": ""
+   "cookies": [
+    {
+     "pos": "크레딧 중간",
+     "len": "",
+     "desc": "엔딩 크레딧이 올라가는 도중에 에두아르도(도도)가 거짓말 탐지기 테스트를 받는 장면이 나온다. 두 리뷰가 이 장면을 영화에서 가장 웃긴 대목 중 하나로 꼽았다."
+    }
+   ],
+   "tip": "",
+   "source": "sacredwall.com · clutchpoints.com (자동 조사)",
+   "sourceUrl": "https://www.sacredwall.com/focker-in-law-review/"
   },
   {
    "id": "lilo-scratch",
