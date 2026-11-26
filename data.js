@@ -178,12 +178,12 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "lilo-scratch",
-    "tmdbId": 1720486,
-    "title": "Lilo & Scratch",
-    "meta": "애니메이션 · 코미디 · 가족",
-    "meta2": "6분",
-    "posterPath": "/tbGwR0B0HDPTwX9BbQEIuIHDk3z.jpg",
+    "id": "la-bataille-de-gaulle-j-cris-ton",
+    "tmdbId": 1165369,
+    "title": "드골2: 자유의 시대",
+    "meta": "드라마 · 전쟁 · 역사",
+    "meta2": "160분",
+    "posterPath": "/3wxvG7GIs3PTExEjhF4fvB0KbBO.jpg",
     "releaseDate": "2026-11-25",
     "audience": null,
     "boRank": null,
@@ -194,12 +194,12 @@ const MOVIES = [
     "source": ""
   },
   {
-    "id": "la-bataille-de-gaulle-j-cris-ton",
-    "tmdbId": 1165369,
-    "title": "드골2: 자유의 시대",
-    "meta": "드라마 · 전쟁 · 역사",
-    "meta2": "160분",
-    "posterPath": "/3wxvG7GIs3PTExEjhF4fvB0KbBO.jpg",
+    "id": "lilo-scratch",
+    "tmdbId": 1720486,
+    "title": "Lilo & Scratch",
+    "meta": "애니메이션 · 코미디 · 가족",
+    "meta2": "6분",
+    "posterPath": "/tbGwR0B0HDPTwX9BbQEIuIHDk3z.jpg",
     "releaseDate": "2026-11-25",
     "audience": null,
     "boRank": null,
@@ -410,11 +410,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "lilo-scratch": {
+  "la-bataille-de-gaulle-j-cris-ton": {
     "up": 0,
     "down": 0
   },
-  "la-bataille-de-gaulle-j-cris-ton": {
+  "lilo-scratch": {
     "up": 0,
     "down": 0
   },
