@@ -171,11 +171,12 @@ const MOVIES = [
     "releaseDate": "2026-11-25",
     "audience": 8208,
     "boRank": 9,
-    "status": "unknown",
+    "status": "no",
     "creditsLen": null,
     "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
+    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
+    "source": "topstarnews.net (자동 조사)",
+    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16287391"
   },
   {
     "id": "la-bataille-de-gaulle-j-cris-ton",
