@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 3104399,
+    "audience": 3104389,
     "boRank": 3,
     "status": "yes",
     "creditsLen": null,
@@ -39,7 +39,7 @@ const MOVIES = [
     "meta2": "89분",
     "posterPath": "/xiBYIFWBrLD7Z7jWrt0e7YLLmfC.jpg",
     "releaseDate": "2026-11-18",
-    "audience": 543625,
+    "audience": 543614,
     "boRank": 1,
     "status": "no",
     "creditsLen": null,
@@ -73,7 +73,7 @@ const MOVIES = [
     "meta2": "159분",
     "posterPath": "/6ehDHRVDtwe1oMu6EMtKC3SoVER.jpg",
     "releaseDate": "2026-11-18",
-    "audience": 114701,
+    "audience": 114700,
     "boRank": 5,
     "status": "no",
     "creditsLen": null,
@@ -90,7 +90,7 @@ const MOVIES = [
     "meta2": "108분",
     "posterPath": "/d7wrWKhol3cBKfDcaJFg0vgW4NF.jpg",
     "releaseDate": "2026-11-25",
-    "audience": 33514,
+    "audience": 33512,
     "boRank": 2,
     "status": "no",
     "creditsLen": null,
@@ -107,7 +107,7 @@ const MOVIES = [
     "meta2": "110분",
     "posterPath": "/rgnSY4Yz3tm8gutVedML3d8UYWy.jpg",
     "releaseDate": "2026-11-25",
-    "audience": 23361,
+    "audience": 23364,
     "boRank": 4,
     "status": "yes",
     "creditsLen": null,
@@ -317,6 +317,22 @@ const MOVIES = [
     "source": ""
   },
   {
+    "id": "the-virgin-suicides",
+    "tmdbId": 1443,
+    "title": "처녀 자살 소동",
+    "meta": "드라마 · 로맨스",
+    "meta2": "97분",
+    "posterPath": "/bxEuunUExRCGtDqTQguuZekFTwy.jpg",
+    "releaseDate": "2026-11-11",
+    "audience": null,
+    "boRank": null,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
     "id": "mother-mary",
     "tmdbId": 1102883,
     "title": "마더 메리",
@@ -338,22 +354,6 @@ const MOVIES = [
     "tip": "",
     "source": "aftercredits.com",
     "sourceUrl": "https://aftercredits.com/2026/04/mother-mary-2026/"
-  },
-  {
-    "id": "the-virgin-suicides",
-    "tmdbId": 1443,
-    "title": "처녀 자살 소동",
-    "meta": "드라마 · 로맨스",
-    "meta2": "97분",
-    "posterPath": "/bxEuunUExRCGtDqTQguuZekFTwy.jpg",
-    "releaseDate": "2026-11-11",
-    "audience": null,
-    "boRank": null,
-    "status": "unknown",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
-    "source": ""
   },
   {
     "id": "tmdb-31347",
@@ -442,11 +442,11 @@ const INITIAL_VOTES = {
     "up": 0,
     "down": 0
   },
-  "mother-mary": {
+  "the-virgin-suicides": {
     "up": 0,
     "down": 0
   },
-  "the-virgin-suicides": {
+  "mother-mary": {
     "up": 0,
     "down": 0
   },
