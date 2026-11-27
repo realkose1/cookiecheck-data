@@ -529,9 +529,9 @@
   "status": "unknown"
  },
  "330081": {
-  "attempts": 2,
-  "checkedAt": "2026-11-27",
-  "reason": "2015년 작품 '자유의 날개'의 쿠키 유무를 직접 적은 근거를 찾지 못했다. 찾은 쿠키 언급(브런치 후기, 디시 글, 나무위키 문서)은 2025년 개봉한 '완결편 더 라스트 어택' 이야기라 버렸다. DVDPrime 댓글의 '후편엔 쿠키영상이 없을 것'은 추측이라 근거가 못 된다.",
+  "attempts": 3,
+  "checkedAt": "2026-11-28",
+  "reason": "검색 결과에서 이 작품(2015, 아라키 테츠로)의 쿠키 영상 유무를 명시한 문장을 찾지 못했고, 검색 한도도 모두 소진했다. 관례로 추측하지 않고 unknown 으로 둔다.",
   "status": "unknown"
  },
  "379088": {
@@ -550,6 +550,12 @@
   "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16261165",
   "status": "yes",
   "tip": ""
+ },
+ "38": {
+  "attempts": 1,
+  "checkedAt": "2026-11-28",
+  "reason": "'없음'을 명시한 글은 parentguiding.com 과 fascinatingspain.com 두 곳에서 봤지만, 둘 다 검색 결과 요약으로만 봤고 web_fetch 로 열어 확인하지 못했다. 열어 확인할 수 있었던 신뢰 출처(나무위키, aftercredits, mediastinger, 언론)는 없었다. 두 곳은 독립된 후기·블로그 성격이라 2건 일치 규",
+  "status": "unknown"
  },
  "42360": {
   "checkedAt": "2026-09-19",
