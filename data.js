@@ -1,11 +1,11 @@
 /* 쿠키이써 — 현재 상영작.
    자동 생성 파일입니다. 직접 고치지 말고 `python3 tools/fetch_movies.py` 를 실행하세요.
-   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-27)
-   관객수: KOBIS 일별 박스오피스 (기준일 20261126)
+   작품 정보: TMDB /movie/now_playing?region=KR (조회일 2026-11-28)
+   관객수: KOBIS 일별 박스오피스 (기준일 20261127)
    쿠키 정보: aftercredits.com + 나무위키 + 자동 조사 + TMDB 키워드 + data.overrides.json */
 
-const DATA_UPDATED = '2026-11-27';
-const BOXOFFICE_DATE = "20261126";
+const DATA_UPDATED = '2026-11-28';
+const BOXOFFICE_DATE = "20261127";
 
 const MOVIES = [
   {
@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 3109786,
+    "audience": 3116463,
     "boRank": 5,
     "status": "yes",
     "creditsLen": null,
@@ -39,7 +39,7 @@ const MOVIES = [
     "meta2": "89분",
     "posterPath": "/xiBYIFWBrLD7Z7jWrt0e7YLLmfC.jpg",
     "releaseDate": "2026-11-18",
-    "audience": 577754,
+    "audience": 623618,
     "boRank": 1,
     "status": "no",
     "creditsLen": null,
@@ -49,6 +49,22 @@ const MOVIES = [
     "sourceUrl": "https://www.ggilbo.com/news/articleView.html?idxno=1193922"
   },
   {
+    "id": "eternal-sunshine-of-the-spotless",
+    "tmdbId": 38,
+    "title": "이터널 선샤인",
+    "meta": "SF · 드라마 · 로맨스",
+    "meta2": "108분",
+    "posterPath": "/aey9NejbFuliqjxwoRpQDT3XIHg.jpg",
+    "releaseDate": "2005-11-10",
+    "audience": 606327,
+    "boRank": 9,
+    "status": "unknown",
+    "creditsLen": null,
+    "cookies": [],
+    "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
+    "source": ""
+  },
+  {
     "id": "fall-2-deadpoint",
     "tmdbId": 1101412,
     "title": "폴2: 데드포인트",
@@ -56,8 +72,8 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/9fhPxF6clLRoQfpmgn5jGpL6BTA.jpg",
     "releaseDate": "2026-11-11",
-    "audience": 258298,
-    "boRank": 8,
+    "audience": 262199,
+    "boRank": 7,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
@@ -73,7 +89,7 @@ const MOVIES = [
     "meta2": "159분",
     "posterPath": "/6ehDHRVDtwe1oMu6EMtKC3SoVER.jpg",
     "releaseDate": "2026-11-18",
-    "audience": 120162,
+    "audience": 127836,
     "boRank": 4,
     "status": "no",
     "creditsLen": null,
@@ -90,7 +106,7 @@ const MOVIES = [
     "meta2": "108분",
     "posterPath": "/d7wrWKhol3cBKfDcaJFg0vgW4NF.jpg",
     "releaseDate": "2026-11-25",
-    "audience": 54953,
+    "audience": 75550,
     "boRank": 2,
     "status": "no",
     "creditsLen": null,
@@ -107,7 +123,7 @@ const MOVIES = [
     "meta2": "110분",
     "posterPath": "/rgnSY4Yz3tm8gutVedML3d8UYWy.jpg",
     "releaseDate": "2026-11-25",
-    "audience": 36833,
+    "audience": 52807,
     "boRank": 3,
     "status": "yes",
     "creditsLen": null,
@@ -130,7 +146,7 @@ const MOVIES = [
     "meta2": "121분",
     "posterPath": "/ZV2aFuwOb7zfvNwXTcQrQrfvEU.jpg",
     "releaseDate": "2015-12-10",
-    "audience": 14529,
+    "audience": 17027,
     "boRank": 10,
     "status": "unknown",
     "creditsLen": null,
@@ -146,7 +162,7 @@ const MOVIES = [
     "meta2": "106분",
     "posterPath": "/2IfBmpzSuHzjThm2RxgYjIRCU11.jpg",
     "releaseDate": "2026-11-25",
-    "audience": 12098,
+    "audience": 16863,
     "boRank": 6,
     "status": "yes",
     "creditsLen": null,
@@ -160,23 +176,6 @@ const MOVIES = [
     "tip": "",
     "source": "sacredwall.com · clutchpoints.com (자동 조사)",
     "sourceUrl": "https://www.sacredwall.com/focker-in-law-review/"
-  },
-  {
-    "id": "tmdb-1535897",
-    "tmdbId": 1535897,
-    "title": "완벽한 집",
-    "meta": "공포 · 미스터리",
-    "meta2": "95분",
-    "posterPath": "/9gTRFnKKWoGe5te3DvTrIlEJ5ME.jpg",
-    "releaseDate": "2026-11-25",
-    "audience": 8208,
-    "boRank": 9,
-    "status": "no",
-    "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "topstarnews.net (자동 조사)",
-    "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16287391"
   },
   {
     "id": "la-bataille-de-gaulle-j-cris-ton",
@@ -371,6 +370,34 @@ const MOVIES = [
     "cookies": [],
     "tip": "아직 확인된 제보가 없습니다. 관람하셨다면 알려주세요.",
     "source": ""
+  },
+  {
+    "id": "the-cat-in-the-hat",
+    "tmdbId": 1117898,
+    "title": "모자 쓴 고양이",
+    "meta": "애니메이션 · 판타지 · 모험",
+    "meta2": "107분",
+    "posterPath": "/lgLg6T1kv7fjfANRNM1QSvPKDJM.jpg",
+    "releaseDate": "2026-11-06",
+    "audience": null,
+    "boRank": null,
+    "status": "yes",
+    "creditsLen": null,
+    "cookies": [
+      {
+        "pos": "크레딧 중간",
+        "len": "",
+        "desc": "Pig in a Wig의 생일이라 Cat in the Hat이 그에게 Thing들이 든 상자를 선물합니다. 상자가 갑자기 터지듯 열리면서 방 안이 Thing들로 가득 차고, 사무실에서 큰 파티가 벌어집니다.\n이어서 닥터 수스(시어도어 가이젤)의 사진과 함께 다음과 같은 헌정 문구가 나옵니다.\n테오도르 가이젤과 천재의 해에 바칩니다\n크레딧이 계속 올라가는 동안 Cat in the Hat 노래가 흘러나오고, Cat in the Hat이 관객에게 그 노래에 대해 이야기하며 속편과 스핀오프 제작을 제안합니다."
+      },
+      {
+        "pos": "크레딧 종료 후",
+        "len": "",
+        "desc": "Go-Backer가 화면에 나타납니다. 이 장치가 작동하면서 영화가 처음으로 되감기고 워너 브라더스 로고가 나옵니다. 로고가 뒤집히며 열리고 Cat in the Hat의 실루엣이 나타나 \"다시 한번 해보자!\"라고 외칩니다. 그가 노래를 시작하려고 박자를 세는 순간 인사팀의 셰리가 나타나 영화는 끝났다고 말하고, 로고는 쾅 하고 닫힙니다."
+      }
+    ],
+    "tip": "",
+    "source": "aftercredits.com",
+    "sourceUrl": "https://aftercredits.com/2026/11/cat-in-the-hat-the-2026/"
   }
 ];
 
@@ -380,6 +407,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "tmdb-1244809": {
+    "up": 0,
+    "down": 0
+  },
+  "eternal-sunshine-of-the-spotless": {
     "up": 0,
     "down": 0
   },
@@ -404,10 +435,6 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "focker-in-law": {
-    "up": 0,
-    "down": 0
-  },
-  "tmdb-1535897": {
     "up": 0,
     "down": 0
   },
@@ -452,6 +479,10 @@ const INITIAL_VOTES = {
     "down": 0
   },
   "tmdb-31347": {
+    "up": 0,
+    "down": 0
+  },
+  "the-cat-in-the-hat": {
     "up": 0,
     "down": 0
   }
