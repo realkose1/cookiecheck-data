@@ -95,8 +95,8 @@ const MOVIES = [
     "creditsLen": null,
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/11/hunger-games-sunrise-on-the-reaping-the-2026/"
+    "source": "slashfilm.com (자동 조사)",
+    "sourceUrl": "https://www.slashfilm.com/2301252/the-hunger-games-sunrise-on-the-reaping-post-credits-scene-guide/"
   },
   {
     "id": "tmdb-1317410",
@@ -164,12 +164,18 @@ const MOVIES = [
     "releaseDate": "2026-11-25",
     "audience": 16863,
     "boRank": 6,
-    "status": "no",
+    "status": "yes",
     "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/11/focker-in-law-2026/"
+    "cookies": [
+      {
+        "desc": "엔딩 크레딧이 올라가는 도중에 에두아르도(도도)가 거짓말 탐지기 테스트를 받는 장면이 나온다. 두 리뷰가 이 장면을 영화에서 가장 웃긴 대목 중 하나로 꼽았다.",
+        "len": "",
+        "pos": "크레딧 중간"
+      }
+    ],
+    "tip": "",
+    "source": "sacredwall.com · clutchpoints.com (자동 조사)",
+    "sourceUrl": "https://www.sacredwall.com/focker-in-law-review/"
   },
   {
     "id": "la-bataille-de-gaulle-j-cris-ton",
