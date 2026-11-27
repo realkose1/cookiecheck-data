@@ -16,7 +16,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg",
     "releaseDate": "2026-09-30",
-    "audience": 3109804,
+    "audience": 3109786,
     "boRank": 5,
     "status": "yes",
     "creditsLen": null,
@@ -39,7 +39,7 @@ const MOVIES = [
     "meta2": "89분",
     "posterPath": "/xiBYIFWBrLD7Z7jWrt0e7YLLmfC.jpg",
     "releaseDate": "2026-11-18",
-    "audience": 577756,
+    "audience": 577754,
     "boRank": 1,
     "status": "no",
     "creditsLen": null,
@@ -79,8 +79,8 @@ const MOVIES = [
     "creditsLen": null,
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/11/hunger-games-sunrise-on-the-reaping-the-2026/"
+    "source": "slashfilm.com (자동 조사)",
+    "sourceUrl": "https://www.slashfilm.com/2301252/the-hunger-games-sunrise-on-the-reaping-post-credits-scene-guide/"
   },
   {
     "id": "tmdb-1317410",
@@ -103,7 +103,7 @@ const MOVIES = [
     "id": "hexed",
     "tmdbId": 1538497,
     "title": "헥스: 마녀왕국",
-    "meta": "모험 · 애니메이션 · 가족",
+    "meta": "애니메이션 · 판타지 · 가족",
     "meta2": "110분",
     "posterPath": "/rgnSY4Yz3tm8gutVedML3d8UYWy.jpg",
     "releaseDate": "2026-11-25",
