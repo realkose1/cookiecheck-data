@@ -39,7 +39,7 @@ const MOVIES = [
     "meta2": "89분",
     "posterPath": "/xiBYIFWBrLD7Z7jWrt0e7YLLmfC.jpg",
     "releaseDate": "2026-11-18",
-    "audience": 717127,
+    "audience": 717139,
     "boRank": 1,
     "status": "no",
     "creditsLen": null,
@@ -56,7 +56,7 @@ const MOVIES = [
     "meta2": "99분",
     "posterPath": "/9fhPxF6clLRoQfpmgn5jGpL6BTA.jpg",
     "releaseDate": "2026-11-11",
-    "audience": 269945,
+    "audience": 269948,
     "boRank": 7,
     "status": "no",
     "creditsLen": null,
@@ -73,14 +73,14 @@ const MOVIES = [
     "meta2": "159분",
     "posterPath": "/6ehDHRVDtwe1oMu6EMtKC3SoVER.jpg",
     "releaseDate": "2026-11-18",
-    "audience": 142039,
+    "audience": 142045,
     "boRank": 5,
     "status": "no",
     "creditsLen": null,
     "cookies": [],
     "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/11/hunger-games-sunrise-on-the-reaping-the-2026/"
+    "source": "slashfilm.com (자동 조사)",
+    "sourceUrl": "https://www.slashfilm.com/2301252/the-hunger-games-sunrise-on-the-reaping-post-credits-scene-guide/"
   },
   {
     "id": "hexed",
@@ -113,7 +113,7 @@ const MOVIES = [
     "meta2": "108분",
     "posterPath": "/d7wrWKhol3cBKfDcaJFg0vgW4NF.jpg",
     "releaseDate": "2026-11-25",
-    "audience": 108042,
+    "audience": 108048,
     "boRank": 3,
     "status": "no",
     "creditsLen": null,
@@ -130,7 +130,7 @@ const MOVIES = [
     "meta2": "121분",
     "posterPath": "/ZV2aFuwOb7zfvNwXTcQrQrfvEU.jpg",
     "releaseDate": "2015-12-10",
-    "audience": 21585,
+    "audience": 21583,
     "boRank": 8,
     "status": "unknown",
     "creditsLen": null,
@@ -148,12 +148,18 @@ const MOVIES = [
     "releaseDate": "2026-11-25",
     "audience": 20780,
     "boRank": 9,
-    "status": "no",
+    "status": "yes",
     "creditsLen": null,
-    "cookies": [],
-    "tip": "쿠키가 없습니다. 크레딧이 시작되면 바로 나가셔도 됩니다.",
-    "source": "aftercredits.com",
-    "sourceUrl": "https://aftercredits.com/2026/11/focker-in-law-2026/"
+    "cookies": [
+      {
+        "desc": "엔딩 크레딧이 올라가는 도중에 에두아르도(도도)가 거짓말 탐지기 테스트를 받는 장면이 나온다. 두 리뷰가 이 장면을 영화에서 가장 웃긴 대목 중 하나로 꼽았다.",
+        "len": "",
+        "pos": "크레딧 중간"
+      }
+    ],
+    "tip": "",
+    "source": "sacredwall.com · clutchpoints.com (자동 조사)",
+    "sourceUrl": "https://www.sacredwall.com/focker-in-law-review/"
   },
   {
     "id": "tmdb-1598766",
